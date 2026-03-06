@@ -62,14 +62,12 @@ curl -I http://127.0.0.1
 8. ブラウザ表示を確認
 
 [http://127.0.0.1](http://127.0.0.1) を開き、次のナビゲーションが表示されることを確認します。
-- Home
+- Home（ロゴから遷移）
 - Research
 - Publications
 - Members
-- Projects
 - News
-- Join Us
-- Contact
+- Join
 
 9. コンテンツ更新スモークテスト
 

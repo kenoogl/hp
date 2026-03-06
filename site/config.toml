@@ -8,34 +8,22 @@ theme = "lab-theme"
 
 [menu]
   [[menu.main]]
-    name = "ホーム / Home"
-    url = "/"
+    name = "Research"
+    url = "/research/"
     weight = 1
   [[menu.main]]
-    name = "研究 / Research"
-    url = "/research/"
+    name = "Publications"
+    url = "/publications/"
     weight = 2
   [[menu.main]]
-    name = "論文 / Publications"
-    url = "/publications/"
+    name = "Members"
+    url = "/members/"
     weight = 3
   [[menu.main]]
-    name = "メンバー / Members"
-    url = "/members/"
+    name = "News"
+    url = "/news/"
     weight = 4
   [[menu.main]]
-    name = "プロジェクト / Projects"
-    url = "/projects/"
-    weight = 5
-  [[menu.main]]
-    name = "ニュース / News"
-    url = "/news/"
-    weight = 6
-  [[menu.main]]
-    name = "参加募集 / Join Us"
+    name = "Join"
     url = "/join/"
-    weight = 7
-  [[menu.main]]
-    name = "お問い合わせ / Contact"
-    url = "/contact/"
-    weight = 8
+    weight = 5
