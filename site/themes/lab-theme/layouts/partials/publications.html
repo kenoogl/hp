@@ -1,5 +1,5 @@
 <section class="section-block">
-  <h2>Latest Publications</h2>
+  <h2>最新論文 / Latest Publications</h2>
 
   <ul class="clean-list">
     {{ range first 3 (sort (where .Site.RegularPages "Section" "publications") "Date" "desc") }}

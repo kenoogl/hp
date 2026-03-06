@@ -1,12 +1,12 @@
 <section class="section-block">
-  <h2>Research Highlights</h2>
+  <h2>研究ハイライト / Research Highlights</h2>
 
   <div class="grid">
     {{ range first 4 (sort (where .Site.RegularPages "Section" "research") "Date" "desc") }}
       <article class="card">
         <h3>{{ .Title }}</h3>
         <p>{{ with .Summary }}{{ . }}{{ else }}{{ .Plain | truncate 140 }}{{ end }}</p>
-        <a href="{{ .RelPermalink }}">Learn more</a>
+        <a href="{{ .RelPermalink }}">詳細を見る / Learn more</a>
       </article>
     {{ end }}
   </div>

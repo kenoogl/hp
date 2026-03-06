@@ -1,5 +1,5 @@
 <section class="section-block">
-  <h2>News</h2>
+  <h2>ニュース / News</h2>
 
   <ul class="clean-list">
     {{ range first 5 (sort (where .Site.RegularPages "Section" "news") "Date" "desc") }}
