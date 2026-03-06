@@ -60,7 +60,7 @@ docker-compose up -d --build
 
 - 向いているケース: 安定運用しつつ、手作業を減らしたい場合
 - 手順:
-  1. `site/data/publications.bib` を更新（Scholar/Zotero/Scopus からエクスポート）
+  1. `data/publications.bib` を更新（Scholar/Zotero/Scopus からエクスポート）
   2. 変換スクリプト `scripts/bibtex_to_markdown.py` を実行
   3. `make build && make up` で反映確認
 
@@ -99,3 +99,8 @@ make up      # nginx コンテナ起動
 make ps      # コンテナ状態確認
 make down    # コンテナ停止
 ```
+
+## トラブルシュート
+
+- `docker compose` が使えず `docker-compose` は使える環境では、本リポジトリの `Makefile` のまま利用してください。
+- `http://localhost` で別ポート（例: `localhost:1455`）に飛ぶ場合は、`http://127.0.0.1` を直接開いて確認してください。

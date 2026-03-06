@@ -47,10 +47,12 @@ lab-website/
 
 site/
   content/publications/
-  data/publications.bib
+
+data/
+  publications.bib
 
 scripts/
-  fetch_scholar.py
+  scholar_fetch.py
   bibtex_to_markdown.py
 
 .github/workflows/
@@ -71,82 +73,31 @@ Install:
 pip install scholarly
 ```
 
-Example script: `scripts/fetch_scholar.py`
+Run:
 
-```python
-from pathlib import Path
-from scholarly import scholarly
-
-AUTHOR_ID = "YOUR_SCHOLAR_ID"
-
-author = scholarly.search_author_id(AUTHOR_ID)
-author = scholarly.fill(author)
-
-bibtex_entries = []
-
-for pub in author["publications"]:
-    pub = scholarly.fill(pub)
-    bib = pub["bib"]
-
-    key = bib.get("title", "untitled").replace(" ", "_")
-
-    entry = f"""@article{{{key},
-  title={{{bib.get('title','')}}},
-  author={{{bib.get('author','')}}},
-  year={{{bib.get('pub_year','')}}},
-  journal={{{bib.get('venue','')}}}
-}}"""
-
-    bibtex_entries.append(entry)
-
-Path("site/data").mkdir(parents=True, exist_ok=True)
-Path("site/data/publications.bib").write_text("\n\n".join(bibtex_entries), encoding="utf-8")
+```bash
+pip install scholarly
+python scripts/scholar_fetch.py --author-id "<YOUR_SCHOLAR_ID>" --output data/publications.bib
 ```
 
-This script generates:
+Output:
 
-`site/data/publications.bib`
+`data/publications.bib`
 
 ---
 
 ## Step 2: Convert BibTeX to Hugo markdown
 
-Script: `scripts/bibtex_to_markdown.py`
+Run:
 
-```python
-from pathlib import Path
-import bibtexparser
-
-with open("site/data/publications.bib", encoding="utf-8") as bibfile:
-    db = bibtexparser.load(bibfile)
-
-out_dir = Path("site/content/publications")
-out_dir.mkdir(parents=True, exist_ok=True)
-
-for entry in db.entries:
-    title = entry.get("title", "")
-    authors = entry.get("author", "")
-    year = entry.get("year", "")
-    journal = entry.get("journal", "")
-
-    filename = title.replace(" ", "_")[:50] or "untitled"
-
-    md = f"""---
-title: \"{title}\"
-authors: \"{authors}\"
-journal: \"{journal}\"
-year: \"{year}\"
----
-
-"""
-
-    path = out_dir / f"{filename}.md"
-    path.write_text(md, encoding="utf-8")
+```bash
+pip install bibtexparser
+python scripts/bibtex_to_markdown.py data/publications.bib --clean
 ```
 
 Output example:
 
-`site/content/publications/wake_modeling.md`
+`site/content/publications/2026/wake-modeling.md`
 
 ---
 
@@ -205,10 +156,17 @@ jobs:
         run: pip install scholarly bibtexparser
 
       - name: fetch scholar
-        run: python scripts/fetch_scholar.py
+        env:
+          SCHOLAR_AUTHOR_ID: ${{ secrets.SCHOLAR_AUTHOR_ID }}
+        run: |
+          if [ -z "$SCHOLAR_AUTHOR_ID" ]; then
+            echo "SCHOLAR_AUTHOR_ID is not set; skipping fetch step."
+          else
+            python scripts/scholar_fetch.py --author-id "$SCHOLAR_AUTHOR_ID" --output data/publications.bib
+          fi
 
       - name: convert bibtex
-        run: python scripts/bibtex_to_markdown.py
+        run: python scripts/bibtex_to_markdown.py data/publications.bib --clean
 
       - name: build hugo output
         run: |
@@ -219,7 +177,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email actions@github.com
-          git add .
+          git add data/publications.bib site/content/publications public
           git commit -m "update publications" || echo "No changes to commit"
           git push
 ```

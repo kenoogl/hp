@@ -80,7 +80,7 @@ hugo --destination ../public
 Use a single BibTeX file as source.
 
 ```text
-site/data/publications.bib
+data/publications.bib
 ```
 
 Example entry:
@@ -108,7 +108,7 @@ Export publications from:
 Save as:
 
 ```text
-site/data/publications.bib
+data/publications.bib
 ```
 
 ### Step 2: Run conversion script
@@ -122,7 +122,7 @@ scripts/bibtex_to_markdown.py
 Example:
 
 ```bash
-python scripts/bibtex_to_markdown.py site/data/publications.bib
+python scripts/bibtex_to_markdown.py data/publications.bib --clean
 ```
 
 Output:
