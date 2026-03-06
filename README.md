@@ -44,6 +44,38 @@ docker-compose up -d --build
 3. Hugo を再ビルド
 4. コンテナを再ビルドして再起動（`make up`）
 
+## Publications メンテナンス方法
+
+研究業績（Publications）は、次の3方式で更新できます。
+
+### 1. 手動更新（Manual）
+
+- 向いているケース: 論文数が少なく、更新頻度が低い場合
+- 手順:
+  1. `site/content/publications/<year>/` に Markdown を追加
+  2. タイトル・著者・誌名・DOI・PDFリンク等を記載
+  3. `make build && make up` で反映確認
+
+### 2. 半自動更新（Semi-Automatic / BibTeX）
+
+- 向いているケース: 安定運用しつつ、手作業を減らしたい場合
+- 手順:
+  1. `site/data/publications.bib` を更新（Scholar/Zotero/Scopus からエクスポート）
+  2. 変換スクリプト `scripts/bibtex_to_markdown.py` を実行
+  3. `make build && make up` で反映確認
+
+### 3. 自動更新（Automatic）
+
+- 向いているケース: 更新頻度が高く、運用を定常化したい場合
+- 構成:
+  1. BibTeX を定期取得
+  2. 変換スクリプト実行
+  3. 自動コミット
+  4. サイト再ビルド
+- 実装例: GitHub Actions の定期実行（weekly など）
+
+詳細は [publications_workflow.md](/Users/Daily/Development/HP/lab-website/publications_workflow.md) を参照してください。
+
 ## セキュリティメモ
 
 - 静的サイト専用構成（DB・アプリバックエンドなし）
