@@ -108,6 +108,19 @@ make ps      # コンテナ状態確認
 make down    # コンテナ停止
 ```
 
+## QA パイプライン
+
+- 軽量チェック（PR / main push）: `.github/workflows/site_checks.yml`
+  - Hugo build
+  - Markdown validity
+  - 内部リンク切れ
+  - 画像サイズ上限（500KB）
+- 月次フル監査（Codex）: `.github/workflows/site_audit.yml`
+  - `lab_website_quality_audit.md` の指示に基づく監査
+  - `reports/monthly_site_audit_YYYY-MM-DD.md` を生成
+
+詳細は [lab_site_qa_pipeline.md](/Users/Daily/Development/HP/lab-website/lab_site_qa_pipeline.md) を参照してください。
+
 ## トラブルシュート
 
 - `docker compose` が使えず `docker-compose` は使える環境では、本リポジトリの `Makefile` のまま利用してください。

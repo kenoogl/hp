@@ -1,0 +1,41 @@
+name: site checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.151.0'
+          extended: true
+
+      - name: Validate content conventions
+        run: python scripts/validate_content.py
+
+      - name: Build site
+        run: |
+          cd site
+          hugo --destination ../public --cleanDestinationDir
+
+      - name: Check markdown validity
+        run: python scripts/check_markdown_validity.py --root .
+
+      - name: Check broken internal links
+        run: python scripts/check_internal_links.py --public-dir public
+
+      - name: Check image size limit (500KB)
+        run: |
+          oversized=$(find site/static/images -type f -size +500k || true)
+          if [ -n "$oversized" ]; then
+            echo "Images over 500KB:" && echo "$oversized"
+            exit 1
+          fi
