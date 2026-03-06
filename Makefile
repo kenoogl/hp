@@ -19,18 +19,18 @@ build:
 	cd $(SITE_DIR) && hugo --destination ../$(PUBLIC_DIR)
 
 up:
-	cd $(DOCKER_DIR) && docker compose up -d
+	cd $(DOCKER_DIR) && docker-compose up -d --build
 
 down:
-	cd $(DOCKER_DIR) && docker compose down
+	cd $(DOCKER_DIR) && docker-compose down
 
 restart: down up
 
 ps:
-	cd $(DOCKER_DIR) && docker compose ps
+	cd $(DOCKER_DIR) && docker-compose ps
 
 logs:
-	cd $(DOCKER_DIR) && docker compose logs -f --tail=100
+	cd $(DOCKER_DIR) && docker-compose logs -f --tail=100
 
 check:
 	@test -f $(DOCKER_DIR)/docker-compose.yml || (echo "Missing docker-compose.yml" && exit 1)
