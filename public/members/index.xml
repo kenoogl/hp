@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Members on AI for Science Laboratory</title>
+    <link>/members/</link>
+    <description>Recent content in Members on AI for Science Laboratory</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/members/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alumni</title>
+      <link>/members/alumni/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>/members/alumni/</guid>
+      <description>Graduates and former researchers.</description>
+    </item>
+    <item>
+      <title>Faculty</title>
+      <link>/members/faculty/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>/members/faculty/</guid>
+      <description>Principal investigator and affiliated faculty.</description>
+    </item>
+    <item>
+      <title>Students</title>
+      <link>/members/students/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>/members/students/</guid>
+      <description>Doctoral and master&amp;rsquo;s students in the group.</description>
+    </item>
+  </channel>
+</rss>

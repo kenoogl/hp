@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  web:
+    image: nginx:stable
+    container_name: lab_web
+    ports:
+      - "80:80"
+    volumes:
+      - ../public:/usr/share/nginx/html:ro
+      - ../nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    restart: always

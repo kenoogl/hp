@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on AI for Science Laboratory</title>
+    <link>/research/</link>
+    <description>Recent content in Research on AI for Science Laboratory</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data-Driven Wake Modeling</title>
+      <link>/research/wake-modeling/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>/research/wake-modeling/</guid>
+      <description>Reduced-order and learning-based methods for turbulent wake prediction.</description>
+    </item>
+    <item>
+      <title>AI for Science</title>
+      <link>/research/ai-for-science/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>/research/ai-for-science/</guid>
+      <description>Foundation and surrogate models for scientific workflows.</description>
+    </item>
+    <item>
+      <title>Reduced-Order Modeling</title>
+      <link>/research/rom/</link>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>/research/rom/</guid>
+      <description>Fast and interpretable reduced-order techniques for high-dimensional systems.</description>
+    </item>
+  </channel>
+</rss>

@@ -46,4 +46,13 @@ Then open `http://localhost`.
 - RSS feed for news
 - Alumni archive automation
 - Visualization section for research assets
-# hp
+
+## Makefile shortcuts
+
+```bash
+cd /Users/Daily/Development/HP/lab-website
+make check   # validate config + build
+make up      # start nginx container
+make ps      # show container status
+make down    # stop container
+```
