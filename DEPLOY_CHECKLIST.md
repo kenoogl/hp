@@ -23,32 +23,30 @@ ls -la /Users/Daily/Development/HP/lab-website/public
 cat /Users/Daily/Development/HP/lab-website/docker/docker-compose.yml
 ```
 
-次の2つが read-only (`:ro`) マウントであることを確認します。
-- `../public:/usr/share/nginx/html:ro`
-- `../nginx/nginx.conf:/etc/nginx/nginx.conf:ro`
+以下を確認します。
+- `build.context` が `..` である
+- `dockerfile` が `docker/Dockerfile` である
+- `image` が `lab-website-nginx:local` である
 
-4. Nginx 設定を確認
+4. Dockerfile を確認
 
 ```bash
-cat /Users/Daily/Development/HP/lab-website/nginx/nginx.conf
+cat /Users/Daily/Development/HP/lab-website/docker/Dockerfile
 ```
 
-以下を確認します。
-- `try_files $uri $uri/ =404;`
-- セキュリティヘッダが設定されている
-- `server_tokens off;`
+`COPY public/ /usr/share/nginx/html/` が含まれることを確認します。
 
 5. コンテナを起動
 
 ```bash
 cd /Users/Daily/Development/HP/lab-website/docker
-docker compose up -d
+docker-compose up -d --build
 ```
 
 6. 稼働状態を確認
 
 ```bash
-docker compose ps
+docker-compose ps
 ```
 
 `lab_web` のステータスが `Up` であることを確認します。
@@ -56,14 +54,14 @@ docker compose ps
 7. HTTP 応答を確認
 
 ```bash
-curl -I http://localhost
+curl -I http://127.0.0.1
 ```
 
 `HTTP/1.1 200 OK` を含むことを確認します。
 
 8. ブラウザ表示を確認
 
-[http://localhost](http://localhost) を開き、次のナビゲーションが表示されることを確認します。
+[http://127.0.0.1](http://127.0.0.1) を開き、次のナビゲーションが表示されることを確認します。
 - Home
 - Research
 - Publications
@@ -77,4 +75,5 @@ curl -I http://localhost
 
 - `/Users/Daily/Development/HP/lab-website/site/content/news/2026-paper.md` を編集
 - Hugo ビルドを再実行
+- `docker-compose up -d --build` を再実行
 - ブラウザを再読み込みして更新が反映されることを確認
