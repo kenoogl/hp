@@ -123,6 +123,7 @@ Example:
 
 ```bash
 python scripts/bibtex_to_markdown.py data/publications.bib --clean
+python scripts/validate_content.py
 ```
 
 Output:

@@ -36,6 +36,9 @@ jobs:
       - name: Convert BibTeX to Markdown
         run: python scripts/bibtex_to_markdown.py data/publications.bib --clean
 
+      - name: Validate content conventions
+        run: python scripts/validate_content.py
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
@@ -45,7 +48,7 @@ jobs:
       - name: Build Hugo output
         run: |
           cd site
-          hugo --destination ../public
+          hugo --destination ../public --cleanDestinationDir
 
       - name: Commit and push updates
         run: |

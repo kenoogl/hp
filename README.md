@@ -41,8 +41,15 @@ docker-compose up -d --build
 
 1. `site/content/` 配下の Markdown を編集
 2. `site/static/images/` 配下に画像を追加
-3. Hugo を再ビルド
-4. コンテナを再ビルドして再起動（`make up`）
+3. `make lint-content` で命名規約・Front Matter を検証
+4. Hugo を再ビルド
+5. コンテナを再ビルドして再起動（`make up`）
+
+### 命名規約（統一）
+
+- `site/content/research/*.md`: kebab-case（例: `reduced-order-modeling.md`）
+- `site/content/publications/<year>/*.md`: kebab-case（例: `physics-guided-wake-emulation-with-uncertainty-quantification.md`）
+- publications は `year` と `date` がディレクトリ年 (`<year>`) と整合していること
 
 ## Publications メンテナンス方法
 
@@ -95,6 +102,7 @@ docker-compose up -d --build
 ```bash
 cd /Users/Daily/Development/HP/lab-website
 make check   # 設定検証 + ビルド
+make lint-content # コンテンツ命名・Front Matter 検証
 make up      # nginx コンテナ起動
 make ps      # コンテナ状態確認
 make down    # コンテナ停止
