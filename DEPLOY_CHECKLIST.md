@@ -76,5 +76,8 @@ curl -I http://127.0.0.1
 - `/Users/Daily/Development/HP/lab-website/site/content/news/2026-paper.md` を編集
 - Hugo ビルドを再実行
 - `python /Users/Daily/Development/HP/lab-website/scripts/validate_content.py` を実行
+- `python /Users/Daily/Development/HP/lab-website/scripts/check_markdown_validity.py --root /Users/Daily/Development/HP/lab-website` を実行
+- `python /Users/Daily/Development/HP/lab-website/scripts/check_internal_links.py --public-dir /Users/Daily/Development/HP/lab-website/public` を実行
+- `find /Users/Daily/Development/HP/lab-website/site/static/images -type f -size +500k` が空結果であることを確認
 - `docker-compose up -d --build` を再実行
 - ブラウザを再読み込みして更新が反映されることを確認

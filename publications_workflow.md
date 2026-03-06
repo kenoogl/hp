@@ -179,7 +179,13 @@ steps:
   2 run converter script
   3 commit updates
   4 rebuild site
+  5 run site checks
 ```
+
+Current repository workflows:
+- `.github/workflows/update_publications.yml` (weekly publication sync)
+- `.github/workflows/site_checks.yml` (PR/push lightweight quality checks)
+- `.github/workflows/site_audit.yml` (monthly full audit)
 
 ---
 

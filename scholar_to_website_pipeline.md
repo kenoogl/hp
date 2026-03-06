@@ -189,6 +189,22 @@ jobs:
 
 ---
 
+## Step 6: Quality gates
+
+After publication sync, quality checks run via:
+
+- `.github/workflows/site_checks.yml`
+  - Hugo build
+  - content validation
+  - markdown validity
+  - internal link checks
+  - image size threshold (500KB)
+- `.github/workflows/site_audit.yml`
+  - monthly full audit report
+  - Codex-based deep review using `lab_website_quality_audit.md`
+
+---
+
 ## Workflow Summary
 
 Every week:
@@ -196,8 +212,9 @@ Every week:
 1. Fetch publications from Scholar
 2. Generate BibTeX
 3. Convert to Markdown
-4. Build Hugo output
-5. Commit and deploy updates
+4. Validate content and build Hugo output
+5. Run quality checks
+6. Commit and deploy updates
 
 ---
 

@@ -32,6 +32,11 @@ No dynamic backend patterns were detected:
 - Content convention validation exists and is wired into local checks and CI:
   - `scripts/validate_content.py`
   - `Makefile` (`lint-content`, `check`)
+- Two-level QA pipeline is implemented:
+  - `.github/workflows/site_checks.yml`
+  - `.github/workflows/site_audit.yml`
+  - `scripts/check_internal_links.py`
+  - `scripts/check_markdown_validity.py`
 - Security baseline is reasonable for static serving (`X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`, `server_tokens off`).
 - Performance baseline is strong:
   - very small HTML pages
@@ -78,7 +83,7 @@ No dynamic backend patterns were detected:
    - disable if unused, or
    - expose via navigation/filter UI.
 6. Add security header hardening where deployment environment allows it.
-7. Add optional QA checks (HTML/link validation) in CI.
+7. Add optional HTML validation in CI (link checks are already implemented).
 
 ## 6. Priority fixes
 
@@ -98,7 +103,7 @@ No dynamic backend patterns were detected:
 
 1. CSP/HSTS/Permissions-Policy enhancement.
 2. Font delivery optimization (self-hosting / fallback strategy).
-3. Add link checker + HTML validation to CI quality gate.
+3. Add HTML validation to CI quality gate.
 
 ---
 
@@ -118,4 +123,4 @@ No dynamic backend patterns were detected:
 - [ ] SEC-001: Add CSP and Permissions-Policy headers in `nginx.conf`.
 - [ ] SEC-002: Add HSTS header after TLS termination policy is defined.
 - [ ] PERF-001: Evaluate self-hosted fonts vs Google Fonts dependency.
-- [ ] QA-001: Add HTML and link validation job in GitHub Actions.
+- [ ] QA-001: Add HTML validation job in GitHub Actions.
