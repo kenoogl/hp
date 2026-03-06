@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "AI for Science Laboratory"
+title = "Intelligent Modeling Laboratory (IML)"
 theme = "lab-theme"
 
 [params]
@@ -8,34 +8,34 @@ theme = "lab-theme"
 
 [menu]
   [[menu.main]]
-    name = "Home"
+    name = "ホーム / Home"
     url = "/"
     weight = 1
   [[menu.main]]
-    name = "Research"
+    name = "研究 / Research"
     url = "/research/"
     weight = 2
   [[menu.main]]
-    name = "Publications"
+    name = "論文 / Publications"
     url = "/publications/"
     weight = 3
   [[menu.main]]
-    name = "Members"
+    name = "メンバー / Members"
     url = "/members/"
     weight = 4
   [[menu.main]]
-    name = "Projects"
+    name = "プロジェクト / Projects"
     url = "/projects/"
     weight = 5
   [[menu.main]]
-    name = "News"
+    name = "ニュース / News"
     url = "/news/"
     weight = 6
   [[menu.main]]
-    name = "Join Us"
+    name = "参加募集 / Join Us"
     url = "/join/"
     weight = 7
   [[menu.main]]
-    name = "Contact"
+    name = "お問い合わせ / Contact"
     url = "/contact/"
     weight = 8

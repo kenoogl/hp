@@ -1,4 +1,4 @@
-# AI for Science Laboratory Website Template
+# Intelligent Modeling Laboratory (IML) Website Template
 
 Hugo + Nginx + Docker で構築した、最小構成で保守しやすい研究室向け静的Webサイトテンプレートです。
 

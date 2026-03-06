@@ -1,6 +1,6 @@
 # デプロイチェックリスト
 
-AI for Science Laboratory website template をデプロイする前の最終確認手順です。
+Intelligent Modeling Laboratory (IML) website template をデプロイする前の最終確認手順です。
 
 1. Hugo 出力を再ビルド
 
