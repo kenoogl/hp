@@ -1,69 +1,69 @@
-# Deploy Checklist
+# デプロイチェックリスト
 
-Final pre-deployment checks for the AI for Science Laboratory website template.
+AI for Science Laboratory website template をデプロイする前の最終確認手順です。
 
-1. Rebuild Hugo output
+1. Hugo 出力を再ビルド
 
 ```bash
 cd /Users/Daily/Development/HP/lab-website/site
 hugo --destination ../public
 ```
 
-2. Verify generated files
+2. 生成ファイルを確認
 
 ```bash
 ls -la /Users/Daily/Development/HP/lab-website/public
 ```
 
-Confirm `/Users/Daily/Development/HP/lab-website/public/index.html` exists.
+`/Users/Daily/Development/HP/lab-website/public/index.html` が存在することを確認します。
 
-3. Verify Docker Compose configuration
+3. Docker Compose 設定を確認
 
 ```bash
 cat /Users/Daily/Development/HP/lab-website/docker/docker-compose.yml
 ```
 
-Confirm both mounts are read-only (`:ro`):
+次の2つが read-only (`:ro`) マウントであることを確認します。
 - `../public:/usr/share/nginx/html:ro`
 - `../nginx/nginx.conf:/etc/nginx/nginx.conf:ro`
 
-4. Verify Nginx configuration
+4. Nginx 設定を確認
 
 ```bash
 cat /Users/Daily/Development/HP/lab-website/nginx/nginx.conf
 ```
 
-Confirm:
+以下を確認します。
 - `try_files $uri $uri/ =404;`
-- Security headers are present
+- セキュリティヘッダが設定されている
 - `server_tokens off;`
 
-5. Start container
+5. コンテナを起動
 
 ```bash
 cd /Users/Daily/Development/HP/lab-website/docker
 docker compose up -d
 ```
 
-6. Confirm running status
+6. 稼働状態を確認
 
 ```bash
 docker compose ps
 ```
 
-Confirm `lab_web` status is `Up`.
+`lab_web` のステータスが `Up` であることを確認します。
 
-7. Check HTTP response
+7. HTTP 応答を確認
 
 ```bash
 curl -I http://localhost
 ```
 
-Confirm response includes `HTTP/1.1 200 OK`.
+`HTTP/1.1 200 OK` を含むことを確認します。
 
-8. Browser validation
+8. ブラウザ表示を確認
 
-Open [http://localhost](http://localhost) and confirm navigation items are visible:
+[http://localhost](http://localhost) を開き、次のナビゲーションが表示されることを確認します。
 - Home
 - Research
 - Publications
@@ -73,8 +73,8 @@ Open [http://localhost](http://localhost) and confirm navigation items are visib
 - Join Us
 - Contact
 
-9. Content update smoke test
+9. コンテンツ更新スモークテスト
 
-- Edit `/Users/Daily/Development/HP/lab-website/site/content/news/2026-paper.md`
-- Re-run Hugo build
-- Reload browser and confirm the update appears
+- `/Users/Daily/Development/HP/lab-website/site/content/news/2026-paper.md` を編集
+- Hugo ビルドを再実行
+- ブラウザを再読み込みして更新が反映されることを確認
