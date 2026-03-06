@@ -1,54 +1,8 @@
 {{ define "main" }}
-<section class="hero">
-  <h1>Intelligent Modeling Laboratory (IML)<br>インテリジェントモデリング研究室（IML）</h1>
-  <p>Computational science and machine intelligence for robust, interpretable scientific discovery.<br>計算科学と機械知能による、頑健で解釈可能な科学的発見を推進します。</p>
-</section>
-
-<section>
-  <h2>研究ハイライト | Research Highlights</h2>
-  <div class="card-grid">
-    {{ range first 3 (where .Site.RegularPages "Section" "research") }}
-      <article class="card">
-        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-        <p>{{ .Summary }}</p>
-      </article>
-    {{ end }}
-  </div>
-</section>
-
-<section>
-  <h2>最新論文 | Latest Publications</h2>
-  <ul class="clean-list">
-    {{ range first 5 (sort (where .Site.RegularPages "Section" "publications") "Date" "desc") }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <span class="meta">({{ .Date.Format "2006" }})</span></li>
-    {{ end }}
-  </ul>
-</section>
-
-<section>
-  <h2>ニュース | News</h2>
-  <ul class="clean-list">
-    {{ range first 5 (sort (where .Site.RegularPages "Section" "news") "Date" "desc") }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <span class="meta">{{ .Date.Format "2006-01-02" }}</span></li>
-    {{ end }}
-  </ul>
-</section>
-
-<section>
-  <h2>メンバー | Members</h2>
-  <div class="card-grid">
-    {{ range (where .Site.RegularPages "Section" "members") }}
-      <article class="card">
-        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-        <p>{{ .Summary }}</p>
-      </article>
-    {{ end }}
-  </div>
-</section>
-
-<section>
-  <h2>参加募集 | Join Us</h2>
-  <p>We welcome applications from students, postdocs, and collaborators. Explore open topics and contact us.<br>学生・ポスドク・共同研究者からの応募を歓迎します。募集テーマをご覧のうえ、お気軽にご連絡ください。</p>
-  <p><a class="button" href="{{ "/join/" | relURL }}">募集情報を見る | View Opportunities</a></p>
-</section>
+{{ partial "hero.html" . }}
+{{ partial "research.html" . }}
+{{ partial "publications.html" . }}
+{{ partial "news.html" . }}
+{{ partial "members.html" . }}
+{{ partial "join.html" . }}
 {{ end }}

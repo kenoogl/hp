@@ -1,0 +1,19 @@
+<section class="section-block">
+  <h2>Members</h2>
+
+  <div class="grid">
+    {{ range where .Site.RegularPages "Section" "members" }}
+      {{ $member := . }}
+      <article class="member-card">
+        {{ with $member.Params.photo }}
+          <img class="member-photo" src="{{ . }}" alt="{{ $member.Title }} photo">
+        {{ else }}
+          <div class="member-photo placeholder">No Photo</div>
+        {{ end }}
+
+        <p class="member-name">{{ $member.Title }}</p>
+        <p class="member-position">{{ with $member.Params.position }}{{ . }}{{ else }}{{ $member.Summary }}{{ end }}</p>
+      </article>
+    {{ end }}
+  </div>
+</section>

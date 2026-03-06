@@ -1,11 +1,14 @@
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+
     <nav aria-label="Main navigation">
       <ul class="nav-list">
-        {{ range .Site.Menus.main }}
-          <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-        {{ end }}
+        <li><a href="{{ "/research/" | relURL }}">Research</a></li>
+        <li><a href="{{ "/publications/" | relURL }}">Publications</a></li>
+        <li><a href="{{ "/members/" | relURL }}">Members</a></li>
+        <li><a href="{{ "/news/" | relURL }}">News</a></li>
+        <li><a href="{{ "/join/" | relURL }}">Join</a></li>
       </ul>
     </nav>
   </div>

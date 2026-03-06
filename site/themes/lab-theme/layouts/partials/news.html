@@ -1,0 +1,12 @@
+<section class="section-block">
+  <h2>News</h2>
+
+  <ul class="clean-list">
+    {{ range first 5 (sort (where .Site.RegularPages "Section" "news") "Date" "desc") }}
+      <li>
+        <span class="meta">{{ .Date.Format "2006-01-02" }}</span>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</section>

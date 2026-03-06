@@ -118,6 +118,12 @@ make down    # コンテナ停止
 - 月次フル監査（Codex）: `.github/workflows/site_audit.yml`
   - `lab_website_quality_audit.md` の指示に基づく監査
   - `reports/monthly_site_audit_YYYY-MM-DD.md` を生成
+- 研究可視性監査（手動・半年ごと）:
+  - `research_visibility_audit.md` を Codex で実行
+  - 推奨頻度: 6か月に1回（例: 4月/10月）
+- 研究インパクト監査（手動・半年ごと）:
+  - `research_impact_audit.md` を Codex で実行
+  - 推奨頻度: 6か月に1回（例: 4月/10月）
 
 詳細は [lab_site_qa_pipeline.md](/Users/Daily/Development/HP/lab-website/lab_site_qa_pipeline.md) を参照してください。
 
