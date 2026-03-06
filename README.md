@@ -25,7 +25,7 @@ make up
 
 ```bash
 cd site
-hugo --destination ../public
+hugo --destination ../public --cleanDestinationDir
 ```
 
 ## デプロイ（直接実行）

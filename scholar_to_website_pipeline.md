@@ -54,6 +54,7 @@ data/
 scripts/
   scholar_fetch.py
   bibtex_to_markdown.py
+  validate_content.py
 
 .github/workflows/
   update_publications.yml
@@ -93,6 +94,7 @@ Run:
 ```bash
 pip install bibtexparser
 python scripts/bibtex_to_markdown.py data/publications.bib --clean
+python scripts/validate_content.py
 ```
 
 Output example:
@@ -107,7 +109,7 @@ Run:
 
 ```bash
 cd site
-hugo --destination ../public
+hugo --destination ../public --cleanDestinationDir
 ```
 
 Output:
@@ -168,10 +170,13 @@ jobs:
       - name: convert bibtex
         run: python scripts/bibtex_to_markdown.py data/publications.bib --clean
 
+      - name: validate content conventions
+        run: python scripts/validate_content.py
+
       - name: build hugo output
         run: |
           cd site
-          hugo --destination ../public
+          hugo --destination ../public --cleanDestinationDir
 
       - name: commit and push
         run: |

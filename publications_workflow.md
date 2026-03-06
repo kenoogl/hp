@@ -25,7 +25,6 @@ Current Hugo source root is `site/`.
 site/content/publications/
     2026/
     2025/
-    2024/
 ```
 
 Each publication is a markdown file.
@@ -70,7 +69,7 @@ Rebuild site.
 
 ```bash
 cd site
-hugo --destination ../public
+hugo --destination ../public --cleanDestinationDir
 ```
 
 ---
@@ -136,7 +135,7 @@ site/content/publications/2026/paper_name.md
 
 ```bash
 cd site
-hugo --destination ../public
+hugo --destination ../public --cleanDestinationDir
 ```
 
 ---
