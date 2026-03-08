@@ -6,7 +6,35 @@
     <description>Recent content in Publications on Intelligent Modeling Laboratory (IML)</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="/publications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Physics-guided wake emulation with uncertainty quantification</title>
+      <link>/publications/2026/physics-guided-wake-emulation-with-uncertainty-quantification/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>/publications/2026/physics-guided-wake-emulation-with-uncertainty-quantification/</guid>
+      <description>&lt;p&gt;Physics-guided wake emulation with uncertainty quantification.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reliable surrogate models for coupled climate dynamics</title>
+      <link>/publications/2026/reliable-surrogate-models-for-coupled-climate-dynamics/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>/publications/2026/reliable-surrogate-models-for-coupled-climate-dynamics/</guid>
+      <description>&lt;p&gt;Reliable surrogate models for coupled climate dynamics.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Benchmarking scientific foundation models for PDE discovery</title>
+      <link>/publications/2025/benchmarking-scientific-foundation-models-for-pde-discovery/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>/publications/2025/benchmarking-scientific-foundation-models-for-pde-discovery/</guid>
+      <description>&lt;p&gt;Benchmarking scientific foundation models for PDE discovery.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Operator-aware reduced models for transient multiphysics systems</title>
+      <link>/publications/2025/operator-aware-reduced-models-for-transient-multiphysics-systems/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>/publications/2025/operator-aware-reduced-models-for-transient-multiphysics-systems/</guid>
+      <description>&lt;p&gt;Operator-aware reduced models for transient multiphysics systems.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

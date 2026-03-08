@@ -1,7 +1,7 @@
 ---
 title: "Benchmarking scientific foundation models for PDE discovery"
 date: 2025-01-01
-authors: "T. Nguyen, L. Park"
+authors: "Nguyen, Tran and Park, Lina"
 journal: "NeurIPS Datasets and Benchmarks"
 year: "2025"
 doi: "10.1234/neurips.2025.5512"

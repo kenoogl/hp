@@ -1,7 +1,7 @@
 ---
 title: "Physics-guided wake emulation with uncertainty quantification"
 date: 2026-01-01
-authors: "S. Yamada, K. Ito, M. Chen"
+authors: "Yamada, Satoshi and Ito, Keiko and Chen, Mei"
 journal: "Journal of Fluid Mechanics"
 year: "2026"
 doi: "10.1234/jfm.2026.1001"
