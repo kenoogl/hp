@@ -50,7 +50,7 @@ jobs:
               echo "Run Codex locally with:"
               echo '
 ```bash'
-              echo 'codex run "Read the repository and execute lab_website_quality_audit.md"'
+              echo 'codex run "Read the repository and execute docs/lab_website_quality_audit.md"'
               echo '```'
             } > "$REPORT"
             exit 0
@@ -72,7 +72,7 @@ jobs:
             exit 0
           fi
 
-          codex run "Read the repository and execute the instructions in lab_website_quality_audit.md. Output a full audit report in markdown." > "$REPORT"
+          codex run "Read the repository and execute the instructions in docs/lab_website_quality_audit.md. Output a full audit report in markdown." > "$REPORT"
 
       - name: Upload audit report artifact
         uses: actions/upload-artifact@v4

@@ -20,7 +20,7 @@ Components:
 2. BibTeX database
 3. Python scripts
 4. Hugo static site
-5. Docker deployment
+5. GitHub Actions deploy to Ubuntu + Apache2
 
 Pipeline:
 
@@ -34,6 +34,8 @@ Python conversion
 Markdown files
   ↓
 Hugo build
+  ↓
+Deploy public/ to Ubuntu Apache2
   ↓
 Website
 ```
@@ -77,7 +79,6 @@ pip install scholarly
 Run:
 
 ```bash
-pip install scholarly
 python scripts/scholar_fetch.py --author-id "<YOUR_SCHOLAR_ID>" --output data/publications.bib
 ```
 
@@ -118,15 +119,18 @@ Output:
 
 ---
 
-## Step 4: Docker deployment
+## Step 4: Deploy to Ubuntu + Apache2
 
-```bash
-make up
+Deploy generated static files to server:
+
+```text
+GitHub Actions -> rsync/scp -> /var/www/mercury-staging (develop)
+GitHub Actions -> rsync/scp -> /var/www/html (main)
 ```
 
-Website becomes available:
-
-`http://127.0.0.1`
+Website URLs:
+- Staging: `http://staging.mercury.cc.kyushu-u.ac.jp`
+- Production: `http://mercury.cc.kyushu-u.ac.jp`
 
 ---
 
@@ -134,58 +138,14 @@ Website becomes available:
 
 `.github/workflows/update_publications.yml`
 
-```yaml
-name: update publications
+Core behavior:
 
-on:
-  schedule:
-    - cron: "0 2 * * 0"
-  workflow_dispatch:
-
-jobs:
-  update:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: setup python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: install dependencies
-        run: pip install scholarly bibtexparser
-
-      - name: fetch scholar
-        env:
-          SCHOLAR_AUTHOR_ID: ${{ secrets.SCHOLAR_AUTHOR_ID }}
-        run: |
-          if [ -z "$SCHOLAR_AUTHOR_ID" ]; then
-            echo "SCHOLAR_AUTHOR_ID is not set; skipping fetch step."
-          else
-            python scripts/scholar_fetch.py --author-id "$SCHOLAR_AUTHOR_ID" --output data/publications.bib
-          fi
-
-      - name: convert bibtex
-        run: python scripts/bibtex_to_markdown.py data/publications.bib --clean
-
-      - name: validate content conventions
-        run: python scripts/validate_content.py
-
-      - name: build hugo output
-        run: |
-          cd site
-          hugo --destination ../public --cleanDestinationDir
-
-      - name: commit and push
-        run: |
-          git config user.name github-actions
-          git config user.email actions@github.com
-          git add data/publications.bib site/content/publications public
-          git commit -m "update publications" || echo "No changes to commit"
-          git push
-```
+1. Install Python deps (`scholarly`, `bibtexparser`)
+2. Fetch Scholar data (`SCHOLAR_AUTHOR_ID`)
+3. Convert BibTeX to Markdown
+4. Validate content conventions
+5. Build Hugo output
+6. Commit and push publication updates
 
 ---
 
@@ -201,7 +161,7 @@ After publication sync, quality checks run via:
   - image size threshold (500KB)
 - `.github/workflows/site_audit.yml`
   - monthly full audit report
-  - Codex-based deep review using `lab_website_quality_audit.md`
+  - Codex-based deep review using `docs/lab_website_quality_audit.md`
 
 ---
 
@@ -213,8 +173,8 @@ Every week:
 2. Generate BibTeX
 3. Convert to Markdown
 4. Validate content and build Hugo output
-5. Run quality checks
-6. Commit and deploy updates
+5. Commit updates
+6. Deploy via branch policy (`develop`/`main`)
 
 ---
 
@@ -228,7 +188,7 @@ Scholar updated
 Website updated
 ```
 
-Reduced manual work.
+Reduced manual work while preserving staging review safety.
 
 ---
 
@@ -236,7 +196,7 @@ Reduced manual work.
 
 Add:
 
-- DOI extraction
+- DOI extraction hardening
 - PDF links
 - Citation counts
-- Research topics
+- Research topic tags

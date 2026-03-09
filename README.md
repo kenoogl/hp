@@ -1,133 +1,94 @@
-# Intelligent Modeling Laboratory (IML) Website Template
+# Intelligent Modeling Laboratory (IML) Website
 
-Hugo + Nginx + Docker で構築した、最小構成で保守しやすい研究室向け静的Webサイトテンプレートです。
+Hugo で構築した研究室向け静的Webサイトです。  
+本番公開は **Ubuntu + Apache2**、GitHub を唯一の正本として運用します。
+
+## 運用方針
+
+- GitHub を唯一の正本にする
+- 本番サーバ（Ubuntu）で直接編集しない
+- 変更は必ず PR / merge 経由で反映する
+- 本番前にローカルまたは staging で確認する
 
 ## 構成
 
-- `docker/docker-compose.yml`: 実行用コンテナ定義（ローカルビルド用）
-- `docker/Dockerfile`: `public/` を Nginx イメージへ同梱
-- `nginx/`: 追加のNginx設定ファイル置き場（将来拡張用）
 - `site/`: Hugo ソース（テーマ、レイアウト、コンテンツ、静的アセット）
-- `public/`: Hugo のビルド出力先
+- `public/`: Hugo のビルド出力
+- `scripts/`: 自動化/検証スクリプト
+- `data/`: BibTeX などのデータソース
+- `.github/workflows/`: CI/CD
+- `apache/`: Apache 本番設定（VirtualHost など）
+- `docker/`, `nginx/`: ローカル検証向け（任意）
 
-## ホームページ確認（推奨）
+## ローカル開発
 
 ```bash
-cd /Users/Daily/Development/HP/lab-website
-make build
-make up
+cd /Users/Daily/Development/HP/lab-website/site
+hugo server
 ```
 
-ブラウザで [http://127.0.0.1](http://127.0.0.1) を開いて確認します。  
-停止するときは `make down` を実行します。
+確認URL: [http://localhost:1313](http://localhost:1313)
 
-## ローカルビルド（直接実行）
+## 本番用ビルド
 
 ```bash
-cd site
+cd /Users/Daily/Development/HP/lab-website/site
 hugo --destination ../public --cleanDestinationDir
 ```
 
-## デプロイ（直接実行）
+## デプロイ方針（本番）
 
-```bash
-cd docker
-docker-compose up -d --build
-```
-
-その後、`http://127.0.0.1` を開いて確認します。
+- `develop` への push: CIチェック + staging 配信
+- `main` への push: CIチェック + production 配信
+- 配信先は Ubuntu + Apache2（`/var/www/...`）
+- 配信方式は `rsync`/`scp`（GitHub Actions 実行）
 
 ## コンテンツ更新フロー
 
-1. `site/content/` 配下の Markdown を編集
-2. `site/static/images/` 配下に画像を追加
-3. `make lint-content` で命名規約・Front Matter を検証
-4. Hugo を再ビルド
-5. コンテナを再ビルドして再起動（`make up`）
+1. `site/content/` の Markdown を編集
+2. `hugo server` で確認
+3. `feature/*` で commit / push
+4. PR を `develop` へマージ
+5. staging 確認後、`main` へマージ
+6. production 反映
 
-### 命名規約（統一）
+## Publications メンテナンス
 
-- `site/content/research/*.md`: kebab-case（例: `reduced-order-modeling.md`）
-- `site/content/publications/<year>/*.md`: kebab-case（例: `physics-guided-wake-emulation-with-uncertainty-quantification.md`）
-- publications は `year` と `date` がディレクトリ年 (`<year>`) と整合していること
+### 手動
 
-## Publications メンテナンス方法
+- `site/content/publications/<year>/` に Markdown を追加
+- `hugo --destination ../public --cleanDestinationDir` で確認
 
-研究業績（Publications）は、次の3方式で更新できます。
-
-### 1. 手動更新（Manual）
-
-- 向いているケース: 論文数が少なく、更新頻度が低い場合
-- 手順:
-  1. `site/content/publications/<year>/` に Markdown を追加
-  2. タイトル・著者・誌名・DOI・PDFリンク等を記載
-  3. `make build && make up` で反映確認
-
-### 2. 半自動更新（Semi-Automatic / BibTeX）
-
-- 向いているケース: 安定運用しつつ、手作業を減らしたい場合
-- 手順:
-  1. `data/publications.bib` を更新（Scholar/Zotero/Scopus からエクスポート）
-  2. 変換スクリプト `scripts/bibtex_to_markdown.py` を実行
-  3. `make build && make up` で反映確認
-
-### 3. 自動更新（Automatic）
-
-- 向いているケース: 更新頻度が高く、運用を定常化したい場合
-- 構成:
-  1. BibTeX を定期取得
-  2. 変換スクリプト実行
-  3. 自動コミット
-  4. サイト再ビルド
-- 実装例: GitHub Actions の定期実行（weekly など）
-
-詳細は [publications_workflow.md](/Users/Daily/Development/HP/lab-website/publications_workflow.md) を参照してください。
-
-## セキュリティメモ
-
-- 静的サイト専用構成（DB・アプリバックエンドなし）
-- 生成済み `public/` をイメージに同梱して配信
-- 必要に応じて `nginx/` 配下に独自設定を追加可能
-
-## 将来の拡張案
-
-- BibTeX からの出版リスト自動生成
-- Google Scholar 連携
-- News の RSS 配信
-- Alumni アーカイブ自動化
-- 研究可視化セクションの追加
-
-## Makefile ショートカット
+### 半自動（BibTeX）
 
 ```bash
-cd /Users/Daily/Development/HP/lab-website
-make check   # 設定検証 + ビルド
-make lint-content # コンテンツ命名・Front Matter 検証
-make up      # nginx コンテナ起動
-make ps      # コンテナ状態確認
-make down    # コンテナ停止
+python scripts/bibtex_to_markdown.py data/publications.bib --clean
+python scripts/validate_content.py
 ```
+
+### 自動
+
+- `.github/workflows/update_publications.yml` を weekly 実行
+- Scholar/BibTeX から更新 → Markdown 生成 → CI 検証
+
+詳細: [publications_workflow.md](/Users/Daily/Development/HP/lab-website/docs/publications_workflow.md)
 
 ## QA パイプライン
 
-- 軽量チェック（PR / main push）: `.github/workflows/site_checks.yml`
+- 軽量チェック: `.github/workflows/site_checks.yml`
   - Hugo build
   - Markdown validity
-  - 内部リンク切れ
+  - 内部リンク
   - 画像サイズ上限（500KB）
-- 月次フル監査（Codex）: `.github/workflows/site_audit.yml`
-  - `lab_website_quality_audit.md` の指示に基づく監査
+- 月次監査: `.github/workflows/site_audit.yml`
   - `reports/monthly_site_audit_YYYY-MM-DD.md` を生成
-- 研究可視性監査（手動・半年ごと）:
-  - `research_visibility_audit.md` を Codex で実行
-  - 推奨頻度: 6か月に1回（例: 4月/10月）
-- 研究インパクト監査（手動・半年ごと）:
-  - `research_impact_audit.md` を Codex で実行
-  - 推奨頻度: 6か月に1回（例: 4月/10月）
+- 半年ごと監査（手動）
+  - `docs/research_visibility_audit.md`
+  - `docs/research_impact_audit.md`
 
-詳細は [lab_site_qa_pipeline.md](/Users/Daily/Development/HP/lab-website/lab_site_qa_pipeline.md) を参照してください。
+詳細: [lab_site_qa_pipeline.md](/Users/Daily/Development/HP/lab-website/docs/lab_site_qa_pipeline.md)
 
-## トラブルシュート
+## 補足
 
-- `docker compose` が使えず `docker-compose` は使える環境では、本リポジトリの `Makefile` のまま利用してください。
-- `http://localhost` で別ポート（例: `localhost:1455`）に飛ぶ場合は、`http://127.0.0.1` を直接開いて確認してください。
+リポジトリには `docker/` と `nginx/` がありますが、これは主にローカル検証用途です。  
+本番配信は Ubuntu + Apache2 を基準に運用します。

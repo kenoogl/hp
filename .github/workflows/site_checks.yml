@@ -3,7 +3,7 @@ name: site checks
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: [develop, main]
 
 jobs:
   check:
