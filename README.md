@@ -20,20 +20,22 @@ Hugo で構築した研究室向け静的Webサイトです。
 - `apache/`: Apache 本番設定（VirtualHost など）
 - `docker/`, `nginx/`: ローカル検証向け（任意）
 
-## ローカル開発
+## ローカル確認（推奨）
 
 ```bash
-cd /Users/Daily/Development/HP/lab-website/site
-hugo server
+cd /Users/Daily/Development/HP/lab-website
+make build
+make up
+make ps
 ```
 
-確認URL: [http://localhost:1313](http://localhost:1313)
+確認URL: [http://127.0.0.1](http://127.0.0.1)
 
-## 本番用ビルド
+停止:
 
 ```bash
-cd /Users/Daily/Development/HP/lab-website/site
-hugo --destination ../public --cleanDestinationDir
+cd /Users/Daily/Development/HP/lab-website
+make down
 ```
 
 ## デプロイ方針（本番）
@@ -46,7 +48,7 @@ hugo --destination ../public --cleanDestinationDir
 ## コンテンツ更新フロー
 
 1. `site/content/` の Markdown を編集
-2. `hugo server` で確認
+2. `make build && make up && make ps` で確認
 3. `feature/*` で commit / push
 4. PR を `develop` へマージ
 5. staging 確認後、`main` へマージ
@@ -92,3 +94,19 @@ python scripts/validate_content.py
 
 リポジトリには `docker/` と `nginx/` がありますが、これは主にローカル検証用途です。  
 本番配信は Ubuntu + Apache2 を基準に運用します。
+
+## トラブルシュート（ローカル確認）
+
+`make up` 実行時に以下のようなエラーが出る場合:
+
+`failed to connect to the docker API at unix:///Users/.../.colima/default/docker.sock`
+
+Colima（Dockerデーモン）が停止しています。以下で復旧します。
+
+```bash
+colima start
+make up
+make ps
+```
+
+`make ps` で `lab_web` が `Up` になっていれば、`http://127.0.0.1` で確認できます。
