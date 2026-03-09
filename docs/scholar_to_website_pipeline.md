@@ -1,48 +1,46 @@
-# Scholar to Website Pipeline
+# Scholar 連携パイプライン
 
-## Goal
+## 目的
 
-Create a fully automated pipeline that updates the laboratory website publications page using Google Scholar data.
+Google Scholar 由来の論文情報を使って、研究室サイトの Publications を自動更新する。
 
-Pipeline:
+パイプライン:
 
 Google Scholar -> BibTeX -> Markdown -> Hugo -> Website
 
-The system must run automatically.
-
 ---
 
-## System Architecture
+## システム構成
 
-Components:
+構成要素:
 
-1. Google Scholar (publication source)
-2. BibTeX database
-3. Python scripts
-4. Hugo static site
-5. GitHub Actions deploy to Ubuntu + Apache2
+1. Google Scholar（論文情報ソース）
+2. BibTeX データベース
+3. Python スクリプト
+4. Hugo 静的サイト
+5. GitHub Actions（Ubuntu + Apache2 への配信）
 
-Pipeline:
+全体フロー:
 
 ```text
 Scholar
   ↓
 BibTeX
   ↓
-Python conversion
+Python 変換
   ↓
-Markdown files
+Markdown（site/content/publications）
   ↓
-Hugo build
+Hugo build（public/）
   ↓
-Deploy public/ to Ubuntu Apache2
+Ubuntu + Apache2 へ配信
   ↓
-Website
+公開サイト
 ```
 
 ---
 
-## Repository Structure
+## リポジトリ構成
 
 ```text
 lab-website/
@@ -64,33 +62,33 @@ scripts/
 
 ---
 
-## Step 1: Fetch publications from Google Scholar
+## Step 1: Google Scholar から取得
 
-Use the Python library:
+使用ライブラリ:
 
-`scholarly`
+- `scholarly`
 
-Install:
+インストール:
 
 ```bash
 pip install scholarly
 ```
 
-Run:
+実行例:
 
 ```bash
 python scripts/scholar_fetch.py --author-id "<YOUR_SCHOLAR_ID>" --output data/publications.bib
 ```
 
-Output:
+出力:
 
-`data/publications.bib`
+- `data/publications.bib`
 
 ---
 
-## Step 2: Convert BibTeX to Hugo markdown
+## Step 2: BibTeX を Hugo Markdown に変換
 
-Run:
+実行:
 
 ```bash
 pip install bibtexparser
@@ -98,105 +96,112 @@ python scripts/bibtex_to_markdown.py data/publications.bib --clean
 python scripts/validate_content.py
 ```
 
-Output example:
+この変換で publication の `pub_type` も自動付与される。
 
-`site/content/publications/2026/wake-modeling.md`
+- `journal`
+- `international-conference`
+- `others`
+
+出力例:
+
+- `site/content/publications/2026/wake-modeling.md`
 
 ---
 
-## Step 3: Hugo build
+## Step 3: Hugo ビルド
 
-Run:
+実行:
 
 ```bash
 cd site
 hugo --destination ../public --cleanDestinationDir
 ```
 
-Output:
+出力:
 
-`public/`
+- `public/`
 
 ---
 
-## Step 4: Deploy to Ubuntu + Apache2
+## Step 4: Ubuntu + Apache2 へデプロイ
 
-Deploy generated static files to server:
+生成済み静的ファイルをサーバに反映する。
 
 ```text
-GitHub Actions -> rsync/scp -> /var/www/mercury-staging (develop)
-GitHub Actions -> rsync/scp -> /var/www/html (main)
+GitHub Actions -> rsync/scp -> /var/www/mercury-staging（develop）
+GitHub Actions -> rsync/scp -> /var/www/html（main）
 ```
 
-Website URLs:
+公開先:
+
 - Staging: `http://staging.mercury.cc.kyushu-u.ac.jp`
 - Production: `http://mercury.cc.kyushu-u.ac.jp`
 
 ---
 
-## Step 5: GitHub Actions automation
+## Step 5: GitHub Actions 自動化
 
-`.github/workflows/update_publications.yml`
+対象 workflow:
 
-Core behavior:
+- `.github/workflows/update_publications.yml`
 
-1. Install Python deps (`scholarly`, `bibtexparser`)
-2. Fetch Scholar data (`SCHOLAR_AUTHOR_ID`)
-3. Convert BibTeX to Markdown
-4. Validate content conventions
-5. Build Hugo output
-6. Commit and push publication updates
+主要処理:
+
+1. Python 依存をインストール（`scholarly`, `bibtexparser`）
+2. Scholar データ取得（`SCHOLAR_AUTHOR_ID`）
+3. BibTeX -> Markdown 変換
+4. content validation
+5. Hugo build
+6. commit/push
 
 ---
 
-## Step 6: Quality gates
+## Step 6: 品質ゲート
 
-After publication sync, quality checks run via:
+publication 同期後に、以下の品質チェックを実行する。
 
 - `.github/workflows/site_checks.yml`
   - Hugo build
   - content validation
   - markdown validity
   - internal link checks
-  - image size threshold (500KB)
+  - image size threshold（500KB）
 - `.github/workflows/site_audit.yml`
-  - monthly full audit report
-  - Codex-based deep review using `docs/lab_website_quality_audit.md`
+  - 月次フル監査
+  - `docs/lab_website_quality_audit.md` ベースの深掘り監査
 
 ---
 
-## Workflow Summary
+## 運用サマリ
 
-Every week:
+週次運用:
 
-1. Fetch publications from Scholar
-2. Generate BibTeX
-3. Convert to Markdown
-4. Validate content and build Hugo output
-5. Commit updates
-6. Deploy via branch policy (`develop`/`main`)
+1. Scholar から論文情報を取得
+2. BibTeX を更新
+3. Markdown を再生成
+4. content 検証と Hugo build
+5. 変更を commit/push
+6. ブランチ方針に従って配信（develop/main）
 
 ---
 
-## Advantages
-
-Automatic publication update:
+## メリット
 
 ```text
-Scholar updated
+Scholar が更新される
   ↓
-Website updated
+サイトの Publications も更新される
 ```
 
-Reduced manual work while preserving staging review safety.
+- 手動更新コストの削減
+- 更新漏れの低減
+- staging を経由した安全な反映
 
 ---
 
-## Optional Improvements
+## 拡張案
 
-Add:
-
-- DOI extraction hardening
-- PDF links
-- Citation counts
-- Research topic tags
+- DOI 抽出ロジックの強化
+- PDF リンク自動付与
+- 引用数（citation）連携
+- 研究トピック自動タグ付け

@@ -44,11 +44,24 @@ def parse_year(entry: dict) -> str:
     return year if year.isdigit() else "unknown"
 
 
+def detect_pub_type(entry: dict) -> str:
+    entry_type = str(entry.get("ENTRYTYPE", "")).strip().lower()
+    venue = get_venue(entry).lower()
+    if entry_type == "article":
+        return "journal"
+    if entry_type in {"inproceedings", "conference", "proceedings"}:
+        return "international-conference"
+    if "conference" in venue or "symposium" in venue or "workshop" in venue:
+        return "international-conference"
+    return "others"
+
+
 def build_markdown(entry: dict) -> str:
     title = entry.get("title", "").replace("\n", " ").strip()
     authors = entry.get("author", "").replace("\n", " ").strip()
-    venue = get_venue(entry).replace("\n", " ").strip()
+    venue = get_venue(entry).replace("\n", " ").strip() or "Unknown venue"
     year = parse_year(entry)
+    pub_type = detect_pub_type(entry)
     doi = entry.get("doi", "").strip()
     url = entry.get("url", "").strip()
 
@@ -61,6 +74,7 @@ def build_markdown(entry: dict) -> str:
         f'authors: "{authors}"',
         f'journal: "{venue}"',
         f'year: "{year}"',
+        f'pub_type: "{pub_type}"',
     ]
     if doi:
         lines.append(f'doi: "{doi}"')
@@ -71,8 +85,13 @@ def build_markdown(entry: dict) -> str:
 
 
 def clean_generated_files(root: Path) -> None:
-    for path in root.glob("*/**/*.md"):
-        path.unlink()
+    for year_dir in root.iterdir():
+        if not year_dir.is_dir():
+            continue
+        for path in year_dir.glob("*.md"):
+            if path.name == "_index.md":
+                continue
+            path.unlink()
 
 
 def main() -> int:

@@ -2,13 +2,57 @@
 <section>
   <h1>{{ .Title }}</h1>
   {{ with .Content }}<div class="section-intro">{{ . }}</div>{{ end }}
-  <ul class="clean-list">
-    {{ range .Pages.ByDate.Reverse }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        {{ if .Date }}<span class="meta">{{ .Date.Format "2006-01-02" }}</span>{{ end }}
-      </li>
-    {{ end }}
-  </ul>
+  {{ if eq .Section "publications" }}
+    {{ $pages := .RegularPages.ByDate.Reverse }}
+    {{ $journal := where $pages "Params.pub_type" "journal" }}
+    {{ $conf := where $pages "Params.pub_type" "international-conference" }}
+    {{ $others := where $pages "Params.pub_type" "others" }}
+    {{ $unset := where $pages "Params.pub_type" nil }}
+
+    <h2>Journal</h2>
+    <ul class="clean-list">
+      {{ range $journal }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ if .Date }}<span class="meta">{{ .Date.Format "2006-01-02" }}</span>{{ end }}
+        </li>
+      {{ end }}
+    </ul>
+
+    <h2>International Conference</h2>
+    <ul class="clean-list">
+      {{ range $conf }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ if .Date }}<span class="meta">{{ .Date.Format "2006-01-02" }}</span>{{ end }}
+        </li>
+      {{ end }}
+    </ul>
+
+    <h2>Others</h2>
+    <ul class="clean-list">
+      {{ range $others }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ if .Date }}<span class="meta">{{ .Date.Format "2006-01-02" }}</span>{{ end }}
+        </li>
+      {{ end }}
+      {{ range $unset }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ if .Date }}<span class="meta">{{ .Date.Format "2006-01-02" }}</span>{{ end }}
+        </li>
+      {{ end }}
+    </ul>
+  {{ else }}
+    <ul class="clean-list">
+      {{ range .Pages.ByDate.Reverse }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ if .Date }}<span class="meta">{{ .Date.Format "2006-01-02" }}</span>{{ end }}
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
 </section>
 {{ end }}

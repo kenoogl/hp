@@ -61,6 +61,18 @@ make down
 - `site/content/publications/<year>/` に Markdown を追加
 - `hugo --destination ../public --cleanDestinationDir` で確認
 
+論文ページの Front Matter には `pub_type` を設定します。
+
+- `journal`
+- `international-conference`
+- `others`
+
+例:
+
+```yaml
+pub_type: "journal"
+```
+
 ### 半自動（BibTeX）
 
 ```bash
@@ -68,10 +80,58 @@ python scripts/bibtex_to_markdown.py data/publications.bib --clean
 python scripts/validate_content.py
 ```
 
+`bibtex_to_markdown.py` は BibTeX の種別から `pub_type` を自動設定します。
+
+- `@article` -> `journal`
+- `@inproceedings` -> `international-conference`
+- それ以外 -> `others`
+
 ### 自動
 
 - `.github/workflows/update_publications.yml` を weekly 実行
 - Scholar/BibTeX から更新 → Markdown 生成 → CI 検証
+
+### `scholar_fetch.py` 利用法（ローカル）
+
+プロジェクトルートで実行します。
+
+```bash
+cd /Users/Daily/Development/HP/lab-website
+source .venv/bin/activate
+```
+
+基本例（著者ID指定）:
+
+```bash
+python scripts/scholar_fetch.py --author-id "kDMq7r4AAAAJ" --output data/publications.bib
+```
+
+著者名検索で取得する例:
+
+```bash
+python scripts/scholar_fetch.py --author-name "Kenji Ono" --output data/publications.bib
+```
+
+実運用例（年フィルタ・件数上限・リトライ付き）:
+
+```bash
+python scripts/scholar_fetch.py \
+  --author-id "kDMq7r4AAAAJ" \
+  --output data/publications.bib \
+  --min-year 1990 \
+  --max-pubs 200 \
+  --retries 3 \
+  --skip-errors \
+  --verbose
+```
+
+取得後の更新フロー:
+
+```bash
+python scripts/bibtex_to_markdown.py data/publications.bib --clean
+python scripts/validate_content.py
+cd site && hugo --destination ../public --cleanDestinationDir
+```
 
 詳細: [publications_workflow.md](/Users/Daily/Development/HP/lab-website/docs/publications_workflow.md)
 

@@ -1,88 +1,90 @@
-# Publications Workflow
+# Publications 運用ワークフロー
 
-## Goal
+## 目的
 
-Manage and update the Publications page of the laboratory website.
+研究室サイトの Publications ページを継続的に更新・運用するための手順を定義する。
 
-Two workflows must be supported:
+対応する更新方式:
 
-1. Manual update
-2. Automated update using BibTeX
-
-The website uses:
-
-- Hugo static site generator
-- Markdown content
-- Docker deployment
+1. 手動更新
+2. BibTeX を使った半自動更新
+3. GitHub Actions を使った自動更新
 
 ---
 
-## Directory Structure
+## 前提
 
-Current Hugo source root is `site/`.
+本リポジトリは以下を前提とする。
+
+- 静的サイト生成: Hugo
+- コンテンツ管理: Markdown
+- 論文データソース: BibTeX (`data/publications.bib`)
+- 品質チェック: `scripts/validate_content.py` など
+
+---
+
+## ディレクトリ構成
+
+Hugo ソースルートは `site/`。
 
 ```text
 site/content/publications/
-    2026/
-    2025/
+  2026/
+  2025/
 ```
 
-Each publication is a markdown file.
+各論文は1ファイル（Markdown）で管理する。
 
 ---
 
-## Method 1: Manual Publication Update
+## 方法1: 手動更新
 
-Best for:
+向いているケース:
 
-- small labs
-- low publication frequency
+- 論文数が少ない
+- 更新頻度が低い
 
-### Step 1
-
-Create a new markdown file.
+### Step 1: Markdown ファイルを追加
 
 ```text
 site/content/publications/2026/wake-modeling.md
 ```
 
-### Step 2
-
-Insert metadata.
+### Step 2: Front Matter を記述
 
 ```yaml
 ---
 title: "Data-driven Wake Modeling using AI"
-authors: ["Kenji Ono", "John Smith"]
+date: 2026-01-01
+authors: "Kenji Ono, John Smith"
 journal: "Journal of Wind Engineering"
-year: 2026
+year: "2026"
+pub_type: "journal"
 doi: "10.xxxx/xxxxx"
-pdf: "/pdf/wake2026.pdf"
 ---
 
-Short description of the paper.
+論文概要をここに記載。
 ```
 
-### Step 3
-
-Rebuild site.
+### Step 3: ビルドと検証
 
 ```bash
+python scripts/validate_content.py
 cd site
 hugo --destination ../public --cleanDestinationDir
 ```
 
 ---
 
-## Method 2: BibTeX Semi-Automatic Update
+## 方法2: BibTeX 半自動更新
 
-Use a single BibTeX file as source.
+単一ソースとして `data/publications.bib` を使う。
 
 ```text
 data/publications.bib
 ```
 
-Example entry:
+BibTeX 例:
 
 ```bibtex
 @article{ono2026wake,
@@ -94,44 +96,40 @@ Example entry:
 }
 ```
 
-BibTeX is a standard structured format for bibliographic data used widely in research publications.
+### Step 1: BibTeX を更新
 
-### Step 1: Export BibTeX
-
-Export publications from:
+取得元例:
 
 - Google Scholar
 - Scopus
 - Zotero
 
-Save as:
+保存先:
 
 ```text
 data/publications.bib
 ```
 
-### Step 2: Run conversion script
-
-Script reads BibTeX and generates markdown pages.
-
-```text
-scripts/bibtex_to_markdown.py
-```
-
-Example:
+### Step 2: 変換スクリプトを実行
 
 ```bash
 python scripts/bibtex_to_markdown.py data/publications.bib --clean
 python scripts/validate_content.py
 ```
 
-Output:
+`bibtex_to_markdown.py` は `pub_type` を自動設定する。
+
+- `@article` -> `journal`
+- `@inproceedings` / `@conference` / `@proceedings` -> `international-conference`
+- それ以外 -> `others`
+
+出力先:
 
 ```text
-site/content/publications/2026/paper_name.md
+site/content/publications/<year>/<slug>.md
 ```
 
-### Step 3: Build site
+### Step 3: Hugo ビルド
 
 ```bash
 cd site
@@ -140,58 +138,54 @@ hugo --destination ../public --cleanDestinationDir
 
 ---
 
-## Method 3: Fully Automatic Workflow
+## 方法3: 完全自動更新（CI）
 
-Goal:
+目的:
 
-Google Scholar -> website
+Google Scholar / BibTeX 更新をサイトへ自動反映する。
 
-Pipeline:
+パイプライン:
 
 ```text
 Google Scholar
-    ↓
-BibTeX export
-    ↓
-Git repository
-    ↓
-Python converter
-    ↓
+  ↓
+BibTeX 更新
+  ↓
+Markdown 生成
+  ↓
 Hugo build
-    ↓
-Website
+  ↓
+CIチェック
+  ↓
+サイト反映
 ```
 
 ---
 
-## Optional Automation
+## GitHub Actions 連携
 
-Use GitHub Actions.
+主な workflow:
 
-Workflow:
+- `.github/workflows/update_publications.yml`
+  - weekly 実行（publication 同期）
+- `.github/workflows/site_checks.yml`
+  - PR / develop / main で軽量チェック
+- `.github/workflows/site_audit.yml`
+  - 月次フル監査
 
-```yaml
-schedule:
-  weekly
+`update_publications.yml` の標準処理:
 
-steps:
-  1 download scholar bibtex
-  2 run converter script
-  3 commit updates
-  4 rebuild site
-  5 run site checks
-```
-
-Current repository workflows:
-- `.github/workflows/update_publications.yml` (weekly publication sync)
-- `.github/workflows/site_checks.yml` (PR/push lightweight quality checks)
-- `.github/workflows/site_audit.yml` (monthly full audit)
+1. Scholar/BibTeX 取得
+2. BibTeX -> Markdown 変換
+3. content validation
+4. Hugo build
+5. commit/push
 
 ---
 
-## Recommended Lab Workflow
+## 推奨運用
 
-For stability, use Method 2.
+安定性重視では「方法2（半自動）」を基本にする。
 
 ```text
 Scholar
@@ -203,9 +197,19 @@ script
 site
 ```
 
-Advantages:
+利点:
 
-- reproducible
-- single source of truth
-- easy maintenance
-- compatible with LaTeX
+- 再現性が高い
+- データソースを一本化できる
+- 手作業ミスを減らせる
+- LaTeX/BibTeX 運用と親和性が高い
+
+---
+
+## 運用上の注意
+
+- `year` と配置ディレクトリ（`publications/<year>/`）を一致させる
+- `date` は `<year>-` で始める
+- ファイル名は kebab-case を使う
+- `pub_type` は `journal` / `international-conference` / `others` のいずれかにする
+- 本番反映前に `site_checks` 相当の検証を通す

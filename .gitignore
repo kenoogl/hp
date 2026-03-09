@@ -1,1 +1,4 @@
 site/.hugo_build.lock
+.venv/
+__pycache__/
+scripts/__pycache__/

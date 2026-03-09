@@ -69,6 +69,7 @@
 - FR-102: BibTeXソースは `data/publications.bib` を単一ソースとする。
 - FR-103: `scripts/bibtex_to_markdown.py` は BibTeX を Hugo Markdown に変換する。
 - FR-104: `scripts/scholar_fetch.py` は Google Scholar から BibTeX を取得可能とする。
+- FR-105: 各publicationに `pub_type` を保持し、`journal` / `international-conference` / `others` の3分類表示を可能にする。
 
 ### 4.3 Validation and QA
 - FR-201: `scripts/validate_content.py` は命名規約・Front Matter整合を検証する。
@@ -126,6 +127,7 @@
 - `authors`
 - `journal`（または同等のvenue）
 - `year`
+- `pub_type`（`journal` / `international-conference` / `others`）
 - `doi` または `doi_url`（推奨）
 
 ### 6.3 Year consistency

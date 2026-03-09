@@ -44,20 +44,6 @@
       <description>Principal investigator and affiliated faculty.</description>
     </item>
     <item>
-      <title>Physics-guided wake emulation with uncertainty quantification</title>
-      <link>/publications/2026/physics-guided-wake-emulation-with-uncertainty-quantification/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>/publications/2026/physics-guided-wake-emulation-with-uncertainty-quantification/</guid>
-      <description>&lt;p&gt;Physics-guided wake emulation with uncertainty quantification.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Reliable surrogate models for coupled climate dynamics</title>
-      <link>/publications/2026/reliable-surrogate-models-for-coupled-climate-dynamics/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>/publications/2026/reliable-surrogate-models-for-coupled-climate-dynamics/</guid>
-      <description>&lt;p&gt;Reliable surrogate models for coupled climate dynamics.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Students</title>
       <link>/members/students/</link>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
@@ -72,18 +58,18 @@
       <description>Fast and interpretable reduced-order techniques for high-dimensional systems.</description>
     </item>
     <item>
-      <title>Benchmarking scientific foundation models for PDE discovery</title>
-      <link>/publications/2025/benchmarking-scientific-foundation-models-for-pde-discovery/</link>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>/publications/2025/benchmarking-scientific-foundation-models-for-pde-discovery/</guid>
-      <description>&lt;p&gt;Benchmarking scientific foundation models for PDE discovery.&lt;/p&gt;</description>
+      <title>Rank Reordering and Data Padding for Optimizing Large-Scale Parallel Image Composition</title>
+      <link>/publications/2015/rank-reordering-and-data-padding-for-optimizing-large-scale-parallel-image-compo/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/rank-reordering-and-data-padding-for-optimizing-large-scale-parallel-image-compo/</guid>
+      <description>&lt;p&gt;Rank Reordering and Data Padding for Optimizing Large-Scale Parallel Image Composition.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Operator-aware reduced models for transient multiphysics systems</title>
-      <link>/publications/2025/operator-aware-reduced-models-for-transient-multiphysics-systems/</link>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>/publications/2025/operator-aware-reduced-models-for-transient-multiphysics-systems/</guid>
-      <description>&lt;p&gt;Operator-aware reduced models for transient multiphysics systems.&lt;/p&gt;</description>
+      <title>Performance evaluation of large-scale parallel image compositing on a T2K Open Supercomputer</title>
+      <link>/publications/2009/performance-evaluation-of-large-scale-parallel-image-compositing-on-a-t2k-open-s/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/performance-evaluation-of-large-scale-parallel-image-compositing-on-a-t2k-open-s/</guid>
+      <description>&lt;p&gt;Performance evaluation of large-scale parallel image compositing on a T2K Open Supercomputer.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

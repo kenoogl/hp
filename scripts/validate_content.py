@@ -20,6 +20,7 @@ PUBLICATIONS_DIR = ROOT / "site" / "content" / "publications"
 
 KEBAB_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*\.md$")
 YEAR_DIR_RE = re.compile(r"^\d{4}$")
+PUB_TYPES = {"journal", "international-conference", "others"}
 
 
 def parse_front_matter(path: Path) -> dict[str, str]:
@@ -85,7 +86,7 @@ def validate_publications(errors: list[str]) -> None:
                 errors.append(f"[publications] {path}: {exc}")
                 continue
 
-            for key in ("title", "date", "authors", "journal", "year"):
+            for key in ("title", "date", "authors", "journal", "year", "pub_type"):
                 if not fm.get(key):
                     errors.append(f"[publications] {path}: missing front matter key '{key}'")
 
@@ -97,6 +98,11 @@ def validate_publications(errors: list[str]) -> None:
             if fm.get("date") and not fm["date"].startswith(f"{year_dir.name}-"):
                 errors.append(
                     f"[publications] {path}: date '{fm['date']}' should start with '{year_dir.name}-'"
+                )
+
+            if fm.get("pub_type") and fm["pub_type"] not in PUB_TYPES:
+                errors.append(
+                    f"[publications] {path}: pub_type '{fm['pub_type']}' must be one of {sorted(PUB_TYPES)}"
                 )
 
 
