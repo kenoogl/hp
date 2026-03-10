@@ -20,7 +20,7 @@ PUBLICATIONS_DIR = ROOT / "site" / "content" / "publications"
 
 KEBAB_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*\.md$")
 YEAR_DIR_RE = re.compile(r"^\d{4}$")
-PUB_TYPES = {"journal", "international-conference", "domestic-conference", "others"}
+PUB_TYPES = {"journal", "international-conference", "domestic-conference", "others", "talk"}
 BOOLISH = {"true", "false", "yes", "no", "1", "0"}
 
 

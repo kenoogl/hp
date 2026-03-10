@@ -58,6 +58,279 @@
       <description>Fast and interpretable reduced-order techniques for high-dimensional systems.</description>
     </item>
     <item>
+      <title>234Compositor: A flexible parallel image compositing framework for massively parallel visualization environments</title>
+      <link>/publications/2018/234compositor-a-flexible-parallel-image-compositing-framework-for-massively-para/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publications/2018/234compositor-a-flexible-parallel-image-compositing-framework-for-massively-para/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2nd International Symposium on Research and Education of Computational Science(RECS2017)</title>
+      <link>/publications/2018/2nd-international-symposium-on-research-and-education-of-computational-science-r/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publications/2018/2nd-international-symposium-on-research-and-education-of-computational-science-r/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Large Data Visualization Framework for SPARC64 fx HPC Systems – Case Study: K Computer Operational Environment</title>
+      <link>/publications/2018/a-large-data-visualization-framework-for-sparc64-fx-hpc-systems-case-study-k-com/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publications/2018/a-large-data-visualization-framework-for-sparc64-fx-hpc-systems-case-study-k-com/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Study on Open Source Software for Large-Scale Data Visualization on SPARC64fx based HPC Systems</title>
+      <link>/publications/2018/a-study-on-open-source-software-for-large-scale-data-visualization-on-sparc64fx/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publications/2018/a-study-on-open-source-software-for-large-scale-data-visualization-on-sparc64fx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Characterizing I/O and Storage Activity on the K Computer for Post-Processing Purposes</title>
+      <link>/publications/2018/characterizing-i-o-and-storage-activity-on-the-k-computer-for-post-processing-pu/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publications/2018/characterizing-i-o-and-storage-activity-on-the-k-computer-for-post-processing-pu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ChOWDER: Dynamic Contents Sharing Through Remote Tiled Display System</title>
+      <link>/publications/2018/chowder-dynamic-contents-sharing-through-remote-tiled-display-system/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publications/2018/chowder-dynamic-contents-sharing-through-remote-tiled-display-system/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Convergence Acceleration of the PinT Integration of Advection Equation using Accurate Phase Calculation Method</title>
+      <link>/publications/2018/convergence-acceleration-of-the-pint-integration-of-advection-equation-using-acc/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publications/2018/convergence-acceleration-of-the-pint-integration-of-advection-equation-using-acc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data I/O management approach for the post-hoc visualization of big simulation data results</title>
+      <link>/publications/2018/data-i-o-management-approach-for-the-post-hoc-visualization-of-big-simulation-da/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publications/2018/data-i-o-management-approach-for-the-post-hoc-visualization-of-big-simulation-da/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Estimation of Functions Representing Data Using Convolution Neural Network</title>
+      <link>/publications/2018/estimation-of-functions-representing-data-using-convolution-neural-network/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publications/2018/estimation-of-functions-representing-data-using-convolution-neural-network/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>High-Performance Parallel Simulation of Airflow for Complex Terrain Surface</title>
+      <link>/publications/2018/high-performance-parallel-simulation-of-airflow-for-complex-terrain-surface/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publications/2018/high-performance-parallel-simulation-of-airflow-for-complex-terrain-surface/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>High-Throughput Parallel Simulation of Airflow for Detailed Land Configuration</title>
+      <link>/publications/2018/high-throughput-parallel-simulation-of-airflow-for-detailed-land-configuration/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publications/2018/high-throughput-parallel-simulation-of-airflow-for-detailed-land-configuration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HIVE: A Cross-Platform, Modular Visualization Ecosystem for Heterogeneous Computational Environments</title>
+      <link>/publications/2018/hive-a-cross-platform-modular-visualization-ecosystem-for-heterogeneous-computat/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publications/2018/hive-a-cross-platform-modular-visualization-ecosystem-for-heterogeneous-computat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Improving efficiency of symbolic regression to find the formula that express data</title>
+      <link>/publications/2018/improving-efficiency-of-symbolic-regression-to-find-the-formula-that-express-dat/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publications/2018/improving-efficiency-of-symbolic-regression-to-find-the-formula-that-express-dat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Influence of the phase accuracy of the coarse solver calculation on the convergence of the parareal method iteration for hyperbolic PDEs</title>
+      <link>/publications/2018/influence-of-the-phase-accuracy-of-the-coarse-solver-calculation-on-the-converge/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publications/2018/influence-of-the-phase-accuracy-of-the-coarse-solver-calculation-on-the-converge/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Performance Evaluation and Visualization of Scientific Applications Using PMlib</title>
+      <link>/publications/2018/performance-evaluation-and-visualization-of-scientific-applications-using-pmlib/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publications/2018/performance-evaluation-and-visualization-of-scientific-applications-using-pmlib/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Research of finding formula that express data without any background information</title>
+      <link>/publications/2018/research-of-finding-formula-that-express-data-without-any-background-information/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publications/2018/research-of-finding-formula-that-express-data-without-any-background-information/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Two-Stage in Situ Parallel Meshing for Large-Scale Atmospheric Fluid Simulation Over Complex Topography</title>
+      <link>/publications/2018/two-stage-in-situ-parallel-meshing-for-large-scale-atmospheric-fluid-simulation/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publications/2018/two-stage-in-situ-parallel-meshing-for-large-scale-atmospheric-fluid-simulation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>第11回スーパーコンピューティング技術産業応用シンポジウム</title>
+      <link>/publications/2018/11/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publications/2018/11/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Visual Causal Exploration Framework - Case Study: A Torrential Rain and a Flash Flood in Kobe City</title>
+      <link>/publications/2017/a-visual-causal-exploration-framework-case-study-a-torrential-rain-and-a-flash-f/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publications/2017/a-visual-causal-exploration-framework-case-study-a-torrential-rain-and-a-flash-f/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Compression-based integral curve data reuse framework for flow visualization</title>
+      <link>/publications/2017/compression-based-integral-curve-data-reuse-framework-for-flow-visualization/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publications/2017/compression-based-integral-curve-data-reuse-framework-for-flow-visualization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Distributed Particle-based Rendering Framework for Large Data Visualization on HPC Environments</title>
+      <link>/publications/2017/distributed-particle-based-rendering-framework-for-large-data-visualization-on-h/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publications/2017/distributed-particle-based-rendering-framework-for-large-data-visualization-on-h/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flexible Fiber Surface: A Reeb-Free Approach</title>
+      <link>/publications/2017/flexible-fiber-surface-a-reeb-free-approach/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publications/2017/flexible-fiber-surface-a-reeb-free-approach/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scalable and ubiquitous visualization in extreme-scale computational environment</title>
+      <link>/publications/2017/scalable-and-ubiquitous-visualization-in-extreme-scale-computational-environment/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publications/2017/scalable-and-ubiquitous-visualization-in-extreme-scale-computational-environment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>データマイニングを用いた2種類の酒類におけるWeb上の感性情報の比較と視覚化</title>
+      <link>/publications/2017/2-web/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publications/2017/2-web/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A novel approach for visualizing and enhancing PinT computation</title>
+      <link>/publications/2016/a-novel-approach-for-visualizing-and-enhancing-pint-computation/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publications/2016/a-novel-approach-for-visualizing-and-enhancing-pint-computation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Iterative-method performance evaluation for multiple vectors associated with a large-scale sparse matrix</title>
+      <link>/publications/2016/iterative-method-performance-evaluation-for-multiple-vectors-associated-with-a-l/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publications/2016/iterative-method-performance-evaluation-for-multiple-vectors-associated-with-a-l/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Parallel-in-Time Integration Framework for Building Simulatiors</title>
+      <link>/publications/2016/parallel-in-time-integration-framework-for-building-simulatiors/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publications/2016/parallel-in-time-integration-framework-for-building-simulatiors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大規模シミュレーションの実行支援環境 HPC/PFの開発と成果</title>
+      <link>/publications/2016/hpc-pf/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publications/2016/hpc-pf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>234 Scheduling of 3-2 and 2-1 Eliminations for Parallel Image Compositing Using Non-Power-of-Two Number of Processes</title>
+      <link>/publications/2015/234-scheduling-of-3-2-and-2-1-eliminations-for-parallel-image-compositing-using/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/234-scheduling-of-3-2-and-2-1-eliminations-for-parallel-image-compositing-using/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Big Data Visual Analytics</title>
+      <link>/publications/2015/big-data-visual-analytics/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/big-data-visual-analytics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HPCを利用したものづくり、その普及における課題と新しい試み</title>
+      <link>/publications/2015/hpc/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/hpc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Immersed boundary法および局所細分化格子を用いた実車形状周りの流れの短時間シミュレーション手法</title>
+      <link>/publications/2015/immersed-boundary/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/immersed-boundary/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>In situ depth maps based feature extraction and tracking</title>
+      <link>/publications/2015/in-situ-depth-maps-based-feature-extraction-and-tracking/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/in-situ-depth-maps-based-feature-extraction-and-tracking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Low Byte/Flop Implementation of Iterative Solver for Sparse Matrices Derived from Stencil Computations</title>
+      <link>/publications/2015/low-byte-flop-implementation-of-iterative-solver-for-sparse-matrices-derived-fro/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/low-byte-flop-implementation-of-iterative-solver-for-sparse-matrices-derived-fro/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multi-Step Image Composition Approach for Sort-Last Massively Parallel Rendering</title>
+      <link>/publications/2015/multi-step-image-composition-approach-for-sort-last-massively-parallel-rendering/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/multi-step-image-composition-approach-for-sort-last-massively-parallel-rendering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PARALLELIZATION OF A BLOCK-BASED HIERARCHICAL CARTESIAN CFD CODE</title>
+      <link>/publications/2015/parallelization-of-a-block-based-hierarchical-cartesian-cfd-code/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/parallelization-of-a-block-based-hierarchical-cartesian-cfd-code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Parareal法による拡散方程式の時間並列計算</title>
+      <link>/publications/2015/parareal/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/parareal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Performance Evaluation of Iterative Solver for Multiple Vectors Associated with a Large-Scale Sparse Matrix</title>
+      <link>/publications/2015/performance-evaluation-of-iterative-solver-for-multiple-vectors-associated-with/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/performance-evaluation-of-iterative-solver-for-multiple-vectors-associated-with/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rank Reordering and Data Padding for Optimizing Large-Scale Parallel Image Composition</title>
+      <link>/publications/2015/rank-reordering-and-data-padding-for-optimizing-large-scale-parallel-image-compo-2/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/rank-reordering-and-data-padding-for-optimizing-large-scale-parallel-image-compo-2/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Rank Reordering and Data Padding for Optimizing Large-Scale Parallel Image Composition</title>
       <link>/publications/2015/rank-reordering-and-data-padding-for-optimizing-large-scale-parallel-image-compo/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
@@ -65,11 +338,2433 @@
       <description></description>
     </item>
     <item>
-      <title>Performance evaluation of large-scale parallel image compositing on a T2K Open Supercomputer</title>
+      <title>Ubiquitous and Sustainable High-Performance Visualization</title>
+      <link>/publications/2015/ubiquitous-and-sustainable-high-performance-visualization/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/ubiquitous-and-sustainable-high-performance-visualization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>VALIDATION OF LOCAL SGS MODELS IMPLEMENTED IN HIGH-PERFORMANCE CFD SOLVER: FFV-C</title>
+      <link>/publications/2015/validation-of-local-sgs-models-implemented-in-high-performance-cfd-solver-ffv-c/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/validation-of-local-sgs-models-implemented-in-high-performance-cfd-solver-ffv-c/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>エクサ級スパコンが導く新しい設計手法への期待</title>
+      <link>/publications/2015/untitled-8/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/untitled-8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>よりよい超大規模並列CFDコード開発にむけて</title>
+      <link>/publications/2015/cfd/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/cfd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>係数行列のビット表現による疎行列反復解法の高速化</title>
+      <link>/publications/2015/untitled-3/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/untitled-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>共通の係数行列を持つ複数の連立一次方程式のための反復ソルバの実装と性能評価</title>
+      <link>/publications/2015/untitled-5/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/untitled-5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>可視化技術の進展と計算科学への貢献</title>
+      <link>/publications/2015/untitled-2/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/untitled-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>壁法則に基づく動的なLES壁面モデルの検討</title>
+      <link>/publications/2015/les/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/les/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大規模データの可視化・分析環境の構築と展開</title>
+      <link>/publications/2015/untitled-4/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/untitled-4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大規模並列計算におけるポスト処理</title>
+      <link>/publications/2015/untitled-9/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/untitled-9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>時間並列計算法の研究開発動向及び将来展望</title>
+      <link>/publications/2015/untitled-7/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/untitled-7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>直交格子積み上げ法に基づく流体解析コードの性能評価とチューニング</title>
+      <link>/publications/2015/untitled-6/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/untitled-6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>鼻腔内熱流動ボクセル解析における横断面医療画像二次元補間の有効性</title>
+      <link>/publications/2015/untitled/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publications/2015/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2-3-4 Combination for Parallel Compression on the K Computer</title>
+      <link>/publications/2014/2-3-4-combination-for-parallel-compression-on-the-k-computer/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/2-3-4-combination-for-parallel-compression-on-the-k-computer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2-3-4 Decomposition Method for Large-Scale Parallel Image Composition with Arbitrary Number of Nodes</title>
+      <link>/publications/2014/2-3-4-decomposition-method-for-large-scale-parallel-image-composition-with-arbit-2/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/2-3-4-decomposition-method-for-large-scale-parallel-image-composition-with-arbit-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2-3-4 Decomposition Method for Large-Scale Parallel Image Composition with Arbitrary Number of Nodes</title>
+      <link>/publications/2014/2-3-4-decomposition-method-for-large-scale-parallel-image-composition-with-arbit/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/2-3-4-decomposition-method-for-large-scale-parallel-image-composition-with-arbit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Cartesian grid method for simulating two-phase flow in complex geometries</title>
+      <link>/publications/2014/a-cartesian-grid-method-for-simulating-two-phase-flow-in-complex-geometries/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/a-cartesian-grid-method-for-simulating-two-phase-flow-in-complex-geometries/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Study of Parallel Data Compression Using Proper Orthogonal Decomposition on the K Computer</title>
+      <link>/publications/2014/a-study-of-parallel-data-compression-using-proper-orthogonal-decomposition-on-th/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/a-study-of-parallel-data-compression-using-proper-orthogonal-decomposition-on-th/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A-Cell: A Unified Abstraction for Fine-Grained Parallelism</title>
+      <link>/publications/2014/a-cell-a-unified-abstraction-for-fine-grained-parallelism/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/a-cell-a-unified-abstraction-for-fine-grained-parallelism/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Active subdomain selection for efficient parallel computation of internal flows in complex geometry</title>
+      <link>/publications/2014/active-subdomain-selection-for-efficient-parallel-computation-of-internal-flows/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/active-subdomain-selection-for-efficient-parallel-computation-of-internal-flows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BIT-REPRESENTATION OF BOUNDARY CONDITIONS FOR HIGH PERFORMANCE INCOMPRESSIBLE THERMAL FLOW SIMULATION</title>
+      <link>/publications/2014/bit-representation-of-boundary-conditions-for-high-performance-incompressible-th/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/bit-representation-of-boundary-conditions-for-high-performance-incompressible-th/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CFD APPLICATION FOR INDUSTRIAL DESIGN IN PETA-SCALE COMPUTING ENVIRONMENTS</title>
+      <link>/publications/2014/cfd-application-for-industrial-design-in-peta-scale-computing-environments/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/cfd-application-for-industrial-design-in-peta-scale-computing-environments/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Challenge for parallel visualization of large-scale dataset and current status</title>
+      <link>/publications/2014/challenge-for-parallel-visualization-of-large-scale-dataset-and-current-status/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/challenge-for-parallel-visualization-of-large-scale-dataset-and-current-status/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CHALLENGES AND STRATEGY TO TACKLE THE EXTREME-SCALE FLUID SIMULATION FOR ENGINEERING PROCESS</title>
+      <link>/publications/2014/challenges-and-strategy-to-tackle-the-extreme-scale-fluid-simulation-for-enginee/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/challenges-and-strategy-to-tackle-the-extreme-scale-fluid-simulation-for-enginee/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Centric Framework for Large-Scale High Performance Parallel Computation</title>
+      <link>/publications/2014/data-centric-framework-for-large-scale-high-performance-parallel-computation-2/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/data-centric-framework-for-large-scale-high-performance-parallel-computation-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Centric Framework for Large-scale High-performance Parallel Computation</title>
+      <link>/publications/2014/data-centric-framework-for-large-scale-high-performance-parallel-computation/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/data-centric-framework-for-large-scale-high-performance-parallel-computation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Design of Practical Framework to utilize Big Data on Exascale Computer</title>
+      <link>/publications/2014/design-of-practical-framework-to-utilize-big-data-on-exascale-computer/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/design-of-practical-framework-to-utilize-big-data-on-exascale-computer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development and applications of the parallel computing middleware for the life science simulations</title>
+      <link>/publications/2014/development-and-applications-of-the-parallel-computing-middleware-for-the-life-s/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/development-and-applications-of-the-parallel-computing-middleware-for-the-life-s/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fluid Data Compression and {ROI} Detection Using Run Length Method</title>
+      <link>/publications/2014/fluid-data-compression-and-roi-detection-using-run-length-method-2/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/fluid-data-compression-and-roi-detection-using-run-length-method-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fluid Data Compression and ROI Detection Using Run Length Method</title>
+      <link>/publications/2014/fluid-data-compression-and-roi-detection-using-run-length-method/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/fluid-data-compression-and-roi-detection-using-run-length-method/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HPC/PFの開発状況と利活用展開</title>
+      <link>/publications/2014/hpc-pf-2/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/hpc-pf-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HPC/PF開発と設計シミュレーションシステムについて</title>
+      <link>/publications/2014/hpc-pf/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/hpc-pf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Knowledge request-broker architecture: A possible foundation for a resource-constrained dynamic and autonomous global system</title>
+      <link>/publications/2014/knowledge-request-broker-architecture-a-possible-foundation-for-a-resource-const/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/knowledge-request-broker-architecture-a-possible-foundation-for-a-resource-const/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LPTlib – 大規模並列粒子計算ライブラリの開発</title>
+      <link>/publications/2014/lptlib/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/lptlib/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LSGL: Large Scale Graphics Library for Peta-Scale Computing Environments</title>
+      <link>/publications/2014/lsgl-large-scale-graphics-library-for-peta-scale-computing-environments/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/lsgl-large-scale-graphics-library-for-peta-scale-computing-environments/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multi-step image compositing for massively parallel rendering</title>
+      <link>/publications/2014/multi-step-image-compositing-for-massively-parallel-rendering/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/multi-step-image-compositing-for-massively-parallel-rendering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multi-Step Image Compositing for Massively Parallel Rendering</title>
+      <link>/publications/2014/multi-step-image-compositing-for-massively-parallel-rendering-2/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/multi-step-image-compositing-for-massively-parallel-rendering-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Parallel POD Compression of Time-Varying Big Datasets Using m-Swap on the K Computer</title>
+      <link>/publications/2014/parallel-pod-compression-of-time-varying-big-datasets-using-m-swap-on-the-k-comp-2/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/parallel-pod-compression-of-time-varying-big-datasets-using-m-swap-on-the-k-comp-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Parallel POD Compression of Time-Varying Big Datasets Using m-Swap on the K Computer</title>
+      <link>/publications/2014/parallel-pod-compression-of-time-varying-big-datasets-using-m-swap-on-the-k-comp/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/parallel-pod-compression-of-time-varying-big-datasets-using-m-swap-on-the-k-comp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Performance Improvement of Iterative Method with Bit-Representation technique for Coefficient Matrix</title>
+      <link>/publications/2014/performance-improvement-of-iterative-method-with-bit-representation-technique-fo/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/performance-improvement-of-iterative-method-with-bit-representation-technique-fo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scalable and ubiquitous visualization in extreme-scale computational environment</title>
+      <link>/publications/2014/scalable-and-ubiquitous-visualization-in-extreme-scale-computational-environment/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/scalable-and-ubiquitous-visualization-in-extreme-scale-computational-environment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SURFACE: A Visualization Framework for Large−Scale Parallel Simulations</title>
+      <link>/publications/2014/surface-a-visualization-framework-for-large-scale-parallel-simulations/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/surface-a-visualization-framework-for-large-scale-parallel-simulations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Validation of local SGS models for high Reynolds number flow</title>
+      <link>/publications/2014/validation-of-local-sgs-models-for-high-reynolds-number-flow/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/validation-of-local-sgs-models-for-high-reynolds-number-flow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>VCAD熱流体ソフトウェアの大規模計算への進展</title>
+      <link>/publications/2014/vcad/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/vcad/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>レベルセット法を用いた接触線運動の数値解析における質量保存性の検討</title>
+      <link>/publications/2014/untitled-4/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/untitled-4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>京の現状とエクサ級コンピュータ</title>
+      <link>/publications/2014/untitled-3/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/untitled-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>係数行列のビット圧縮による疎行列反復解法の高速化</title>
+      <link>/publications/2014/untitled-7/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/untitled-7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>医療画像に基づく鼻腔内熱流動のボクセルシミュレーション</title>
+      <link>/publications/2014/untitled/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大規模可視化向け並列ＰＢＶＲの考察</title>
+      <link>/publications/2014/untitled-8/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/untitled-8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大規模計算機環境における可視化について</title>
+      <link>/publications/2014/untitled-9/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/untitled-9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>微細溝を有するチャネル乱流における摩擦抵抗低減効果</title>
+      <link>/publications/2014/untitled-6/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/untitled-6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>産業界からの期待およびニーズ</title>
+      <link>/publications/2014/untitled-2/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/untitled-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>直交格子上で表現された物体に対する表面積評価手法</title>
+      <link>/publications/2014/untitled-5/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/untitled-5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>超大規模熱流体計算のための100億超の階層的直交格子生成とその応用</title>
+      <link>/publications/2014/100/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/2014/100/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automatically optimized core mapping to subdomains of domain decomposition method on multicore parallel environments</title>
+      <link>/publications/2013/automatically-optimized-core-mapping-to-subdomains-of-domain-decomposition-metho/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/automatically-optimized-core-mapping-to-subdomains-of-domain-decomposition-metho/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development of a CFD software for large-scale computation</title>
+      <link>/publications/2013/development-of-a-cfd-software-for-large-scale-computation/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/development-of-a-cfd-software-for-large-scale-computation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HPC/PF - High Performance Computing Platform: An Environment That Accelerates Large-Scale Simulations</title>
+      <link>/publications/2013/hpc-pf-high-performance-computing-platform-an-environment-that-accelerates-large/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/hpc-pf-high-performance-computing-platform-an-environment-that-accelerates-large/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HPC/PFの開発とアウトリーチ活動への展開</title>
+      <link>/publications/2013/hpc-pf/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/hpc-pf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Life cycle management of big data for extreme-scale simulation</title>
+      <link>/publications/2013/life-cycle-management-of-big-data-for-extreme-scale-simulation-2/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/life-cycle-management-of-big-data-for-extreme-scale-simulation-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Life cycle management of big data for extreme-scale simulation</title>
+      <link>/publications/2013/life-cycle-management-of-big-data-for-extreme-scale-simulation/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/life-cycle-management-of-big-data-for-extreme-scale-simulation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Parallel POD Compression Accelerated by Binary-Swap Compositing</title>
+      <link>/publications/2013/parallel-pod-compression-accelerated-by-binary-swap-compositing/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/parallel-pod-compression-accelerated-by-binary-swap-compositing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>POD-Based Parallel Compression for Visualizing Large-Scale Dataset</title>
+      <link>/publications/2013/pod-based-parallel-compression-for-visualizing-large-scale-dataset/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/pod-based-parallel-compression-for-visualizing-large-scale-dataset/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proper orthogonal decomposition based parallel compression for visualizing big data on the K computer</title>
+      <link>/publications/2013/proper-orthogonal-decomposition-based-parallel-compression-for-visualizing-big-d/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/proper-orthogonal-decomposition-based-parallel-compression-for-visualizing-big-d/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proper Orthogonal Decomposition Based Parallel Compression for Visualizing Big Data on the K Computer</title>
+      <link>/publications/2013/proper-orthogonal-decomposition-based-parallel-compression-for-visualizing-big-d-2/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/proper-orthogonal-decomposition-based-parallel-compression-for-visualizing-big-d-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Research Activities of Visualization on K-computer</title>
+      <link>/publications/2013/research-activities-of-visualization-on-k-computer/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/research-activities-of-visualization-on-k-computer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Strategy of Visualization toward Exa-Scale Computing</title>
+      <link>/publications/2013/strategy-of-visualization-toward-exa-scale-computing-2/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/strategy-of-visualization-toward-exa-scale-computing-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Strategy of Visualization toward Exa-Scale Computing</title>
+      <link>/publications/2013/strategy-of-visualization-toward-exa-scale-computing/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/strategy-of-visualization-toward-exa-scale-computing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology Infrastructure for Scientific Applications with Large-Scale Dataset</title>
+      <link>/publications/2013/technology-infrastructure-for-scientific-applications-with-large-scale-dataset/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/technology-infrastructure-for-scientific-applications-with-large-scale-dataset/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>エクサスケールに向けた計算工学の取り組み</title>
+      <link>/publications/2013/untitled-6/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/untitled-6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>エクサスケールに向けた高性能アプリケーション開発</title>
+      <link>/publications/2013/untitled-4/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/untitled-4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>エクサスケール時代のアプリケーション開発とポスト処理</title>
+      <link>/publications/2013/untitled-7/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/untitled-7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ものづくりの大規模シミュレーション支援に向けた取り組み</title>
+      <link>/publications/2013/untitled-3/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/untitled-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大規模な計算結果の可視化における課題とアプローチについて</title>
+      <link>/publications/2013/untitled/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>接触線運動の数値解析に関する検討</title>
+      <link>/publications/2013/untitled-5/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/untitled-5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>熱流体ソフトウェアの新展開と京での計算</title>
+      <link>/publications/2013/untitled-2/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publications/2013/untitled-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Software Framework of the Building-Cube Method for a Large-scale Computation</title>
+      <link>/publications/2012/a-software-framework-of-the-building-cube-method-for-a-large-scale-computation/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/a-software-framework-of-the-building-cube-method-for-a-large-scale-computation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>An Efficient Data Structure of Building-Cube Method for Large-Scale Computation</title>
+      <link>/publications/2012/an-efficient-data-structure-of-building-cube-method-for-large-scale-computation/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/an-efficient-data-structure-of-building-cube-method-for-large-scale-computation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automatic Grid Generation over 10 Billion Scale and Visualization</title>
+      <link>/publications/2012/automatic-grid-generation-over-10-billion-scale-and-visualization/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/automatic-grid-generation-over-10-billion-scale-and-visualization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Convergence properties of the Poisson equation solvers for two-phase fluid flows (2nd report: Applicability of the MultiGrid Preconditioned Conjugate Gradient Method)</title>
+      <link>/publications/2012/convergence-properties-of-the-poisson-equation-solvers-for-two-phase-fluid-flows-2/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/convergence-properties-of-the-poisson-equation-solvers-for-two-phase-fluid-flows-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Convergence properties of the Poisson equation solvers for two-phase fluid flows (2nd report: Applicability of the MultiGrid Preconditioned Conjugate Gradient Method)</title>
+      <link>/publications/2012/convergence-properties-of-the-poisson-equation-solvers-for-two-phase-fluid-flows/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/convergence-properties-of-the-poisson-equation-solvers-for-two-phase-fluid-flows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development of a parallel Poisson equation solver for two-phase flow simulations</title>
+      <link>/publications/2012/development-of-a-parallel-poisson-equation-solver-for-two-phase-flow-simulations/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/development-of-a-parallel-poisson-equation-solver-for-two-phase-flow-simulations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development of technology for very-large-scale voxel generation and its interface for simulators</title>
+      <link>/publications/2012/development-of-technology-for-very-large-scale-voxel-generation-and-its-interfac/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/development-of-technology-for-very-large-scale-voxel-generation-and-its-interfac/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gaze-Directed Flow Visualization</title>
+      <link>/publications/2012/gaze-directed-flow-visualization/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/gaze-directed-flow-visualization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HPC/PF - High Performance Computing Platform: An Environment that Accelerates Large-Scale Simulations</title>
+      <link>/publications/2012/hpc-pf-high-performance-computing-platform-an-environment-that-accelerates-large-2/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/hpc-pf-high-performance-computing-platform-an-environment-that-accelerates-large-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HPC/PF - High Performance Computing Platform: An Environment that Accelerates Large-Scale Simulations</title>
+      <link>/publications/2012/hpc-pf-high-performance-computing-platform-an-environment-that-accelerates-large/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/hpc-pf-high-performance-computing-platform-an-environment-that-accelerates-large/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interactive Control of Mesh Topology in Quadrilateral Mesh Generation Based on 2D Tensor Fields</title>
+      <link>/publications/2012/interactive-control-of-mesh-topology-in-quadrilateral-mesh-generation-based-on-2-2/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/interactive-control-of-mesh-topology-in-quadrilateral-mesh-generation-based-on-2-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interactive Control of Mesh Topology in Quadrilateral Mesh Generation Based on 2D Tensor Fields</title>
+      <link>/publications/2012/interactive-control-of-mesh-topology-in-quadrilateral-mesh-generation-based-on-2/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/interactive-control-of-mesh-topology-in-quadrilateral-mesh-generation-based-on-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Issues and approach for large-scale CFD on K computer</title>
+      <link>/publications/2012/issues-and-approach-for-large-scale-cfd-on-k-computer-2/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/issues-and-approach-for-large-scale-cfd-on-k-computer-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Issues and approach for large-scale CFD on K computer</title>
+      <link>/publications/2012/issues-and-approach-for-large-scale-cfd-on-k-computer/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/issues-and-approach-for-large-scale-cfd-on-k-computer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Large-scale CFD for Industrial Application and Post Processing</title>
+      <link>/publications/2012/large-scale-cfd-for-industrial-application-and-post-processing/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/large-scale-cfd-for-industrial-application-and-post-processing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Role of numerical library on road map for exa-flops computer</title>
+      <link>/publications/2012/role-of-numerical-library-on-road-map-for-exa-flops-computer/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/role-of-numerical-library-on-road-map-for-exa-flops-computer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology that joins product design and simulation-- Construction of HPC/PF and its application scenario</title>
+      <link>/publications/2012/technology-that-joins-product-design-and-simulation-construction-of-hpc-pf-and-i/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/technology-that-joins-product-design-and-simulation-construction-of-hpc-pf-and-i/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Verification of a sharp interface method for two-phase flow simulations</title>
+      <link>/publications/2012/verification-of-a-sharp-interface-method-for-two-phase-flow-simulations/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/verification-of-a-sharp-interface-method-for-two-phase-flow-simulations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大規模並列計算の支援技術と設計適用</title>
+      <link>/publications/2012/untitled-2/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/untitled-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大規模数値計算における可視化技術の最先端</title>
+      <link>/publications/2012/untitled-3/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/untitled-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大規模流体計算へのチャレンジ</title>
+      <link>/publications/2012/untitled/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publications/2012/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A level-set-based eulerian-lagrangian coupling method with contact model for folded airbag deployment analysis</title>
+      <link>/publications/2011/a-level-set-based-eulerian-lagrangian-coupling-method-with-contact-model-for-fol/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publications/2011/a-level-set-based-eulerian-lagrangian-coupling-method-with-contact-model-for-fol/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automatically optimized core mapping for subdomains of parallel finite element method on multicore parallel environments</title>
+      <link>/publications/2011/automatically-optimized-core-mapping-for-subdomains-of-parallel-finite-element-m/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publications/2011/automatically-optimized-core-mapping-for-subdomains-of-parallel-finite-element-m/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development of High Intensity Focused Ultrasound Simulator for Large Scale Computing</title>
+      <link>/publications/2011/development-of-high-intensity-focused-ultrasound-simulator-for-large-scale-compu/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publications/2011/development-of-high-intensity-focused-ultrasound-simulator-for-large-scale-compu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Massively Parallel Ray Tracing</title>
+      <link>/publications/2011/massively-parallel-ray-tracing/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publications/2011/massively-parallel-ray-tracing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Towards Large-Scale Practical CFD in Industry</title>
+      <link>/publications/2011/towards-large-scale-practical-cfd-in-industry/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publications/2011/towards-large-scale-practical-cfd-in-industry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Voxel-Based High Performance Parallel Flow Simulator for Industrial Applications</title>
+      <link>/publications/2011/voxel-based-high-performance-parallel-flow-simulator-for-industrial-applications/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publications/2011/voxel-based-high-performance-parallel-flow-simulator-for-industrial-applications/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>バイオメカニズムのための協調的表現手法</title>
+      <link>/publications/2011/untitled-10/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publications/2011/untitled-10/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ものづくりのパラダイムシフトを加速するシミュレーション技術</title>
+      <link>/publications/2011/untitled-5/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publications/2011/untitled-5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>レベルセットに基づいたLagrangian-Eulerian coupling methodの並列計算についての検討</title>
+      <link>/publications/2011/lagrangian-eulerian-coupling-method/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publications/2011/lagrangian-eulerian-coupling-method/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大規模な計算機を使いこなす総合技術</title>
+      <link>/publications/2011/untitled-6/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publications/2011/untitled-6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大規模並列計算の設計適用の実現に向けた戦略</title>
+      <link>/publications/2011/untitled-4/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publications/2011/untitled-4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>気液2相流れ解析における圧力ポアソン方程式に関する検討</title>
+      <link>/publications/2011/2/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publications/2011/2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>生体・医療技術のシミュレーション研究</title>
+      <link>/publications/2011/untitled-3/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publications/2011/untitled-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>符号付き距離関数を形状表現に用いた流体ソルバーの精度</title>
+      <link>/publications/2011/untitled/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publications/2011/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>階層型並列計算機における領域分割法のサブドメイン最適マッピング</title>
+      <link>/publications/2011/untitled-9/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publications/2011/untitled-9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>電磁流体解析のための並列有限要素法コードの開発に向けて</title>
+      <link>/publications/2011/untitled-8/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publications/2011/untitled-8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>領域分割法におけるサブドメインのノード内最適自動マッピング</title>
+      <link>/publications/2011/untitled-2/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publications/2011/untitled-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>領域分割法におけるサブドメインのノード内最適自動マッピング</title>
+      <link>/publications/2011/untitled-7/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publications/2011/untitled-7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A fixed {E}ulerian mesh-based scheme using level set function for airbag deployment simulation including the effect of outside air</title>
+      <link>/publications/2010/a-fixed-e-ulerian-mesh-based-scheme-using-level-set-function-for-airbag-deployme/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/a-fixed-e-ulerian-mesh-based-scheme-using-level-set-function-for-airbag-deployme/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Framework for Volume Segmentation and Visualization Using Augmented Reality</title>
+      <link>/publications/2010/a-framework-for-volume-segmentation-and-visualization-using-augmented-reality/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/a-framework-for-volume-segmentation-and-visualization-using-augmented-reality/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>An efficient parallel computation on cartesian mesh composed of multiply-connected domains</title>
+      <link>/publications/2010/an-efficient-parallel-computation-on-cartesian-mesh-composed-of-multiply-connect/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/an-efficient-parallel-computation-on-cartesian-mesh-composed-of-multiply-connect/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Application of a partitioned coupling algorithm using level set function to folded airbag deployment</title>
+      <link>/publications/2010/application-of-a-partitioned-coupling-algorithm-using-level-set-function-to-fold/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/application-of-a-partitioned-coupling-algorithm-using-level-set-function-to-fold/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computer-Generated Tie-Dyeing using a 3D Diffusion Graph</title>
+      <link>/publications/2010/computer-generated-tie-dyeing-using-a-3d-diffusion-graph-3/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/computer-generated-tie-dyeing-using-a-3d-diffusion-graph-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computer-Generated Tie-Dyeing Using a 3D Diffusion Graph</title>
+      <link>/publications/2010/computer-generated-tie-dyeing-using-a-3d-diffusion-graph-2/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/computer-generated-tie-dyeing-using-a-3d-diffusion-graph-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computer-Generated Tie-Dyeing Using a 3D Diffusion Graph</title>
+      <link>/publications/2010/computer-generated-tie-dyeing-using-a-3d-diffusion-graph/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/computer-generated-tie-dyeing-using-a-3d-diffusion-graph/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development of fixed mesh-based partitioned solution method for large-deformation FSI analysis with contact</title>
+      <link>/publications/2010/development-of-fixed-mesh-based-partitioned-solution-method-for-large-deformatio/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/development-of-fixed-mesh-based-partitioned-solution-method-for-large-deformatio/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development of Next Generation CFD Tools on HPC</title>
+      <link>/publications/2010/development-of-next-generation-cfd-tools-on-hpc/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/development-of-next-generation-cfd-tools-on-hpc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development of parallel vis. platform for large-scale dataset toward scientific and information visualization</title>
+      <link>/publications/2010/development-of-parallel-vis-platform-for-large-scale-dataset-toward-scientific-a/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/development-of-parallel-vis-platform-for-large-scale-dataset-toward-scientific-a/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DEVELOPMENT OF RAPID SIMULATION METHOD FOR AUTOMOTIVE AERODYNAMICS</title>
+      <link>/publications/2010/development-of-rapid-simulation-method-for-automotive-aerodynamics/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/development-of-rapid-simulation-method-for-automotive-aerodynamics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Digital archiving of archaeological remains using X-Ray CT</title>
+      <link>/publications/2010/digital-archiving-of-archaeological-remains-using-x-ray-ct/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/digital-archiving-of-archaeological-remains-using-x-ray-ct/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fast and stable treatment of non-watertight geometry for incompressible flow simulation on {C}artesian grid</title>
+      <link>/publications/2010/fast-and-stable-treatment-of-non-watertight-geometry-for-incompressible-flow-sim/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/fast-and-stable-treatment-of-non-watertight-geometry-for-incompressible-flow-sim/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FSI問題のためのAMRを用いたEulerianメッシュベーススキーム</title>
+      <link>/publications/2010/fsi-amr-eulerian/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/fsi-amr-eulerian/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interface treatment under no-slip conditions using level-set virtual particles for fluid-structure interaction</title>
+      <link>/publications/2010/interface-treatment-under-no-slip-conditions-using-level-set-virtual-particles-f/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/interface-treatment-under-no-slip-conditions-using-level-set-virtual-particles-f/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multicolor SOR Method with Consecutive Memory Access Implementation in a Shared and Distributed Memory Parallel Environment</title>
+      <link>/publications/2010/multicolor-sor-method-with-consecutive-memory-access-implementation-in-a-shared/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/multicolor-sor-method-with-consecutive-memory-access-implementation-in-a-shared/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>New Cloth Modeling for Designing Dyed Patterns</title>
+      <link>/publications/2010/new-cloth-modeling-for-designing-dyed-patterns/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/new-cloth-modeling-for-designing-dyed-patterns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Numerical Simulation of the Tissue Ablation in HIFU therapy with an Array Transducer</title>
+      <link>/publications/2010/numerical-simulation-of-the-tissue-ablation-in-hifu-therapy-with-an-array-transd/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/numerical-simulation-of-the-tissue-ablation-in-hifu-therapy-with-an-array-transd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Numerical simulation of the tissue ablation in high intensity focused ultrasound therapy with an array transducer</title>
+      <link>/publications/2010/numerical-simulation-of-the-tissue-ablation-in-high-intensity-focused-ultrasound-2/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/numerical-simulation-of-the-tissue-ablation-in-high-intensity-focused-ultrasound-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Numerical Simulation of the Tissue Ablation in High Intensity Focused Ultrasound Therapy with Array Transducer</title>
+      <link>/publications/2010/numerical-simulation-of-the-tissue-ablation-in-high-intensity-focused-ultrasound/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/numerical-simulation-of-the-tissue-ablation-in-high-intensity-focused-ultrasound/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Numerical study on high intensity focused ultrasound therapy using array transducer</title>
+      <link>/publications/2010/numerical-study-on-high-intensity-focused-ultrasound-therapy-using-array-transdu/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/numerical-study-on-high-intensity-focused-ultrasound-therapy-using-array-transdu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Numerical Study on the Effective Combination of Microbubble and Ultrasound in HIFU Therapy</title>
+      <link>/publications/2010/numerical-study-on-the-effective-combination-of-microbubble-and-ultrasound-in-hi/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/numerical-study-on-the-effective-combination-of-microbubble-and-ultrasound-in-hi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Optimization of the application middleware &#34;{SPHERE}&#34; for {B}lue {G}ene/{L} system</title>
+      <link>/publications/2010/optimization-of-the-application-middleware-sphere-for-b-lue-g-ene-l-system/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/optimization-of-the-application-middleware-sphere-for-b-lue-g-ene-l-system/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Parallel CFD Applications and Its Performance on a Middleware</title>
+      <link>/publications/2010/parallel-cfd-applications-and-its-performance-on-a-middleware/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/parallel-cfd-applications-and-its-performance-on-a-middleware/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The Tissue Ablation in High Intensity Focused Ultrasound Therapy with an Array Transducer</title>
+      <link>/publications/2010/the-tissue-ablation-in-high-intensity-focused-ultrasound-therapy-with-an-array-t/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/the-tissue-ablation-in-high-intensity-focused-ultrasound-therapy-with-an-array-t/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Towards large-scale data visualization on leading-edge HPC systems</title>
+      <link>/publications/2010/towards-large-scale-data-visualization-on-leading-edge-hpc-systems/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/towards-large-scale-data-visualization-on-leading-edge-hpc-systems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Voxel-based modeling of flow in the nasal cavities</title>
+      <link>/publications/2010/voxel-based-modeling-of-flow-in-the-nasal-cavities/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/voxel-based-modeling-of-flow-in-the-nasal-cavities/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>スパコンは本当にものづくりに役立つのか？</title>
+      <link>/publications/2010/untitled-4/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/untitled-4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>トーラス型ネットワークにおける並列性能測定</title>
+      <link>/publications/2010/untitled-9/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/untitled-9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>メモリ効率の良いデータ構造を用いたロバストなボクセル化アルゴリズム</title>
+      <link>/publications/2010/untitled-8/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/untitled-8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>レベルセットに基づいたLagrangian-Eulerian連成手法の接触モデルについての検討（Folded Airbag Deploymentの3次元解析に向けて）</title>
+      <link>/publications/2010/lagrangian-eulerian-folded-airbag-deployment-3/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/lagrangian-eulerian-folded-airbag-deployment-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>レベルセット関数を用いたpartitioned coupling algorithmのfolded airbag deploymentへの適用</title>
+      <link>/publications/2010/partitioned-coupling-algorithm-folded-airbag-deployment/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/partitioned-coupling-algorithm-folded-airbag-deployment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大規模データのリモートインタラクティブ可視化</title>
+      <link>/publications/2010/untitled-5/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/untitled-5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大規模データのリモートインタラクティブ可視化</title>
+      <link>/publications/2010/untitled-7/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/untitled-7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>布形状を考慮した絞り染め模様のシミュレータ</title>
+      <link>/publications/2010/untitled-6/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/untitled-6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>縄文式土器に対する工業用CT装置を用いたデジタル・アーカイブ方式の提案</title>
+      <link>/publications/2010/ct-2/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/ct-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>縄文式土器に対する工業用CT装置を用いたデジタル・アーカイブ方式の提案</title>
+      <link>/publications/2010/ct/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/ct/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>製品開発におけるCFD活用の視点</title>
+      <link>/publications/2010/cfd/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/cfd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>設計を加速するデジタルエンジニアリング技術の開発</title>
+      <link>/publications/2010/untitled-3/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/untitled-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>設計品質を高めるシミュレータ活用のために</title>
+      <link>/publications/2010/untitled-2/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/untitled-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>非水密なポリゴン要素で構成された任意形状周りの直交格子を用いた非圧縮粘性流れ解析</title>
+      <link>/publications/2010/untitled/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>高ユーザビリティを目指す大規模並列シミュレータの開発インフラSPHERE</title>
+      <link>/publications/2010/sphere/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/sphere/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>鼻腔内気流のボクセルシミュレーション</title>
+      <link>/publications/2010/untitled-10/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/untitled-10/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>鼻腔内気流のボクセルシミュレーション</title>
+      <link>/publications/2010/untitled-11/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publications/2010/untitled-11/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>3D Partitioned FSI Simulation Using Level Set Function on Eulerian Mesh</title>
+      <link>/publications/2009/3d-partitioned-fsi-simulation-using-level-set-function-on-eulerian-mesh/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/3d-partitioned-fsi-simulation-using-level-set-function-on-eulerian-mesh/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Decomposition Approach for Optimizing Large-Scale Parallel Image Composition on Multi-Core MPP Systems</title>
+      <link>/publications/2009/a-decomposition-approach-for-optimizing-large-scale-parallel-image-composition-o/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/a-decomposition-approach-for-optimizing-large-scale-parallel-image-composition-o/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A fixed mesh approach using level set function for fluid domains divided by large-deformable thin elastic structure</title>
+      <link>/publications/2009/a-fixed-mesh-approach-using-level-set-function-for-fluid-domains-divided-by-larg/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/a-fixed-mesh-approach-using-level-set-function-for-fluid-domains-divided-by-larg/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Fixed Mesh Approach using Level Set Function for Fluid Domains divided by Large-Deformable Thin Elastic Structure</title>
+      <link>/publications/2009/a-fixed-mesh-approach-using-level-set-function-for-fluid-domains-divided-by-larg-2/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/a-fixed-mesh-approach-using-level-set-function-for-fluid-domains-divided-by-larg-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A framework for parallel flow computation with multi-box layout</title>
+      <link>/publications/2009/a-framework-for-parallel-flow-computation-with-multi-box-layout/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/a-framework-for-parallel-flow-computation-with-multi-box-layout/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>An Application of Photo Realistic Water Surface Interaction Using Mixed Reality</title>
+      <link>/publications/2009/an-application-of-photo-realistic-water-surface-interaction-using-mixed-reality/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/an-application-of-photo-realistic-water-surface-interaction-using-mixed-reality/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computer-Generated Tie-Dyeing Pattern</title>
+      <link>/publications/2009/computer-generated-tie-dyeing-pattern/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/computer-generated-tie-dyeing-pattern/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development of a Framework for Parallel Simulators with Various Physics and its Performance</title>
+      <link>/publications/2009/development-of-a-framework-for-parallel-simulators-with-various-physics-and-its/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/development-of-a-framework-for-parallel-simulators-with-various-physics-and-its/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development of Finite Element framework for the Application Middleware &#34;SPHERE&#34;</title>
+      <link>/publications/2009/development-of-finite-element-framework-for-the-application-middleware-sphere/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/development-of-finite-element-framework-for-the-application-middleware-sphere/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Direct 3D Manipulation for Volume Segmentation using Mixed Reality</title>
+      <link>/publications/2009/direct-3d-manipulation-for-volume-segmentation-using-mixed-reality/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/direct-3d-manipulation-for-volume-segmentation-using-mixed-reality/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FSI問題のためのレベルセット仮想粒子による滑り無し条件を考慮した界面処理</title>
+      <link>/publications/2009/fsi/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/fsi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Modeling and Simulation of the Tissue Ablation in High Intensity Focused Ultrasound Therapy with Array Transducer</title>
+      <link>/publications/2009/modeling-and-simulation-of-the-tissue-ablation-in-high-intensity-focused-ultraso/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/modeling-and-simulation-of-the-tissue-ablation-in-high-intensity-focused-ultraso/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Numerical Simulation of High Intensity Focused Ultrasound Therapy with Volume Model of Human Body</title>
+      <link>/publications/2009/numerical-simulation-of-high-intensity-focused-ultrasound-therapy-with-volume-mo/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/numerical-simulation-of-high-intensity-focused-ultrasound-therapy-with-volume-mo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Numerical Simulation of Therapeutic Ultrasound</title>
+      <link>/publications/2009/numerical-simulation-of-therapeutic-ultrasound/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/numerical-simulation-of-therapeutic-ultrasound/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Numerical study on high intensity focused ultrasound therapy using array transducer</title>
+      <link>/publications/2009/numerical-study-on-high-intensity-focused-ultrasound-therapy-using-array-transdu/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/numerical-study-on-high-intensity-focused-ultrasound-therapy-using-array-transdu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Performance Evaluation of Large-Scale Parallel Image Compositing on a T2K Open Supercomputer</title>
+      <link>/publications/2009/performance-evaluation-of-large-scale-parallel-image-compositing-on-a-t2k-open-s-2/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/performance-evaluation-of-large-scale-parallel-image-compositing-on-a-t2k-open-s-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Performance Evaluation of Large-Scale Parallel Image Compositing on a T2K Open Supercomputer</title>
       <link>/publications/2009/performance-evaluation-of-large-scale-parallel-image-compositing-on-a-t2k-open-s/</link>
       <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
       <guid>/publications/2009/performance-evaluation-of-large-scale-parallel-image-compositing-on-a-t2k-open-s/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Transonic Aeroelastic Computations of a Delta Wing Configuration with High Fidelity Equations</title>
+      <link>/publications/2009/transonic-aeroelastic-computations-of-a-delta-wing-configuration-with-high-fidel/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/transonic-aeroelastic-computations-of-a-delta-wing-configuration-with-high-fidel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wind Tunnel Testing of {JSAE} Standard Low-aerodynamic-drag Vehicle Body Using 1/5 Scale Model</title>
+      <link>/publications/2009/wind-tunnel-testing-of-jsae-standard-low-aerodynamic-drag-vehicle-body-using-1-5/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/wind-tunnel-testing-of-jsae-standard-low-aerodynamic-drag-vehicle-body-using-1-5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>シミュレーション結果の可視化ソフトウェア　V-Isio</title>
+      <link>/publications/2009/v-isio/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/v-isio/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>セマンティックログを用いた可視化システム診断のすすめ</title>
+      <link>/publications/2009/untitled-7/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/untitled-7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ボリュームデータを用いたシームレスな流体シミュレーション環境</title>
+      <link>/publications/2009/untitled-8/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/untitled-8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>外側の空気の影響を考慮したエアバック展開シミュレーション</title>
+      <link>/publications/2009/untitled-5/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/untitled-5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大変形する薄い弾性構造を介した流体領域に対する固定メッシュアプローチ</title>
+      <link>/publications/2009/untitled-9/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/untitled-9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>強力集束超音波による腫瘍焼灼のシミュレーション</title>
+      <link>/publications/2009/untitled-2/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/untitled-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>接触を考慮した大変形FSI解析のための固定メッシュに基づくpartitioned solution methodの開発</title>
+      <link>/publications/2009/fsi-partitioned-solution-method/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/fsi-partitioned-solution-method/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>次世代スパコン向け超大規模データの可視化手法</title>
+      <link>/publications/2009/untitled-3/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/untitled-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>熱流体解析による製品開発の意志決定支援</title>
+      <link>/publications/2009/untitled/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>組織の加熱凝固を考慮したHIFU治療シミュレーション</title>
+      <link>/publications/2009/hifu-2/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/hifu-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>高密度焦点式超音波療法において組織の加熱凝固が音場に与える影響</title>
+      <link>/publications/2009/untitled-6/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/untitled-6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>高密度焦点式超音波療法の支援に向けたHIFUシミュレーションシステムの開発</title>
+      <link>/publications/2009/hifu/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/hifu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>鼻腔内気流の数値シミュレーション</title>
+      <link>/publications/2009/untitled-4/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publications/2009/untitled-4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Strategy of Software Infrastructure Technology Enabling Peta-Scale Computing</title>
+      <link>/publications/2008/a-strategy-of-software-infrastructure-technology-enabling-peta-scale-computing-2/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/a-strategy-of-software-infrastructure-technology-enabling-peta-scale-computing-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Strategy of Software Infrastructure Technology Enabling Peta-Scale Computing</title>
+      <link>/publications/2008/a-strategy-of-software-infrastructure-technology-enabling-peta-scale-computing/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/a-strategy-of-software-infrastructure-technology-enabling-peta-scale-computing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Coupled Analysis of High-Speed Flow and Large-Deformable Structure using Partitioned Solution Method with Level Set Function</title>
+      <link>/publications/2008/coupled-analysis-of-high-speed-flow-and-large-deformable-structure-using-partiti/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/coupled-analysis-of-high-speed-flow-and-large-deformable-structure-using-partiti/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Design of cooperative visualization environment with intensive data management in project lifecycle</title>
+      <link>/publications/2008/design-of-cooperative-visualization-environment-with-intensive-data-management-i/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/design-of-cooperative-visualization-environment-with-intensive-data-management-i/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eye Tracking Based Automatic ROI Detection and Streamline Seeding in Large Flow Field Visualization</title>
+      <link>/publications/2008/eye-tracking-based-automatic-roi-detection-and-streamline-seeding-in-large-flow/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/eye-tracking-based-automatic-roi-detection-and-streamline-seeding-in-large-flow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Feature extraction and ROI identification for large-scale flow visualization</title>
+      <link>/publications/2008/feature-extraction-and-roi-identification-for-large-scale-flow-visualization/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/feature-extraction-and-roi-identification-for-large-scale-flow-visualization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>High Intensity Focused Ultrasound in a Human Body</title>
+      <link>/publications/2008/high-intensity-focused-ultrasound-in-a-human-body/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/high-intensity-focused-ultrasound-in-a-human-body/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Immersed Pressure Loss Boundary Condition on Cartesian Grid</title>
+      <link>/publications/2008/immersed-pressure-loss-boundary-condition-on-cartesian-grid/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/immersed-pressure-loss-boundary-condition-on-cartesian-grid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MultiBox - 直交等間隔格子を用いた大規模並列計算フレームワーク</title>
+      <link>/publications/2008/multibox/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/multibox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Performance of Multicolor SOR Method for Poisson&#39;s Equation on Shared and Distributed Memory Parallel Environment</title>
+      <link>/publications/2008/performance-of-multicolor-sor-method-for-poisson-s-equation-on-shared-and-distri/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/performance-of-multicolor-sor-method-for-poisson-s-equation-on-shared-and-distri/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>pFTT-AMRによる円柱回りの流れ</title>
+      <link>/publications/2008/pftt-amr/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/pftt-amr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>pFTT解適合格子による円柱回りの流れのシミュレーション</title>
+      <link>/publications/2008/pftt/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/pftt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shape Representation by Singed Distance Function for Immersed Boundary Method</title>
+      <link>/publications/2008/shape-representation-by-singed-distance-function-for-immersed-boundary-method/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/shape-representation-by-singed-distance-function-for-immersed-boundary-method/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Simulation framework for large scale coupled analysis</title>
+      <link>/publications/2008/simulation-framework-for-large-scale-coupled-analysis/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/simulation-framework-for-large-scale-coupled-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SPHEREフレームワークの非構造格子計算法への拡張</title>
+      <link>/publications/2008/sphere/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/sphere/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Theoretical and Practical Performance and Scalability Analyses of Binary-Swap image Composition Method on IBM Blue Gene/L</title>
+      <link>/publications/2008/theoretical-and-practical-performance-and-scalability-analyses-of-binary-swap-im/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/theoretical-and-practical-performance-and-scalability-analyses-of-binary-swap-im/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Toward development of software infrastructure to enable peta-scale life science simulation</title>
+      <link>/publications/2008/toward-development-of-software-infrastructure-to-enable-peta-scale-life-science-2/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/toward-development-of-software-infrastructure-to-enable-peta-scale-life-science-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Toward development of software infrastructure to enable peta-scale life science simulation</title>
+      <link>/publications/2008/toward-development-of-software-infrastructure-to-enable-peta-scale-life-science/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/toward-development-of-software-infrastructure-to-enable-peta-scale-life-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>V-Xgenの機能と操作方法</title>
+      <link>/publications/2008/v-xgen/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/v-xgen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>アプリケーションミドルウェアを用いた大規模並列流体シミュレータの開発</title>
+      <link>/publications/2008/untitled-3/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>アレイトランスデューサを利用したHIFU療法に対する数値計算</title>
+      <link>/publications/2008/hifu/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/hifu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ペタスケールシミュレーションのソフトウェア基盤</title>
+      <link>/publications/2008/untitled-4/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ペタスケールシミュレーションを支えるソフトウェア技術</title>
+      <link>/publications/2008/untitled-2/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ボクセルベース流体解析システムの進展</title>
+      <link>/publications/2008/untitled-8/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ボリュームベースの流体解析システムの進展</title>
+      <link>/publications/2008/untitled-13/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-13/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>レベルセット仮想粒子による界面処理を用いた固定メッシュに基づく流体構造連成解析手法の開発</title>
+      <link>/publications/2008/untitled/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>レベルセット関数を利用したエアバッグ展開シミュレーション</title>
+      <link>/publications/2008/untitled-18/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-18/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>レベルセット関数を利用した高速流と大変形するシェルの連成解析</title>
+      <link>/publications/2008/untitled-24/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-24/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>レベルセット関数を用いた流体と大変形する弾性構造の連成解析</title>
+      <link>/publications/2008/untitled-23/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-23/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>固定メッシュに基づくpartitioned solution methodによる3次元大変形FSI解析（流体コードの並列化に関する検討）</title>
+      <link>/publications/2008/partitioned-solution-method-3-fsi/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/partitioned-solution-method-3-fsi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大変形FSI解析のためのレベルセット粒子による界面処理</title>
+      <link>/publications/2008/fsi/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/fsi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大規模ボリュームデータのout of core線画レンダリング</title>
+      <link>/publications/2008/out-of-core/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/out-of-core/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大規模並列連成シミュレータのための開発支援・実行環境ミドルウェアの開発</title>
+      <link>/publications/2008/untitled-12/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-12/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大規模計算におけるアプリケーション開発と可視化について</title>
+      <link>/publications/2008/untitled-6/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>強力集束超音波の数値計算-焦点制御</title>
+      <link>/publications/2008/untitled-16/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-16/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>未来をきり拓くシミュレーション技術</title>
+      <link>/publications/2008/untitled-5/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>次世代HPCにおける大規模データの可視化環境</title>
+      <link>/publications/2008/hpc/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/hpc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>次世代シミュレーションを支援する大規模データ・プロセスマネジメントシステムの開発</title>
+      <link>/publications/2008/untitled-7/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>熱流体・構造連成解析システムの開発と自動車技術への応用</title>
+      <link>/publications/2008/untitled-11/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-11/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>生体情報を利用した超音波伝播シミュレータの開発</title>
+      <link>/publications/2008/untitled-20/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-20/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>生命体ソフトウェア開発と可視化の環境について</title>
+      <link>/publications/2008/untitled-17/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-17/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>直交格子を用いた薄い物体周りの非圧縮流れ計算の検討</title>
+      <link>/publications/2008/untitled-19/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-19/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>符号付き距離関数を利用したエアバッグ展開のシミュレーション</title>
+      <link>/publications/2008/untitled-9/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>臓器全身スケールのマルチスケールシミュレータの構築に向けて</title>
+      <link>/publications/2008/untitled-10/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-10/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>複数の伝達関数を用いた流体シミュレーションのボリュームレンダリング</title>
+      <link>/publications/2008/untitled-14/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-14/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>視線に基づく関心領域の特定と流れの可視化への適用</title>
+      <link>/publications/2008/untitled-21/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-21/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>視線情報を用いた非定常流における流脈線と流跡線の自動配置</title>
+      <link>/publications/2008/untitled-25/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-25/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>超並列システムでのソート・ラスト式イメージ重畳手法の性能評価</title>
+      <link>/publications/2008/untitled-15/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-15/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>高密度焦点式超音波療法の支援に向けたシミュレーション</title>
+      <link>/publications/2008/untitled-22/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publications/2008/untitled-22/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cartesian Approach for Large-scale CFD; Issues and Advantages</title>
+      <link>/publications/2007/cartesian-approach-for-large-scale-cfd-issues-and-advantages/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/cartesian-approach-for-large-scale-cfd-issues-and-advantages/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cartesian Grid Generation Towards Large-Scale Practical Flow Simulations</title>
+      <link>/publications/2007/cartesian-grid-generation-towards-large-scale-practical-flow-simulations-2/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/cartesian-grid-generation-towards-large-scale-practical-flow-simulations-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cartesian Grid Generation Towards Large-Scale Practical Flow Simulations</title>
+      <link>/publications/2007/cartesian-grid-generation-towards-large-scale-practical-flow-simulations/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/cartesian-grid-generation-towards-large-scale-practical-flow-simulations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development of a framework for parallel simulators with various physics and its performance</title>
+      <link>/publications/2007/development-of-a-framework-for-parallel-simulators-with-various-physics-and-its-2/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/development-of-a-framework-for-parallel-simulators-with-various-physics-and-its-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development of a framework for parallel simulators with various physics and its performance</title>
+      <link>/publications/2007/development-of-a-framework-for-parallel-simulators-with-various-physics-and-its/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/development-of-a-framework-for-parallel-simulators-with-various-physics-and-its/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Extracting and Visualizing Fluid Flow Features in Simulations for Industrial and Engineering Design</title>
+      <link>/publications/2007/extracting-and-visualizing-fluid-flow-features-in-simulations-for-industrial-and/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/extracting-and-visualizing-fluid-flow-features-in-simulations-for-industrial-and/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fast Large Scale Voxelization using a Pedigree</title>
+      <link>/publications/2007/fast-large-scale-voxelization-using-a-pedigree/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/fast-large-scale-voxelization-using-a-pedigree/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Numerical Simulation of Multiple Fluids Flow by Diffuse Interface Model</title>
+      <link>/publications/2007/numerical-simulation-of-multiple-fluids-flow-by-diffuse-interface-model/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/numerical-simulation-of-multiple-fluids-flow-by-diffuse-interface-model/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>pFTTデータ構造によるAMRシミュレーションと時間計測</title>
+      <link>/publications/2007/pftt-amr/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/pftt-amr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>pFTTデータ構造のライブラリ実装と性能評価</title>
+      <link>/publications/2007/pftt/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/pftt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>pFTTデータ構造を用いたAMRシミュレーション</title>
+      <link>/publications/2007/pftt-amr-2/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/pftt-amr-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reliability of Compressible Flow/Structure Coupling Method on Cartesian Grid with Signed Distance Field</title>
+      <link>/publications/2007/reliability-of-compressible-flow-structure-coupling-method-on-cartesian-grid-wit/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/reliability-of-compressible-flow-structure-coupling-method-on-cartesian-grid-wit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Simulations with Adaptive Mesh Refinement using pFTT Data Structure</title>
+      <link>/publications/2007/simulations-with-adaptive-mesh-refinement-using-pftt-data-structure/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/simulations-with-adaptive-mesh-refinement-using-pftt-data-structure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The Fluid-Structure Interacting Simulations with the Immersed Interface Method on a Cartesian Grid</title>
+      <link>/publications/2007/the-fluid-structure-interacting-simulations-with-the-immersed-interface-method-o/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/the-fluid-structure-interacting-simulations-with-the-immersed-interface-method-o/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unreveal the secret of Gyroball</title>
+      <link>/publications/2007/unreveal-the-secret-of-gyroball/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/unreveal-the-secret-of-gyroball/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>オブジェクト指向並列化クラスライブラリの開発と性能評価</title>
+      <link>/publications/2007/untitled-2/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/untitled-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>オブジェクト指向並列化クラスライブラリの開発と性能評価</title>
+      <link>/publications/2007/untitled-9/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/untitled-9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ボクセルベース熱流体解析システムの開発と適用事例</title>
+      <link>/publications/2007/untitled-5/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/untitled-5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>レベルセット関数を利用したPartitioned Solution Methodによる流体構造連成解析</title>
+      <link>/publications/2007/partitioned-solution-method/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/partitioned-solution-method/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>レベルセット関数を利用した流体構造連成解析における界面の扱いに対する検討</title>
+      <link>/publications/2007/untitled-10/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/untitled-10/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>レベルセット関数を用いた流体と大変形する弾性構造の連成解析</title>
+      <link>/publications/2007/untitled-8/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/untitled-8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>可視化情報学会　先端可視化研究会</title>
+      <link>/publications/2007/untitled-7/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/untitled-7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大規模並列連成シミュレータのための開発支援・実行環境ミドルウェアの開発</title>
+      <link>/publications/2007/untitled-12/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/untitled-12/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>循環器系マルチスケールシミュレータの構築に向けて</title>
+      <link>/publications/2007/untitled-4/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/untitled-4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>理化学研究所における熱流体解析システムの開発</title>
+      <link>/publications/2007/untitled-6/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/untitled-6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>直交格子を用いた非圧縮流れ解析における圧力損失モデルの実装</title>
+      <link>/publications/2007/untitled/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>臓器全身スケール医療支援シミュレータの応用に向けて</title>
+      <link>/publications/2007/untitled-3/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/untitled-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>視線情報を利用した3次元流れ場における関心領域の取得と流線の自動配置</title>
+      <link>/publications/2007/3/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>高密度焦点式超音波療法の支援に向けたシミュレーション技術開発</title>
+      <link>/publications/2007/untitled-11/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publications/2007/untitled-11/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A seamless CFD system coupling with the implicit function</title>
+      <link>/publications/2006/a-seamless-cfd-system-coupling-with-the-implicit-function/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/a-seamless-cfd-system-coupling-with-the-implicit-function/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Get understanding about physical phenomena with CG</title>
+      <link>/publications/2006/get-understanding-about-physical-phenomena-with-cg/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/get-understanding-about-physical-phenomena-with-cg/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Numerical Analysis of Medical Ultrasound with Navier-Stokes Equation</title>
+      <link>/publications/2006/numerical-analysis-of-medical-ultrasound-with-navier-stokes-equation/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/numerical-analysis-of-medical-ultrasound-with-navier-stokes-equation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Numerical Analysis on Ultrasound Propagation and Temperature Rise in Focused Ultrasound Treatment with Navier-Stokes Equation</title>
+      <link>/publications/2006/numerical-analysis-on-ultrasound-propagation-and-temperature-rise-in-focused-ult/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/numerical-analysis-on-ultrasound-propagation-and-temperature-rise-in-focused-ult/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>pFTTデータ構造によるオクツリー解適合格子を用いたシミュレーション</title>
+      <link>/publications/2006/pftt-3/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/pftt-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>pFTTデータ構造を用いたオクツリー解適合格子によるシミュレーション</title>
+      <link>/publications/2006/pftt-2/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/pftt-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>pFTTデータ構造を用いた八分木解適合格子によるシミュレーション</title>
+      <link>/publications/2006/pftt/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/pftt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SPHERE - 物理シミュレーションのフレームワークと実行環境の開発</title>
+      <link>/publications/2006/sphere/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/sphere/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SPHERE -シミュレーションの開発・実行支援環境-</title>
+      <link>/publications/2006/sphere-2/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/sphere-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The fluid-structure interacting simulations with the immersed interface method on a Cartesian grid</title>
+      <link>/publications/2006/the-fluid-structure-interacting-simulations-with-the-immersed-interface-method-o/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/the-fluid-structure-interacting-simulations-with-the-immersed-interface-method-o/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Transonic Aeroelastic Computations of a Delta Wing Configuration with High Fidelity Equations</title>
+      <link>/publications/2006/transonic-aeroelastic-computations-of-a-delta-wing-configuration-with-high-fidel/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/transonic-aeroelastic-computations-of-a-delta-wing-configuration-with-high-fidel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ボクセル法を用いた非圧縮流れ解析の境界条件の実装方法</title>
+      <link>/publications/2006/untitled-5/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/untitled-5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>可視化ソフトウェアvfVisの開発</title>
+      <link>/publications/2006/vfvis/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/vfvis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>可視化研究の動向と次世代可視化システム</title>
+      <link>/publications/2006/untitled-2/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/untitled-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大規模ボクセルデータの高速生成アルゴリズム</title>
+      <link>/publications/2006/untitled-8/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/untitled-8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>微小圧縮性による流体音の解析</title>
+      <link>/publications/2006/untitled-6/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/untitled-6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>機能情報シミュレーション：新しいシミュレーション技術と知識創出の枠組みを創る</title>
+      <link>/publications/2006/untitled-3/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/untitled-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>複雑形状に対するボクセル法に基づく非圧縮流れ解析の境界条件の実装方法</title>
+      <link>/publications/2006/untitled/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>距離関数を利用した流体構造連成解析法の信頼性評価</title>
+      <link>/publications/2006/untitled-7/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/untitled-7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>陰関数形状表現にもとづくボクセル解析のためのCAEフレームワーク</title>
+      <link>/publications/2006/cae/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/cae/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>集束超音波医療における温度上昇の数値解析</title>
+      <link>/publications/2006/untitled-4/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publications/2006/untitled-4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SPHERE::物理シミュレーションプログラム開発のフレームワーク</title>
+      <link>/publications/2005/sphere/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>/publications/2005/sphere/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>V-FLOW::SPHERE物理と工学研究のソルバーフレームワーク</title>
+      <link>/publications/2005/v-flow-sphere/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>/publications/2005/v-flow-sphere/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>VCADデータによる熱流体解析V-FLOW</title>
+      <link>/publications/2005/vcad-v-flow/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>/publications/2005/vcad-v-flow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Voxel Approach to simulate Flows Using V-CAD</title>
+      <link>/publications/2005/voxel-approach-to-simulate-flows-using-v-cad/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>/publications/2005/voxel-approach-to-simulate-flows-using-v-cad/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ビジュアルデータマイニング支援によるPSEの構築</title>
+      <link>/publications/2005/pse/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>/publications/2005/pse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ボクセルベース次世代可視化システム構想</title>
+      <link>/publications/2005/untitled/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>/publications/2005/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>マルチプラットホーム可視化APIの設計と開発</title>
+      <link>/publications/2005/api/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>/publications/2005/api/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>次世代可視化プラットホーム</title>
+      <link>/publications/2005/untitled-3/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>/publications/2005/untitled-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>視線情報に基づく流れの可視化システム</title>
+      <link>/publications/2005/untitled-2/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>/publications/2005/untitled-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>視線情報に基づく流れ場のストリームライン配置</title>
+      <link>/publications/2005/untitled-4/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>/publications/2005/untitled-4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Application of Cartesian Grid Method to Automobile Design</title>
+      <link>/publications/2004/application-of-cartesian-grid-method-to-automobile-design/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/publications/2004/application-of-cartesian-grid-method-to-automobile-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automotive CFD Application Based on Cartesian Grid Method and Related Issues</title>
+      <link>/publications/2004/automotive-cfd-application-based-on-cartesian-grid-method-and-related-issues/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/publications/2004/automotive-cfd-application-based-on-cartesian-grid-method-and-related-issues/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Benchmark of CFD software from a viewpoint of user site</title>
+      <link>/publications/2004/benchmark-of-cfd-software-from-a-viewpoint-of-user-site/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/publications/2004/benchmark-of-cfd-software-from-a-viewpoint-of-user-site/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CFDの深みにはまった経験</title>
+      <link>/publications/2004/cfd/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/publications/2004/cfd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development of CFD System with Feedback Concept on Product Design</title>
+      <link>/publications/2004/development-of-cfd-system-with-feedback-concept-on-product-design/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/publications/2004/development-of-cfd-system-with-feedback-concept-on-product-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Numerical Study of Water Mist Fire Suppression System,&#34; The 5th International Conference on Multiphase Flow</title>
+      <link>/publications/2004/numerical-study-of-water-mist-fire-suppression-system-the-5th-international-conf/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/publications/2004/numerical-study-of-water-mist-fire-suppression-system-the-5th-international-conf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Role of Fluid Dynamics Technology in Automobile Design</title>
+      <link>/publications/2004/role-of-fluid-dynamics-technology-in-automobile-design/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/publications/2004/role-of-fluid-dynamics-technology-in-automobile-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ボリュームデータを用いた流体解析システムの可能性</title>
+      <link>/publications/2004/untitled/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/publications/2004/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>画像重畳装置とクラスタ装置を使った高速可視化システムの開発</title>
+      <link>/publications/2004/untitled-3/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/publications/2004/untitled-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>重畳装置を用いたインタラクティブボリュームレンダリングの性能評価</title>
+      <link>/publications/2004/untitled-2/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/publications/2004/untitled-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>非定常大規模データのインタラクティブ可視化システムの開発</title>
+      <link>/publications/2004/untitled-4/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/publications/2004/untitled-4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>An interactive volume visualization system for transient flow analysis</title>
+      <link>/publications/2003/an-interactive-volume-visualization-system-for-transient-flow-analysis/</link>
+      <pubDate>Wed, 01 Jan 2003 00:00:00 +0000</pubDate>
+      <guid>/publications/2003/an-interactive-volume-visualization-system-for-transient-flow-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>シミュレーションの精度と利用価値</title>
+      <link>/publications/2003/untitled-3/</link>
+      <pubDate>Wed, 01 Jan 2003 00:00:00 +0000</pubDate>
+      <guid>/publications/2003/untitled-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>自動車における流体技術の役割</title>
+      <link>/publications/2003/untitled-2/</link>
+      <pubDate>Wed, 01 Jan 2003 00:00:00 +0000</pubDate>
+      <guid>/publications/2003/untitled-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>自動車設計における空力音予測の研究動向</title>
+      <link>/publications/2003/untitled/</link>
+      <pubDate>Wed, 01 Jan 2003 00:00:00 +0000</pubDate>
+      <guid>/publications/2003/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>設計利用のためのインタラクティブボリュームレンダリングシステムの開発</title>
+      <link>/publications/2003/untitled-4/</link>
+      <pubDate>Wed, 01 Jan 2003 00:00:00 +0000</pubDate>
+      <guid>/publications/2003/untitled-4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CFDの自動化（自動車を例にとって）</title>
+      <link>/publications/2002/cfd/</link>
+      <pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate>
+      <guid>/publications/2002/cfd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Construction of Rapid Simulation Tool for Automotive CFD</title>
+      <link>/publications/2002/construction-of-rapid-simulation-tool-for-automotive-cfd/</link>
+      <pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate>
+      <guid>/publications/2002/construction-of-rapid-simulation-tool-for-automotive-cfd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Turbulent Diffusion Process of Inert Gas and Water Mist</title>
+      <link>/publications/2002/turbulent-diffusion-process-of-inert-gas-and-water-mist/</link>
+      <pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate>
+      <guid>/publications/2002/turbulent-diffusion-process-of-inert-gas-and-water-mist/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>設計における直交格子法の利用</title>
+      <link>/publications/2002/untitled-2/</link>
+      <pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate>
+      <guid>/publications/2002/untitled-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>設計技術を支える数値流体力学</title>
+      <link>/publications/2002/untitled/</link>
+      <pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate>
+      <guid>/publications/2002/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Visualization of the Behavior of Noise Source for an automotive wind noise</title>
+      <link>/publications/2001/a-visualization-of-the-behavior-of-noise-source-for-an-automotive-wind-noise-2/</link>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+      <guid>/publications/2001/a-visualization-of-the-behavior-of-noise-source-for-an-automotive-wind-noise-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Visualization of the Behavior of Noise Source for an automotive wind noise</title>
+      <link>/publications/2001/a-visualization-of-the-behavior-of-noise-source-for-an-automotive-wind-noise/</link>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+      <guid>/publications/2001/a-visualization-of-the-behavior-of-noise-source-for-an-automotive-wind-noise/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>An Application of Volume Rendering Visualization to the Thermal Flow Analysis in a Vehicle Cabin</title>
+      <link>/publications/2001/an-application-of-volume-rendering-visualization-to-the-thermal-flow-analysis-in/</link>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+      <guid>/publications/2001/an-application-of-volume-rendering-visualization-to-the-thermal-flow-analysis-in/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unsteady CFD analysis around a circular cylinder at various Reynolds numbers</title>
+      <link>/publications/2001/unsteady-cfd-analysis-around-a-circular-cylinder-at-various-reynolds-numbers/</link>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+      <guid>/publications/2001/unsteady-cfd-analysis-around-a-circular-cylinder-at-various-reynolds-numbers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Visualization of Thermal Flows in an Automotive Cabin with Volume Rendering Method</title>
+      <link>/publications/2001/visualization-of-thermal-flows-in-an-automotive-cabin-with-volume-rendering-meth/</link>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+      <guid>/publications/2001/visualization-of-thermal-flows-in-an-automotive-cabin-with-volume-rendering-meth/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>自動車の性能設計を支えるCFDと可視化技術</title>
+      <link>/publications/2001/cfd/</link>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+      <guid>/publications/2001/cfd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prediction of Cooling Airflow Rate through the Front Grille Using Flow Analysis with a Multi-Level Mesh System</title>
+      <link>/publications/2000/prediction-of-cooling-airflow-rate-through-the-front-grille-using-flow-analysis/</link>
+      <pubDate>Sat, 01 Jan 2000 00:00:00 +0000</pubDate>
+      <guid>/publications/2000/prediction-of-cooling-airflow-rate-through-the-front-grille-using-flow-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>エアクリーナ雪入り予測手法の開発</title>
+      <link>/publications/2000/untitled/</link>
+      <pubDate>Sat, 01 Jan 2000 00:00:00 +0000</pubDate>
+      <guid>/publications/2000/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ボリュームレンダリング法の車室内空調設計への適用</title>
+      <link>/publications/2000/untitled-3/</link>
+      <pubDate>Sat, 01 Jan 2000 00:00:00 +0000</pubDate>
+      <guid>/publications/2000/untitled-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>自動車の床下風音における音源の可視化</title>
+      <link>/publications/2000/untitled-2/</link>
+      <pubDate>Sat, 01 Jan 2000 00:00:00 +0000</pubDate>
+      <guid>/publications/2000/untitled-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>自動車設計に関わる流体問題と日産自動車における空力分野の{CFD}について</title>
+      <link>/publications/2000/cfd/</link>
+      <pubDate>Sat, 01 Jan 2000 00:00:00 +0000</pubDate>
+      <guid>/publications/2000/cfd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Applications of CFD Using Voxel Modeling to Vehicle Development</title>
+      <link>/publications/1999/applications-of-cfd-using-voxel-modeling-to-vehicle-development/</link>
+      <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
+      <guid>/publications/1999/applications-of-cfd-using-voxel-modeling-to-vehicle-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development of Techniques for Identifying the Factors Determining the Temperatures of Engine Compartment Components and for Predicting their Temperatures</title>
+      <link>/publications/1999/development-of-techniques-for-identifying-the-factors-determining-the-temperatur/</link>
+      <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
+      <guid>/publications/1999/development-of-techniques-for-identifying-the-factors-determining-the-temperatur/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prediction of wind noise radiated from passenger cars and its evaluation based on auralization</title>
+      <link>/publications/1999/prediction-of-wind-noise-radiated-from-passenger-cars-and-its-evaluation-based-o/</link>
+      <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
+      <guid>/publications/1999/prediction-of-wind-noise-radiated-from-passenger-cars-and-its-evaluation-based-o/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>An Application of Voxel Modeling Approach to Prediction of Engine Cooling Flow</title>
+      <link>/publications/1998/an-application-of-voxel-modeling-approach-to-prediction-of-engine-cooling-flow/</link>
+      <pubDate>Thu, 01 Jan 1998 00:00:00 +0000</pubDate>
+      <guid>/publications/1998/an-application-of-voxel-modeling-approach-to-prediction-of-engine-cooling-flow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prediction of wind noise radiated from passenger cars and its evaluation based on auralization</title>
+      <link>/publications/1998/prediction-of-wind-noise-radiated-from-passenger-cars-and-its-evaluation-based-o/</link>
+      <pubDate>Thu, 01 Jan 1998 00:00:00 +0000</pubDate>
+      <guid>/publications/1998/prediction-of-wind-noise-radiated-from-passenger-cars-and-its-evaluation-based-o/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flow Simulation of Passenger Cars and Auralization of Aerodynamic Noise Emitted from them</title>
+      <link>/publications/1997/flow-simulation-of-passenger-cars-and-auralization-of-aerodynamic-noise-emitted/</link>
+      <pubDate>Wed, 01 Jan 1997 00:00:00 +0000</pubDate>
+      <guid>/publications/1997/flow-simulation-of-passenger-cars-and-auralization-of-aerodynamic-noise-emitted/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computation of Aerodynamic Noise Emitted from a Door Mirror of a Passenger Car and Its Synthesis</title>
+      <link>/publications/1996/computation-of-aerodynamic-noise-emitted-from-a-door-mirror-of-a-passenger-car-a/</link>
+      <pubDate>Mon, 01 Jan 1996 00:00:00 +0000</pubDate>
+      <guid>/publications/1996/computation-of-aerodynamic-noise-emitted-from-a-door-mirror-of-a-passenger-car-a/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Improving Accuracy of Computing Flows Around an Automobile with a Cross-Wind by an Overlaid Grid Approach</title>
+      <link>/publications/1994/improving-accuracy-of-computing-flows-around-an-automobile-with-a-cross-wind-by/</link>
+      <pubDate>Sat, 01 Jan 1994 00:00:00 +0000</pubDate>
+      <guid>/publications/1994/improving-accuracy-of-computing-flows-around-an-automobile-with-a-cross-wind-by/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>三次元流れ解析によるラジエータ通過風量の予測</title>
+      <link>/publications/1993/untitled/</link>
+      <pubDate>Fri, 01 Jan 1993 00:00:00 +0000</pubDate>
+      <guid>/publications/1993/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Simultaneous Computation of the External Flow around a Car Body and the Internal Flow Through Its Engine Compartment</title>
+      <link>/publications/1992/simultaneous-computation-of-the-external-flow-around-a-car-body-and-the-internal-2/</link>
+      <pubDate>Wed, 01 Jan 1992 00:00:00 +0000</pubDate>
+      <guid>/publications/1992/simultaneous-computation-of-the-external-flow-around-a-car-body-and-the-internal-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Simultaneous Computation of the External Flow around a Car Body and the Internal Flow Through Its Engine Compartment</title>
+      <link>/publications/1992/simultaneous-computation-of-the-external-flow-around-a-car-body-and-the-internal/</link>
+      <pubDate>Wed, 01 Jan 1992 00:00:00 +0000</pubDate>
+      <guid>/publications/1992/simultaneous-computation-of-the-external-flow-around-a-car-body-and-the-internal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>くいちがい配置された２正方形柱まわりの流れ</title>
+      <link>/publications/1992/untitled/</link>
+      <pubDate>Wed, 01 Jan 1992 00:00:00 +0000</pubDate>
+      <guid>/publications/1992/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Domestic Conference</title>
+      <link>/publications/domestic-conference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/publications/domestic-conference/</guid>
+      <description>&lt;p&gt;Domestic conference publications.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>International Conference</title>
+      <link>/publications/international-conference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/publications/international-conference/</guid>
+      <description>&lt;p&gt;International conference publications.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Journal</title>
+      <link>/publications/journal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/publications/journal/</guid>
+      <description>&lt;p&gt;Journal publications.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Others</title>
+      <link>/publications/others/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/publications/others/</guid>
+      <description>&lt;p&gt;Other publication records.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -114,11 +114,12 @@ Required fields:
 - authors
 - venue/journal
 - year
-- pub_type (`journal` / `international-conference` / `domestic-conference` / `others`)
+- pub_type (`journal` / `international-conference` / `domestic-conference` / `talk` / `others`)
 - DOI or PDF
 
 Optional (for conference papers):
 - peer_reviewed (`true` / `false`)
+- annote (`invited` etc. for talks)
 
 Verify consistency and visibility.
 Also verify publications can be grouped into:
@@ -132,6 +133,8 @@ Also verify publications can be grouped into:
   - Non-Refereed
   - Unspecified
 - Others
+  - `talk` は Others に集約されること
+  - `pub_type=talk` かつ `annote=invited` で `Invited talk` が表示されること
 
 Check automation assets:
 - `data/publications.bib`

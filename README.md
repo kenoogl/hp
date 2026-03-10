@@ -66,6 +66,7 @@ make down
 - `journal`
 - `international-conference`
 - `domestic-conference`
+- `talk`
 - `others`
 
 例:
@@ -85,15 +86,7 @@ peer_reviewed: true
 
 ```bash
 cd /Users/Daily/Development/HP/lab-website
-source .venv/bin/activate
-
-python scripts/bibtex_to_markdown.py data/publications.bib --clean
-python scripts/validate_content.py
-
-deactivate
-
-make build
-make up
+./scripts/update_publications.sh  # publication を更新してページ反映
 ```
 
 `bibtex_to_markdown.py` は BibTeX の種別から `pub_type` を自動設定します。
@@ -102,6 +95,13 @@ make up
 - `@article` -> `journal`
 - `@inproceedings` / `@conference` / `@proceedings` -> `international-conference`（国内会議判定時は `domestic-conference`）
 - それ以外 -> `others`
+
+`pub_type: "talk"` を指定した場合は、表示上は `Others` カテゴリに入ります。
+`pub_type: "talk"` かつ `annote: "invited"` の場合は、一覧と詳細で `Invited talk` を表示します。
+
+ジャーナル判定ルール：
+
+- `article`はジャーナルとして判定するが、日本語処理が優先のため、日本語論文の場合には`pub_type={journal}`をbibに入れておく
 
 国内会議判定ルール（追加）:
 
@@ -114,11 +114,9 @@ make up
 - `note` / `keywords` のキーワードで推定（`non-refereed`, `査読なし` など）
 - 入力Bibファイル名で補助推定（`*_refereed.bib`, `*_non_refereed.bib`）
 
-表示上は `International Conference` と `Domestic Conference` を以下に分けて表示します。
+- タイトルの後ろにRefereedを表示する
+- `doi` / `doi_url`（または `url`）があれば詳細ページに表示する
 
-- `Refereed`
-- `Non-Refereed`
-- `Unspecified`
 
 ### 自動
 

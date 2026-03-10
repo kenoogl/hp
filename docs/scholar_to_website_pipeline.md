@@ -102,7 +102,11 @@ python scripts/validate_content.py
 - `journal`
 - `international-conference`
 - `domestic-conference`
+- `talk`
 - `others`
+
+`talk` は公開ページでは `Others` に集約表示される。
+`pub_type=talk` で `annote=invited` の場合は、一覧と詳細で `Invited talk` を表示する。
 
 `international-conference` / `domestic-conference` の場合は `peer_reviewed` も自動判定される（`true` / `false` / 未設定）。
 

@@ -32,7 +32,14 @@ def parse_args() -> argparse.Namespace:
 
 def slugify(text: str) -> str:
     slug = re.sub(r"[^a-zA-Z0-9]+", "-", text).strip("-").lower()
-    return slug[:80] if slug else "untitled"
+    if not slug:
+        return "untitled"
+    return slug[:80].strip("-") or "untitled"
+
+
+def yaml_quote(value: str) -> str:
+    # Use single-quoted YAML scalars and escape embedded single quotes.
+    return "'" + value.replace("'", "''") + "'"
 
 
 def get_venue(entry: dict) -> str:
@@ -40,8 +47,28 @@ def get_venue(entry: dict) -> str:
 
 
 def parse_year(entry: dict) -> str:
-    year = str(entry.get("year", "")).strip()
-    return year if year.isdigit() else "unknown"
+    # Prefer explicit year-like fields.
+    for key in ("year", "pub_year", "date"):
+        raw = str(entry.get(key, "")).strip()
+        if raw.isdigit() and len(raw) == 4:
+            return raw
+        m = re.search(r"(19|20)\d{2}", raw)
+        if m:
+            return m.group(0)
+
+    # Fallback: infer year from venue/note text when possible.
+    fallback_blob = " ".join(
+        [
+            str(entry.get("journal", "")),
+            str(entry.get("booktitle", "")),
+            str(entry.get("note", "")),
+        ]
+    )
+    m = re.search(r"(19|20)\d{2}", fallback_blob)
+    if m:
+        return m.group(0)
+
+    return "unknown"
 
 
 def _is_domestic_conference_venue(venue: str) -> bool:
@@ -77,7 +104,7 @@ def _contains_japanese(text: str) -> bool:
 
 def _normalize_pub_type(value: str) -> str:
     v = (value or "").strip().lower().replace("_", "-")
-    allowed = {"journal", "international-conference", "domestic-conference", "others"}
+    allowed = {"journal", "international-conference", "domestic-conference", "others", "talk"}
     return v if v in allowed else ""
 
 
@@ -160,24 +187,27 @@ def build_markdown(entry: dict, bib_path: Path) -> str:
     peer_reviewed = detect_peer_reviewed(entry, bib_path, pub_type)
     doi = entry.get("doi", "").strip()
     url = entry.get("url", "").strip()
+    annote = str(entry.get("annote", "") or entry.get("annotation", "")).strip()
 
     date = f"{year}-01-01" if year.isdigit() else "1970-01-01"
 
     lines = [
         "---",
-        f'title: "{title}"',
+        f"title: {yaml_quote(title)}",
         f'date: {date}',
-        f'authors: "{authors}"',
-        f'journal: "{venue}"',
-        f'year: "{year}"',
-        f'pub_type: "{pub_type}"',
+        f"authors: {yaml_quote(authors)}",
+        f"journal: {yaml_quote(venue)}",
+        f"year: {yaml_quote(year)}",
+        f"pub_type: {yaml_quote(pub_type)}",
     ]
     if peer_reviewed is not None:
         lines.append(f"peer_reviewed: {'true' if peer_reviewed else 'false'}")
+    if annote:
+        lines.append(f"annote: {yaml_quote(annote)}")
     if doi:
-        lines.append(f'doi: "{doi}"')
+        lines.append(f"doi: {yaml_quote(doi)}")
     if url:
-        lines.append(f'doi_url: "{url}"')
+        lines.append(f"doi_url: {yaml_quote(url)}")
     lines.extend(["---", ""])
     return "\n".join(lines) + "\n"
 

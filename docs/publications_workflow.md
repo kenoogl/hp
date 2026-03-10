@@ -131,6 +131,8 @@ python scripts/validate_content.py
 - それ以外 -> `others`
 - `journal` / `booktitle` に日本語を含む場合 -> `domestic-conference`
 - `author` に日本語を含む場合 -> `domestic-conference`
+- 明示的に `pub_type: "talk"` を指定可能（表示カテゴリは `Others`）
+- `annote: "invited"` を指定すると、`pub_type: "talk"` で `Invited talk` 表示に利用できる
 
 会議論文 (`international-conference` / `domestic-conference`) には、必要に応じて `peer_reviewed` が付与される。
 
@@ -143,6 +145,12 @@ python scripts/validate_content.py
 1. BibTeXの明示値（`peer_reviewed` / `peerreviewed` / `refereed` / `reviewed`）
 2. `note`/`keywords` 等のキーワード推定（`non-refereed`, `査読なし` など）
 3. 入力Bibファイル名ヒント（`*_non_refereed.bib`, `*_refereed.bib`）
+
+`talk` の注記表示:
+
+- `pub_type: "talk"` かつ `annote: "invited"` の場合
+  - 一覧ページ: タイトル末尾に `(Invited talk)` を表示
+  - 詳細ページ: `Talk Type: Invited talk` を表示
 
 出力先:
 
@@ -232,6 +240,8 @@ site
 - `year` と配置ディレクトリ（`publications/<year>/`）を一致させる
 - `date` は `<year>-` で始める
 - ファイル名は kebab-case を使う
-- `pub_type` は `journal` / `international-conference` / `domestic-conference` / `others` のいずれかにする
+- `pub_type` は `journal` / `international-conference` / `domestic-conference` / `talk` / `others` のいずれかにする
+- `talk` は公開ページ上では `Others` に集約される
+- `annote` を利用する場合は `invited` などの値を統一して使う
 - `international-conference` / `domestic-conference` で査読有無を表示したい場合は `peer_reviewed` を設定する（`true` / `false`）
 - 本番反映前に `site_checks` 相当の検証を通す
