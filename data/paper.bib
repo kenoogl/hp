@@ -1,0 +1,548 @@
+%% This BibTeX bibliography file was created using BibDesk.
+%% http://bibdesk.sourceforge.net/
+
+
+%% Created for keno at 2012-02-17 20:47:12 +0900
+
+%% Saved with string encoding Unicode (UTF-8)
+
+%% 査読付き学術論文
+
+@article{NONAKA2018647,
+title = "234Compositor: A flexible parallel image compositing framework for massively parallel visualization environments",
+journal = "Future Generation Computer Systems",
+volume = "82",
+pages = "647 - 655",
+year = "2018",
+issn = "0167-739X",
+doi = "https://doi.org/10.1016/j.future.2017.02.011",
+url = "http://www.sciencedirect.com/science/article/pii/S0167739X17302030",
+author = "Jorji Nonaka and Kenji Ono and Masahiro Fujita",
+keywords = "Data analytics and data mining, Large scale systems for scientific computing, Scalable computing",
+abstract = "Leading-edge HPC systems have already been generating a vast amount of time-varying complex data sets, and future-generation HPC systems are expected to produce much higher amounts of such data, thus making their visualization and analysis a much more challenging task. In such scenario, the In-situ visualization approach, where the same HPC system is used for both numerical simulation and visualization, is expected to become more a necessity than an option. On massively parallel environments, the Sort-last approach, which requires final image compositing, has become the de facto standard for parallel rendering. In this work, we present the 234Compositor, a scalable and flexible parallel image compositor framework for massively parallel rendering applications. It is composed of a single-stage power-of-two conversion mechanism based on 234 Scheduling of 3-2 and 2-1 Eliminations, and a final image gathering mechanism based on Data Padding and MPI Rank Reordering for enabling the use of MPI_Gather collective operation. In addition, the hybrid MPI/OpenMP parallelism can also be applied to take advantage of current multi-node, multi-core architecture of modern HPC systems. We confirmed the scalability of the proposed approach by evaluating a Binary-Swap implementation of 234Compositor on the K computer, a Japanese leading-edge supercomputer installed at RIKEN AICS. We also evaluated an integration with HIVE (Heterogeneously Integrated Visual-analytic Environment) in order to verify a real-world usage. From the encouraging scalability results, we expect that this approach can also be useful even on the next-generation HPC systems which may demand higher level of parallelism."
+}
+
+
+@article{MSE18,
+author = {Kenji Ono and Takanori Uchida},
+title = {High-Performance Parallel Simulation of Airflow for Complex Terrain Surface },
+journal = {Modelling and Simulation in Engineering },
+volume = {},
+number = {},
+pages = {},
+year = {2018},
+doi = {},
+
+URL = {},
+eprint = {}
+,
+abstract = {}
+}
+
+
+@article{doi:10.1142/S1793962318400068,
+author = {Nonaka, Jorji and Inacio, Eduardo C. and Ono, Kenji and Dantas, Mario A. R. and Kawashima, Yasuhiro and Kawanabe, Tomohiro and Shoji, Fumiyoshi},
+title = {Data I/O management approach for the post-hoc visualization of big simulation data results},
+journal = {International Journal of Modeling, Simulation, and Scientific Computing},
+volume = {09},
+number = {03},
+pages = {1840006},
+year = {2018},
+doi = {10.1142/S1793962318400068},
+
+URL = { 
+        https://doi.org/10.1142/S1793962318400068
+    
+},
+eprint = { 
+        https://doi.org/10.1142/S1793962318400068
+    
+}
+,
+    abstract = { Leading-edge supercomputers, such as the K computer, have generated a vast amount of simulation results, and most of these datasets were stored on the file system for the post-hoc analysis such as visualization. In this work, we first investigated the data generation trends of the K computer by analyzing some operational log data files. We verified a tendency of generating large amounts of distributed files as simulation outputs, and in most cases, the number of files has been proportional to the number of utilized computational nodes, that is, each computational node producing one or more files. Considering that the computational cost of visualization tasks is usually much smaller than that required for large-scale numerical simulations, a flexible data input/output (I/O) management mechanism becomes highly useful for the post-hoc visualization and analysis. In this work, we focused on the xDMlib data management library, and its flexible data I/O mechanism in order to enable flexible data loading of big computational climate simulation results. In the proposed approach, a pre-processing is executed on the target distributed files for generating a light-weight metadata necessary for the elaboration of the data assignment mapping used in the subsequent data loading process. We evaluated the proposed approach by using a 32-node visualization cluster, and the K computer. Besides the inevitable performance penalty associated with longer data loading time, when using smaller number of processes, there is a benefit for avoiding any data replication via copy, conversion, or extraction. In addition, users will be able to freely select any number of nodes, without caring about the number of distributed files, for the post-hoc visualization and analysis purposes. }
+}
+
+
+
+@Article{Iizuka2018,
+author="Iizuka, Mikio
+and Ono, Kenji",
+title="Influence of the phase accuracy of the coarse solver calculation on the convergence of the parareal method iteration for hyperbolic PDEs",
+journal="Computing and Visualization in Science",
+year="2018",
+month="Jun",
+day="27",
+abstract="Gander and Petcu (ESAIM Proc 25:114--129, 2008) reported that, theoretically, the convergence of the parareal method iteration for hyperbolic PDEs is strongly influenced by the phase (frequency) accuracy of the coarse solver calculation. However, no numerical study has clearly shown this. Therefore, through numerical tests, we investigate the influence of the phase accuracy of the coarse solver calculation on the convergence of the parareal method iteration for hyperbolic PDEs. First, we consider a simple harmonic motion and a multi-DOF mass-spring system (MDMSS) as examples of hyperbolic PDEs using the modified Newmark-                                                                  {\$}{\$}{\backslash}beta {\$}{\$}                                                      $\beta$                                                 method (Mizuta et al. in J JSCE 268:15--21, 1977), which can provide the exact phase of the time integration of a simple harmonic motion. Based on the results of the numerical tests, we show that the convergence of the parareal method iteration for hyperbolic PDEs is approximately independent of the parameters of parallel-in-time integration (PinT) and instead is dependent primarily on the phase accuracy of the coarse solver calculation. In addition, we show that reducing the number of bases in the reduced basis method (RBM) (Chen et al., in: Rozza (ed) Reduced order methods for modeling and computational reduction, MS and a modeling, simulation and applications, vol 9, Springer, Berlin, pp 187--214, 2014) causes the saturation of a decrease in an error during the parareal iteration for the MDMSS using the mode analysis method. The RBM is expected to make available accurate phase calculation in the coarse solver by maintaining the time step width as same as that of the fine solver. Second, we investigate whether the same saturation appears for the linear advection--diffusion equation when we use the RBM. We use the time evolution basis method in the RBM for the linear advection--diffusion equation. As a result, we show that reducing the number of bases causes the saturation of the decrease in the error in the linear advection--diffusion equation. Based on the results of the present study, an increase in the phase accuracy of the coarse solver calculation is strongly required for better convergence of the parareal method iteration for hyperbolic PDEs. Moreover, the saturation of the decrease in the error during the parareal method iteration should be overcome when using the RBM.",
+issn="1433-0369",
+doi="10.1007/s00791-018-0299-9",
+url="https://doi.org/10.1007/s00791-018-0299-9"
+}
+
+@article{takenoshita2017,
+author = {竹之下遼、原田利宣、小野謙二},
+title = {データマイニングを用いた2種類の酒類におけるWeb上の感性情報の比較と視覚化},
+journal = {日本感性工学会論文誌},
+doi = {10.5057/jjske.TJSKE-D-17-00052},
+URL = {https://www.jstage.jst.go.jp/article/jjske/advpub/0/advpub_TJSKE-D-17-00052/_pdf},
+year = {2017},
+note = {J-Stage早期公開記事, 2017.08.24}
+}
+
+@article{doi:10.1080/10618562.2016.1234046,
+author = {Seigo Imamura and Kenji Ono and Mitsuo Yokokawa},
+title = {Iterative-method performance evaluation for multiple vectors associated with a large-scale sparse matrix},
+journal = {International Journal of Computational Fluid Dynamics},
+volume = {30},
+number = {6},
+pages = {395-401},
+year = {2016},
+doi = {10.1080/10618562.2016.1234046},
+URL = {http://dx.doi.org/10.1080/10618562.2016.1234046},
+eprint = {http://dx.doi.org/10.1080/10618562.2016.1234046}
+}
+
+@inproceedings{wrro114659,
+       booktitle = {Topology-Based Methods in Visualization 2017 (TopoInVis 2017)},
+           title = {Flexible Fiber Surface: A Reeb-Free Approach},
+          author = {D Sakurai and HA Carr and K Ono and J Nonaka and T Kawanabe},
+        keywords = {Computational Topology; Topology in Visualization; Fiber Surfaces},
+             url = {http://eprints.whiterose.ac.uk/114659/},
+        abstract = {The fiber surface generalizes the popular isosurface to multi-fields, visu- alizing the pre-images as surfaces. As with isosurfaces, however, fiber surface com- ponent may suffer from visual occlusion. The flexible isosurface avoids occlusion of components by tracking them topologically in the contour tree, at some cost to user comprehension. For the fiber surface, this requires computing the Reeb space, which poses further issues in comprehension. However, the flexible isosurface can also be defined as a set of user interactions, and we extend this notion to provide the flexible fiber surface, without pre-computing the global topology. Our on-demand tracking of surfaces is Reeb-free, as it does not require the explicit computation of the Reeb graph nor Reeb space. We study our geometrical approach taking into account how the semantics in the flexible isosurface generalizes to the Reeb-free multi-field analysis.}
+}
+
+
+@Article{Hong2017,
+author="Hong, Fan
+and Bi, Chongke
+and Guo, Hanqi
+and Ono, Kenji
+and Yuan, Xiaoru",
+title="Compression-based integral curve data reuse framework for flow visualization",
+journal="Journal of Visualization",
+year="2017",
+pages="1--16",
+abstract="Currently, by default, integral curves are repeatedly re-computed in different flow visualization applications, such as FTLE field computation, source-destination queries, etc., leading to unnecessary resource cost. We present a compression-based data reuse framework for integral curves, to greatly reduce their retrieval cost, especially in a resource-limited environment. In our design, a hierarchical and hybrid compression scheme is proposed to balance three objectives, including high compression ratio, controllable error, and low decompression cost. Specifically, we use and combine digitized curve sparse representation, floating-point data compression, and octree space partitioning to adaptively achieve the objectives. Results have shown that our data reuse framework could acquire tens of times acceleration in the resource-limited environment compared to on-the-fly particle tracing, and keep controllable information loss. Moreover, our method could provide fast integral curve retrieval for more complex data, such as unstructured mesh data.",
+issn="1875-8975",
+doi="10.1007/s12650-017-0428-4",
+url="http://dx.doi.org/10.1007/s12650-017-0428-4"
+}
+
+
+@article{isobe:15:seitai,
+author="磯部 光基 and 木村 祐介 and 木村 真也 and 世良 俊博 and 横田 秀夫 and 小野 謙二 and 田中 学",
+title="鼻腔内熱流動ボクセル解析における横断面医療画像二次元補間の有効性",
+journal="生体医工学",
+ISSN="1347-443X",
+publisher="Japanese Society for Medical and Biological Engineering",
+year="2015",
+month="",
+volume="53",
+number="3",
+pages="160-167",
+URL="http://ci.nii.ac.jp/naid/130005106901/",
+DOI="10.11239/jsmbe.53.160",
+}
+
+@article{Nonaka:2015:JASSE,
+  title={Multi-Step Image Composition Approach for Sort-Last Massively Parallel Rendering},
+  author={Jorji Nonaka and Masahiro Fujita and Kenji Ono},
+  journal={Journal of Advanced Simulation in Science and Engineering},
+  volume={2},
+  number={1},
+  pages={108-125},
+  year={2015},
+  doi={10.15748/jasse.2.108}
+}
+
+@incollection{ono:2015:LNCS,
+year={2015},
+isbn={978-3-319-17352-8},
+booktitle={High Performance Computing for Computational Science -- VECPAR 2014},
+volume={8969},
+series={Lecture Notes in Computer Science},
+editor={Dayd, Michel and Marques, Osni and Nakajima, Kengo},
+doi={10.1007/978-3-319-17353-5_17},
+title={Low Byte/Flop Implementation of Iterative Solver for Sparse Matrices Derived from Stencil Computations},
+url={http://dx.doi.org/10.1007/978-3-319-17353-5_17},
+publisher={Springer International Publishing},
+keywords={Sparse matrix; Boundary condition; SIMD; Bit operation; CFD},
+author={Ono, Kenji and Chiba, Shuichi and Inoue, Shunsuke and Minami, Kazuo},
+pages={192-205},
+language={English}
+}
+
+@article{akasaka:2015:jsae,
+title = {Immersed boundary法および局所細分化格子を用いた実車形状周りの流れの短時間シミュレーション手法},
+journal = {自動車技術会論文集},
+volume = {46},
+number = {5},
+pages = {963--968},
+year = {2015},
+note = {},
+issn = {},
+doi = {},
+url = {},
+author = {赤坂 啓 and 荒木 敏弘 and 石原 裕二 and 小野 謙二},
+yomi = {Akasaka Kei and Araki Toshihiro and Ishihara Yuji and Ono, Kenji},
+annote = {refereed}
+}
+
+@article{Ono:14:procedia,
+title = "Data Centric Framework for Large-scale High-performance Parallel Computation ",
+journal = "Procedia Computer Science ",
+volume = "29",
+number = "0",
+pages = "2336 - 2350",
+year = "2014",
+note = "2014 International Conference on Computational Science ",
+issn = "1877-0509",
+doi = "http://dx.doi.org/10.1016/j.procs.2014.05.218",
+url = "http://www.sciencedirect.com/science/article/pii/S1877050914003950",
+author = "Kenji Ono and Yasuhiro Kawashima and Tomohiro Kawanabe",
+keywords = "Domain Decomposition",
+keywords = "Simulation Life Cycle",
+keywords = "File Management",
+keywords = "Computational Fluid Dynamics",
+keywords = "Middleware ",
+abstract = "Abstract Supercomputer architectures are being upgraded using different level of parallelism to improve computing performance. This makes it difficult for scientists to develop high performance code in a short time. From the viewpoint of productivity and software life cycle, a concise yet effective infrastructure is required to achieve parallel processing. In this paper, we propose a usable building block framework to build parallel applications on large-scale Cartesian data structures. The proposed framework is designed such that each process in a simulation cycle can easily access the generated data files with usable functions. This framework enables us to describe parallel applications with fewer lines of source code, and hence, it contributes to the productivity of the software. Further, this framework was considered for improving performance, and it was confirmed that the developed flow simulator based on this framework demonstrated considerably excellent weak scaling performance on the K computer. "
+}
+
+@article{tanaka:14:mus,
+	Author = {水谷 崇志，磯部 光基，田中 学，世良 俊博，小野 謙二},
+	Journal = {生体医工学},
+	Number = {1},
+	Pages = {33--41},
+	Title = {医療画像に基づく鼻腔内熱流動のボクセルシミュレーション},
+	Volume = {52},
+	Year = {2014}
+}
+
+@article{Ishikawa:2014:precedia,
+title = {Fluid Data Compression and {ROI} Detection Using Run Length Method},
+journal = {Procedia Computer Science},
+volume = {35},
+number = {0},
+pages = {1284 - 1291},
+year = {2014},
+note = {Knowledge-Based and Intelligent Information \&; Engineering Systems 18th Annual Conference, KES-2014 Gdynia, Poland, September 2014 Proceedings},
+issn = {1877-0509},
+doi = {http://dx.doi.org/10.1016/j.procs.2014.08.228},
+url = {http://www.sciencedirect.com/science/article/pii/S1877050914011934},
+author = {Ishikawa, Shota and Wu, Haiyuan and Bi, Chongke and Chen, Qian and Taki, Hirokazu and Ono, Kenji}
+}
+
+@incollection{ono:hpcpf:13,
+year={2013},
+isbn={978-3-642-38717-3},
+booktitle={High Performance Computing for Computational Science - VECPAR 2012},
+volume={7851},
+series={Lecture Notes in Computer Science},
+editor={Dayd, Michel and Marques, Osni and Nakajima, Kengo},
+doi={10.1007/978-3-642-38718-0_5},
+title={{HPC/PF - High Performance Computing Platform: An Environment That Accelerates Large-Scale Simulations}},
+url={http://dx.doi.org/10.1007/978-3-642-38718-0_5},
+publisher={Springer Berlin Heidelberg},
+author={Ono, Kenji and Kawanabe, Tomohiro and Hatada, Toshio},
+pages={23-27}
+}
+
+
+@article{Ito:CF:2013,
+title = {Automatically optimized core mapping to subdomains of domain decomposition method on multicore parallel environments},
+journal = {Computers \& Fluids},
+volume = {80},
+number = {0},
+pages = {88--93},
+year = {2013},
+note = {Selected contributions of the 23rd International Conference on Parallel Fluid Dynamics ParCFD2011},
+issn = {0045-7930},
+doi = {http://dx.doi.org/10.1016/j.compfluid.2012.04.024},
+url = {http://www.sciencedirect.com/science/article/pii/S0045793012001636},
+author = {Satoshi Ito and Kazuya Goto and Kenji Ono}
+}
+
+
+@incollection{bi:lncs:12,
+year={2012},
+isbn={978-3-642-33190-9},
+booktitle={Advances in Visual Computing},
+volume={7432},
+series={Lecture Notes in Computer Science},
+editor={Bebis, George and Boyle, Richard and Parvin, Bahram and Koracin, Darko and Fowlkes, Charless and Wang, Sen and Choi, Min-Hyung and Mantler, Stephan and Schulze, Jrgen and Acevedo, Daniel and Mueller, Klaus and Papka, Michael},
+doi={10.1007/978-3-642-33191-6_72},
+title={Interactive Control of Mesh Topology in Quadrilateral Mesh Generation Based on 2D Tensor Fields},
+url={http://dx.doi.org/10.1007/978-3-642-33191-6_72},
+publisher={Springer Berlin Heidelberg},
+author={Bi, Chongke and Sakurai, Daisuke and Takahashi, Shigeo and Ono, Kenji},
+pages={726-735}
+}
+
+
+@article{okita:11:jsme,
+	Author = {沖田 浩平，小野 謙二},
+	Journal = {日本機械学会論文集 B編},
+	Number = {781},
+	Pages = {1813--1821},
+	Title = {符号付き距離関数を形状表現に用いた流体ソルバーの精度},
+	Volume = {77},
+	Year = {2011}}
+
+@article{okita:11:IJNMF,
+	Author = {Okita, Kohei and Ono, Kenji and Takagi, Shu and Matsumoto, Yoichiro},
+	Journal = {International Journal of Numerical Methods in Fluids},
+	Pages = {43--46},
+	Title = {Development of High Intensity Focused Ultrasound Simulator for Large Scale Computing},
+	Volume = {65},
+	Year = {2011}
+}
+
+@article{ito:11:HPCS,
+	Author = {伊東 聰 and 後藤 和哉 and 小野 謙二},
+	journal = {IPSJ-HPCS201105},
+	Pages = {163--169},
+	Title = {領域分割法におけるサブドメインのノード内最適自動マッピング},
+	Volume = {},
+	Year = {2011},
+	Yomi = {Ito, Satoshi and Gotoh, Kazuya and Ono, Kenji}
+}
+
+@article{akasaka:10:JSME,
+	Author = {赤坂 啓，小野 謙二},
+	Journal = {日本機械学会論文集 B編},
+	Number = {764},
+	Pages = {536--545},
+	Title = {非水密なポリゴン要素で構成された任意形状周りの直交格子を用いた非圧縮粘性流れ解析},
+	Volume = {76},
+	Year = {2010},
+	Yomi = {Akasaka, Kei and Ono, Kenji}}
+
+@article{okita:10:IJNMF,
+	Author = {Okita, Kohei and Ono, Kenji and Takagi, Shu and Matsumoto, Yoichiro},
+	Journal = {International Journal of Numerical Methods in Fluids},
+	Pages = {1395--1411},
+	Title = {Numerical Simulation of the Tissue Ablation in High Intensity Focused Ultrasound Therapy with Array Transducer},
+	Volume = {64},
+	Year = {2010}}
+
+@article{okita:10:PP,
+	Author = {Okita, Kohei and Sugiyama, Kazuyasu and Ono, Kenji and Takagi, Shu and Matsumoto, Yoichiro},
+	Journal = {Physics Procedia},
+	Number = {1},
+	Pages = {315--322},
+	Title = {Numerical study on high intensity focused ultrasound therapy using array transducer},
+	Volume = {3},
+	Year = {2010}}
+
+@article{hashimoto:10:IMM:TAMJ,
+	Author = {Hashimoto, Gaku and Ono, Kenji},
+	Journal = {Theoretical and Applied Mechanics Japan},
+	Pages = {325--342},
+	Title = {Interface treatment under no-slip conditions using level-set virtual particles for fluid-structure interaction},
+	Volume = {58},
+	Year = {2010}
+}
+
+@inbook{Ono:10:Pcfd,
+	Author = {Ono, Kenji and Kawashima, Yasuhiro},
+	Editor = {Tromeur-Dervout, Damien and Brenner, Gunther and Emerson, David R. and Erhel, Jocelyne},
+	Note = {Multicolor SOR Method with Consecutive Memory Access Implementation in a Shared and Distributed Memory Parallel Environment},
+	Pages = {183--191},
+	Publisher = {Springer},
+	Title = {Lecture Notes in Computational Science and Engineering 74, Parallel Computational Fluid Dynamics 2008},
+  Volume = {74},
+	Year = {2010}
+  }
+
+@incollection{morimoto:vc,
+year={2010},
+isbn={978-3-642-17288-5},
+booktitle={Advances in Visual Computing},
+volume={6453},
+series={Lecture Notes in Computer Science},
+editor={Bebis, George and Boyle, Richard and Parvin, Bahram and Koracin, Darko and Chung, Ronald and Hammoud, Riad and Hussain, Muhammad and Kar-Han, Tan and Crawfis, Roger and Thalmann, Daniel and Kao, David and Avila, Lisa},
+doi={10.1007/978-3-642-17289-2_68},
+title={{Computer-Generated Tie-Dyeing Using a 3D Diffusion Graph}},
+url={http://dx.doi.org/10.1007/978-3-642-17289-2_68},
+publisher={Springer Berlin Heidelberg},
+author={Morimoto, Yuki and Ono, Kenji},
+pages={707-718},
+language={English}
+}
+
+@incollection{terashima:cfd06:06,
+year={2009},
+isbn={978-3-540-92778-5},
+booktitle={Computational Fluid Dynamics 2006},
+editor={Deconinck, Herman and Dick, E.},
+doi={10.1007/978-3-540-92779-2_133},
+title={Transonic Aeroelastic Computations of a Delta Wing Configuration with High Fidelity Equations},
+url={http://dx.doi.org/10.1007/978-3-540-92779-2_133},
+publisher={Springer Berlin Heidelberg},
+author={Terashima, Hiroshi and Ono, Kenji},
+pages={843-848},
+language={English}
+}
+
+  @inbook{Ono:07:Pcfd,
+    Author = {Ono, Kenji and Tamaki, Tsuyoshi and Yoshikawa, Hiroyuki},
+    Editor = {Tuncer, Ismail H. and G\"ulcat, \"Ulgen and Emerson, David R. and Matsuno, Kenichi},
+    Note = {Development of a Framework for Parallel Simulators with Various Physics and its Performance},
+    Pages = {9--18},
+    Volume = {67},
+    Publisher = {Springer},
+    Title = {Lecture Notes in Computational Science and Engineering 67, Parallel Computational Fluid Dynamics 2007},
+    Year = {2009}
+}
+
+@inproceedings{nonaka:09:EGPGV,
+	Author = {Nonaka, Jorji and Ono, Kenji and Miyachi, Hideo},
+	Booktitle = {Eurographics Symposium on Parallel Graphics and Visualization},
+	Pages = {71--78},
+	Title = {A Decomposition Approach for Optimizing Large-Scale Parallel Image Composition on {M}ulti-{C}ore {MPP} Systems},
+	Year = {2009}}
+
+@article{nonaka:09:ACS,
+	Author = {Nonaka, Jorji and Ono, Kenji and Miyachi, Hideo},
+	Journal = {IPSJ Transactions on Advanced Computing Systems},
+	Number = {2},
+	Pages = {122--130},
+	Title = {Performance Evaluation of Large-Scale Parallel Image Compositing on a {T2K} Open Supercomputer},
+	Volume = {2},
+	Year = {2009}}
+
+@article{shimano:09:RAE,
+	Author = {SHIMANO, Kenjiro and KUMANO, Takahiro and TAKAGI, Michitoshi and ONO, Kenji and HORINOUCHI, Nariaki and TARUMI, Seiji},
+	Journal = {Review of Automotive Engineering},
+	Number = {1},
+	Pages = {51--60},
+	Title = {Wind Tunnel Testing of {JSAE} Standard Low-aerodynamic-drag Vehicle Body Using 1/5 Scale Model},
+	Volume = {30},
+	Year = {2009}}
+
+@article{hashimoto:08:JSCES,
+	Author = {橋本 学，小野 謙二，野口 裕久},
+	Journal = {Transaction of JSCES},
+	Number = {20080028},
+	Title = {レベルセット仮想粒子による界面処理を用いた固定メッシュに基づく流体構造連成解析手法の開発},
+	Year = {2008},
+  Volume = {},
+	Yomi = {Hashimoto, Gaku and Ono, Kenji and Noguchi, Hirohisa}}
+
+
+@incollection{ii:sim:07,
+year={2007},
+isbn={978-4-431-49021-0},
+booktitle={Systems Modeling and Simulation},
+editor={Koyamada, Koji and Tamura, Shinsuke and Ono, Osamu},
+doi={10.1007/978-4-431-49022-7_24},
+title={The Fluid-Structure Interacting Simulations with the Immersed Interface Method on a Cartesian Grid},
+url={http://dx.doi.org/10.1007/978-4-431-49022-7_24},
+publisher={Springer Japan},
+keywords={Fluid-Structure Interaction; Immersed Interface Method; IDO-SC Scheme},
+author={Ii, Satoshi and Xiao, Feng and Ono, Kenji},
+pages={118-122},
+language={English}
+}
+
+@article{akasaka:07:JSCES,
+	Author = {赤坂 啓，小野 謙二},
+	Journal = {Transaction of JSCES},
+	Number = {20070032},
+	Title = {直交格子を用いた非圧縮流れ解析における圧力損失モデルの実装},
+	Year = {2007},
+  Volume = {},
+	Yomi = {Akasaka, Kei and Ono, Kenji}}
+
+@article{ono:07:ACS,
+	Author = {小野 謙二，玉木 剛，野田 茂穂，岩田 正子，重谷 隆之},
+	Journal = {情報処理学会論文誌：コンピューティングシステム},
+	Number = {SIG 8(ACS 18)},
+	Pages = {44-53},
+	Title = {オブジェクト指向並列化クラスライブラリの開発と性能評価},
+	Volume = {48},
+	Year = {2007},
+	Yomi = {Ono, Kenji and Tamaki, Tsuyoshi and Noda, Shigeho and Iwata, Masako and Shigetani, Takayuki}}
+
+@article{ono:06:JSCES,
+	Author = {小野　謙二，玉木　剛},
+	Journal = {Transaction of JSCES},
+	Number = {20060031},
+	Title = {SPHERE - 物理シミュレーションのフレームワークと実行環境の開発},
+	Year = {2006},
+  Volume = {},
+	Yomi = {Ono, Kenji and Tamaki, Tsuyoshi}}
+
+@article{akasaka:06:JSCES,
+	Author = {赤坂 啓，小野 謙二},
+	Journal = {Transaction of JSCES},
+	Number = {20060024},
+	Title = {複雑形状に対するボクセル法に基づく非圧縮流れ解析の境界条件の実装方法},
+	Year = {2006},
+  Volume = {},
+	Yomi = {Akasaka, Kei and Ono, Kenji}}
+
+@article{ono:04:RAE,
+	Author = {Ono, Kenji},
+	Journal = {Review of Automotive Engineering},
+	Number = {2},
+	Pages = {129--134},
+	Title = {Role of Fluid Dynamics Technology in Automobile Design},
+	Volume = {25},
+	Year = {2004}}
+
+@inproceedings{rosa:03:VG,
+	Address = {New York, NY, USA},
+	Author = {Rosa, Gabriel G. and Lum, Eric B. and Ma, Kwan-Liu and Ono, Kenji},
+	Booktitle = {VG '03: Proceedings of the 2003 Eurographics/IEEE TVCG Workshop on Volume graphics},
+	Doi = {http://doi.acm.org/10.1145/827051.827072},
+	Isbn = {1-58113-745-1},
+	Location = {Tokyo, Japan},
+	Pages = {137--144},
+	Publisher = {ACM},
+	Title = {An interactive volume visualization system for transient flow analysis},
+	Year = {2003},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/827051.827072}}
+
+@article{ono:01:DV,
+	Author = {Ono, Kenji and Matsumoto, Hideki and Himeno, Ryutaro},
+	Editor = {David Ebert},
+	Journal = {Data Visualization 2001},
+	Pages = {301--308},
+	Publisher = {Springer},
+	Title = {Visualization of Thermal Flows in an Automotive Cabin with Volume Rendering Method},
+	Year = {2001}}
+
+@article{ono:99:JWE,
+	Author = {Ono, Kenji and Himeno, Ryutaro and Fukushima, Tatsuya},
+	Journal = {Journal of wind engineering and industrial aerodynamics},
+	Pages = {403--419},
+	Title = {Prediction of wind noise radiated from passenger cars and its evaluation based on auralization},
+	Volume = {81},
+	Year = {1999}}
+
+@article{ono:93:JSAE,
+	Author = {小野 謙二，姫野 龍太郎，藤谷 克郎，佐藤 早苗},
+	Journal = {自動車技術会論文集},
+	Number = {2},
+	Pages = {49--53},
+	Title = {三次元流れ解析によるラジエータ通過風量の予測},
+	Volume = {24},
+	Year = {1993},
+	Yomi = {Ono, Kenji and Himeno, Ryutaro and Fujitani, Katsuro and Sato, Sanae}}
+
+@article{fujiwara:92:JAA,
+	Author = {藤原 和人，松尾 日出男，小野 謙二，広江 哲幸},
+	Journal = {日本航空宇宙学会誌},
+	Number = {460},
+	Pages = {276--284},
+	Title = {くいちがい配置された２正方形柱まわりの流れ},
+	Volume = {40},
+	Year = {1992},
+	Yomi = {Fujiwara, Kazuto and Matsuo, Hideo and Ono, Kenji and Hiroe, Tetsuyuki}}
+
+@article{ono:92:SAE-trns,
+	Author = {Ono, Kenji and Himeno, Ryutaro and Fujitani, Katsuro and Uematsu, Yutaka},
+	Journal = {SAE TRANSACTIONS, Journal of Passenger Cars},
+	Pages = {403--411},
+	Title = {Simultaneous Computation of the External Flow around a Car Body and the Internal Flow Through Its Engine Compartment},
+	Year = {1992}}

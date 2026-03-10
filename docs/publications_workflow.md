@@ -121,6 +121,7 @@ python scripts/validate_content.py
 
 - `@article` -> `journal`
 - `@inproceedings` / `@conference` / `@proceedings` -> `international-conference`
+  - venue が国内会議キーワードに一致する場合 -> `domestic-conference`
 - それ以外 -> `others`
 
 出力先:
@@ -211,5 +212,5 @@ site
 - `year` と配置ディレクトリ（`publications/<year>/`）を一致させる
 - `date` は `<year>-` で始める
 - ファイル名は kebab-case を使う
-- `pub_type` は `journal` / `international-conference` / `others` のいずれかにする
+- `pub_type` は `journal` / `international-conference` / `domestic-conference` / `others` のいずれかにする
 - 本番反映前に `site_checks` 相当の検証を通す

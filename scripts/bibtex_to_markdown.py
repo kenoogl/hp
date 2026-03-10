@@ -44,14 +44,48 @@ def parse_year(entry: dict) -> str:
     return year if year.isdigit() else "unknown"
 
 
+def _is_domestic_conference_venue(venue: str) -> bool:
+    v = (venue or "").lower()
+    if not v:
+        return False
+
+    if "international" in v:
+        return False
+
+    domestic_keywords = [
+        "情報処理学会",
+        "電子情報通信学会",
+        "日本機械学会",
+        "日本計算工学会",
+        "可視化情報学会",
+        "日本流体力学会",
+        "全国大会",
+        "年次大会",
+        "講演会",
+        "研究会",
+        "ipsj",
+        "ieice",
+    ]
+    return any(k in v for k in domestic_keywords)
+
+
 def detect_pub_type(entry: dict) -> str:
+    manual_type = str(entry.get("pub_type", "")).strip().lower()
+    if manual_type in {"journal", "international-conference", "domestic-conference", "others"}:
+        return manual_type
+
     entry_type = str(entry.get("ENTRYTYPE", "")).strip().lower()
-    venue = get_venue(entry).lower()
+    venue = get_venue(entry)
     if entry_type == "article":
         return "journal"
     if entry_type in {"inproceedings", "conference", "proceedings"}:
+        if _is_domestic_conference_venue(venue):
+            return "domestic-conference"
         return "international-conference"
-    if "conference" in venue or "symposium" in venue or "workshop" in venue:
+    venue_lower = venue.lower()
+    if "conference" in venue_lower or "symposium" in venue_lower or "workshop" in venue_lower:
+        if _is_domestic_conference_venue(venue):
+            return "domestic-conference"
         return "international-conference"
     return "others"
 

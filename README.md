@@ -65,6 +65,7 @@ make down
 
 - `journal`
 - `international-conference`
+- `domestic-conference`
 - `others`
 
 例:
@@ -83,7 +84,7 @@ python scripts/validate_content.py
 `bibtex_to_markdown.py` は BibTeX の種別から `pub_type` を自動設定します。
 
 - `@article` -> `journal`
-- `@inproceedings` -> `international-conference`
+- `@inproceedings` / `@conference` / `@proceedings` -> `international-conference`（国内会議判定時は `domestic-conference`）
 - それ以外 -> `others`
 
 ### 自動

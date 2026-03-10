@@ -6,44 +6,63 @@
     {{ $pages := .RegularPages.ByDate.Reverse }}
     {{ $journal := where $pages "Params.pub_type" "journal" }}
     {{ $conf := where $pages "Params.pub_type" "international-conference" }}
+    {{ $domestic := where $pages "Params.pub_type" "domestic-conference" }}
     {{ $others := where $pages "Params.pub_type" "others" }}
     {{ $unset := where $pages "Params.pub_type" nil }}
 
-    <h2>Journal</h2>
-    <ul class="clean-list">
-      {{ range $journal }}
-        <li>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          {{ if .Date }}<span class="meta">{{ .Date.Format "2006-01-02" }}</span>{{ end }}
-        </li>
-      {{ end }}
-    </ul>
+    {{ if gt (len $journal) 0 }}
+      <h2>Journal</h2>
+      <ul class="clean-list">
+        {{ range $journal }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ if .Date }}<span class="meta">{{ .Date.Format "2006-01-02" }}</span>{{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
 
-    <h2>International Conference</h2>
-    <ul class="clean-list">
-      {{ range $conf }}
-        <li>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          {{ if .Date }}<span class="meta">{{ .Date.Format "2006-01-02" }}</span>{{ end }}
-        </li>
-      {{ end }}
-    </ul>
+    {{ if gt (len $conf) 0 }}
+      <h2>International Conference</h2>
+      <ul class="clean-list">
+        {{ range $conf }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ if .Date }}<span class="meta">{{ .Date.Format "2006-01-02" }}</span>{{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
 
-    <h2>Others</h2>
-    <ul class="clean-list">
-      {{ range $others }}
-        <li>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          {{ if .Date }}<span class="meta">{{ .Date.Format "2006-01-02" }}</span>{{ end }}
-        </li>
-      {{ end }}
-      {{ range $unset }}
-        <li>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          {{ if .Date }}<span class="meta">{{ .Date.Format "2006-01-02" }}</span>{{ end }}
-        </li>
-      {{ end }}
-    </ul>
+    {{ if gt (len $domestic) 0 }}
+      <h2>Domestic Conference</h2>
+      <ul class="clean-list">
+        {{ range $domestic }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ if .Date }}<span class="meta">{{ .Date.Format "2006-01-02" }}</span>{{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+
+    {{ if or (gt (len $others) 0) (gt (len $unset) 0) }}
+      <h2>Others</h2>
+      <ul class="clean-list">
+        {{ range $others }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ if .Date }}<span class="meta">{{ .Date.Format "2006-01-02" }}</span>{{ end }}
+          </li>
+        {{ end }}
+        {{ range $unset }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ if .Date }}<span class="meta">{{ .Date.Format "2006-01-02" }}</span>{{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
   {{ else }}
     <ul class="clean-list">
       {{ range .Pages.ByDate.Reverse }}

@@ -114,9 +114,15 @@ Required fields:
 - authors
 - venue/journal
 - year
+- pub_type (`journal` / `international-conference` / `domestic-conference` / `others`)
 - DOI or PDF
 
 Verify consistency and visibility.
+Also verify publications can be grouped into:
+- Journal
+- International Conference
+- Domestic Conference
+- Others
 
 Check automation assets:
 - `data/publications.bib`

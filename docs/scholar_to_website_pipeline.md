@@ -100,6 +100,7 @@ python scripts/validate_content.py
 
 - `journal`
 - `international-conference`
+- `domestic-conference`
 - `others`
 
 出力例:
