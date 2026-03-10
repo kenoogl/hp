@@ -98,10 +98,19 @@ python scripts/validate_content.py
 
 この変換で publication の `pub_type` も自動付与される。
 
+- BibTeX に `pub_type` が明示されている場合は、その値を最優先で採用する。
 - `journal`
 - `international-conference`
 - `domestic-conference`
 - `others`
+
+`international-conference` / `domestic-conference` の場合は `peer_reviewed` も自動判定される（`true` / `false` / 未設定）。
+
+- 明示値: `peer_reviewed`, `peerreviewed`, `refereed`, `reviewed`
+- キーワード推定: `note`, `keywords`（例: `non-refereed`, `査読なし`）
+- Bibファイル名推定: `*_refereed.bib`, `*_non_refereed.bib`
+
+国内会議判定では、`journal` / `booktitle` / `author` に日本語が含まれる場合を `domestic-conference` とする。
 
 出力例:
 

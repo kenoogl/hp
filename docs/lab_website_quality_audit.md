@@ -117,11 +117,20 @@ Required fields:
 - pub_type (`journal` / `international-conference` / `domestic-conference` / `others`)
 - DOI or PDF
 
+Optional (for conference papers):
+- peer_reviewed (`true` / `false`)
+
 Verify consistency and visibility.
 Also verify publications can be grouped into:
 - Journal
 - International Conference
+  - Refereed
+  - Non-Refereed
+  - Unspecified
 - Domestic Conference
+  - Refereed
+  - Non-Refereed
+  - Unspecified
 - Others
 
 Check automation assets:

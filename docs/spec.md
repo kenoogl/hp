@@ -70,6 +70,8 @@
 - FR-103: `scripts/bibtex_to_markdown.py` は BibTeX を Hugo Markdown に変換する。
 - FR-104: `scripts/scholar_fetch.py` は Google Scholar から BibTeX を取得可能とする。
 - FR-105: 各publicationに `pub_type` を保持し、`journal` / `international-conference` / `domestic-conference` / `others` の4分類表示を可能にする。
+- FR-106: `international-conference` および `domestic-conference` は任意メタデータ `peer_reviewed`（boolean）で `Refereed` / `Non-Refereed` / `Unspecified` 表示を可能にする。
+- FR-107: BibTeXに `pub_type` が明示されている場合、分類自動推定より優先して採用する。
 
 ### 4.3 Validation and QA
 - FR-201: `scripts/validate_content.py` は命名規約・Front Matter整合を検証する。
@@ -128,6 +130,7 @@
 - `journal`（または同等のvenue）
 - `year`
 - `pub_type`（`journal` / `international-conference` / `domestic-conference` / `others`）
+- `peer_reviewed`（任意、会議論文向け。`true` / `false`）
 - `doi` または `doi_url`（推奨）
 
 ### 6.3 Year consistency

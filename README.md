@@ -74,18 +74,51 @@ make down
 pub_type: "journal"
 ```
 
+`international-conference` / `domestic-conference` の場合は、査読有無を `peer_reviewed` で明示できます。
+
+```yaml
+pub_type: "international-conference"
+peer_reviewed: true
+```
+
 ### 半自動（BibTeX）
 
 ```bash
+cd /Users/Daily/Development/HP/lab-website
+source .venv/bin/activate
+
 python scripts/bibtex_to_markdown.py data/publications.bib --clean
 python scripts/validate_content.py
+
+deactivate
+
+make build
+make up
 ```
 
 `bibtex_to_markdown.py` は BibTeX の種別から `pub_type` を自動設定します。
 
+- `pub_type` がBibTeXに明示されている場合は、その値を最優先で採用
 - `@article` -> `journal`
 - `@inproceedings` / `@conference` / `@proceedings` -> `international-conference`（国内会議判定時は `domestic-conference`）
 - それ以外 -> `others`
+
+国内会議判定ルール（追加）:
+
+- `journal` / `booktitle` に日本語を含む場合 -> `domestic-conference`
+- `author` に日本語を含む場合 -> `domestic-conference`
+
+会議論文（国際/国内）の査読有無（`peer_reviewed`）:
+
+- BibTeX の明示値（`peer_reviewed` / `peerreviewed` / `refereed` / `reviewed`）を最優先
+- `note` / `keywords` のキーワードで推定（`non-refereed`, `査読なし` など）
+- 入力Bibファイル名で補助推定（`*_refereed.bib`, `*_non_refereed.bib`）
+
+表示上は `International Conference` と `Domestic Conference` を以下に分けて表示します。
+
+- `Refereed`
+- `Non-Refereed`
+- `Unspecified`
 
 ### 自動
 

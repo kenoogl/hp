@@ -1,7 +1,18 @@
 {{ define "main" }}
 <article>
   <h1>{{ .Title }}</h1>
-  {{ if .Date }}<p class="meta">{{ .Date.Format "2006-01-02" }}</p>{{ end }}
+  {{ if or .Params.authors .Params.journal .Params.peer_reviewed }}
+    {{ with .Params.authors }}<p class="meta"><strong>Authors:</strong> {{ . }}</p>{{ end }}
+    {{ with .Params.journal }}<p class="meta"><strong>Venue:</strong> {{ . }}</p>{{ end }}
+    {{ if or (eq .Params.pub_type "international-conference") (eq .Params.pub_type "domestic-conference") }}
+      {{ if eq .Params.peer_reviewed true }}<p class="meta"><strong>Peer Review:</strong> Refereed</p>{{ end }}
+      {{ if eq .Params.peer_reviewed "true" }}<p class="meta"><strong>Peer Review:</strong> Refereed</p>{{ end }}
+      {{ if eq .Params.peer_reviewed false }}<p class="meta"><strong>Peer Review:</strong> Non-Refereed</p>{{ end }}
+      {{ if eq .Params.peer_reviewed "false" }}<p class="meta"><strong>Peer Review:</strong> Non-Refereed</p>{{ end }}
+    {{ end }}
+  {{ else }}
+    {{ if .Date }}<p class="meta">{{ .Date.Format "2006-01-02" }}</p>{{ end }}
+  {{ end }}
   <div class="content">{{ .Content }}</div>
 </article>
 {{ end }}

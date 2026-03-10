@@ -69,13 +69,42 @@ def _is_domestic_conference_venue(venue: str) -> bool:
     return any(k in v for k in domestic_keywords)
 
 
+def _contains_japanese(text: str) -> bool:
+    if not text:
+        return False
+    return bool(re.search(r"[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]", text))
+
+
+def _normalize_pub_type(value: str) -> str:
+    v = (value or "").strip().lower().replace("_", "-")
+    allowed = {"journal", "international-conference", "domestic-conference", "others"}
+    return v if v in allowed else ""
+
+
+def _parse_boolish(value: str) -> bool | None:
+    v = (value or "").strip().lower()
+    if v in {"true", "yes", "y", "1", "reviewed", "refereed", "peer-reviewed", "査読あり", "査読有"}:
+        return True
+    if v in {"false", "no", "n", "0", "non-refereed", "nonrefereed", "unreviewed", "査読なし", "査読無"}:
+        return False
+    return None
+
+
 def detect_pub_type(entry: dict) -> str:
-    manual_type = str(entry.get("pub_type", "")).strip().lower()
-    if manual_type in {"journal", "international-conference", "domestic-conference", "others"}:
+    manual_type = _normalize_pub_type(str(entry.get("pub_type", "")))
+    if manual_type:
         return manual_type
 
     entry_type = str(entry.get("ENTRYTYPE", "")).strip().lower()
     venue = get_venue(entry)
+    authors = str(entry.get("author", "")).strip()
+
+    # Heuristic requested by operation policy:
+    # if venue (journal/booktitle) or author string contains Japanese,
+    # classify as domestic conference.
+    if _contains_japanese(venue) or _contains_japanese(authors):
+        return "domestic-conference"
+
     if entry_type == "article":
         return "journal"
     if entry_type in {"inproceedings", "conference", "proceedings"}:
@@ -90,12 +119,45 @@ def detect_pub_type(entry: dict) -> str:
     return "others"
 
 
-def build_markdown(entry: dict) -> str:
+def detect_peer_reviewed(entry: dict, bib_path: Path, pub_type: str) -> bool | None:
+    if pub_type not in {"international-conference", "domestic-conference"}:
+        return None
+
+    for key in ("peer_reviewed", "peerreviewed", "refereed", "reviewed"):
+        manual = _parse_boolish(str(entry.get(key, "")))
+        if manual is not None:
+            return manual
+
+    blob = " ".join(
+        [
+            str(entry.get("note", "")),
+            str(entry.get("keywords", "")),
+            str(entry.get("booktitle", "")),
+            str(entry.get("journal", "")),
+            str(entry.get("howpublished", "")),
+        ]
+    ).lower()
+    if any(k in blob for k in ("non-refereed", "non refereed", "査読なし", "without review", "wip")):
+        return False
+    if any(k in blob for k in ("peer-reviewed", "peer reviewed", "refereed", "査読あり", "査読付")):
+        return True
+
+    stem = bib_path.stem.lower()
+    if "non_refereed" in stem or "non-refereed" in stem:
+        return False
+    if "refereed" in stem and "non_refereed" not in stem and "non-refereed" not in stem:
+        return True
+
+    return None
+
+
+def build_markdown(entry: dict, bib_path: Path) -> str:
     title = entry.get("title", "").replace("\n", " ").strip()
     authors = entry.get("author", "").replace("\n", " ").strip()
     venue = get_venue(entry).replace("\n", " ").strip() or "Unknown venue"
     year = parse_year(entry)
     pub_type = detect_pub_type(entry)
+    peer_reviewed = detect_peer_reviewed(entry, bib_path, pub_type)
     doi = entry.get("doi", "").strip()
     url = entry.get("url", "").strip()
 
@@ -110,11 +172,13 @@ def build_markdown(entry: dict) -> str:
         f'year: "{year}"',
         f'pub_type: "{pub_type}"',
     ]
+    if peer_reviewed is not None:
+        lines.append(f"peer_reviewed: {'true' if peer_reviewed else 'false'}")
     if doi:
         lines.append(f'doi: "{doi}"')
     if url:
         lines.append(f'doi_url: "{url}"')
-    lines.extend(["---", "", f"{title}."])
+    lines.extend(["---", ""])
     return "\n".join(lines) + "\n"
 
 
@@ -126,6 +190,19 @@ def clean_generated_files(root: Path) -> None:
             if path.name == "_index.md":
                 continue
             path.unlink()
+
+
+def resolve_unique_md_path(year_dir: Path, slug: str) -> Path:
+    base = year_dir / f"{slug}.md"
+    if not base.exists():
+        return base
+
+    n = 2
+    while True:
+        candidate = year_dir / f"{slug}-{n}.md"
+        if not candidate.exists():
+            return candidate
+        n += 1
 
 
 def main() -> int:
@@ -154,8 +231,8 @@ def main() -> int:
         year_dir.mkdir(parents=True, exist_ok=True)
 
         slug = slugify(title)
-        md_path = year_dir / f"{slug}.md"
-        md_path.write_text(build_markdown(entry), encoding="utf-8")
+        md_path = resolve_unique_md_path(year_dir, slug)
+        md_path.write_text(build_markdown(entry, bib_path), encoding="utf-8")
         written += 1
 
     print(f"Generated {written} publication markdown files under {out_root}")

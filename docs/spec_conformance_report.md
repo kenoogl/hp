@@ -33,6 +33,9 @@ The current implementation is aligned with the defined system specification for 
   - `scripts/bibtex_to_markdown.py`
 - Scholar fetch support: **PASS**
   - `scripts/scholar_fetch.py`
+- International conference peer-review split (`peer_reviewed`): **PASS**
+  - Implemented in converter + list/single templates
+  - `Refereed` / `Non-Refereed` / `Unspecified` grouping
 
 ### 2.3 Validation and QA scripts
 
@@ -94,4 +97,3 @@ Validation run evidence (local):
 ## 5. Conclusion
 
 The implementation is **consistent with the current specification** and is operationally ready under the defined QA and deployment model.
-

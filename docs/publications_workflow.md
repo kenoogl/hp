@@ -119,10 +119,30 @@ python scripts/validate_content.py
 
 `bibtex_to_markdown.py` は `pub_type` を自動設定する。
 
+判定優先順位:
+
+1. BibTeXの明示値 `pub_type`（最優先）
+2. `journal` / `booktitle` / `author` の日本語判定（国内会議）
+3. `ENTRYTYPE`・venueキーワードに基づく自動分類
+
 - `@article` -> `journal`
 - `@inproceedings` / `@conference` / `@proceedings` -> `international-conference`
   - venue が国内会議キーワードに一致する場合 -> `domestic-conference`
 - それ以外 -> `others`
+- `journal` / `booktitle` に日本語を含む場合 -> `domestic-conference`
+- `author` に日本語を含む場合 -> `domestic-conference`
+
+会議論文 (`international-conference` / `domestic-conference`) には、必要に応じて `peer_reviewed` が付与される。
+
+- `peer_reviewed: true` -> Refereed
+- `peer_reviewed: false` -> Non-Refereed
+- 未設定 -> Unspecified
+
+判定優先順位:
+
+1. BibTeXの明示値（`peer_reviewed` / `peerreviewed` / `refereed` / `reviewed`）
+2. `note`/`keywords` 等のキーワード推定（`non-refereed`, `査読なし` など）
+3. 入力Bibファイル名ヒント（`*_non_refereed.bib`, `*_refereed.bib`）
 
 出力先:
 
@@ -213,4 +233,5 @@ site
 - `date` は `<year>-` で始める
 - ファイル名は kebab-case を使う
 - `pub_type` は `journal` / `international-conference` / `domestic-conference` / `others` のいずれかにする
+- `international-conference` / `domestic-conference` で査読有無を表示したい場合は `peer_reviewed` を設定する（`true` / `false`）
 - 本番反映前に `site_checks` 相当の検証を通す

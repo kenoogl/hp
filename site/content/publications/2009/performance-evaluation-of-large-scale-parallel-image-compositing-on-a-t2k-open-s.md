@@ -8,4 +8,3 @@ pub_type: "journal"
 doi_url: "https://kyushu-u.elsevierpure.com/en/publications/performance-evaluation-of-large-scale-parallel-image-compositing-/"
 ---
 
-Performance evaluation of large-scale parallel image compositing on a T2K Open Supercomputer.

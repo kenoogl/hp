@@ -8,4 +8,3 @@ pub_type: "journal"
 doi_url: "https://cir.nii.ac.jp/crid/1050011097156353152"
 ---
 
-Rank Reordering and Data Padding for Optimizing Large-Scale Parallel Image Composition.

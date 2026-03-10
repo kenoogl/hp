@@ -1,13 +1,3748 @@
-@article{performance_evaluation_of_large_scale_parallel_image_composi_2009,
-  title={Performance evaluation of large-scale parallel image compositing on a T2K Open Supercomputer},
-  author={Nonaka Jorji and Ono Kenji and Miyachi Hideo},
-  year={2009},
-  url={https://kyushu-u.elsevierpure.com/en/publications/performance-evaluation-of-large-scale-parallel-image-compositing-/},
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% JOURNAL
+
+
+@article{NONAKA2018647,
+title = "234Compositor: A flexible parallel image compositing framework for massively parallel visualization environments",
+journal = "Future Generation Computer Systems",
+volume = "82",
+pages = "647 - 655",
+year = "2018",
+issn = "0167-739X",
+doi = "https://doi.org/10.1016/j.future.2017.02.011",
+url = "http://www.sciencedirect.com/science/article/pii/S0167739X17302030",
+author = "Jorji Nonaka and Kenji Ono and Masahiro Fujita",
+keywords = "Data analytics and data mining, Large scale systems for scientific computing, Scalable computing",
+abstract = "Leading-edge HPC systems have already been generating a vast amount of time-varying complex data sets, and future-generation HPC systems are expected to produce much higher amounts of such data, thus making their visualization and analysis a much more challenging task. In such scenario, the In-situ visualization approach, where the same HPC system is used for both numerical simulation and visualization, is expected to become more a necessity than an option. On massively parallel environments, the Sort-last approach, which requires final image compositing, has become the de facto standard for parallel rendering. In this work, we present the 234Compositor, a scalable and flexible parallel image compositor framework for massively parallel rendering applications. It is composed of a single-stage power-of-two conversion mechanism based on 234 Scheduling of 3-2 and 2-1 Eliminations, and a final image gathering mechanism based on Data Padding and MPI Rank Reordering for enabling the use of MPI_Gather collective operation. In addition, the hybrid MPI/OpenMP parallelism can also be applied to take advantage of current multi-node, multi-core architecture of modern HPC systems. We confirmed the scalability of the proposed approach by evaluating a Binary-Swap implementation of 234Compositor on the K computer, a Japanese leading-edge supercomputer installed at RIKEN AICS. We also evaluated an integration with HIVE (Heterogeneously Integrated Visual-analytic Environment) in order to verify a real-world usage. From the encouraging scalability results, we expect that this approach can also be useful even on the next-generation HPC systems which may demand higher level of parallelism."
 }
 
-@article{rank_reordering_and_data_padding_for_optimizing_large_scale__2015,
-  title={Rank Reordering and Data Padding for Optimizing Large-Scale Parallel Image Composition},
-  author={Nonaka Jorji and Fujita Masahiro and Ono Kenji},
-  year={2015},
-  url={https://cir.nii.ac.jp/crid/1050011097156353152},
+
+@article{MSE18,
+author = {Kenji Ono and Takanori Uchida},
+title = {High-Performance Parallel Simulation of Airflow for Complex Terrain Surface },
+journal = {Modelling and Simulation in Engineering },
+volume = {},
+number = {},
+pages = {},
+year = {2018},
+doi = {},
+
+URL = {},
+eprint = {}
+,
+abstract = {}
 }
+
+
+@article{doi:10.1142/S1793962318400068,
+author = {Nonaka, Jorji and Inacio, Eduardo C. and Ono, Kenji and Dantas, Mario A. R. and Kawashima, Yasuhiro and Kawanabe, Tomohiro and Shoji, Fumiyoshi},
+title = {Data I/O management approach for the post-hoc visualization of big simulation data results},
+journal = {International Journal of Modeling, Simulation, and Scientific Computing},
+volume = {09},
+number = {03},
+pages = {1840006},
+year = {2018},
+doi = {10.1142/S1793962318400068},
+
+URL = { 
+        https://doi.org/10.1142/S1793962318400068
+    
+},
+eprint = { 
+        https://doi.org/10.1142/S1793962318400068
+    
+}
+,
+    abstract = { Leading-edge supercomputers, such as the K computer, have generated a vast amount of simulation results, and most of these datasets were stored on the file system for the post-hoc analysis such as visualization. In this work, we first investigated the data generation trends of the K computer by analyzing some operational log data files. We verified a tendency of generating large amounts of distributed files as simulation outputs, and in most cases, the number of files has been proportional to the number of utilized computational nodes, that is, each computational node producing one or more files. Considering that the computational cost of visualization tasks is usually much smaller than that required for large-scale numerical simulations, a flexible data input/output (I/O) management mechanism becomes highly useful for the post-hoc visualization and analysis. In this work, we focused on the xDMlib data management library, and its flexible data I/O mechanism in order to enable flexible data loading of big computational climate simulation results. In the proposed approach, a pre-processing is executed on the target distributed files for generating a light-weight metadata necessary for the elaboration of the data assignment mapping used in the subsequent data loading process. We evaluated the proposed approach by using a 32-node visualization cluster, and the K computer. Besides the inevitable performance penalty associated with longer data loading time, when using smaller number of processes, there is a benefit for avoiding any data replication via copy, conversion, or extraction. In addition, users will be able to freely select any number of nodes, without caring about the number of distributed files, for the post-hoc visualization and analysis purposes. }
+}
+
+
+
+@Article{Iizuka2018,
+author="Iizuka, Mikio
+and Ono, Kenji",
+title="Influence of the phase accuracy of the coarse solver calculation on the convergence of the parareal method iteration for hyperbolic PDEs",
+journal="Computing and Visualization in Science",
+year="2018",
+month="Jun",
+day="27",
+abstract="Gander and Petcu (ESAIM Proc 25:114--129, 2008) reported that, theoretically, the convergence of the parareal method iteration for hyperbolic PDEs is strongly influenced by the phase (frequency) accuracy of the coarse solver calculation. However, no numerical study has clearly shown this. Therefore, through numerical tests, we investigate the influence of the phase accuracy of the coarse solver calculation on the convergence of the parareal method iteration for hyperbolic PDEs. First, we consider a simple harmonic motion and a multi-DOF mass-spring system (MDMSS) as examples of hyperbolic PDEs using the modified Newmark-                                                                  {\$}{\$}{\backslash}beta {\$}{\$}                                                      $\beta$                                                 method (Mizuta et al. in J JSCE 268:15--21, 1977), which can provide the exact phase of the time integration of a simple harmonic motion. Based on the results of the numerical tests, we show that the convergence of the parareal method iteration for hyperbolic PDEs is approximately independent of the parameters of parallel-in-time integration (PinT) and instead is dependent primarily on the phase accuracy of the coarse solver calculation. In addition, we show that reducing the number of bases in the reduced basis method (RBM) (Chen et al., in: Rozza (ed) Reduced order methods for modeling and computational reduction, MS and a modeling, simulation and applications, vol 9, Springer, Berlin, pp 187--214, 2014) causes the saturation of a decrease in an error during the parareal iteration for the MDMSS using the mode analysis method. The RBM is expected to make available accurate phase calculation in the coarse solver by maintaining the time step width as same as that of the fine solver. Second, we investigate whether the same saturation appears for the linear advection--diffusion equation when we use the RBM. We use the time evolution basis method in the RBM for the linear advection--diffusion equation. As a result, we show that reducing the number of bases causes the saturation of the decrease in the error in the linear advection--diffusion equation. Based on the results of the present study, an increase in the phase accuracy of the coarse solver calculation is strongly required for better convergence of the parareal method iteration for hyperbolic PDEs. Moreover, the saturation of the decrease in the error during the parareal method iteration should be overcome when using the RBM.",
+issn="1433-0369",
+doi="10.1007/s00791-018-0299-9",
+url="https://doi.org/10.1007/s00791-018-0299-9"
+}
+
+@article{takenoshita2017,
+author = {竹之下遼、原田利宣、小野謙二},
+title = {データマイニングを用いた2種類の酒類におけるWeb上の感性情報の比較と視覚化},
+journal = {日本感性工学会論文誌},
+doi = {10.5057/jjske.TJSKE-D-17-00052},
+URL = {https://www.jstage.jst.go.jp/article/jjske/advpub/0/advpub_TJSKE-D-17-00052/_pdf},
+year = {2017},
+note = {J-Stage早期公開記事, 2017.08.24}
+}
+
+@article{doi:10.1080/10618562.2016.1234046,
+author = {Seigo Imamura and Kenji Ono and Mitsuo Yokokawa},
+title = {Iterative-method performance evaluation for multiple vectors associated with a large-scale sparse matrix},
+journal = {International Journal of Computational Fluid Dynamics},
+volume = {30},
+number = {6},
+pages = {395-401},
+year = {2016},
+doi = {10.1080/10618562.2016.1234046},
+URL = {http://dx.doi.org/10.1080/10618562.2016.1234046},
+eprint = {http://dx.doi.org/10.1080/10618562.2016.1234046}
+}
+
+@inproceedings{wrro114659,
+       booktitle = {Topology-Based Methods in Visualization 2017 (TopoInVis 2017)},
+           title = {Flexible Fiber Surface: A Reeb-Free Approach},
+          author = {D Sakurai and HA Carr and K Ono and J Nonaka and T Kawanabe},
+        keywords = {Computational Topology; Topology in Visualization; Fiber Surfaces},
+             url = {http://eprints.whiterose.ac.uk/114659/},
+        abstract = {The fiber surface generalizes the popular isosurface to multi-fields, visu- alizing the pre-images as surfaces. As with isosurfaces, however, fiber surface com- ponent may suffer from visual occlusion. The flexible isosurface avoids occlusion of components by tracking them topologically in the contour tree, at some cost to user comprehension. For the fiber surface, this requires computing the Reeb space, which poses further issues in comprehension. However, the flexible isosurface can also be defined as a set of user interactions, and we extend this notion to provide the flexible fiber surface, without pre-computing the global topology. Our on-demand tracking of surfaces is Reeb-free, as it does not require the explicit computation of the Reeb graph nor Reeb space. We study our geometrical approach taking into account how the semantics in the flexible isosurface generalizes to the Reeb-free multi-field analysis.},
+        pub_type={journal}
+}
+
+
+@Article{Hong2017,
+author="Hong, Fan
+and Bi, Chongke
+and Guo, Hanqi
+and Ono, Kenji
+and Yuan, Xiaoru",
+title="Compression-based integral curve data reuse framework for flow visualization",
+journal="Journal of Visualization",
+year="2017",
+pages="1--16",
+abstract="Currently, by default, integral curves are repeatedly re-computed in different flow visualization applications, such as FTLE field computation, source-destination queries, etc., leading to unnecessary resource cost. We present a compression-based data reuse framework for integral curves, to greatly reduce their retrieval cost, especially in a resource-limited environment. In our design, a hierarchical and hybrid compression scheme is proposed to balance three objectives, including high compression ratio, controllable error, and low decompression cost. Specifically, we use and combine digitized curve sparse representation, floating-point data compression, and octree space partitioning to adaptively achieve the objectives. Results have shown that our data reuse framework could acquire tens of times acceleration in the resource-limited environment compared to on-the-fly particle tracing, and keep controllable information loss. Moreover, our method could provide fast integral curve retrieval for more complex data, such as unstructured mesh data.",
+issn="1875-8975",
+doi="10.1007/s12650-017-0428-4",
+url="http://dx.doi.org/10.1007/s12650-017-0428-4"
+}
+
+
+@article{isobe:15:seitai,
+author={磯部 光基 and 木村 祐介 and 木村 真也 and 世良 俊博 and 横田 秀夫 and 小野 謙二 and 田中 学},
+title={鼻腔内熱流動ボクセル解析における横断面医療画像二次元補間の有効性},
+journal={生体医工学},
+ISSN={1347-443X},
+publisher={Japanese Society for Medical and Biological Engineering},
+year={2015},
+month={},
+volume={53},
+number={3},
+pages={160-167},
+URL={http://ci.nii.ac.jp/naid/130005106901/},
+DOI={10.11239/jsmbe.53.16},
+pub_type={journal}
+}
+
+@article{Nonaka:2015:JASSE,
+  title={Multi-Step Image Composition Approach for Sort-Last Massively Parallel Rendering},
+  author={Jorji Nonaka and Masahiro Fujita and Kenji Ono},
+  journal={Journal of Advanced Simulation in Science and Engineering},
+  volume={2},
+  number={1},
+  pages={108-125},
+  year={2015},
+  doi={10.15748/jasse.2.108}
+}
+
+@incollection{ono:2015:LNCS,
+year={2015},
+isbn={978-3-319-17352-8},
+booktitle={High Performance Computing for Computational Science -- VECPAR 2014},
+volume={8969},
+series={Lecture Notes in Computer Science},
+editor={Dayd, Michel and Marques, Osni and Nakajima, Kengo},
+doi={10.1007/978-3-319-17353-5_17},
+title={Low Byte/Flop Implementation of Iterative Solver for Sparse Matrices Derived from Stencil Computations},
+url={http://dx.doi.org/10.1007/978-3-319-17353-5_17},
+publisher={Springer International Publishing},
+keywords={Sparse matrix; Boundary condition; SIMD; Bit operation; CFD},
+author={Ono, Kenji and Chiba, Shuichi and Inoue, Shunsuke and Minami, Kazuo},
+pages={192-205},
+language={English},
+pub_type={journal}
+}
+
+@article{akasaka:2015:jsae,
+title = {Immersed boundary法および局所細分化格子を用いた実車形状周りの流れの短時間シミュレーション手法},
+journal = {自動車技術会論文集},
+volume = {46},
+number = {5},
+pages = {963--968},
+year = {2015},
+note = {},
+issn = {},
+doi = {},
+url = {},
+author = {赤坂 啓 and 荒木 敏弘 and 石原 裕二 and 小野 謙二},
+yomi = {Akasaka Kei and Araki Toshihiro and Ishihara Yuji and Ono, Kenji},
+annote = {refereed},
+pub_type={journal}
+}
+
+@article{Ono:14:procedia,
+title = "Data Centric Framework for Large-scale High-performance Parallel Computation ",
+journal = "Procedia Computer Science ",
+volume = "29",
+number = "0",
+pages = "2336 - 2350",
+year = "2014",
+note = "2014 International Conference on Computational Science ",
+issn = "1877-0509",
+doi = "http://dx.doi.org/10.1016/j.procs.2014.05.218",
+url = "http://www.sciencedirect.com/science/article/pii/S1877050914003950",
+author = "Kenji Ono and Yasuhiro Kawashima and Tomohiro Kawanabe",
+keywords = "Domain Decomposition",
+keywords = "Simulation Life Cycle",
+keywords = "File Management",
+keywords = "Computational Fluid Dynamics",
+keywords = "Middleware ",
+abstract = "Abstract Supercomputer architectures are being upgraded using different level of parallelism to improve computing performance. This makes it difficult for scientists to develop high performance code in a short time. From the viewpoint of productivity and software life cycle, a concise yet effective infrastructure is required to achieve parallel processing. In this paper, we propose a usable building block framework to build parallel applications on large-scale Cartesian data structures. The proposed framework is designed such that each process in a simulation cycle can easily access the generated data files with usable functions. This framework enables us to describe parallel applications with fewer lines of source code, and hence, it contributes to the productivity of the software. Further, this framework was considered for improving performance, and it was confirmed that the developed flow simulator based on this framework demonstrated considerably excellent weak scaling performance on the K computer. "
+}
+
+@article{tanaka:14:mus,
+  Author = {水谷 崇志，磯部 光基，田中 学，世良 俊博，小野 謙二},
+  Journal = {生体医工学},
+  Number = {1},
+  Pages = {33--41},
+  Title = {医療画像に基づく鼻腔内熱流動のボクセルシミュレーション},
+  Volume = {52},
+  Year = {2014},
+  pub_type={journal}
+}
+
+@article{Ishikawa:2014:precedia,
+title = {Fluid Data Compression and {ROI} Detection Using Run Length Method},
+journal = {Procedia Computer Science},
+volume = {35},
+number = {0},
+pages = {1284 - 1291},
+year = {2014},
+note = {Knowledge-Based and Intelligent Information \&; Engineering Systems 18th Annual Conference, KES-2014 Gdynia, Poland, September 2014 Proceedings},
+issn = {1877-0509},
+doi = {http://dx.doi.org/10.1016/j.procs.2014.08.228},
+url = {http://www.sciencedirect.com/science/article/pii/S1877050914011934},
+author = {Ishikawa, Shota and Wu, Haiyuan and Bi, Chongke and Chen, Qian and Taki, Hirokazu and Ono, Kenji}
+}
+
+@incollection{ono:hpcpf:13,
+year={2013},
+isbn={978-3-642-38717-3},
+booktitle={High Performance Computing for Computational Science - VECPAR 2012},
+volume={7851},
+series={Lecture Notes in Computer Science},
+editor={Dayd, Michel and Marques, Osni and Nakajima, Kengo},
+doi={10.1007/978-3-642-38718-0_5},
+title={{HPC/PF - High Performance Computing Platform: An Environment That Accelerates Large-Scale Simulations}},
+url={http://dx.doi.org/10.1007/978-3-642-38718-0_5},
+publisher={Springer Berlin Heidelberg},
+author={Ono, Kenji and Kawanabe, Tomohiro and Hatada, Toshio},
+pages={23-27},
+pub_type={journal}
+}
+
+
+@article{Ito:CF:2013,
+title = {Automatically optimized core mapping to subdomains of domain decomposition method on multicore parallel environments},
+journal = {Computers \& Fluids},
+volume = {80},
+number = {0},
+pages = {88--93},
+year = {2013},
+note = {Selected contributions of the 23rd International Conference on Parallel Fluid Dynamics ParCFD2011},
+issn = {0045-7930},
+doi = {http://dx.doi.org/10.1016/j.compfluid.2012.04.024},
+url = {http://www.sciencedirect.com/science/article/pii/S0045793012001636},
+author = {Satoshi Ito and Kazuya Goto and Kenji Ono}
+}
+
+
+@incollection{bi:lncs:12,
+year={2012},
+isbn={978-3-642-33190-9},
+booktitle={Advances in Visual Computing},
+volume={7432},
+series={Lecture Notes in Computer Science},
+editor={Bebis, George and Boyle, Richard and Parvin, Bahram and Koracin, Darko and Fowlkes, Charless and Wang, Sen and Choi, Min-Hyung and Mantler, Stephan and Schulze, Jrgen and Acevedo, Daniel and Mueller, Klaus and Papka, Michael},
+doi={10.1007/978-3-642-33191-6_72},
+title={Interactive Control of Mesh Topology in Quadrilateral Mesh Generation Based on 2D Tensor Fields},
+url={http://dx.doi.org/10.1007/978-3-642-33191-6_72},
+publisher={Springer Berlin Heidelberg},
+author={Bi, Chongke and Sakurai, Daisuke and Takahashi, Shigeo and Ono, Kenji},
+pages={726-735},
+pub_type={journal}
+}
+
+
+@article{okita:11:jsme,
+  Author = {沖田 浩平，小野 謙二},
+  Journal = {日本機械学会論文集 B編},
+  Number = {781},
+  Pages = {1813--1821},
+  Title = {符号付き距離関数を形状表現に用いた流体ソルバーの精度},
+  Volume = {77},
+  Year = {2011},
+  pub_type={journal}
+  }
+
+@article{okita:11:IJNMF,
+  Author = {Okita, Kohei and Ono, Kenji and Takagi, Shu and Matsumoto, Yoichiro},
+  Journal = {International Journal of Numerical Methods in Fluids},
+  Pages = {43--46},
+  Title = {Development of High Intensity Focused Ultrasound Simulator for Large Scale Computing},
+  Volume = {65},
+  Year = {2011}
+}
+
+@article{ito:11:HPCS,
+  Author = {伊東 聰 and 後藤 和哉 and 小野 謙二},
+  journal = {IPSJ-HPCS201105},
+  Pages = {163--169},
+  Title = {領域分割法におけるサブドメインのノード内最適自動マッピング},
+  Volume = {},
+  Year = {2011},
+  Yomi = {Ito, Satoshi and Gotoh, Kazuya and Ono, Kenji},
+  pub_type={journal}
+}
+
+@article{akasaka:10:JSME,
+  Author = {赤坂 啓，小野 謙二},
+  Journal = {日本機械学会論文集 B編},
+  Number = {764},
+  Pages = {536--545},
+  Title = {非水密なポリゴン要素で構成された任意形状周りの直交格子を用いた非圧縮粘性流れ解析},
+  Volume = {76},
+  Year = {2010},
+  Yomi = {Akasaka, Kei and Ono, Kenji},
+  pub_type={journal}
+  }
+
+@article{okita:10:IJNMF,
+  Author = {Okita, Kohei and Ono, Kenji and Takagi, Shu and Matsumoto, Yoichiro},
+  Journal = {International Journal of Numerical Methods in Fluids},
+  Pages = {1395--1411},
+  Title = {Numerical Simulation of the Tissue Ablation in High Intensity Focused Ultrasound Therapy with Array Transducer},
+  Volume = {64},
+  Year = {2010}}
+
+@article{okita:10:PP,
+  Author = {Okita, Kohei and Sugiyama, Kazuyasu and Ono, Kenji and Takagi, Shu and Matsumoto, Yoichiro},
+  Journal = {Physics Procedia},
+  Number = {1},
+  Pages = {315--322},
+  Title = {Numerical study on high intensity focused ultrasound therapy using array transducer},
+  Volume = {3},
+  Year = {2010}}
+
+@article{hashimoto:10:IMM:TAMJ,
+  Author = {Hashimoto, Gaku and Ono, Kenji},
+  Journal = {Theoretical and Applied Mechanics Japan},
+  Pages = {325--342},
+  Title = {Interface treatment under no-slip conditions using level-set virtual particles for fluid-structure interaction},
+  Volume = {58},
+  Year = {2010}
+}
+
+@inbook{Ono:10:Pcfd,
+  Author = {Ono, Kenji and Kawashima, Yasuhiro},
+  Editor = {Tromeur-Dervout, Damien and Brenner, Gunther and Emerson, David R. and Erhel, Jocelyne},
+  Note = {Multicolor SOR Method with Consecutive Memory Access Implementation in a Shared and Distributed Memory Parallel Environment},
+  Pages = {183--191},
+  Publisher = {Springer},
+  Title = {Lecture Notes in Computational Science and Engineering 74, Parallel Computational Fluid Dynamics 2008},
+  Volume = {74},
+  Year = {2010},
+  pub_type={journal}
+  }
+
+@incollection{morimoto:vc,
+year={2010},
+isbn={978-3-642-17288-5},
+booktitle={Advances in Visual Computing},
+volume={6453},
+series={Lecture Notes in Computer Science},
+editor={Bebis, George and Boyle, Richard and Parvin, Bahram and Koracin, Darko and Chung, Ronald and Hammoud, Riad and Hussain, Muhammad and Kar-Han, Tan and Crawfis, Roger and Thalmann, Daniel and Kao, David and Avila, Lisa},
+doi={10.1007/978-3-642-17289-2_68},
+title={{Computer-Generated Tie-Dyeing Using a 3D Diffusion Graph}},
+url={http://dx.doi.org/10.1007/978-3-642-17289-2_68},
+publisher={Springer Berlin Heidelberg},
+author={Morimoto, Yuki and Ono, Kenji},
+pages={707-718},
+language={English},
+pub_type={journal}
+}
+
+@incollection{terashima:cfd06:06,
+year={2009},
+isbn={978-3-540-92778-5},
+booktitle={Computational Fluid Dynamics 2006},
+editor={Deconinck, Herman and Dick, E.},
+doi={10.1007/978-3-540-92779-2_133},
+title={Transonic Aeroelastic Computations of a Delta Wing Configuration with High Fidelity Equations},
+url={http://dx.doi.org/10.1007/978-3-540-92779-2_133},
+publisher={Springer Berlin Heidelberg},
+author={Terashima, Hiroshi and Ono, Kenji},
+pages={843-848},
+language={English},
+pub_type={journal}
+}
+
+  @inbook{Ono:07:Pcfd,
+    Author = {Ono, Kenji and Tamaki, Tsuyoshi and Yoshikawa, Hiroyuki},
+    Editor = {Tuncer, Ismail H. and G\"ulcat, \"Ulgen and Emerson, David R. and Matsuno, Kenichi},
+    Note = {Development of a Framework for Parallel Simulators with Various Physics and its Performance},
+    Pages = {9--18},
+    Volume = {67},
+    Publisher = {Springer},
+    Title = {Lecture Notes in Computational Science and Engineering 67, Parallel Computational Fluid Dynamics 2007},
+    Year = {2009},
+    pub_type={journal}
+}
+
+@inproceedings{nonaka:09:EGPGV,
+  Author = {Nonaka, Jorji and Ono, Kenji and Miyachi, Hideo},
+  Booktitle = {Eurographics Symposium on Parallel Graphics and Visualization},
+  Pages = {71--78},
+  Title = {A Decomposition Approach for Optimizing Large-Scale Parallel Image Composition on {M}ulti-{C}ore {MPP} Systems},
+  Year = {2009},
+  peer_reviewed={true},
+  pub_type={journal}
+  }
+
+@article{nonaka:09:ACS,
+  Author = {Nonaka, Jorji and Ono, Kenji and Miyachi, Hideo},
+  Journal = {IPSJ Transactions on Advanced Computing Systems},
+  Number = {2},
+  Pages = {122--130},
+  Title = {Performance Evaluation of Large-Scale Parallel Image Compositing on a {T2K} Open Supercomputer},
+  Volume = {2},
+  Year = {2009}}
+
+@article{shimano:09:RAE,
+  Author = {SHIMANO, Kenjiro and KUMANO, Takahiro and TAKAGI, Michitoshi and ONO, Kenji and HORINOUCHI, Nariaki and TARUMI, Seiji},
+  Journal = {Review of Automotive Engineering},
+  Number = {1},
+  Pages = {51--60},
+  Title = {Wind Tunnel Testing of {JSAE} Standard Low-aerodynamic-drag Vehicle Body Using 1/5 Scale Model},
+  Volume = {30},
+  Year = {2009},
+  pub_type={journal}
+  }
+
+@article{hashimoto:08:JSCES,
+  Author = {橋本 学，小野 謙二，野口 裕久},
+  Journal = {Transaction of JSCES},
+  Number = {20080028},
+  Title = {レベルセット仮想粒子による界面処理を用いた固定メッシュに基づく流体構造連成解析手法の開発},
+  Year = {2008},
+  Volume = {},
+  Yomi = {Hashimoto, Gaku and Ono, Kenji and Noguchi, Hirohisa},
+  pub_type={journal}
+  }
+
+
+@incollection{ii:sim:07,
+year={2007},
+isbn={978-4-431-49021-0},
+booktitle={Systems Modeling and Simulation},
+editor={Koyamada, Koji and Tamura, Shinsuke and Ono, Osamu},
+doi={10.1007/978-4-431-49022-7_24},
+title={The Fluid-Structure Interacting Simulations with the Immersed Interface Method on a Cartesian Grid},
+url={http://dx.doi.org/10.1007/978-4-431-49022-7_24},
+publisher={Springer Japan},
+keywords={Fluid-Structure Interaction; Immersed Interface Method; IDO-SC Scheme},
+author={Ii, Satoshi and Xiao, Feng and Ono, Kenji},
+pages={118-122},
+language={English},
+pub_type={journal}
+}
+
+@article{akasaka:07:JSCES,
+  Author = {赤坂 啓，小野 謙二},
+  Journal = {Transaction of JSCES},
+  Number = {20070032},
+  Title = {直交格子を用いた非圧縮流れ解析における圧力損失モデルの実装},
+  Year = {2007},
+  Volume = {},
+  Yomi = {Akasaka, Kei and Ono, Kenji},
+  pub_type={journal}
+  }
+
+@article{ono:07:ACS,
+  Author = {小野 謙二，玉木 剛，野田 茂穂，岩田 正子，重谷 隆之},
+  Journal = {情報処理学会論文誌：コンピューティングシステム},
+  Number = {SIG 8(ACS 18)},
+  Pages = {44-53},
+  Title = {オブジェクト指向並列化クラスライブラリの開発と性能評価},
+  Volume = {48},
+  Year = {2007},
+  Yomi = {Ono, Kenji and Tamaki, Tsuyoshi and Noda, Shigeho and Iwata, Masako and Shigetani, Takayuki},
+  pub_type={journal}
+  }
+
+@article{ono:06:JSCES,
+  Author = {小野　謙二，玉木　剛},
+  Journal = {Transaction of JSCES},
+  Number = {20060031},
+  Title = {SPHERE - 物理シミュレーションのフレームワークと実行環境の開発},
+  Year = {2006},
+  Volume = {},
+  Yomi = {Ono, Kenji and Tamaki, Tsuyoshi},
+  pub_type={journal}
+  }
+
+@article{akasaka:06:JSCES,
+  Author = {赤坂 啓，小野 謙二},
+  Journal = {Transaction of JSCES},
+  Number = {20060024},
+  Title = {複雑形状に対するボクセル法に基づく非圧縮流れ解析の境界条件の実装方法},
+  Year = {2006},
+  Volume = {},
+  Yomi = {Akasaka, Kei and Ono, Kenji},
+  pub_type={journal}
+  }
+
+@article{ono:04:RAE,
+  Author = {Ono, Kenji},
+  Journal = {Review of Automotive Engineering},
+  Number = {2},
+  Pages = {129--134},
+  Title = {Role of Fluid Dynamics Technology in Automobile Design},
+  Volume = {25},
+  Year = {2004}}
+
+@inproceedings{rosa:03:VG,
+  Address = {New York, NY, USA},
+  Author = {Rosa, Gabriel G. and Lum, Eric B. and Ma, Kwan-Liu and Ono, Kenji},
+  Booktitle = {VG '03: Proceedings of the 2003 Eurographics/IEEE TVCG Workshop on Volume graphics},
+  Doi = {http://doi.acm.org/10.1145/827051.827072},
+  Isbn = {1-58113-745-1},
+  Location = {Tokyo, Japan},
+  Pages = {137--144},
+  Publisher = {ACM},
+  Title = {An interactive volume visualization system for transient flow analysis},
+  Year = {2003},
+  pub_type={journal},
+  Bdsk-Url-1 = {http://doi.acm.org/10.1145/827051.827072}}
+
+@article{ono:01:DV,
+  Author = {Ono, Kenji and Matsumoto, Hideki and Himeno, Ryutaro},
+  Editor = {David Ebert},
+  Journal = {Data Visualization 2001},
+  Pages = {301--308},
+  Publisher = {Springer},
+  Title = {Visualization of Thermal Flows in an Automotive Cabin with Volume Rendering Method},
+  Year = {2001}}
+
+@article{ono:99:JWE,
+  Author = {Ono, Kenji and Himeno, Ryutaro and Fukushima, Tatsuya},
+  Journal = {Journal of wind engineering and industrial aerodynamics},
+  Pages = {403--419},
+  Title = {Prediction of wind noise radiated from passenger cars and its evaluation based on auralization},
+  Volume = {81},
+  Year = {1999}}
+
+@article{ono:93:JSAE,
+  Author = {小野 謙二，姫野 龍太郎，藤谷 克郎，佐藤 早苗},
+  Journal = {自動車技術会論文集},
+  Number = {2},
+  Pages = {49--53},
+  Title = {三次元流れ解析によるラジエータ通過風量の予測},
+  Volume = {24},
+  Year = {1993},
+  Yomi = {Ono, Kenji and Himeno, Ryutaro and Fujitani, Katsuro and Sato, Sanae},
+  pub_type={journal}
+  }
+
+@article{fujiwara:92:JAA,
+  Author = {藤原 和人，松尾 日出男，小野 謙二，広江 哲幸},
+  Journal = {日本航空宇宙学会誌},
+  Number = {460},
+  Pages = {276--284},
+  Title = {くいちがい配置された２正方形柱まわりの流れ},
+  Volume = {40},
+  Year = {1992},
+  Yomi = {Fujiwara, Kazuto and Matsuo, Hideo and Ono, Kenji and Hiroe, Tetsuyuki},
+  pub_type={journal}
+  }
+
+@article{ono:92:SAE-trns,
+  Author = {Ono, Kenji and Himeno, Ryutaro and Fujitani, Katsuro and Uematsu, Yutaka},
+  Journal = {SAE TRANSACTIONS, Journal of Passenger Cars},
+  Pages = {403--411},
+  Title = {Simultaneous Computation of the External Flow around a Car Body and the Internal Flow Through Its Engine Compartment},
+  Year = {1992},
+  pub_type={journal}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INTERNATIONAL CONFERENCE
+
+
+
+@inproceedings{koga:2018:ISIP,
+ author = {Issei Koga and Kenji Ono},
+ title = {Improving efficiency of symbolic regression to find the formula that express data},
+ booktitle = {The 12th International Workshop on Information Search, Integration, and Personalization (ISIP2018)},
+ year = {2018},
+ month = {5},
+ isbn = {},
+ location = {},
+ pages = {},
+ url = {https://sites.google.com/view/isip2018/home},
+ doi = {},
+ peer_reviewed={true}
+}
+
+
+
+@inproceedings{koga:2018:HPCAsia,
+ author = {Issei Koga and Kenji Ono},
+ title = {Estimation of Functions Representing Data Using Convolution Neural Network},
+ booktitle = {2018 International Conference on High Performance Computing in Asia-Pacific Region, HPC Asia 2018},
+ year = {2018},
+ month = {1},
+ isbn = {},
+ location = {Tokyo},
+ pages = {},
+ url = {http://sighpc.ipsj.or.jp/HPCAsia2018/},
+ doi = {},
+ peer_reviewed={true}
+}
+
+
+@inproceedings{nonaka:2018:SC,
+ author = {Jorji Nonaka and Kenji Ono and Naohisa Sakamoto and Kengo Hayashi and Tomohiro Kawanabe and Fumiyoshi Shoji and Masahiro Fujita and Kentaro Oku and Kazuma Hatta},
+ title = {HIVE: A Cross-Platform, Modular Visualization Ecosystem for Heterogeneous Computational Environments},
+ booktitle = {The 2018 Conference on Supercomputing (SC18), Research Poster},
+ year = {2018},
+ month = {11},
+ isbn = {},
+ location = {},
+ pages = {},
+ numpages = {},
+ url = {},
+ doi = {},
+ peer_reviewed={true}
+}
+
+
+@inproceedings{nonaka:2018:LDAV,
+ author = {Jorji Nonaka and Kenji Ono and Naohisa Sakamoto and Kengo Hayashiand Motohiko Matsuda and Fumiyoshi Shoji and Kentaro Oku and Masahiro Fujita and Kazuma Hatta},
+ title = {A Large Data Visualization Framework for SPARC64 fx HPC Systems – Case Study: K Computer Operational Environment},
+ booktitle = {The 8th IEEE Symposium on Large Data Analysis and Visualization (Poster)},
+ year = {2018},
+ month = {10},
+ isbn = {},
+ location = {},
+ pages = {},
+ numpages = {},
+ url = {},
+ doi = {},
+ peer_reviewed={true}
+}
+
+
+@inproceedings{Eduardo:2018:ISCC,
+ author = {Eduardo C. Inacio and Jorji Nonaka and Kenji Ono and Mario A. R. Dantas and Fumiyoshi Shoji},
+ title = {Characterizing I/O and Storage Activity on the K Computer for Post-Processing Purposes},
+ booktitle = {ISCC 2018},
+ year = {2018},
+ isbn = {},
+ location = {},
+ pages = {730--735},
+ numpages = {},
+ url = {},
+ doi = {},
+ peer_reviewed={true}
+}
+
+@inproceedings{ono:2018:IMR27,
+ author = {Kenji Ono and Takanori Uchida},
+ title = {Two-Stage in Situ Parallel Meshing for Large-Scale Atmospheric Fluid Simulation Over Complex Topography},
+ booktitle = {In Proc. of 27th International Meshing Roundtable and Users Forum},
+ year = {2018},
+ isbn = {},
+ location = {Albuquerque, NM, USA},
+ pages = {},
+ url = {},
+ doi = {},
+ peer_reviewed={true}
+} 
+
+@inproceedings{mikami:2018:LHAM18,
+ author = {Mikami, Kazunori and Ono, Kenji and Nonaka, Jorji},
+ title = {Performance Evaluation and Visualization of Scientific Applications Using PMlib},
+ booktitle = {6th International Workshop on Large-scale HPC Application Modernization LHAM’18},
+ year = {2018},
+ month = {11},
+ isbn = {},
+ location = {Hida Takayama, Japan},
+ pages = {243--249},
+ url = {},
+ doi = {10.1109/CANDARW.2018.00053},
+ peer_reviewed={true}
+}
+
+@inproceedings{ono:2018:ACFD,
+ author = {Kenji Ono and Takanori Uchida},
+ title = {High-Throughput Parallel Simulation of Airflow for Detailed Land Configuration},
+ booktitle = {The 2nd International Conference on Mechanics (ICM 2018), jointing conferences of the 12th Asian Computational Fluid Dynamics Conference (ACFD),},
+ year = {2018},
+ month = {10},
+ isbn = {},
+ location = {Yilan City, Taiwan,},
+ pages = {},
+ url = {},
+ doi = {},
+ peer_reviewed={true}
+} 
+
+
+
+@inproceedings{Kawanabe:2018:CDC:3231622.3232504,
+ author = {Kawanabe, Tomohiro and Nonaka, Jorji and Ono, Kenji},
+ title = {ChOWDER: Dynamic Contents Sharing Through Remote Tiled Display System},
+ booktitle = {Proceedings of the 11th International Symposium on Visual Information Communication and Interaction},
+ series = {VINCI '18},
+ year = {2018},
+ isbn = {978-1-4503-6501-7},
+ location = {V\äxj\ö, Sweden},
+ pages = {108--109},
+ numpages = {2},
+ url = {http://doi.acm.org/10.1145/3231622.3232504},
+ doi = {10.1145/3231622.3232504},
+ acmid = {3232504},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {collaboration work, in-situ, in-transit, tiled display wall, visualization, web-based},
+ peer_reviewed={true}
+} 
+
+@inproceedings{iizuka:2018:SIAM,
+ author = {Mikio Iizuka and Kenji Ono},
+ title = {Convergence Acceleration of the PinT Integration of Advection Equation using Accurate Phase Calculation Method},
+ booktitle = {SIAM Conference on Parallel Processing for Scientific Computing},
+ year = {2018},
+ month = {3},
+ isbn = {},
+ location = {},
+ pages = {},
+ url = {},
+ doi = {},
+ peer_reviewed={true}
+}
+
+
+@inproceedings{nonaka:2018:ICHCPA,
+ author = {Jorji Nonaka and Motohiko Matsuda and Takashi Shimizu and Naohisa Sakamoto and Masahiro Fujita and Kenji Onishi and Eduardo C. Inacio and Shun Ito and Fumiyoshi Shoji and Kenji Ono},
+ title = {A Study on Open Source Software for Large-Scale Data Visualization on SPARC64fx based HPC Systems},
+ booktitle = {In Proc. of International Conference on High Performance Computing in Asia-Pacific Region},
+ year = {2018},
+ month = {1},
+ isbn = {},
+ location = {},
+ pages = {278--288},
+ url = {},
+ doi = {},
+ peer_reviewed={true}
+}
+
+
+@inproceedings{koga:2018:SIAM-PP,
+ author = {Issei Koga and Kenji Ono},
+ title = {Research of finding formula that express data without any background information},
+ booktitle = {{SIAM Conference on Parallel Processing for Scientific Computing 2018 (Poster)}},
+ year = {2018},
+ month = {3},
+ isbn = {},
+ location = {Tokyo},
+ pages = {},
+ url = {},
+ doi = {},
+ peer_reviewed={true}
+}
+
+
+
+
+@inproceedings{nonaka:2017:sigAsia,
+ author = {Jorji Nonaka and Naohisa Sakamoto and Yasumitsu Maejima and Koji Koyamada and Kenji Ono},
+ title = {A Visual Causal Exploration Framework - Case Study: A Torrential Rain and a Flash Flood in Kobe City},
+ booktitle = {SIGGRAPH ASIA Symposium on Visualization (SA17)},
+ year = {2017},
+ month = {11},
+ isbn = {},
+ location = {},
+ volume = {8},
+ pages = {1--8},
+ url = {},
+ doi = {},
+ peer_reviewed={true}
+}
+
+
+
+
+@inproceedings{nonaka:2017:HPCS,
+ author = {Jorji Nonaka and Naohisa Sakamoto and Takashi Shimizu and Masahiro Fujita and Kenji Ono and Koji Koyamada},
+ title = {Distributed Particle-based Rendering Framework for Large Data Visualization on HPC Environments},
+ booktitle = {In Proc. of International Conference on High Performance Computing \& Simulation (HPCS2017)},
+ year = {2017},
+ month = {7},
+ isbn = {},
+ location = {},
+ volume = {},
+ pages = {300--307},
+ url = {},
+ doi = {},
+ peer_reviewed={true}
+}
+
+
+@inproceedings{DBLP:conf/ldav/YeWMMO15,
+  author    = {Yucong Chris Ye and
+               Yang Wang and
+               Robert Miller and
+               Kwan{-}Liu Ma and
+               Kenji Ono},
+  title     = {In situ depth maps based feature extraction and tracking},
+  booktitle = {5th {IEEE} Symposium on Large Data Analysis and Visualization, {LDAV} 2015, Chicago, IL, USA, October 25-26, 2015},
+  pages     = {1--8},
+  year      = {2015},
+  crossref  = {DBLP:conf/ldav/2015},
+  url       = {http://dx.doi.org/10.1109/LDAV.2015.7348065},
+  doi       = {10.1109/LDAV.2015.7348065},
+  timestamp = {Fri, 18 Dec 2015 10:12:45 +0100},
+  biburl    = {http://dblp2.uni-trier.de/rec/bib/conf/ldav/YeWMMO15},
+  bibsource = {dblp computer science bibliography, http://dblp.org},
+  peer_reviewed={true}
+}
+
+
+
+@conference{nonaka:2015:HPCS,
+author = {Nonaka, Jorji and Fujita, Masahiro and Ono, Kenji},
+Title = {234 Scheduling of 3-2 and 2-1 Eliminations for Parallel Image Compositing Using Non-Power-of-Two Number of Processes},
+Booktitle = {The 2015 International Conference on High Performance Computing \& Simulation (HPCS 2015)},
+Year = {2015},
+month = {23th July},
+pages = {17},
+annote = {reffereed},
+url = {http://hpcs2015.cisedu.info/},
+peer_reviewed={true}
+}
+
+@conference{imamura:2015:ParCFD,
+author = {Imamura, Seigo and Ono, Kenji and Yokokawa, Mitsuo},
+Title = {Performance Evaluation of Iterative Solver for Multiple Vectors Associated with a Large-Scale Sparse Matrix},
+Booktitle = {27th International Conference on Parallel Computational Fluid Dynamics Conference Abstract},
+Year = {2015},
+month = {May 17-20},
+location = {Montreal, Quebec, Canada},
+annote = {refereed},
+pages = {124--125},
+url = {},
+peer_reviewed={true}
+}
+
+@INPROCEEDINGS{Nonaka:2014:HPCS,
+author={Nonaka, J. and Ono, K. and Fujita, M.},
+booktitle={{High Performance Computing Simulation (HPCS), 2014 International Conference on}},
+title={Multi-step image compositing for massively parallel rendering},
+year={2014},
+month={July},
+pages={627--634},
+keywords={data visualisation;iterative methods;parallel processing;rendering (computer graphics);RIKEN K computer;binary-swap method;computational scientists;computer-aided scientific discovery;high performance visualization;high-end massively parallel HPC systems;large scale scientific computing;massively parallel rendering;multistep image compositing method;sort-last parallel rendering;theoretically scalable image compositing algortithms;visual data analytics;Computers;Data visualization;Degradation;Equations;Image color analysis;Pipelines;Rendering (computer graphics);K computer;Parallel image compositing;parallel rendering;scientific visualization},
+doi={10.1109/HPCSim.2014.6903746},
+peer_reviewed={true}
+}
+
+@inproceedings{Nonaka:2014:SIMS,
+ author = {Nonaka, Jorji and Bi, Chongke and Ono, Kenji and Fujita, Masahiro},
+ title = {{2-3-4 Decomposition Method for Large-Scale Parallel Image Composition with Arbitrary Number of Nodes}},
+ booktitle = {Proceedings of the 2014 First International Conference on Systems Informatics, Modelling and Simulation},
+ series = {SIMS '14},
+ year = {2014},
+ isbn = {978-0-7695-5198-2},
+ pages = {59--64},
+ numpages = {6},
+ url = {http://dx.doi.org/10.1109/SIMS.2014.21},
+ doi = {10.1109/SIMS.2014.21},
+ acmid = {2682469},
+ publisher = {IEEE Computer Society},
+ address = {Sheffield, UK},
+ peer_reviewed={true}
+}
+
+@INPROCEEDINGS{Bi:2013:LDAV,
+author={Chongke Bi and Ono, K. and Kwan-Liu Ma and Haiyuan Wu and Imamura, T.},
+booktitle={{Large-Scale Data Analysis and Visualization (LDAV), 2013 IEEE Symposium on}},
+title={Proper orthogonal decomposition based parallel compression for visualizing big data on the K computer},
+year={2013},
+month={Oct},
+pages={121-122},
+doi={10.1109/LDAV.2013.6675169},
+peer_reviewed={true}
+}
+
+@INPROCEEDINGS{Bi:2014:BigData,
+author={Chongke Bi and Ono, K. and Lu Yang},
+booktitle={Big Data (BigData Congress), 2014 IEEE International Congress on},
+title={{Parallel POD Compression of Time-Varying Big Datasets Using m-Swap on the K Computer}},
+year={2014},
+month={June},
+pages={438-445},
+doi={10.1109/BigData.Congress.2014.70},
+peer_reviewed={true}
+}
+
+@INPROCEEDINGS{Bi:2014:PacificVis,
+author={Chongke Bi and Ono, K.},
+booktitle={Pacific Visualization Symposium (PacificVis), 2014 IEEE},
+title={{2-3-4 Combination for Parallel Compression on the K Computer}},
+year={2014},
+month={March},
+pages={281-285},
+doi={10.1109/PacificVis.2014.28},
+peer_reviewed={true}
+}
+
+@inproceedings {bi:2014:pgv,
+booktitle = {Eurographics Symposium on Parallel Graphics and Visualization},
+editor = {Margarita Amor and Markus Hadwiger},
+title = {{A Study of Parallel Data Compression Using Proper Orthogonal Decomposition on the K Computer}},
+author = {Bi, Chongke and Ono, Kenji and Ma, Kwan-Liu and Wu, Haiyuan and Imamura, Toshiyuki},
+year = {2014},
+publisher = {The Eurographics Association},
+ISSN = {1727-348X},
+ISBN = {978-3-905674-59-0},
+DOI = {10.2312/pgv.20141078},
+peer_reviewed={true}
+}
+
+@inproceedings {ono:2014:pcfd,
+booktitle = {Books of extended abstracts of 26th International Conference on Computational Fluid Dynamics},
+title = {Active subdomain selection for efficient parallel computation of internal flows in complex geometry},
+author = {Ono, Kenji and Nonaka, Jorji},
+month={20-22 May 2014},
+pages = {112–113},
+year = {2014},
+location = {Trondheim, Norway},
+peer_reviewed={true}
+}
+
+@INPROCEEDINGS{Hamed-WFIoT-14,
+author={Khandan, H. and Ono, K.},
+booktitle={{Internet of Things (WF-IoT), 2014 IEEE World Forum on}},
+title={Knowledge request-broker architecture: A possible foundation for a resource-constrained dynamic and autonomous global system},
+year={2014},
+month={March},
+pages={506-507},
+keywords={Internet of Things;mobile agents;parallel architectures;sensors;software architecture;Internet-of-Things;KnoRBA;asynchronous infrastructure;asynchronous mobile agents;autonomous global system;distributed environment;distributed infrastructure;execution model;hardware infrastructure;knowledge request-broker architecture;loosely connected infrastructure;parallel infrastructure;resource-constrained dynamic system;sensor networks;software fundamentally;software programming model;software systems;Computational modeling;Computer architecture;Hardware;Programming;Servers;Software systems;Ambient Intelligence;Distributed Software Systems;Internet of Things;Knowledge Request-Broker Architecture;Low Energy Devices;Multi-agent Systems;Software Architecture},
+doi={10.1109/WF-IoT.2014.6803219},
+peer_reviewed={true}
+}
+
+@inproceedings{Ishikawa:2014:KES,
+title = {Fluid Data Compression and {ROI} Detection Using Run Length Method},
+journal = {18th International Conference on Knowledge-Based and Intelligent Information \& Engineering Systems (KES2014)},
+pages = {},
+year = {2014},
+url = {http://www.sciencedirect.com/science/article/pii/S1877050914011934},
+author = {Ishikawa, Shota and Wu, Haiyuan and Bi, Chongke and Chen, Qian and Taki, Hirokazu and Ono, Kenji},
+peer_reviewed={true}
+}
+
+
+@inproceedings{onishi-flucome:13,
+   Author = {Onishi, Junya and Ono, Kenji},
+   title   = {{Development of a CFD software for large-scale computation}},
+   booktitle = {FLUCONME 2013},
+   year    = {2013},
+   volume  = {},
+   pages   = {},
+   month   = {Nov. 18-23},
+   location  = {Nara, Japan},
+   peer_reviewed={true}
+}
+
+@inproceedings{bi-vis-13,
+   author  = {Bi, Chongke and Ono, Kenji and Ma, Kwan-Liu and Wu, Haiyuan and Imamura, Toshiyuki},
+   title   = {Proper Orthogonal Decomposition Based Parallel Compression for Visualizing Big Data on the K Computer},
+   booktitle = {Proceedings of IEEE Symposium on Large-Scale Data Analysis and Visualization},
+   year    = {2013},
+   volume  = {2013},
+   pages   = {},
+   month   = {},
+   peer_reviewed={true}
+}
+
+@inproceedings{bi-hpcs-13,
+   author  = {Bi, Chongke and Ono, Kenji},
+   title   = {POD-Based Parallel Compression for Visualizing Large-Scale Dataset},
+   booktitle = {Proceedings of High Performance Computing Symposium 2013},
+   year    = {2013},
+   volume  = {},
+   pages   = {83},
+   month   = {1},
+   peer_reviewed={true}
+}
+
+@incollection{bi:isvc:12,
+year={2012},
+booktitle={ISVC},
+title={Interactive Control of Mesh Topology in Quadrilateral Mesh Generation Based on 2D Tensor Fields},
+author={Bi, Chongke and Sakurai, Daisuke and Takahashi, Shigeo and Ono, Kenji},
+pages={726-735},
+peer_reviewed={true}
+}
+
+@inproceedings{ono-vecpar:12,
+  Author = {Ono, Kenji and Kawanabe, Tomohiro and Hatada, Toshio},
+  Booktitle = {VECPAR 2012},
+  Month = {7},
+  Title = {{HPC/PF - High Performance Computing Platform: An Environment that Accelerates Large-Scale Simulations}},
+  Year = {2012},
+  peer_reviewed={true}
+  }
+
+@conference{Fujita:11:SC,
+  Author = {Fujita, Masahiro and Ono, Kenji},
+  Booktitle = {2011 Workshop on Ultrascale Visualization},
+  Date-Modified = {2012-02-17 04:33:07 +0000},
+  Location = {Seattle, WA, USA},
+  Month = {Nov.},
+  Title = {Massively Parallel Ray Tracing},
+  Year = {2011},
+  peer_reviewed={true}
+  }
+
+@inproceedings{ito:11:PCFD,
+  Author = {Ito, Satoshi and Ono, Kenji and Goto, Kazuya},
+  Booktitle = {23nd International Conference on Parallel Computational Fluid Dynamics (PARALLEL CFD 2011)},
+  Location = {Barcelona, Spain},
+  Month = {May},
+  Title = {Automatically optimized core mapping for subdomains of parallel finite element method on multicore parallel environments},
+  Year = {2011},
+  peer_reviewed={true}
+  }
+
+@inproceedings{morimoto:10:ISVC,
+  Author = {Morimoto, Yuki and Ono, Kenji},
+  Booktitle = {International Symposium on Visual Computing},
+  Location = {Las Vegas, USA},
+  Month = {Oct.},
+  Pages = {707--718},
+  Title = {{Computer-Generated Tie-Dyeing Using a 3D Diffusion Graph}},
+  Volume = {1},
+  Year = {2010},
+  peer_reviewed={true}
+  }
+
+@inproceedings{ono:10:PCFD,
+  Author = {Ono, Kenji and Tamaki, Tsuyoshi},
+  Booktitle = {22nd International Conference on Parallel Computational Fluid Dynamics (PARALLEL CFD 2010)},
+  Location = {Kaohsiung, Taiwan},
+  Month = {May},
+  Title = {An efficient parallel computation on cartesian mesh composed of multiply-connected domains},
+  Year = {2010},
+  peer_reviewed={true}
+  }
+
+@inproceedings{akasaka:10:FEDSM,
+  Author = {Akasaka, Kei and Ono, Kenji},
+  Booktitle = {ASME 2010 3rd Joint US-European Fluids Engineering Summer Meeting and 8th International Conference on Nanochannels, Microchannels, and Minichannels},
+  Location = {Montreal, Canada},
+  Month = {Aug.},
+  Note = {FEDSM2007-37343},
+  Title = {DEVELOPMENT OF RAPID SIMULATION METHOD FOR AUTOMOTIVE AERODYNAMICS},
+  Year = {2010},
+  peer_reviewed={true}
+  }
+
+@inproceedings{morimoto:10:SIGasia,
+  Author = {Morimoto, Yuki and Ono, Kenji},
+  Booktitle = {Proceeding of {SIGGRAPH} {A}sia 2010 Posters},
+  Location = {Seoul, Korea},
+  Month = {Dec.},
+  Title = {New Cloth Modeling for Designing Dyed Patterns},
+  Year = {2010},
+  peer_reviewed={true}
+  }
+
+@inproceedings{matsumoto:10:WCCM,
+  Author = {Matsumoto, Yoichiro and Okita, Kohei and Ono, Kenji and Takagi, Shu},
+  Booktitle = {WCCM/APCOM 2010},
+  Location = {Sydney, Australia},
+  Month = {July 19-23},
+  Title = {The Tissue Ablation in High Intensity Focused Ultrasound Therapy with an Array Transducer},
+  Year = {2010},
+  peer_reviewed={true}
+  }
+
+@inproceedings{okita:10:VPH,
+  Author = {Okita, Kohei and Ono, Kenji and Takagi, Shu and Matsumoto, Yoichiro},
+  Booktitle = {VPH2010},
+  Location = {Brussels, Belgium},
+  Month = {Sep. 30 - Oct. 1},
+  Title = {Modeling and Simulation of the Tissue Ablation in High Intensity Focused Ultrasound Therapy with Array Transducer},
+  Year = {2009},
+  peer_reviewed={true}
+  }
+
+
+@inproceedings{okita:10:ISTU,
+  Author = {Okita, Kohei and Sugiyama, Kazuyasu and Ono, Kenji and Takagi, Shu and Matsumoto, Yoichiro},
+  Booktitle = {10th International Symposium on Therapeutic Ultrasound},
+  Location = {Tokyo, Japan},
+  Month = {June 9-12},
+  Title = {Numerical Study on the Effective Combination of Microbubble and Ultrasound in HIFU Therapy},
+  Year = {2010},
+  peer_reviewed={true}
+  }
+
+@inproceedings{hashimoto:10:WCCM,
+  Author = {Hashimoto, Gaku and Ono, Kenji},
+  Booktitle = {WCCM/APCOM 2010},
+  Location = {Sydney, Australia},
+  Month = {July 19-23},
+  Title = {Development of fixed mesh-based partitioned solution method for large-deformation FSI analysis with contact},
+  Year = {2010},
+  peer_reviewed={true}
+  }
+
+@inproceedings{hashimoto:10:ECCOMAS,
+  Author = {Hashimoto, Gaku and Ono, Kenji},
+  Booktitle = {5th European Conference on Computational Fluid Dynamics, {CFD} 2010, Book of Abstracts},
+  Location = {Lisbon, Portugal},
+  Month = {June 14-17},
+  Pages = {533},
+  Title = {A fixed {E}ulerian mesh-based scheme using level set function for airbag deployment simulation including the effect of outside air},
+  Volume = {2},
+  Year = {2010},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Doi:10:ACS,
+  Author = {Doi, Akio and Ono, Kenji},
+  Booktitle = {The 10th WSEAS International Conference on Applied Computer Science (ACS'10)},
+  Location = {Takizawa-mura, Iwate, Japan},
+  Pages = {204--209},
+  Title = {Digital archiving of archaeological remains using {X-Ray CT}},
+  Year = {2010},
+  peer_reviewed={true}
+  }
+
+@article{morimoto:10:vc,
+  Author = {Morimoto, Yuki and Ono, Kenji},
+  Journal = {Proc.of the 6th Intl. Conf. on Advances in Visual Computing},
+  Pages = {707--718},
+  Title = {Computer-Generated Tie-Dyeing using a 3{D} Diffusion Graph},
+  Year = {2010},
+  peer_reviewed={true}
+}
+
+@inproceedings{okita:10:ECCOMAS,
+  Author = {Okita, Kohei and Ono, Kenji and Takagi, Shu and Matsumoto, Yoichiro},
+  Booktitle = {5th European Conference on Computational Fluid Dynamics, {CFD} 2010, Book of Abstracts},
+  Location = {Lisbon, Portugal},
+  Month = {June},
+  Pages = {571},
+  Title = {Numerical simulation of the tissue ablation in high intensity focused ultrasound therapy with an array transducer},
+  Volume = {2},
+  Year = {2010},
+  peer_reviewed={true}
+  }
+
+@inproceedings{ito:10:ECCOMAS,
+  Author = {Ito, Satoshi and Ono, Kenji},
+  Booktitle = {5th European Conference on Computational Fluid Dynamics, {CFD} 2010, Book of Abstracts},
+  Location = {Lisbon, Portugal},
+  Month = {June},
+  Pages = {669},
+  Title = {Optimization of the application middleware "{SPHERE}" for {B}lue {G}ene/{L} system},
+  Volume = {2},
+  Year = {2010},
+  peer_reviewed={true}
+}
+
+@inproceedings{Akasaka:10:ECCOMAS,
+  Author = {Akasaka, Kei and Ono, Kenji},
+  Booktitle = {5th European Conference on Computational Fluid Dynamics, {CFD} 2010, Book of Abstracts},
+  Location = {Lisbon, Portugal},
+  Month = {June},
+  Pages = {169},
+  Title = {Fast and stable treatment of non-watertight geometry for incompressible flow simulation on {C}artesian grid},
+  Volume = {1},
+  Year = {2010},
+  peer_reviewed={true}
+}
+
+@inproceedings{tawara:10:IEEE-3DUI,
+  Author = {Tawara, Takehiro and Ono, Kenji},
+  Booktitle = {IEEE Symposium on 3D User Interfaces 2010 Poster},
+  Location = {Waltham, Massachusetts USA},
+  Month = {March 20-21},
+  Title = {A Framework for Volume Segmentation and Visualization Using Augmented Reality},
+  Year = {2010},
+  peer_reviewed={true}
+}
+
+@inproceedings{tawara:09:VRIPHYS,
+  Author = {Tawara, Takehiro and Ono, Kenji},
+  Booktitle = {The 6th Workshop on Virtual Reality Interaction and Physical Simulation ({VRIPHYS} 09)},
+  Location = {Karlsruhe, Germany},
+  Month = {Nov.},
+  Title = {An Application of Photo Realistic Water Surface Interaction Using Mixed Reality},
+  Year = {2009},
+  peer_reviewed={true}
+}
+
+@inproceedings{Okita:09:ISTU,
+  Author = {Okita, Kohei and Sugiyama, Kazuyasu and Ono, Kenji and Takagi, Shu and Matsumoto, Yoichiro},
+  Booktitle = {ISTU2009},
+  Location = {Aix-en Province, France},
+  Month = {Sep.},
+  Title = {Numerical Simulation of High Intensity Focused Ultrasound Therapy with Volume Model of Human Body},
+  Year = {2009},
+  peer_reviewed={true}
+}
+
+@inproceedings{Ono:09:PCFD,
+  Author = {Ono, Kenji and Michikawa, Takashi and Tamaki, Tsuyoshi and Hiramoto, Osamu},
+  Booktitle = {Proceeding of International Conference on Parallel Computational Fluid Dynamics},
+  Location = {California, USA},
+  Month = {May},
+  Title = {A framework for parallel flow computation with multi-box layout},
+  Year = {2009},
+  peer_reviewed={true}
+}
+
+@inproceedings{tawara:09:SIGasia,
+  Author = {Tawara, Takehiro and Ono, Kenji},
+  Booktitle = {Proceeding of {SIGGRAPH} {A}sia 2009 Posters},
+  Location = {Yokohama, Japan},
+  Month = {Dec. 16-19},
+  Title = {Direct 3D Manipulation for Volume Segmentation using Mixed Reality},
+  Year = {2009},
+  peer_reviewed={true}
+}
+
+@inproceedings{morimoto:09:SIGasia,
+  Author = {Morimoto, Yuki and Ono, Kenji},
+  Booktitle = {Proceeding of {SIGGRAPH} {A}sia 2009 Posters},
+  Location = {Yokohama, Japan},
+  Month = {Dec. 16-19},
+  Title = {Computer-Generated Tie-Dyeing Pattern},
+  Year = {2009},
+  peer_reviewed={true}
+}
+
+@inproceedings{ono:08:SC,
+  Author = {Ono, Kenji and Nonaka, Jorji},
+  Booktitle = {Ultrascale Visualization, 2008. UltraVis 2008. Workshop on},
+  Doi = {10.1109/ULTRAVIS.2008.5154064},
+  Month = {Nov.},
+  Pages = {55--61},
+  Title = {Design of cooperative visualization environment with intensive data management in project lifecycle},
+  Year = {2008},
+  Bdsk-Url-1 = {http://dx.doi.org/10.1109/ULTRAVIS.2008.5154064},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Akasaka:08:ECCOMAS,
+  Author = {Akasaka, Kei and Ono, Kenji},
+  Booktitle = {5th Europian Congress on Computational methods in Applied Science and Engineering, ECCOMAS 2008},
+  Location = {Venice, Italy},
+  Month = {June},
+  Title = {Immersed Pressure Loss Boundary Condition on Cartesian Grid},
+  Year = {2008},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Hashimoto:08:ECCOMAS,
+  Author = {Hashimoto, Gaku and Ono, Kenji and Noguchi, Hirohisa},
+  Booktitle = {5th Europian Congress on Computational methods in Applied Science and Engineering, ECCOMAS 2008},
+  Location = {Venice, Italy},
+  Month = {June},
+  Title = {Coupled Analysis of High-Speed Flow and Large-Deformable Structure using Partitioned Solution Method with Level Set Function},
+  Year = {2008},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Okita:08:ECCOMAS-shape,
+  Author = {Okita, Kohei and Tawara, Takehiro and Ono, Kenji},
+  Booktitle = {5th Europian Congress on Computational methods in Applied Science and Engineering, ECCOMAS 2008},
+  Location = {Venice, Italy},
+  Month = {June},
+  Title = {Shape Representation by Singed Distance Function for Immersed Boundary Method},
+  Year = {2008},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Okita:08:ECCOMAS-HIFU,
+  Author = {Okita, Kohei and Ono, Kenji and Takagi, Shu and Matsumoto, Yoichiro},
+  Booktitle = {5th Europian Congress on Computational methods in Applied Science and Engineering, ECCOMAS 2008},
+  Location = {Venice, Italy},
+  Month = {June},
+  Title = {High Intensity Focused Ultrasound in a Human Body},
+  Year = {2008},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Nonaka:08:IWSV,
+  Author = {Nonaka, Jorji and Ono, Kenji and Miyachi, Hideo},
+  Booktitle = {The 1st International Workshop on Super Visualization (IWSV)},
+  Location = {Kos Is., Greece},
+  Month = {July},
+  Title = {Theoretical and Practical Performance and Scalability Analyses of Binary-Swap image Composition Method on {IBM Blue Gene/L}},
+  Year = {2008},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Watanabe:08:IWSV,
+  Author = {Watanabe, Daisuke and Ono, Kenji and Mao, Xiaoyang},
+  Booktitle = {The 1st International Workshop on Super Visualization (IWSV)},
+  Location = {Kos Is., Greece},
+  Month = {July},
+  Title = {Eye Tracking Based Automatic ROI Detection and Streamline Seeding in Large Flow Field Visualization},
+  Year = {2008},
+  peer_reviewed={true}
+  }
+
+
+@inproceedings{Ono:08:PCFD,
+  Author = {Ono, Kenji},
+  Booktitle = {Proceeding of International Conference on Parallel Computational Fluid Dynamics},
+  Location = {Lyon, France},
+  Month = {May},
+  Pages = {77--80},
+  Title = {Performance of Multicolor SOR Method for Poisson's Equation on Shared and Distributed Memory Parallel Environment},
+  Year = {2008},
+  peer_reviewed={true}
+  }
+
+
+@inproceedings{Ono:07:APCOM,
+  Author = {Ono, Kenji and Tawara, Takehiro and Yoshikawa, Hiroyuki},
+  Booktitle = {APCOM '07 in conjunction with EPMESC XI},
+  Location = {Kyoto, Japan},
+  Month = {Dec.},
+  Pages = {208},
+  Title = {Cartesian Grid Generation Towards Large-Scale Practical Flow Simulations},
+  Year = {2007},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Iwata:07:ISGG,
+  Author = {Iwata, Masako and Ono, Kenji and Tamaki ,Tsuyoshi},
+  Booktitle = {The 10th ISGG Conference on Numerical Grid Generation},
+  Location = {Forth, Crete},
+  Month = {Sep.},
+  Title = {Simulations with Adaptive Mesh Refinement using pFTT Data Structure},
+  Year = {2007},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Tawara:07:ISGG,
+  Author = {Tawara, Takehiro and Ono, Kenji},
+  Booktitle = {The 10th ISGG Conference on Numerical Grid Generation},
+  Location = {Forth, Crete},
+  Month = {Sep.},
+  Title = {Fast Large Scale Voxelization using a Pedigree},
+  Year = {2007},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Okita:07:ICMF,
+  Author = {Okita, Kohei and Ono, Kenji},
+  Booktitle = {6th International Conference on Multiphase Flow, ICMF07},
+  Location = {Leipzig, Germany},
+  Month = {July},
+  Title = {Numerical Simulation of Multiple Fluids Flow by Diffuse Interface Model},
+  Year = {2007},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Terashima:07:FEDSM,
+  Author = {Terashima, Hiroshi and Ono, Kenji},
+  Booktitle = {5th Joint ASME/JSME Fluid Engineering Conference},
+  Location = {San Diego, USA},
+  Month = {July},
+  Title = {Reliability of Compressible Flow/Structure Coupling Method on Cartesian Grid with Signed Distance Field},
+  Year = {2007},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Ono:07:PCFD,
+  Author = {Ono, Kenji and Tamaki, Tsuyoshi},
+  Booktitle = {Proceeding of International Conference on Parallel Computational Fluid Dynamics},
+  Location = {Antalya, Turkey},
+  Month = {May},
+  Title = {Development of a framework for parallel simulators with various physics and its performance},
+  Year = {2007},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Kato:06:ISUCI,
+  Author = {Kato, Mitsuaki and Yoshizawa, Shin and Ono, Kenji and Matsumoto, Yoichiro},
+  Booktitle = {8th International Symposium on Ultrasound Contrast Imaging},
+  Pages = {91},
+  Title = {Numerical Analysis of Medical Ultrasound with Navier-Stokes Equation},
+  Year = {2006},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Ono:04:WCCM,
+  Author = {Ono, Kenji and Ikeda, Kazuto and Nakamura, Souich and Hamamoto, Naoki and Isomura, Ryouji and Hasegawa, Takumi and Tooya, Hideki},
+  Booktitle = {The sixth World Congress on Computational Mechanics in conjunction with the second Asian-Pacific Congress on Computational Mechanics},
+  Location = {Beijing, China},
+  Month = {Sep.},
+  Pages = {158},
+  Title = {Benchmark of CFD software from a viewpoint of user site},
+  Volume = {1},
+  Year = {2004},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Fukuta:04:ICMF,
+  Author = {Fukuta, Masato and Ono, Kenji and Matsumoto, Yoichiro},
+  Booktitle = {The 5th International Conference on Multiphase Flow, ICMF04},
+  Location = {Yokohama, Japan},
+  Month = {May},
+  Number = {361},
+  Pages = {168--178},
+  Title = {Numerical Study of Water Mist Fire Suppression System," The 5th International Conference on Multiphase Flow},
+  Year = {2004},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Fukuta:03:CFD,
+  Author = {Fukuta, Masato and Ono, Kenji and Matsumoto, Yoichiro},
+  Booktitle = {CFD 2003: The Eleventh Annual Conference of the CFD Society of Canada},
+  Location = {Vancouver, Canada},
+  Pages = {272--278},-
+  Title = {An Efficient Procedure for Solving Coupled Problem of Fluid/Solid Heat Transfer},
+  Year = {2003},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Ono:02:NGG,
+  Author = {Ono, Kenji and Aoki, Hiroyuki and Sato, Sanae and Shiozawa, Hiroyuki},
+  Booktitle = {8th International Conference on Numerical Grid Generation in Computational Field Simulation},
+  Pages = {81--90},
+  Title = {Construction of Rapid Simulation Tool for Automotive CFD},
+  Year = {2002},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Ono:01:AFI,
+  Author = {Ono, Kenji and Matsumoto, Hideki and Himeno, Ryutaro},
+  Booktitle = {Proc. of 1st Intl. Symp. On Advanced Fluid Information},
+  Pages = {423--426},
+  Title = {A Visualization of the Behavior of Noise Source for an automotive wind noise},
+  Year = {2001},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Katori:01:ISFV,
+  Author = {Katori, Yoshiaki and Takagi, Michitoshi and Ono, Kenji},
+  Booktitle = {9th International Symposium on Flow Visualization 2000},
+  Location = {Edinburgh, UK},
+  Number = {350},
+  Title = {Unsteady CFD analysis around a circular cylinder at various Reynolds numbers},
+  Year = {2001},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Ono:00:FISITA,
+  Author = {Ono, Kenji and Akabane, Ken-ichi and Shiozawa, Hiroyuki and Fujitani, Katsuro},
+  Booktitle = {FISITA World Automotive Congress 2000},
+  Location = {Seoul, Korea},
+  Month = {June},
+  Title = {Prediction of Cooling Airflow Rate through the Front Grille Using Flow Analysis with a Multi-Level Mesh System},
+  Year = {2000},
+  peer_reviewed={true}
+}
+
+@inproceedings{Ono:99:FEDSM,
+  Author = {Ono, Kenji and Fujitani, Katsuro and Fujita, Hideki},
+  Booktitle = {Proceedings of the 3rd ASME/JSME Joint Fluids Engineering Conference},
+  Location = {San Francisco, California, USA},
+  Month = {June},
+  Title = {Applications of CFD Using Voxel Modeling to Vehicle Development},
+  Year = {1999},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Ishikawa:99:VTMS,
+  Author = {Ishikawa, Teruaki and Shiozawa, Hiroyuki and Oshima, Munehiko and Ono, Kenji},
+  Booktitle = {Vehicle Thermal Management Systems},
+  Location = {London, U.K.},
+  Month = {May},
+  Pages = {39--49},
+  Title = {Development of Techniques for Identifying the Factors Determining the Temperatures of Engine Compartment Components and for Predicting their Temperatures},
+  Year = {1999},
+  peer_reviewed={true}
+  }
+
+
+@inproceedings{Ono:98:IWE,
+  Author = {Ono, Kenji and Himeno, Ryutaro and Fukushima, Tatsuya},
+  Booktitle = {International Workshop on CFD for Wind Climate in Cities, International Wind Engineering Forum Preprint papers},
+  Location = {Hayama, Japan},
+  Month = {Aug.},
+  Pages = {326--335},
+  Title = {Prediction of wind noise radiated from passenger cars and its evaluation based on auralization},
+  Year = {1998},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Ono:98:JSAE,
+  Author = {Ono, Kenji and Tomita, Naoyuki and Fujitani, Katsuro and Himeno, Ryutaro},
+  Booktitle = {Society of Automotive Engineers of Japan, Spring Convention},
+  Number = {984},
+  Pages = {165--168},
+  Title = {An Application of Voxel Modeling Approach to Prediction of Engine Cooling Flow},
+  Year = {1998},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Ono:94:WCCM,
+  Author = {Ono, Kenji and Himeno, Ryutaro and Fukushima, Tatsuya},
+  Booktitle = {International Association for Computational Mechanics, The Third World Congress on Computational Mechanics},
+  Pages = {1540--1541},
+  Title = {Improving Accuracy of Computing Flows Around an Automobile with a Cross-Wind by an Overlaid Grid Approach},
+  Volume = {2},
+  Year = {1994},
+  peer_reviewed={true}
+  }
+
+@inproceedings{Ono:92:SAE,
+  Author = {Ono, Kenji and Himeno, Ryutaro and Fujitani, Katsuro and Uematsu, Yutaka},
+  Booktitle = {SAE Paper},
+  Number = {920342},
+  Title = {Simultaneous Computation of the External Flow around a Car Body and the Internal Flow Through Its Engine Compartment},
+  Year = {1992},
+  peer_reviewed={true}
+  }
+
+
+
+
+@conference{nonaka:2015:SM,
+  Author = {Nonaka, Jorji and Ono, Kenji},
+  Booktitle = {NII Shonan Meeting Report No. 2015-7},
+  Issn = {ISSN 2186-7437},
+  Location = {Hayama, Japan},
+  Month = {Nov. 11},
+  Organization = {National Institute of Informatics},
+  Title = {Big Data Visual Analytics},
+  Year = {2015},
+}
+
+@conference{nonaka:2015:SigAsia,
+  Author = {Nonaka, Jorji and Ono, Kenji},
+  Booktitle = {Panel: Top Computation Visualization R\&D Problems 2015},
+  Location = {Kobe, Japan},
+  Month = {Nov. 4},
+  Organization = {SIGGRAPH Asia},
+  Title = {Ubiquitous and Sustainable High-Performance Visualization},
+  Year = {2015},
+}
+
+@conference{onishi:2015:AJK,
+  Author = {Onishi, Jyunya and Ono, Kenji and Suzuki, Soichiro},
+  Booktitle = {Proceedings of the ASME-JSME-KSME Joint Fluids Engineering Conference 2015 AJK2015-FED},
+  Location = {SEOUL, KOREA},
+  Month = {July 26-31},
+  Pages = {AJK2015-29581},
+  Title = {PARALLELIZATION OF A BLOCK-BASED HIERARCHICAL CARTESIAN CFD CODE},
+  Year = {2015},
+}
+
+@conference{uzawa:2015:AJK,
+  Author = {Uzawa, Ken and Ono, Kenji},
+  Booktitle = {Proceedings of the ASME-JSME-KSME Joint Fluids Engineering Conference 2015 AJK2015-FED},
+  Location = {SEOUL, KOREA},
+  Month = {July 26-31},
+  Pages = {AJK2015-29634},
+  Title = {VALIDATION OF LOCAL SGS MODELS IMPLEMENTED IN HIGH-PERFORMANCE CFD SOLVER: FFV-C},
+  Year = {2015},
+}
+
+@conference{Nonaka:2014:Uvis,
+  Author = {Nonaka, J. and Fujita, M. and Ono, K.},
+  Booktitle = {Ultrascale Visualization Workshop 2014 (UltraVis2014)},
+  Location = {New Orleans, USA},
+  Month = {November},
+  Title = {SURFACE: A Visualization Framework for Large−Scale Parallel Simulations},
+  Url = {http://vis.cs.ucdavis.edu/Ultravis14/},
+  Year = {2014},
+  Bdsk-Url-1 = {http://vis.cs.ucdavis.edu/Ultravis14/}}
+
+@conference{Nonaka:2014:hpcs-conf,
+  Author = {Nonaka, J. and Fujita, M. and Ono, K.},
+  Booktitle = {2014 International Conference on High Performance Computing \& Simulation},
+  Location = {Bologna, Italy},
+  Month = {July 21-25},
+  Pages = {627---634},
+  Title = {Multi-Step Image Compositing for Massively Parallel Rendering},
+  Url = {http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6903658},
+  Year = {2014},
+  Bdsk-Url-1 = {http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6903658}}
+
+@inproceedings{Onishi:2014:ICNMMF,
+  Author = {Onishi, J. and Ono, K.},
+  Booktitle = {2nd International Conference on Numerical Methods in Multiphase Flows},
+  Location = {Darmstadt, Germany},
+  Month = {April},
+  Title = {A Cartesian grid method for simulating two-phase flow in complex geometries},
+  Year = {2014},
+}
+
+@conference{Ono:2014:SMC,
+  Author = {Ono, K.},
+  Booktitle = {Japan/United States Exascale Applications Workshop},
+  Location = {Gatlinburg, Tennessee, USA},
+  Month = {September 5-6},
+  Title = {CHALLENGES AND STRATEGY TO TACKLE THE EXTREME-SCALE FLUID SIMULATION FOR ENGINEERING PROCESS},
+  Year = {2014},
+}
+
+@conference{uzawa:2014:WCCM,
+  Author = {Uzawa, K. and Ono, K. and Uchida, T.},
+  Booktitle = {{11th World Congress on Computational Mechanics (WCCM XI)}},
+  Location = {Barcelona, Spain},
+  Month = {July 20-25},
+  Title = {Validation of local SGS models for high Reynolds number flow},
+  Url = {http://www.wccm-eccm-ecfd2014.org/admin/files/fileabstract/a3688.pdf},
+  Year = {2014},
+  Bdsk-Url-1 = {http://www.wccm-eccm-ecfd2014.org/admin/files/fileabstract/a3688.pdf}}
+
+@conference{noda:2014:WCCM,
+  Author = {Noda, S. and Sugiyama, K. and Kawashima, Y. and Ono, K. and Takagi, S. and Himeno, R.},
+  Booktitle = {{11th World Congress on Computational Mechanics (WCCM XI)}},
+  Location = {Barcelona, Spain},
+  Month = {July 20-25},
+  Title = {Development and applications of the parallel computing middleware for the life science simulations},
+  Year = {2014},
+}
+
+@conference{ono:2014:WCCM,
+  Author = {Ono, K.},
+  Booktitle = {{11th World Congress on Computational Mechanics (WCCM XI)}},
+  Location = {Barcelona, Spain},
+  Month = {July 20-25},
+  Title = {BIT-REPRESENTATION OF BOUNDARY CONDITIONS FOR HIGH PERFORMANCE INCOMPRESSIBLE THERMAL FLOW SIMULATION},
+  Year = {2014},
+}
+
+@conference{ono:2014:HPCsummer,
+  Author = {Ono, K.},
+  Booktitle = {International {HPC} Summer School 2014},
+  Location = {Budapest},
+  Month = {June 2-6},
+  Title = {{CFD} APPLICATION FOR INDUSTRIAL DESIGN IN PETA-SCALE COMPUTING ENVIRONMENTS},
+  Year = {2014},
+}
+
+@conference{ono:2014:ICCS,
+  Author = {Ono, K. and Kawashima, Y. and Kawanabe, T.},
+  Booktitle = {International Conference on Computational Science},
+  Location = {Cairns, Australia},
+  Month = {June 10-12},
+  Title = {Data Centric Framework for Large-Scale High Performance Parallel Computation},
+  Year = {2014},
+}
+
+@conference{nonaka:2014:sims-conf,
+  Author = {Nonaka, J. and Bi, Change and Ono, Kenji and Fujita, Masahiro},
+  Booktitle = {Proc. of UKSim-AMSS 1st International Conference on Systems Informatics, Modelling and Simulation},
+  Location = {Sheffield, United Kingdom},
+  Month = {29 April -- 1 May},
+  Pages = {59-64},
+  Title = {2-3-4 Decomposition Method for Large-Scale Parallel Image Composition with Arbitrary Number of Nodes},
+  Year = {2014},
+}
+
+@conference{ono:2014:vecpar,
+  Author = {Ono, Kenji and Chiba, Shuichi and Inoue, Shunsuke and Minami, Kazuo},
+  Booktitle = {11th International Meeting High Performance Computing for Computational Science},
+  Location = {Eugene, Oregon, USA},
+  Month = {June 30 - July 3},
+  Title = {Performance Improvement of Iterative Method with Bit-Representation technique for Coefficient Matrix},
+  Url = {http://www.vecpar.org},
+  Year = {2014},
+  Bdsk-Url-1 = {http://www.vecpar.org}}
+
+@conference{bi:2014:bd,
+  Author = {Bi, Chongke and Ono, kenji and Yang, Lu},
+  Booktitle = {3rd International Congress on Big Data},
+  Location = {Anchorage, Alaska, USA},
+  Month = {June 27 - July 2},
+  Title = {Parallel POD Compression of Time-Varying Big Datasets Using m-Swap on the K Computer},
+  Year = {2014},
+ }
+
+@conference{fujita:2014:hpg,
+  Annote = {poster},
+  Author = {Fujita, M. and Nonaka, J. and Ono, K.},
+  Booktitle = {High Performance Graphics 2014},
+  Month = {June},
+  Title = {LSGL: Large Scale Graphics Library for Peta-Scale Computing Environments},
+  Year = {2014},
+}
+
+@conference{khandan:2014:gtc,
+  Annote = {poster},
+  Author = {Khandan, H.},
+  Booktitle = {GPU Technology Conference Japan 2014},
+  Month = {July},
+  Title = {A-Cell: A Unified Abstraction for Fine-Grained Parallelism},
+  Year = {2014},
+}
+
+@conference{ono-bdec:13,
+  Author = {Ono, Kenji},
+  Booktitle = {Big data and extreme-scale computing},
+  Location = {Charleston, SC, USA},
+  Month = {4},
+  Title = {Life cycle management of big data for extreme-scale simulation},
+  Url = {http://www.exascale.org/bdec/},
+  Year = {2013},
+  Bdsk-Url-1 = {http://www.exascale.org/bdec/}}
+
+@conference{ono-aics:13,
+  Author = {Ono, Kenji},
+  Booktitle = {The 4th AICS International Symposium: Computer and Computational Science for Exascale Computing},
+  Month = {12},
+  Title = {Technology Infrastructure for Scientific Applications with Large-Scale Dataset},
+  Url = {http://www.aics.riken.jp/AICS-Symposium/2013/},
+  Year = {2013},
+  Bdsk-Url-1 = {http://www.aics.riken.jp/AICS-Symposium/2013/}}
+
+@conference{ono-aics:12,
+  Author = {Ono, Kenji},
+  Booktitle = {The 3rd AICS International Symposium: Computer and Computational Science for Exascale Computing},
+  Month = {2},
+  Title = {Research Activities of Visualization on K-computer},
+  Year = {2013},
+  }
+
+@conference{ono-vws:12,
+  Author = {Ono, Kenji},
+  Booktitle = {3rd International WS of large-scale visualization},
+  Month = {10},
+  Title = {Large-scale CFD for Industrial Application and Post Processing},
+  Year = {2012},
+}
+
+@inproceedings{ono-kj:12,
+  Annote = {Invited},
+  Author = {Ono, Kenji and Onishi, Junya and Kawanabe, Tomohiro},
+  Booktitle = {International Workshop on Future of CFD and Aerospace Sciences},
+  Month = {12},
+  Title = {Issues and approach for large-scale CFD on K computer},
+  Year = {2012},
+}
+
+@inproceedings{onishi-isgg:12,
+  Author = {Onishi, Junya and Ono, Kenji},
+  Booktitle = {MASCOT and ISGG 2012},
+  Title = {Development of a parallel Poisson equation solver for two-phase flow simulations},
+  Year = {2012},
+}
+
+@inproceedings{suzuki-isgg:12,
+  Author = {Suzuki, Souichirou and Ono, Kenji and Ogawa, Takanobu and Onishi, Junya},
+  Booktitle = {MASCOT and ISGG 2012},
+  Title = {A Software Framework of the Building-Cube Method for a Large-scale Computation},
+  Year = {2012},
+}
+
+@inproceedings{hashimoto:11:USNCCM,
+  Address = {Minneapolis, USA},
+  Author = {Hashimoto, Gaku and Ono, Kenji},
+  Booktitle = {USNCCM 11},
+  Month = {July 25-28},
+  Title = {A level-set-based eulerian-lagrangian coupling method with contact model for folded airbag deployment analysis},
+  Year = {2011},
+}
+
+@conference{ono:11:AJK,
+  Address = {Hamamatsu, Shizuoka, Japan},
+  Author = {Ono, Kenji},
+  Booktitle = {Proc. of ASME-JSME-KSME joint Fluids Engineering Conference 2011},
+  Month = {July 24-29},
+  Title = {Voxel-Based High Performance Parallel Flow Simulator for Industrial Applications},
+  Year = {2011},
+}
+
+@conference{ono:11:ICFD,
+  Address = {Sendai, Miyagi, Japan},
+  Author = {Ono, Kenji and Kato, Chisachi},
+  Booktitle = {Proc. of Eighth International Conference on Fluid Dynamics},
+  Month = {Nov.},
+  Title = {Towards Large-Scale Practical CFD in Industry},
+  Year = {2011},
+}
+
+@inproceedings{okita:10:BioSC,
+  Author = {Okita, Kohei and Ono, Kenji and Takagi, Shu and Matsumoto, Yoichiro},
+  Booktitle = {2nd Bio Supercomputing Symposium},
+  Location = {Tokyo, Japan},
+  Month = {March 18-19},
+  Title = {Numerical Simulation of the Tissue Ablation in HIFU therapy with an Array Transducer},
+  Year = {2010},
+}
+
+@proceedings{hashimoto:10:IWACOM,
+  Author = {Hashimoto, Gaku and Ono, Kenji},
+  Booktitle = {Proc. of 2nd International Workshops on Advances in Computational Mechanics(IWACOM-II)},
+  Location = {Yokohama, Japan},
+  Month = {March 29-31},
+  Title = {Application of a partitioned coupling algorithm using level set function to folded airbag deployment},
+  Year = {2010},
+}
+
+@inproceedings{hashimoto:10:USNCCM,
+  Address = {Columbus, USA},
+  Author = {Hashimoto, Gaku and Ono, Kenji},
+  Booktitle = {USNCCM 10},
+  Month = {July 16-19},
+  Title = {A fixed mesh approach using level set function for fluid domains divided by large-deformable thin elastic structure},
+  Year = {2009},
+}
+
+@inproceedings{Sakata:10:CMB,
+  Author = {Sakata, Takuya and Sera, Toshihiro and Kakusho, Nobunori and Yokota, Hideo and Ono, kenji and Takagi, Shu},
+  Booktitle = {Computer Methods in Biomechanics and Biomedical Engineering 2010},
+  Location = {Spain},
+  Month = {Feb.},
+  Title = {Voxel-based modeling of flow in the nasal cavities},
+  Year = {2010},
+}
+
+@inproceedings{Ono:10:SIAM,
+  Author = {Ono, Kenji and Ito, Satoshi},
+  Booktitle = {SIAM Conference on Parallel Processing for Scientific Computing(PP10)},
+  Location = {Seattle, Washington, USA},
+  Month = {February},
+  Title = {{P}arallel {CFD} {A}pplications and {I}ts {P}erformance on a {M}iddleware},
+  Year = {2010},
+}
+
+@inproceedings{Hashimoto:09:USCCM,
+  Author = {Hashimoto, Gaku and Ono, Kenji},
+  Booktitle = {10th US Nantional Congress on Computational Mechanics},
+  Location = {Columbus, Ohaio, USA},
+  Month = {July},
+  Title = {A Fixed Mesh Approach using Level Set Function for Fluid Domains divided by Large-Deformable Thin Elastic Structure},
+  Year = {2009},
+}
+
+@inproceedings{Ito:09:USCCM,
+  Author = {Ito, Satoshi and Ono, Kenji},
+  Booktitle = {10th US Nantional Congress on Computational Mechanics},
+  Location = {Columbus, Ohaio, USA},
+  Month = {July},
+  Title = {Development of Finite Element framework for the Application Middleware "SPHERE"},
+  Year = {2009},
+}
+
+@inproceedings{Matsumoto:09:FEF,
+  Author = {Matsumoto, Yoichiro and Okita, Kohei and Ono, Kenji and Takagi, Shu},
+  Booktitle = {15th International Conference on Finite Elements in Flow Problems},
+  Location = {Tokyo, Japan},
+  Month = {April},
+  Title = {Numerical Simulation of Therapeutic Ultrasound},
+  Year = {2009},
+}
+
+@inproceedings{Hashimoto:09:SIAM,
+  Author = {Hashimoto, Gaku and Ono, Kenji},
+  Booktitle = {SIAM Conference on Computational Science and Engineering 2009 (CSE09)},
+  Location = {Miami, Florida, USA},
+  Month = {March},
+  Title = {{3D} Partitioned FSI Simulation Using Level Set Function on Eulerian Mesh},
+  Year = {2009},
+}
+
+@inproceedings{Okita:09:ICU,
+  Author = {Okita, Kohei and Sugiyama, Kazuyasu and Ono, Kenji and Takagi, Shu and Matsumoto, Yoichiro},
+  Booktitle = {International Congress on Ultrasonics},
+  Location = {Santiago, Chile},
+  Month = {Jan.},
+  Title = {Numerical study on high intensity focused ultrasound therapy using array transducer},
+  Year = {2009},
+}
+
+@inproceedings{Ono:08:TFEC,
+  Author = {Ono, Kenji and Himeno, Ryutaro},
+  Booktitle = {The Seventh JSME-KSME Thermal and Fluids Engineering Conference},
+  Location = {Sapporo, Japan},
+  Month = {Oct.},
+  Pages = {2},
+  Title = {A Strategy of Software Infrastructure Technology Enabling Peta-Scale Computing},
+  Year = {2008},
+}
+
+@inproceedings{Kato:06:DFD,
+  Author = {Kato, Mitsuaki and Yoshizawa, Shin and Ono, Kenji and Matsumoto, Yoichiro},
+  Booktitle = {The 2006 APS Division of Fluid Dynamics 59th Annual Meeting (DFD06)},
+  Location = {Florida, USA},
+  Pages = {178},
+  Title = {Numerical Analysis on Ultrasound Propagation and Temperature Rise in Focused Ultrasound Treatment with Navier-Stokes Equation},
+  Year = {2006},
+}
+
+@inproceedings{Ii:06:ASC,
+  Author = {Ii, Satoshi and Xiao, Feng and Ono, Kenji},
+  Booktitle = {Asian Simulation Conference 2006},
+  Location = {Tokyo, Japan},
+  Month = {Oct.},
+  Title = {The fluid-structure interacting simulations with the immersed interface method on a Cartesian grid},
+  Year = {2006},
+}
+
+@inproceedings{Terashima:06:ICCFD,
+  Author = {Terashima, Hiroshi and Ono, Kenji},
+  Booktitle = {Proceedings of The Forth International Conference on Computational Fluid Dynamics (ICCFD4)},
+  Title = {Transonic Aeroelastic Computations of a Delta Wing Configuration with High Fidelity Equations},
+  Year = {2006},
+}
+
+@inproceedings{Ono:06:TFI,
+  Author = {Ono, Kenji and Ohtake, Yutaka and Shirazaki, Minoru},
+  Booktitle = {Proc. of The Third International Symposium on Transdisciplinary Fluid Information},
+  Location = {Miyagi, Japan},
+  Month = {June},
+  Pages = {19--22},
+  Title = {A seamless CFD system coupling with the implicit function},
+  Year = {2006},
+}
+
+@inproceedings{Himeno:05:MECHJ,
+  Author = {Himeno, Ryutaro and Ono, Kenji},
+  Booktitle = {International Minisymposium on Challenger and Advances in Flow Simulation and Modeling},
+  Pages = {272},
+  Title = {Voxel Approach to simulate Flows Using V-CAD},
+  Volume = {8},
+  Year = {2005},
+}
+
+@inproceedings{Kawabata:02:NRIFD,
+  Author = {Kawabata, Nobuyoshi and Ono, Kenji and Matsumoto, Yoichiro},
+  Booktitle = {Proc. Of Second NRIFD Symposium},
+  Location = {Mitaka, Tokyo},
+  Month = {July},
+  Pages = {237--248},
+  Title = {Turbulent Diffusion Process of Inert Gas and Water Mist},
+  Year = {2002},
+}
+
+@inproceedings{Ono:01:PSFVIP,
+  Author = {Ono, Kenji and Matsumoto, Hideki and Himeno, Ryutaro},
+  Booktitle = {The 3rd Pacific Symposium on Flow Visualization and Image Processing 2001, PSFVIP-3},
+  Location = {Maui, Hawai},
+  Month = {March},
+  Pages = {203--204},
+  Title = {An Application of Volume Rendering Visualization to the Thermal Flow Analysis in a Vehicle Cabin},
+  Year = {2001},
+}
+
+@inproceedings{Ono:01:AFI,
+  Author = {Ono, Kenji and Matsumoto, Hideki and Himeno, Ryutaro},
+  Booktitle = {Proc. of 1st Intl. Symp. On Advanced Fluid Information},
+  Pages = {423--426},
+  Title = {A Visualization of the Behavior of Noise Source for an automotive wind noise},
+  Year = {2001},
+}
+
+@inproceedings{himeno:97:ISS,
+  Author = {Himeno, Ryutaro and Fukushima, Tatsuya and Ono, Kenji},
+  Booktitle = {Proceedings of International Symposium on Simulation, Visualization and Auralization for Acoustic Research and Education},
+  Organization = {Acoustic Society of Japan / Institute of Noise Control Engineering of Japan},
+  Pages = {117--122},
+  Title = {Flow Simulation of Passenger Cars and Auralization of Aerodynamic Noise Emitted from them},
+  Year = {1997},
+}
+
+@inproceedings{Himeno:96:FED,
+  Author = {Himeno, Ryutaro and Fukushima, Tatsuya and Ono, Kenji},
+  Booktitle = {Proceedings of the ASME Fluids Engineering Division},
+  Pages = {167--173},
+  Title = {Computation of Aerodynamic Noise Emitted from a Door Mirror of a Passenger Car and Its Synthesis},
+  Volume = {242},
+  Year = {1996},
+  }
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TALK
+
+@inproceedings{Ono:15:finalsympo,
+  Address = {東京},
+  Author = {小野 謙二},
+  Booktitle = {文部科学省「HPCI戦略プログラム」分野４ものづくり 第6回次世代ものづくりシンポジウム(最終成果報告会）},
+  Month = {3月~24日},
+  Organization = {東京大学生産技術研究所　革新的シミュレーションセンター},
+  Title = {大規模シミュレーションの実行支援環境 HPC/PFの開発と成果},
+  Year = {2016},
+  Yomi = {Ono, Kenji}
+}
+
+@inproceedings{nonaka:15:HPCS2015,
+  Address = {東京},
+  Author = {野中 丈士 and 藤田 将洋 and 小野 謙二},
+  Booktitle = {2015年ハイパフォーマンスコンピューティングと計算科学シンポジウム},
+  Month = {5月19日},
+  Organization = {情報処理学会},
+  Title = {Rank Reordering and Data Padding for Optimizing Large-Scale Parallel Image Composition},
+  Year = {2015},
+  Yomi = {Nonaka, Jorji and Fujita, Masahiro and Ono, Kenji},
+  URL = {http://id.nii.ac.jp/1001/00141690/}
+}
+
+
+@inproceedings{Ono:14:tougouWS2,
+  Address = {東京},
+  Author = {小野 謙二},
+  Booktitle = {文部科学省「HPCI戦略プログラム」分野４ものづくり第１回統合ワークショップ　共通基盤・先端アプリ・PF部門},
+  Month = {3月~13日},
+  Organization = {東京大学生産技術研究所　革新的シミュレーションセンター},
+  Title = {HPC/PF開発と設計シミュレーションシステムについて},
+  Year = {2014},
+  Yomi = {Ono, Kenji}
+}
+
+@inproceedings{Ono:14:tougouWS1,
+  Address = {東京},
+  Author = {小野 謙二},
+  Booktitle = {文部科学省「HPCI戦略プログラム」分野４ものづくり第１回統合ワークショップ　熱流体部門},
+  Month = {3月~6-7日},
+  Organization = {東京大学生産技術研究所　革新的シミュレーションセンター},
+  Title = {産業界からの期待およびニーズ},
+  Year = {2014},
+  Yomi = {Ono, Kenji}
+}
+
+@inproceedings{Ono:13:hpci4sympo,
+  Address = {神戸},
+  Author = {小野 謙二},
+  Booktitle = {分野４次世代ものづくりシンポジウム},
+  Month = {12月~6日},
+  Organization = {東京大学生産技術研究所},
+  Title = {HPC/PFの開発とアウトリーチ活動への展開},
+  Year = {2013},
+  Yomi = {Ono, Kenji}}
+
+@misc{Ono:cmsi:13,
+  Author = {小野 謙二},
+  Booktitle = {第２回CMSI人材育成シンポジウム「大規模計算に伴う数値誤差及び可視化},
+  Howpublished = {http://www.cms-initiative.jp/ja/events/20131202-haishin2},
+  Number = {},
+  Title = {大規模な計算結果の可視化における課題とアプローチについて},
+  Year = {2013},
+  month = {12月2日},
+  Yomi = {Ono, Kenji}
+}
+
+
+@conference{ono-vcad:13,
+  Author = {小野 謙二 and 大西 順也 and 岩田 正子 and 鵜沢 憲 and 川鍋 友宏},
+  Booktitle = {VCADシステム研究会},
+  Month = {4月},
+  Title = {熱流体ソフトウェアの新展開と京での計算},
+  Year = {2013}
+}
+
+@conference{ono-hokudai:13,
+  Author = {小野 謙二},
+  Booktitle = {第9回創成シンポジウムスーパーコンピュータ京でせまる最先端の科学技術},
+  Month = {3月},
+  Title = {ものづくりの大規模シミュレーション支援に向けた取り組み},
+  Year = {2013}
+}
+
+@conference{ono-pc:13,
+  Annote = {Invited},
+  Author = {Ono, Kenji},
+  Booktitle = {PC cluster consortium workshop in Kyoto},
+  Month = {1},
+  Organization = {PC cluster consortium},
+  Title = {Strategy of Visualization toward Exa-Scale Computing},
+  Year = {2013}}
+
+@conference{ono-vinas:12,
+  Annote = {Invited},
+  Author = {Ono, Kenji},
+  Booktitle = {VINAS user group meeting},
+  Month = {10月},
+  Title = {Automatic Grid Generation over 10 Billion Scale and Visualization},
+  Year = {2012}}
+
+@conference{ono-combst:12,
+  Author = {小野 謙二},
+  Booktitle = {戦略分野４燃焼コンソーシアム研究会},
+  Title = {大規模流体計算へのチャレンジ},
+  Year = {2012}
+}
+
+@conference{ono-at:12,
+  Author = {Ono, Kenji},
+  Booktitle = {Automatic Tuning Research Group meeting},
+  Month = {7月},
+  Title = {Role of numerical library on road map for exa-flops computer},
+  Year = {2012}
+}
+
+@misc{ono:12:ss,
+  Author = {小野 謙二},
+  Month = {2月},
+  Title = {大規模並列計算の支援技術と設計適用},
+  Year = {2012}
+}
+
+
+@conference{ono:11:kobe-cluster,
+  Author = {小野 謙二},
+  Month = {11月},
+  Booktitle = {神戸市クラスター交流会},
+  Title = {生体・医療技術のシミュレーション研究},
+  Year = {2011}
+}
+
+@conference{ono:11:vinas-uc,
+  Author = {小野 謙二},
+  Month = {10月},
+  Booktitle = {VINAS ユーザーカンファレンス　2011},
+  Title = {大規模並列計算の設計適用の実現に向けた戦略},
+  Year = {2011}
+}
+
+@conference{ono:11:NIRO,
+  Author = {小野 謙二},
+  Month = {9月},
+  Booktitle = {国際フロンティア産業メッセ},
+  Title = {ものづくりのパラダイムシフトを加速するシミュレーション技術},
+  Year = {2011}
+}
+
+
+@inproceedings{nonaka:10:BJ,
+  Address = {Recife, Brazil},
+  Author = {Nonaka, Jorji and Ono, Kenji},
+  Booktitle = {symposium Brazil Japan: Energy, Environment, Advanced Materials, Naval and Offshore},
+  Month = {Nov.},
+  Organization = {Universidade Federal de Pernambuco},
+  Title = {Towards large-scale data visualization on leading-edge HPC systems},
+  Year = {2010}}
+
+@inproceedings{Ono:10:JSME-Eng,
+  Address = {東京},
+  Author = {小野 謙二},
+  Booktitle = {計算力学技術者交流会},
+  Month = {July},
+  Title = {製品開発におけるCFD活用の視点},
+  Year = {2010},
+  Yomi = {Ono, Kenji}}
+
+@inproceedings{Ono:10:AT-sympo,
+  Address = {東京},
+  Author = {小野 謙二},
+  Booktitle = {第2回自動チューニング技術の現状と応用に関するシンポジウム},
+  Month = {Nov.},
+  Title = {高ユーザビリティを目指す大規模並列シミュレータの開発インフラ{SPHERE}},
+  Year = {2010},
+  Yomi = {Ono, Kenji}}
+
+@inproceedings{Ono:10:LSV-WS,
+  Address = {東京},
+  Author = {小野 謙二},
+  Booktitle = {大規模可視化ワークショップ},
+  Month = {Oct.},
+  Title = {Development of parallel vis. platform for large-scale dataset toward scientific and information visualization},
+  Year = {2010},
+  Yomi = {Ono, Kenji}}
+
+@inproceedings{Ono:10:VRSJ,
+  Address = {山形},
+  Author = {小野 謙二},
+  Booktitle = {日本バーチャルリアリティ学会研究報告},
+  Month = {June},
+  Title = {大規模データのリモートインタラクティブ可視化},
+  Year = {2010},
+  Yomi = {Ono, Kenji}}
+
+@inproceedings{Doi:10:VRSJ,
+  Address = {山形},
+  Author = {土井 章男 and 小野 謙二},
+  Booktitle = {日本バーチャルリアリティ学会研究報告},
+  Month = {June},
+  Title = {縄文式土器に対する工業用CT装置を用いたデジタル・アーカイブ方式の提案},
+  Year = {2010},
+  Yomi = {Doi, Akio and Ono, Kenji}}
+
+@inproceedings{Ono:10:JSCES-panel,
+  Address = {福岡},
+  Author = {小野 謙二},
+  Booktitle = {計算工学会特別企画パネルディスカッション},
+  Month = {May},
+  Title = {スパコンは本当にものづくりに役立つのか？},
+  Year = {2010},
+  Yomi = {Ono, Kenji}}
+
+@inproceedings{Ono:09:VCADsys-jun,
+  Address = {東京},
+  Author = {小野 謙二},
+  Booktitle = {VCADシステム研究会},
+  Month = {June},
+  Title = {シミュレーション結果の可視化ソフトウェア　V-Isio},
+  Year = {2009},
+  Yomi = {Ono, Kenji}}
+
+@inproceedings{Okita:09:RS-mar,
+  Address = {和光},
+  Author = {沖田 浩平 and 小野 謙二 and 杉山 和靖 and 高木 周 and 松本 洋一郎},
+  Booktitle = {理研シンポジウム「生体シミュレーション研究」},
+  Month = {Mar.},
+  Title = {高密度焦点式超音波療法の支援に向けたHIFUシミュレーションシステムの開発},
+  Year = {2009},
+  Yomi = {Okita, Kohei and Ono, Kenji and Sugiyama, Kazuyasu and Takagi, Shu and Matsumoto, Yoichiro}}
+
+@inproceedings{Ito:08:bio-sc,
+  Address = {東京},
+  Author = {伊東 聰 and 小野 謙二},
+  Booktitle = {次世代スーパーコンピュータプロジェクト「次世代生命体統合シミュレーションソフトウェアの研究開発」シンポジウム：バイオスーパーコンピューティング・シンポジウム(BSCS)2008「新たな学問領域の創成に向けて」},
+  Month = {Dec.},
+  Title = {SPHEREフレームワークの非構造格子計算法への拡張},
+  Year = {2008},
+  Yomi = {Ito, Satoshi and Ono, Kenji}}
+
+@inproceedings{Okita:08:bio-sc,
+  Address = {東京},
+  Author = {沖田 浩平 and 小野 謙二 and 杉山 和靖 and 高木 周 and 松本 洋一郎},
+  Booktitle = {次世代スーパーコンピュータプロジェクト「次世代生命体統合シミュレーションソフトウェアの研究開発」シンポジウム：バイオスーパーコンピューティング・シンポジウム(BSCS)2008「新たな学問領域の創成に向けて」},
+  Month = {Dec.},
+  Title = {アレイトランスデューサを利用したHIFU療法に対する数値計算},
+  Year = {2008},
+  Yomi = {Okita, Kohei and Ono, Kenji and Sugiyama, Kazuyasu and Takagi, Shu and Matsumoto, Yoichiro}}
+
+@inproceedings{Watanabe:08:bio-sc,
+  Address = {東京},
+  Author = {渡邊 大介 and 小野 謙二 and 沖田 浩平},
+  Booktitle = {次世代スーパーコンピュータプロジェクト「次世代生命体統合シミュレーションソフトウェアの研究開発」シンポジウム：バイオスーパーコンピューティング・シンポジウム(BSCS)2008「新たな学問領域の創成に向けて」},
+  Month = {Dec.},
+  Title = {次世代シミュレーションを支援する大規模データ・プロセスマネジメントシステムの開発},
+  Year = {2008},
+  Yomi = {Watanabe, Daisuke and Ono, Kenji and Okita, Kohei}}
+
+@inproceedings{Hashimoto:08:RS-nov,
+  Address = {和光},
+  Author = {橋本 学 and 小野 謙二},
+  Booktitle = {理研シンポジウム「VCADシステム研究2008：ものつくりから細胞まで」},
+  Month = {Nov.},
+  Title = {ボクセルベース流体解析システムの進展},
+  Year = {2008},
+  Yomi = {Hashimoto, Gaku and Ono, Kenji}}
+
+@inproceedings{Iwata:08:RS-nov,
+  Address = {和光},
+  Author = {岩田 正子 and 小野 謙二 and 玉木 剛},
+  Booktitle = {理研シンポジウム「VCADシステム研究2008：ものつくりから細胞まで」},
+  Month = {Nov.},
+  Title = {pFTT解適合格子による円柱回りの流れのシミュレーション},
+  Year = {2008},
+  Yomi = {Iwata, Masako and Ono, Kenji and Tamaki, Tsuyoshi}}
+
+@inproceedings{Ono:08:RS-nov,
+  Address = {和光},
+  Author = {小野 謙二},
+  Booktitle = {理研シンポジウム「VCADシステム研究2008：ものつくりから細胞まで」},
+  Month = {Nov.},
+  Title = {符号付き距離関数を利用したエアバッグ展開のシミュレーション},
+  Year = {2008},
+  Yomi = {Ono, Kenji}}
+
+@inproceedings{Ito:08:ws-cs,
+  Address = {和光},
+  Author = {伊東 聰 and 小野 謙二},
+  Booktitle = {1st joint workshop on computational science},
+  Month = {July},
+  Title = {Simulation framework for large scale coupled analysis},
+  Year = {2008},
+  Yomi = {Ito, Satoshi and Ono, Kenji}}
+
+@inproceedings{Ono:08:ws-cs,
+  Address = {和光},
+  Author = {小野 謙二},
+  Booktitle = {1st joint workshop on computational science},
+  Month = {July},
+  Title = {Toward development of software infrastructure to enable peta-scale life science simulation},
+  Year = {2008},
+  Yomi = {Ono, Kenji}}
+
+@inproceedings{Watanabe:08:ws-cs,
+  Address = {和光},
+  Author = {渡邊 大介 and 小野 謙二},
+  Booktitle = {1st joint workshop on computational science},
+  Month = {July},
+  Title = {Feature extraction and ROI identification for large-scale flow visualization},
+  Year = {2008},
+  Yomi = {Watanabe, Daisuke and Ono, Kenji}}
+
+@inproceedings{Iwata:08:VCAD-sys-jun,
+  Address = {東京},
+  Author = {岩田 正子 and 小野 謙二 and 俵 丈展},
+  Booktitle = {第18回VCADシステム定例研究会},
+  Month = {June},
+  Title = {V-Xgenの機能と操作方法},
+  Year = {2008},
+  Yomi = {Iwata, Masako and Ono, Kenji, Tawara, Takehiro}}
+
+@inproceedings{Takagi:08:RPCS-mar,
+  Address = {東京},
+  Author = {高木 周 and 松本 洋一郎 and 姫野 龍太郎 and 和田 成生 and 松澤 照男 and 野村 泰伸 and 山口 隆美 and 大島 まり and 劉 浩 and 久田 俊明 and 野間 昭典 and 野田 茂穂 and 小野 謙二 and 横田 秀夫 and 岡澤 重信},
+  Booktitle = {理研シンポジウム「生体力学シミュレーション研究」(2008)},
+  Month = {Mar.},
+  Title = {臓器全身スケールのマルチスケールシミュレータの構築に向けて},
+  Year = {2008},
+  Yomi = {Takagi, Shu and Matsumoto, Yoichiro and Himeno, Ryutaro and Wada, Shigeo and Matsuzawa, Teruo and Nomura, Taishin and Yamaguchi, Takami and Ooshima, Marie and Ryu, Hao and Hisada, Toshiaki and Noma, Akinori and Noda, Shigeho and Ono, Kenji and Yokota, Hideo and Okazawa, Shigenobu}}
+
+@inproceedings{Takagi:07:RPCS-2-dec,
+  Address = {東京},
+  Author = {高木 周 and 松本 洋一郎 and 姫野 龍太郎 and 和田 成生 and 松澤 照男 and 野村 泰伸 and 山口 隆美 and 大島 まり and 劉 浩 and 久田 俊明 and 野間 昭典 and 野田 茂穂 and 小野 謙二 and 横田 秀夫 and 岡澤 重信},
+  Booktitle = {次世代生命体統合シミュレーション研究開発プロジェクトシンポジウム2007},
+  Month = {Dec.},
+  Title = {臓器全身スケール医療支援シミュレータの応用に向けて},
+  Year = {2007},
+  Yomi = {Takagi, Shu and Matsumoto, Yoichiro and Himeno, Ryutaro and Wada, Shigeo and Matsuzawa, Teruo and Nomura, Taishin and Yamaguchi, Takami and Ooshima, Marie and Ryu, Hao and Hisada, Toshiaki and Noma, Akinori and Noda, Shigeho and Ono, Kenji and Yokota, Hideo and Okazawa, Shigenobu}}
+
+@inproceedings{Takagi:07:RPCS-dec,
+  Address = {東京},
+  Author = {高木 周 and 松本 洋一郎 and 姫野 龍太郎 and 和田 成生 and 松澤 照男 and 野村 泰伸 and 山口 隆美 and 大島 まり and 劉 浩 and 久田 俊明 and 野間 昭典 and 野田 茂穂 and 小野 謙二 and 横田 秀夫 and 岡澤 重信},
+  Booktitle = {次世代生命体統合シミュレーション研究開発プロジェクトシンポジウム2007},
+  Month = {Dec.},
+  Title = {循環器系マルチスケールシミュレータの構築に向けて},
+  Year = {2007},
+  Yomi = {Takagi, Shu and Matsumoto, Yoichiro and Himeno, Ryutaro and Wada, Shigeo and Matsuzawa, Teruo and Nomura, Taishin and Yamaguchi, Takami and Ooshima, Marie and Ryu, Hao and Hisada, Toshiaki and Noma, Akinori and Noda, Shigeho and Ono, Kenji and Yokota, Hideo and Okazawa, Shigenobu}}
+
+@inproceedings{Iwata:07:RS-oct,
+  Address = {和光},
+  Author = {岩田 正子 and 小野 謙二 and 玉木 剛},
+  Booktitle = {理研シンポジウム　VCADシステム研究2007},
+  Month = {Oct.},
+  Title = {pFTTデータ構造によるAMRシミュレーションと時間計測},
+  Year = {2007},
+  Yomi = {Iwata, Masako and Ono, Kenji and Tamaki, Tsuyoshi}}
+
+@inproceedings{Ono:07:KDK,
+  Address = {宮崎},
+  Author = {小野 謙二},
+  Booktitle = {九州デジタルエンジニアリング研究会},
+  Month = {July~5},
+  Title = {ボクセルベース熱流体解析システムの開発と適用事例},
+  Year = {2007},
+  Yomi = {Ono, Kenji}}
+
+@inproceedings{Ono:07:auto,
+  Address = {鹿児島},
+  Author = {小野 謙二},
+  Booktitle = {計測自動制御学会鹿児島地区委員会講演会},
+  Month = {July~6},
+  Title = {理化学研究所における熱流体解析システムの開発},
+  Year = {2007},
+  Yomi = {Ono, Kenji}}
+
+@inproceedings{Ono:07:shitashimu,
+  Address = {東京},
+  Author = {小野 謙二},
+  Booktitle = {理研に親しむ会},
+  Month = {Nov.~15},
+  Title = {機能情報シミュレーション：新しいシミュレーション技術と知識創出の枠組みを創る},
+  Year = {2006},
+  Yomi = {Ono, Kenji}}
+
+@inproceedings{Ono:06:RS-oct,
+  Address = {和光},
+  Author = {岩田 正子 and 小野 謙二 and 玉木 剛},
+  Booktitle = {理研シンポジウム　{VCAD}システム研究2006},
+  Month = {Oct.},
+  Title = {{pFTT}データ構造を用いた八分木解適合格子によるシミュレーション},
+  Year = {2006},
+  Yomi = {Iwata, Masako and Ono, Kenji and Tamaki, Tsuyoshi}}
+
+@inproceedings{Ono:05:RS-jun-1,
+  Address = {和光},
+  Author = {小野 謙二},
+  Booktitle = {理研シンポジウム　「ものつくり情報技術統合化研究（第5回）」講演論文集},
+  Month = {June},
+  Title = {{V-FLOW::SPHERE}物理と工学研究のソルバーフレームワーク},
+  Year = {2005},
+  Yomi = {Ono, Kenji}}
+
+@inproceedings{Ono:05:RS-jun-2,
+  Address = {和光},
+  Author = {小野 謙二},
+  Booktitle = {理研シンポジウム　「ものつくり情報技術統合化研究（第5回）」講演論文集},
+  Month = {June},
+  Title = {{VCAD}データによる熱流体解析{V-FLOW}},
+  Year = {2005},
+  Yomi = {Ono, Kenji}}
+
+@inproceedings{Ono:01:nec,
+  Address = {東京},
+  Author = {小野 謙二},
+  Booktitle = {第13回NEC・HPC研究会},
+  Month = {July},
+  Title = {自動車の性能設計を支えるCFDと可視化技術},
+  Year = {2001},
+  Yomi = {Ono, Kenji}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% GENERAL REMARKS
+
+
+@article{Ono-hpcpf:2015:jsces,
+title = {HPCを利用したものづくり、その普及における課題と新しい試み},
+journal = {計算工学},
+volume = {20},
+number = {4},
+pages = {23--26},
+year = {2015},
+note = {},
+issn = {},
+doi = {},
+url = {},
+author = {小野 謙二},
+yomi = {Ono, Kenji}
+}
+
+@article{Ono-vis:2015:jsces,
+title = {可視化技術の進展と計算科学への貢献},
+journal = {計算工学},
+volume = {21},
+number = {1},
+pages = {},
+year = {2015},
+note = {20周年記念号（Vol.21, No.1）特別企画「計算工学の20年，これからの20年」},
+issn = {},
+doi = {},
+url = {},
+author = {小野 謙二},
+yomi = {Ono, Kenji}
+}
+
+@article{Ono:2015:nagare,
+title = {係数行列のビット表現による疎行列反復解法の高速化},
+journal = {ながれ},
+volume = {34},
+number = {},
+pages = {119--123},
+year = {2015},
+note = {特集　注目研究 in {CFD}28},
+issn = {},
+doi = {},
+url = {},
+author = {小野 謙二},
+yomi = {Ono, Kenji}
+}
+
+@inproceedings{Ono:14:JSME,
+  Author = {小野 謙二},
+  Booktitle = {日本機械学会誌},
+  Month = {8月},
+  Number = {1149},
+  Pages = {507},
+  Title = {京の現状とエクサ級コンピュータ},
+  Volume = {117},
+  Publisher = {日本機械学会},
+  Year = {2014},
+  Yomi = {Ono, Kenji},
+    url = {http://ci.nii.ac.jp/naid/110009832837}
+}
+
+ターボ機械
+@inproceedings{Ono:14:turbo,
+  Author = {小野 謙二},
+  Booktitle = {ターボ機械},
+  Month = {May},
+  Number = {5},
+  Pages = {310-316},
+  Title = {超大規模熱流体計算のための100億超の階層的直交格子生成とその応用},
+  Volume = {42},
+  Publisher = {日本工業出版},
+  Year = {2014},
+  Yomi = {Ono, Kenji},
+    url = {http://ci.nii.ac.jp/naid/40020079653}
+}
+
+@inproceedings{Ono:12:VSJ,
+  Author = {小野 謙二},
+  Booktitle = {可視化情報},
+  Month = {June},
+  Number = {125},
+  Pages = {1--6},
+  Title = {大規模数値計算における可視化技術の最先端},
+  Volume = {32},
+  Publisher = {可視化情報学会},
+  Year = {2012},
+  Yomi = {Ono, Kenji}
+}
+
+@incollection{ono:11:jsme-nl,
+  Author = {小野 謙二},
+  booktitle = {日本機械学会　計算力学部門　ニュースレター},
+  Month = {11月},
+  Pages = {19--20},
+  Title = {大規模な計算機を使いこなす総合技術},
+  Url = {http://www.jsme.or.jp/cmd/Newsletter/PDF/nl47.pdf},
+  Volume = {47},
+  Year = {2011}
+}
+
+@incollection{okita:10:JSCES,
+  Author = {沖田 浩平 and 小野 謙二},
+  Booktitle = {計算工学},
+  Number = {4},
+  Pages = {11--22},
+  Publisher = {日本計算工学会},
+  Title = {強力集束超音波による腫瘍焼灼のシミュレーション},
+  Volume = {14},
+  Year = {2009},
+  Yomi = {Okita, Kohei and Ono, Kenji}
+}
+
+@inproceedings{Ono:10:JSME-CS,
+  Address = {東京},
+  Author = {小野 謙二},
+  Booktitle = {日本機械学会，認定計算力学技術者交流会},
+  Month = {July},
+  Title = {製品開発における{CFD}活用の視点},
+  Year = {2010},
+  Yomi = {Ono, Kenji}}
+
+@inproceedings{Ono:10:VRSJ,
+  Address = {山形},
+  Author = {小野 謙二},
+  Booktitle = {日本バーチャルリアリティ学会研究報告},
+  Month = {June},
+  Number = {CS-2},
+  Pages = {53--64},
+  Title = {大規模データのリモートインタラクティブ可視化},
+  Volume = {15},
+  Year = {2010},
+  Yomi = {Ono, Kenji}}
+
+@inproceedings{Doi:10:VRSJ,
+  Address = {山形},
+  Author = {土井 章 and 小野 謙二},
+  Booktitle = {日本バーチャルリアリティ学会研究報告},
+  Month = {June},
+  Number = {CS-2},
+  Pages = {65--76},
+  Title = {縄文式土器に対する工業用{CT}装置を用いたデジタル・アーカイブ方式の提案},
+  Volume = {15},
+  Year = {2010},
+  Yomi = {Doi, Akio and Ono, Kenji}}
+
+@incollection{Ono:JSCES09,
+  Author = {小野 謙二},
+  Booktitle = {計算工学},
+  Number = {4},
+  Pages = {19--20},
+  Publisher = {日本計算工学会},
+  Title = {次世代スパコン向け超大規模データの可視化手法},
+  Volume = {14},
+  Year = {2009},
+  Yomi = {Ono, Kenji}}
+
+@incollection{Ono:JSAE08,
+  Author = {小野 謙二 and 橋本　学},
+  Booktitle = {自動車技術},
+  Pages = {47--52},
+  Publisher = {自動車技術会},
+  Title = {熱流体・構造連成解析システムの開発と自動車技術への応用},
+  Volume = {62},
+  Year = {2008},
+  Yomi = {Ono, Kenji and Hashimoto, Gaku}}
+
+@incollection{Ono:Jaxa08,
+  Author = {小野 謙二 and 玉木 剛},
+  Booktitle = {第39回流体力学講演会/航空宇宙数値シミュレーション技術シンポジウム2007論文集},
+  Pages = {95-100},
+  Title = {大規模並列連成シミュレータのための開発支援・実行環境ミドルウェアの開発},
+  Year = {2008},
+  Yomi = {Ono, Kenji and Tamaki, Tsuyoshi}}
+
+@incollection{Ono:optronics07,
+  Author = {小野 謙二},
+  Booktitle = {オプトロニクス},
+  Pages = {190-191},
+  Title = {可視化情報学会　先端可視化研究会},
+  Year = {2007},
+  Yomi = {Ono, Kenji}}
+
+@incollection{Ono:JSCES05,
+  Author = {小野 謙二},
+  Booktitle = {計算工学},
+  Number = {4},
+  Pages = {5--10},
+  Publisher = {日本計算工学会},
+  Title = {{SPHERE}::物理シミュレーションプログラム開発のフレームワーク},
+  Volume = {10},
+  Year = {2005},
+  Yomi = {Ono, Kenji}}
+
+@incollection{Ono:Sim04,
+  Author = {小野 謙二 and 白崎 実 and 大竹 豊},
+  Booktitle = {シミュレーション},
+  Number = {4},
+  Pages = {286--291},
+  Publisher = {日本シミュレーション学会},
+  Title = {ボリュームデータを用いた流体解析システムの可能性},
+  Volume = {23},
+  Year = {2004},
+  Yomi = {Ono, Kenji and Shirazaki, Minoru and Ohtake, Yutaka}}
+
+@incollection{Ono:Turbo04,
+  Author = {小野 謙二},
+  Booktitle = {ターボ機械},
+  Number = {5},
+  Pages = {7--10},
+  Publisher = {ターボ機械協会},
+  Title = {{CFD}の深みにはまった経験},
+  Volume = {32},
+  Year = {2004},
+  Yomi = {Ono, Kenji}}
+
+@incollection{Ono:NoiseCntl03,
+  Author = {小野 謙二},
+  Booktitle = {騒音制御},
+  Number = {5},
+  Pages = {318--323},
+  Publisher = {日本騒音制御工学会},
+  Title = {自動車設計における空力音予測の研究動向},
+  Volume = {27},
+  Year = {2003},
+  Yomi = {Ono, Kenji}}
+
+@incollection{Ono:JSAE03,
+  Author = {小野 謙二},
+  Booktitle = {自動車技術},
+  Number = {4},
+  Pages = {4--8},
+  Publisher = {自動車技術会},
+  Title = {自動車における流体技術の役割},
+  Volume = {57},
+  Year = {2003},
+  Yomi = {Ono, Kenji}}
+
+@incollection{Ono:motoring03,
+  Author = {小野 謙二},
+  Booktitle = {MotorRing},
+  Howpublished = {http://www.jsae.or.jp/motorring/motor16.html},
+  Number = {16},
+  Publisher = {自動車技術会},
+  Title = {シミュレーションの精度と利用価値},
+  Year = {2003},
+  Yomi = {Ono, Kenji}}
+
+@incollection{Ono:valve02,
+  Author = {小野 謙二 and 松本 洋一郎},
+  Booktitle = {バルブ技報},
+  Number = {1},
+  Pages = {7--13},
+  Publisher = {日本バルブ工業会},
+  Title = {設計技術を支える数値流体力学},
+  Volume = {17},
+  Year = {2002},
+  Yomi = {Ono, Kenji and Matsumoto, Yoichiro}}
+
+@incollection{Ono:JSFM02,
+  Author = {小野 謙二},
+  Booktitle = {ながれ},
+  Number = {1},
+  Pages = {16--25},
+  Publisher = {日本流体力学会},
+  Title = {設計における直交格子法の利用},
+  Volume = {21},
+  Year = {2002},
+  Yomi = {Ono, Kenji}}
+
+@incollection{Ono:JSCFD02,
+  Author = {小野 謙二},
+  Booktitle = {日本数値流体力学会誌},
+  Number = {2},
+  Pages = {195--201},
+  Publisher = {日本数値流体力学会},
+  Title = {{CFD}の自動化（自動車を例にとって）},
+  Volume = {10},
+  Year = {2002},
+  Yomi = {Ono, Kenji}}
+
+@incollection{Ono:JSAE01,
+  Author = {小野 謙二 ほか},
+  Booktitle = {{CFD}ソフト・ハードの性能比較},
+  Editor = {自動車技術会},
+  Publisher = {自動車技術会},
+  Year = {2001},
+  Yomi = {Ono, Kenji}}
+
+@incollection{Ono:JSCFD00,
+  Author = {小野 謙二 and 姫野 龍太郎},
+  Booktitle = {日本数値流体力学会誌},
+  Number = {4},
+  Pages = {167--179},
+  Publisher = {日本数値流体力学会},
+  Title = {自動車設計に関わる流体問題と日産自動車における空力分野の{CFD}について},
+  Volume = {8},
+  Year = {2000},
+  Yomi = {Ono, Kenji and Himeno, Ryutaro}}
+
+@incollection{Furuoya:JSAE00,
+  Author = {古尾谷 信吾 and 浦 智紀 and 池田 雅文 and 小野 謙二},
+  Booktitle = {自動車技術},
+  Number = {12},
+  Pages = {61--63},
+  Publisher = {自動車技術会},
+  Title = {エアクリーナ雪入り予測手法の開発},
+  Volume = {54},
+  Year = {2000},
+  Yomi = {Furuoya, Shingo and Ura, Tomoki and Ikeda, Masafumi and Ono, Kenji}}
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DOMESTIC CONFERENCE
+
+@conference{ono:2015:Setouchi,
+author = {Ono, Kenji and Iizuka, Mikio},
+Title = {A novel approach for visualizing and enhancing PinT computation},
+Booktitle = {日本応用数理学会 環瀬戸内応用数理研究部会 第19回シンポジウム講演予稿集},
+Year = {2016},
+month = {1月8日-10日},
+location = {日田市、大分},
+annote = {},
+organization = {},
+pages = {18--19},
+issn = {},
+url = {}
+}
+
+@conference{iizuka:2015:Setouchi,
+author = {Iizuka, Mikio and Ono, Kenji},
+Title = {Parallel-in-Time Integration Framework for Building Simulatiors},
+Booktitle = {日本応用数理学会 環瀬戸内応用数理研究部会 第19回シンポジウム講演予稿集},
+Year = {2016},
+month = {1月8日-10日},
+location = {日田市、大分},
+annote = {},
+organization = {},
+pages = {16--17},
+issn = {},
+url = {}
+}
+
+@conference{ono:2015:VisConf,
+author = {Ono, Kenji},
+Title = {大規模データの可視化・分析環境の構築と展開},
+Booktitle = {第21回ビジュアリゼーションカンファレンス},
+Year = {2015},
+month = {Nov. 6},
+location = {Kobe, Japan},
+annote = {},
+organization = {},
+pages = {},
+issn = {},
+url = {}
+}
+
+@conference{imamura:2015:CFD29,
+author = {今村 成吾 and 小野 謙二 and 横川 三津夫},
+Title = {共通の係数行列を持つ複数の連立一次方程式のための反復ソルバの実装と性能評価},
+Booktitle = {第29回数値流体力学シンポジウム講演予稿集},
+Year = {2015},
+month = {12月15日-17日},
+location = {九州大学筑紫キャンパス},
+annote = {},
+organization = {},
+pages = {},
+issn = {},
+url = {}
+}
+
+@conference{iizuka:2015:CFD29,
+author = {飯塚 幹夫 and 小野 謙二 and 加藤 千幸},
+Title = {Parareal法による拡散方程式の時間並列計算},
+Booktitle = {第29回数値流体力学シンポジウム講演予稿集},
+Year = {2015},
+month = {12月15日-17日},
+location = {九州大学筑紫キャンパス},
+annote = {},
+organization = {},
+pages = {},
+issn = {},
+url = {}
+}
+
+@conference{uzawa:2015:CFD29,
+author = {鵜沢 憲 and 小野 謙二},
+Title = {壁法則に基づく動的なLES壁面モデルの検討},
+Booktitle = {第29回数値流体力学シンポジウム講演予稿集},
+Year = {2015},
+month = {12月15日-17日},
+location = {九州大学筑紫キャンパス},
+annote = {},
+organization = {},
+pages = {},
+issn = {},
+url = {}
+}
+
+@conference{ono:2015:CFD29,
+author = {小野 謙二},
+Title = {よりよい超大規模並列CFDコード開発にむけて},
+Booktitle = {第29回数値流体力学シンポジウム講演予稿集},
+Year = {2015},
+month = {12月15日-17日},
+location = {九州大学筑紫キャンパス},
+annote = {},
+organization = {},
+pages = {},
+issn = {},
+url = {}
+}
+
+@conference{ono:2015:CFD29,
+author = {大西 順也 and 小野 謙二 and 鈴木 惣一郎},
+Title = {直交格子積み上げ法に基づく流体解析コードの性能評価とチューニング},
+Booktitle = {第29回数値流体力学シンポジウム講演予稿集},
+Year = {2015},
+month = {12月15日-17日},
+location = {九州大学筑紫キャンパス},
+annote = {},
+organization = {},
+pages = {},
+issn = {},
+url = {}
+}
+
+@conference{iizuka:2015:CMD,
+author = {飯塚 幹夫 and 小野 謙二 and 加藤 千幸},
+Title = {時間並列計算法の研究開発動向及び将来展望},
+Booktitle = {日本機械学会第28回計算力学講演会（CMD2015）},
+Year = {2015},
+month = {10月10日~12日},
+pages = {},
+annote = {},
+location = {横浜},
+url = {}
+}
+
+@conference{ono:2015:JASS,
+author = {Ono, Kenji and Iizuka, Mikio},
+Title = {エクサ級スパコンが導く新しい設計手法への期待},
+Booktitle = {第47回流体力学講演会/第33回航空宇宙数値シミュレーション技術シンポジウムアブストラクト集},
+Year = {2015},
+month = {7月2日},
+pages = {17},
+annote = {},
+url = {}
+}
+
+@inproceedings{nonaka:15:HPCS,
+  Author = {野中 丈士 and 藤田 将洋 and 小野 謙二},
+  Booktitle = {2015年ハイパフォーマンスコンピューティングと計算科学シンポジウム},
+  Location = {東京},
+  Month = {5月},
+  Pages = {64--72},
+  Title = {Rank Reordering and Data Padding for Optimizing Large-Scale Parallel Image Composition},
+  Year = {2015},
+  note = "\underline{査読有り}",
+  peer_reviewed={true},
+  Yomi = {Nonaka, Jorji and Fujita, Masahiro and Ono, Kenji}
+}
+
+
+@conference{ono:2014:VINAS-UGM,
+author={小野 謙二},
+yomi = {Ono, Kenji},
+title = {LPTlib – 大規模並列粒子計算ライブラリの開発},
+booktitle = {VINAS ユーザーグループミーティング},
+year = {2014},
+location = {東京}
+}
+
+@conference{ono:2014:VCAD,
+author={小野 謙二},
+yomi = {Ono, Kenji},
+title = {VCAD熱流体ソフトウェアの大規模計算への進展},
+booktitle = {VCAD学術講演会},
+year = {2014},
+location = {京都}
+}
+
+@conference{ono:2014:net-sympo,
+author = {小野謙二},
+yomi = {Ono, Kenji},
+Title = {大規模並列計算におけるポスト処理},
+Booktitle = {第1回名古屋大学情報基盤センター　ネットワーク型共同研究シンポジウム},
+Year = {2015},
+month = {1},
+annote = {},
+url = {http://www.hpc.itc.nagoya-u.ac.jp/njrs2015/}
+}
+
+
+@inproceedings{onishi:2014:konsou,
+Author = {大西 順也 and 小野 謙二},
+yomi = {Onishi, J. and Ono, K.},
+Title = {レベルセット法を用いた接触線運動の数値解析における質量保存性の検討},
+Booktitle = {日本混相流学会混相流シンポジウム2014 講演論文集2014},
+Month = {},
+Pages = {},
+Year = {2014},
+}
+
+@inproceedings{onishi:2014:CFD28,
+Author = {大西 順也 and 野々村 拓 and 小野 謙二},
+yomi = {Onishi, J. and Nonomura, T. and Ono, K.},
+Title = {直交格子上で表現された物体に対する表面積評価手法},
+Booktitle = {数値流体力学シンポジウムCFD28},
+Month = {12},
+Pages = {C06-2},
+Year = {2014},
+}
+
+@inproceedings{uzawa:2014:CFD28,
+Author = {鵜沢 憲 and 小野 謙二},
+yomi = {Uzawa, K. and Ono, K.},
+Title = {微細溝を有するチャネル乱流における摩擦抵抗低減効果},
+Booktitle = {数値流体力学シンポジウムCFD28},
+Month = {12},
+Pages = {B12-2},
+Year = {2014},
+}
+
+@inproceedings{ono:2014:CFD28,
+Author = {小野 謙二},
+yomi = {Ono, K.},
+Title = {係数行列のビット圧縮による疎行列反復解法の高速化},
+Booktitle = {数値流体力学シンポジウムCFD28},
+Month = {12},
+Pages = {E06-2},
+Year = {2014},
+}
+
+@inproceedings{uzawa:2014:CFD28,
+Author = {ノナカ　ジョルジ and 小野 謙二 and 藤田 将洋 and 坂本 尚久 and 小山田 耕二},
+yomi = {Nonaka, J. and Ono, K. and Fujita, S. and Sakamoto, N. and Koyamada, K.},
+Title = {大規模可視化向け並列ＰＢＶＲの考察},
+Booktitle = {可視化情報学会　第42回可視化情報シンポジウム公演論文集},
+Month = {7},
+Pages = {},
+Year = {2014},
+}
+
+@conference{ono:2014:csti,
+  Author = {Ono, Kenji},
+  Booktitle = {日本学術会議　公開シンポジウム　第1回 可視化シンポジウム},
+  Month = {9月22日},
+  Organization = {日本学術会議},
+  Title = {大規模計算機環境における可視化について},
+  Year = {2014},
+    organization = {総合工学委員会・機械工学委員会合同計算科学シミュレーションと工学設計分科会},
+  url = {http://www.scj.go.jp/ja/event/pdf2/196-s-3-1.pdf}
+}
+
+@conference{ono:2014:hpci4,
+  Author = {Ono, Kenji},
+  Booktitle = {第5回「分野４次世代ものづくり」シンポジウムin神戸　講演集},
+  Month = {12月5日},
+  Organization = {日本学術会議},
+  Title = {HPC/PFの開発状況と利活用展開},
+  Year = {2014},
+    pages = {23–30},
+  url = {http://www.ciss.iis.u-tokyo.ac.jp/supercomputer/event/event.php?id=55}
+}
+
+
+@inproceedings{bi-sacsis:13,
+   author  = "Bi, Chongke and Ono, Kenji",
+   title   = "Parallel POD Compression Accelerated by Binary-Swap Compositing",
+   booktitle = "先進的計算基盤システムシンポジウム論文集 SACSIS2013",
+   year    = "2013",
+   volume  = "",
+   pages   = "112--112",
+   month   = "May",
+   note      = "\underline{査読有り}",
+   peer_reviewed={true}
+}
+
+@inproceedings{ono-cfd:13,
+   Author = {小野 謙二 and 三上 和徳},
+   title   = {エクサスケールに向けた高性能アプリケーション開発},
+   booktitle = {第27回数値流体力学シンポジウム D05-1},
+   year    = "2013",
+   volume  = "",
+   pages   = "",
+   month   = ""
+}
+
+
+@inproceedings{onishi-kon:13,
+   Author = {大西 順也 and 小野 謙二},
+   title   = {接触線運動の数値解析に関する検討},
+   booktitle = {日本混相流学会混相流シンポジウム2013講演論文集},
+   year    = "2013",
+   volume  = "",
+   pages   = "",
+   month   = ""
+}
+
+@inproceedings{ono-swopp:13,
+   Author = {大西 順也 and 小野 謙二},
+   title   = {エクサスケールコンピューティングとビッグデータが変える世界},
+   booktitle = {並列/分散/協調処理に関する『北九州』サマー・ワークショップ},
+   year    = "2013",
+   volume  = "",
+   pages   = "",
+   month   = "July",
+   location = "小倉"
+   url = {http://www.hpcc.jp/swopp/}
+}
+
+@inproceedings{ono-jsces:13,
+  Author = {小野 謙二 and 高木 亮治 and 河合 浩志 and 樫山 和男 and 中島 研吾},
+  Booktitle = {第18回計算工学講演会シンポジウム 計算工学講演会論文集},
+  Title = {エクサスケールに向けた計算工学の取り組み},
+  Volume = {18},
+  Year = {2013},
+  url = {http://www.jsces.org/koenkai/18/}
+}
+
+@inproceedings{ono-jsces-2:13,
+  Author = {小野 謙二},
+  Booktitle = {第18回計算工学講演会シンポジウム 計算工学講演会論文集},
+  Title = {エクサスケール時代のアプリケーション開発とポスト処理},
+  Volume = {18},
+  Year = {2013},
+  url = {http://www.jsces.org/koenkai/18/}
+}
+
+@inproceedings{onishi-cfd:12,
+   Author = {大西 順也 and 小野 謙二},
+   title   = {Convergence properties of the Poisson equation solvers for two-phase fluid flows (2nd report: Applicability of the MultiGrid Preconditioned Conjugate Gradient Method)},
+   booktitle = {第26回数値流体力学シンポジウム},
+   year    = "2012",
+   volume  = "",
+   pages   = "",
+   month   = ""
+}
+
+@inproceedings{ono-jsces:12,
+  Author = {Ono, Kenji and Mizuno, Hiroki and Mukai, Yukiteru and Oku, Kentarou},
+  Booktitle = {Proceedings of the Conference on Computational Engineering and Science},
+  Title = {Development of technology for very-large-scale voxel generation and its interface for simulators},
+  Volume = {17},
+  Year = {2012}}
+
+@inproceedings{mao-jsces:12,
+  Author = {Mao, Xyaoyang and Watanabe, Daisuke and Ono, Kenji},
+  Booktitle = {Proceedings of the Conference on Computational Engineering and Science},
+  Title = {Gaze-Directed Flow Visualization},
+  Volume = {17},
+  Year = {2012}}
+
+@inproceedings{suzuki-jsces:12,
+  Author = {Suzuki, Souichirou and Ono, Kenji},
+  Booktitle = {Proceedings of the Conference on Computational Engineering and Science},
+  Title = {An Efficient Data Structure of Building-Cube Method for Large-Scale Computation},
+  Volume = {17},
+  Year = {2012}}
+
+@conference{ono-jsme:12,
+  Author = {Ono, Kenji},
+  Booktitle = {JSME 25th Computational Mechanics Division Conference},
+  Title = {Technology that joins product design and simulation-- Construction of HPC/PF and its application scenario},
+  Year = {2012}}
+
+@inproceedings{onishi-cfd:12,
+  Author = {Onishi, Junya and Ono, Kenji},
+  Booktitle = {The 26th CFD symposium},
+  Title = {Convergence properties of the Poisson equation solvers for two-phase fluid flows (2nd report: Applicability of the MultiGrid Preconditioned Conjugate Gradient Method)},
+  Year = {2012}}
+
+@inproceedings{onishi-mf:12,
+  Author = {Onishi, Junya and Ono, Kenji},
+  Booktitle = {Annual meeting of The Japanese Society for Multiphase Flow 2012},
+  Title = {Verification of a sharp interface method for two-phase flow simulations},
+  Year = {2012}}
+
+@inproceedings{ito:11:HPCS,
+  Author = {伊東 聰 and 後藤 和哉 and 小野 謙二},
+  Booktitle = {2011年ハイパフォーマンスコンピューティングと計算科学シンポジウム},
+  Location = {筑波},
+  Month = {1月},
+  Pages = {163--169},
+  Title = {領域分割法におけるサブドメインのノード内最適自動マッピング},
+  Year = {2011},
+  note      = "\underline{査読有り}",
+  peer_reviewed={true},
+  Yomi = {Ito, Satoshi and Gotoh, Kazuya and Ono, Kenji}
+}
+
+@inproceedings{ohnishi:11:CFD25,
+  Author = {大西 順也，小野 謙二},
+  Booktitle = {日本流体力学会　第25回数値流体力学シンポジウム},
+  Month = {12月},
+  Title = {気液2相流れ解析における圧力ポアソン方程式に関する検討},
+  Year = {2011}}
+
+@inproceedings{hashimoto:11:JSCES,
+  Author = {橋本 学，小野 謙二，河合 秀樹，棚橋 隆彦},
+  Booktitle = {日本計算工学会　第16回計算工学講演会},
+  Month = {5月},
+  Title = {電磁流体解析のための並列有限要素法コードの開発に向けて},
+  Year = {2011}}
+
+@inproceedings{hashimoto:11:JSME-CMD,
+  Author = {橋本 学，小野 謙二，奥田 洋司},
+  Booktitle = {日本機械学会第24回計算力学講演会},
+  Month = {10月},
+  Title = {レベルセットに基づいたLagrangian-Eulerian coupling methodの並列計算についての検討},
+  Year = {2011}}
+
+@inproceedings{ito:11:NHPCS,
+  Author = {伊東 聰 and 小野 謙二 and 後藤 和哉},
+  Booktitle = {次世代スーパーコンピューティングシンポジウム2010},
+  Location = {神戸},
+  Month = {1月},
+  Title = {階層型並列計算機における領域分割法のサブドメイン最適マッピング},
+  Year = {2011},
+  Yomi = {Ito, Satoshi and Ono, Kenji and Gotoh, Kazuya}}
+
+@inproceedings{kimura:11:Bio-Eng,
+  Author = {木村 真也 and 田中 学 and 三代 大樹 and 世良 俊博 and 覚正 信徳 and 横田 秀夫 and 小野 謙二 and 高木 周},
+  Booktitle = {日本機械学会 第23回バイオエンジニアリング講演会 講演論文集},
+  Location = {熊本},
+  Month = {1月8-9},
+  Pages = {515--516},
+  Title = {バイオメカニズムのための協調的表現手法},
+  Year = {2011},
+  Yomi = {Kimura, Shinya and Tanaka, Gaku and Mishiro, Daiki and Kakusho, Nobunori and Yokota, Hideo and Ono, Kenji and Takagi, Shu}}
+
+@inproceedings{morimoto:10:DS,
+  Author = {森本 有紀 and 小野 謙二},
+  Booktitle = {Designシンポジウム},
+  Location = {東京},
+  Month = {11月25-26},
+  Title = {布形状を考慮した絞り染め模様のシミュレータ},
+  Year = {2010},
+  Yomi = {Morimoto, Yuki and Ono, Kenji}}
+
+@inproceedings{hashimoto:10:CFD24,
+  Author = {橋本 学 and 小野 謙二},
+  Booktitle = {日本流体力学会　第24回数値流体力学シンポジウム},
+  Date-Modified = {2012-02-17 06:17:28 +0000},
+  Location = {横浜},
+  Month = {12月},
+  Title = {レベルセットに基づいたLagrangian-Eulerian連成手法の接触モデルについての検討（Folded Airbag Deploymentの3次元解析に向けて）},
+  Year = {2010},
+  Yomi = {Hashimoto, Gaku and Ono, Kenji}}
+
+@inproceedings{hashimoto:10:TAMJ-amr,
+  Author = {橋本 学 and 小野 謙二},
+  Booktitle = {日本学術会議　第59回理論応用力学講演会},
+  Location = {東京},
+  Month = {6月},
+  Title = {FSI問題のためのAMRを用いたEulerianメッシュベーススキーム},
+  Year = {2010},
+  Yomi = {Hashimoto, Gaku and Ono, Kenji}}
+
+@inproceedings{Ono:10:VRSJ,
+  Address = {山形},
+  Author = {小野 謙二},
+  Booktitle = {日本バーチャルリアリティ学会研究報告},
+  Month = {June~3, 4},
+  Number = {CS-2},
+  Pages = {53--64},
+  Title = {大規模データのリモートインタラクティブ可視化},
+  Volume = {15},
+  Year = {2010},
+  Yomi = {Ono, Kenji}}
+
+@inproceedings{Doi:10:VRSJ,
+  Address = {山形},
+  Author = {土井 章男 and 小野 謙二},
+  Booktitle = {日本バーチャルリアリティ学会研究報告},
+  Month = {June~3, 4},
+  Number = {CS-2},
+  Pages = {65--76},
+  Title = {縄文式土器に対する工業用CT装置を用いたデジタル・アーカイブ方式の提案},
+  Volume = {15},
+  Year = {2010},
+  Yomi = {Doi, Akio and Ono, Kenji}}
+
+@inproceedings{Ono:10:JSCES,
+  Author = {小野 謙二 and 向井 亨光 and 佐藤 吉将},
+  Booktitle = {計算工学講演会論文集},
+  Location = {福岡市},
+  Month = {5月},
+  Number = {2},
+  Pages = {785--788},
+  Title = {メモリ効率の良いデータ構造を用いたロバストなボクセル化アルゴリズム},
+  Volume = {15},
+  Year = {2010},
+  Yomi = {Ono, Kenji and Mukai, yukiteru and Satou, Yoshimasa}}
+
+@inproceedings{Ito:10:JSCES,
+  Author = {伊東 聰 and 小野 謙二},
+  Booktitle = {計算工学講演会論文集},
+  Location = {福岡市},
+  Month = {5月},
+  Number = {1},
+  Pages = {93--94},
+  Title = {トーラス型ネットワークにおける並列性能測定},
+  Volume = {15},
+  Year = {2010},
+  Yomi = {Ito, Satoshi and Ono, Kenji}}
+
+@inproceedings{Hashimoto:10:JSCES,
+  Author = {橋本 学 and 小野 謙二},
+  Booktitle = {計算工学講演会論文集},
+  Location = {福岡市},
+  Month = {5月},
+  Number = {1},
+  Pages = {231--234},
+  Title = {レベルセット関数を用いたpartitioned coupling algorithmのfolded airbag deploymentへの適用},
+  Volume = {15},
+  Year = {2010},
+  Yomi = {Hashimoto, Gaku and Ono, Kenji}}
+
+@inproceedings{sakata:10:Heat,
+  Author = {木村真也 and 坂田 拓也 and 田中 学 and 世良 俊博 and 覚正 信徳 and 横田 秀夫 and 小野 謙二 and 高木 周},
+  Booktitle = {第47回日本伝熱シンポジウム},
+  Date-Modified = {2012-02-17 06:16:17 +0000},
+  Location = {札幌市},
+  Month = {5月},
+  Title = {鼻腔内気流のボクセルシミュレーション},
+  Year = {2010},
+  Yomi = {Kimura, Shinya and Sakata, Takuya and Sera, Toshihiro and Kakusho, Nobunori and Yokota, Hideo and Ono, kenji and Takagi, Shu}}
+
+@inproceedings{sakata:10:JSME-AM,
+  Author = {坂田 拓也 and 田中 学 and 世良 俊博 and 覚正 信徳 and 横田 秀夫 and 小野 謙二 and 高木 周},
+  Booktitle = {日本機械学会 機械学会バイオエンジニアリング講演会 講演論文集},
+  Date-Modified = {2012-02-17 06:15:42 +0000},
+  Location = {岡山市},
+  Month = {1月},
+  Title = {鼻腔内気流のボクセルシミュレーション},
+  Year = {2010},
+  Yomi = {Sakata, Takuya and Sera, Toshihiro and Kakusho, Nobunori and Yokota, Hideo and Ono, kenji and Takagi, Shu}}
+
+@inproceedings{nonaka:09:HPCS,
+  Author = {Nonaka, Jorji and Ono, Kenji and Miyachi, Hideo},
+  Booktitle = {ハイパフォーマンスコンピューティングと計算科学シンポジウム, HPCS2009},
+  Organization = {HPCS2009},
+  Pages = {73--80},
+  Title = {Performance Evaluation of Large-Scale Parallel Image Compositing on a T2K Open Supercomputer},
+  Note = {\underline{査読有り}},
+  peer_reviewed={true},
+  Year = {2009}}
+
+@inproceedings{sakata:09:JSME-AM,
+  Author = {坂田 拓也 and 田中 学 and 世良 俊博 and 覚正 信徳 and 横田 秀夫 and 小野 謙二 and 高木 周},
+  Booktitle = {日本機械学会 第85期流体工学部門講演会 講演論文集},
+  Location = {盛岡市},
+  Month = {8月},
+  Title = {鼻腔内気流の数値シミュレーション},
+  Year = {2009},
+  Yomi = {Sakata, Takuya and Sera, Toshihiro and Kakusho, Nobunori and Yokota, Hideo and Ono, kenji and Takagi, Shu}}
+
+@inproceedings{Hashimoto:09:CFD23,
+  Author = {橋本 学 and 小野 謙二},
+  Booktitle = {日本流体力学会　第23回数値流体力学シンポジウム講演論文集},
+  Date-Modified = {2012-02-17 06:16:43 +0000},
+  Location = {仙台市},
+  Month = {12月},
+  Title = {接触を考慮した大変形FSI解析のための固定メッシュに基づくpartitioned solution methodの開発},
+  Year = {2009},
+  Yomi = {Hashimoto, Gaku and Ono, Kenji}}
+
+@inproceedings{Hashimoto:09:CMD,
+  Author = {橋本 学 and 小野 謙二},
+  Booktitle = {日本機械学会　第22回計算力学講演会},
+  Location = {金沢市},
+  Month = {10月},
+  Title = {外側の空気の影響を考慮したエアバック展開シミュレーション},
+  Year = {2009},
+  Yomi = {Hashimoto, Gaku and Ono, Kenji}}
+
+@article{okita:09:JSCES,
+  Author = {沖田浩平 and 小野 謙二 and 杉山和靖 and 高木周 and 松本洋一郎},
+  Journal = {計算工学講演会論文集},
+  Title = {高密度焦点式超音波療法において組織の加熱凝固が音場に与える影響},
+  Volume = {14},
+  Year = {2009},
+  Yomi = {Okita, kohei and Ono, Kenji and Sugiyama Kazuyasu and Takagi Shu and Matsumoto Yoichiro}}
+
+@article{okita:09:JSME-AM,
+  Author = {沖田浩平 and 小野 謙二 and 杉山和靖 and 高木周 and 松本洋一郎},
+  Journal = {日本機械学会 第85期流体工学部門講演会 講演論文集},
+  Pages = {43--44},
+  Title = {組織の加熱凝固を考慮したHIFU治療シミュレーション},
+  Year = {2009},
+  Yomi = {Okita, kohei and Ono, Kenji and Sugiyama Kazuyasu and Takagi Shu and Matsumoto Yoichiro}}
+
+@article{Nagasawa:09:VSJsympo,
+  Author = {長澤 幹夫 and 森田 秀和 and 黒川 原佳 and 小野 謙二},
+  Journal = {第37回可視化情報シンポジウム講演論文集},
+  Number = {1},
+  Pages = {55--56},
+  Title = {セマンティックログを用いた可視化システム診断のすすめ},
+  Volume = {29},
+  Year = {2009},
+  Yomi = {Nagasawa, Mikio and Morita, Hidekazu and Kurokawa, Motoyoshi and Ono, Kenji}}
+
+@article{Hashimoto:09:NCUTAM,
+  Author = {橋本 学 and 小野 謙二},
+  Journal = {第58回理論応用力学講演会講演論文集},
+  Pages = {405--406},
+  Title = {FSI問題のためのレベルセット仮想粒子による滑り無し条件を考慮した界面処理},
+  Year = {2009},
+  Yomi = {Hashimoto, Gaku and Ono, Kenji}}
+
+@article{Ono:09:NCUTAM,
+  Author = {小野 謙二},
+  Journal = {第58回理論応用力学講演会講演論文集},
+  Pages = {35--36},
+  Title = {ボリュームデータを用いたシームレスな流体シミュレーション環境},
+  Year = {2009},
+  Yomi = {Ono, Kenji}}
+
+@article{Hashimoto:09:JSCES,
+  Author = {橋本 学 and 小野 謙二},
+  Journal = {計算工学講演会論文集},
+  Pages = {773--774},
+  Title = {大変形する薄い弾性構造を介した流体領域に対する固定メッシュアプローチ},
+  Year = {2009},
+  Yomi = {Hashimoto, Gaku and Ono, Kenji}}
+
+@article{Ono:08:JSME-bio,
+  Author = {小野 謙二},
+  Journal = {日本機械学会，第２１回バイオエンジニアリング講演会講演論文集},
+  Pages = {339--340},
+  Title = {ボリュームベースの流体解析システムの進展},
+  Year = {2008},
+  Yomi = {Ono, Kenji}}
+
+@article{Ono:08:CFDsympo,
+  Author = {小野 謙二 and 道川 隆士 and 玉木 剛 and 平本 修},
+  Journal = {第22回 数値流体力学シンポジウム講演論文集},
+  Title = {MultiBox - 直交等間隔格子を用いた大規模並列計算フレームワーク},
+  Year = {2008},
+  Yomi = {Ono, Kenji and Michikawa, Takashi and Tamaki, Tsuyoshi and Hiramoto, Osamu}}
+
+@article{Tawara:08:CFDsympo,
+  Author = {俵 丈展，小野 謙二},
+  Journal = {第22回 数値流体力学シンポジウム講演論文集},
+  Pages = {177},
+  Title = {複数の伝達関数を用いた流体シミュレーションのボリュームレンダリング},
+  Year = {2008},
+  Yomi = {Tawara, Takehiro and Ono, Kenji}}
+
+@article{Nonaka:08:CFDsympo,
+  Author = {野中 丈士，小野 謙二，宮地 英生},
+  Journal = {第22回 数値流体力学シンポジウム講演論文集},
+  Title = {超並列システムでのソート・ラスト式イメージ重畳手法の性能評価},
+  Year = {2008},
+  Yomi = {Nonaka, Jorji and Ono, Kenji and Miyachi, Hideo}}
+
+@article{Hashimoto:08:CFD22,
+  Author = {橋本 学 and 小野 謙二},
+  Date-Modified = {2012-02-17 06:14:31 +0000},
+  Journal = {第22回 数値流体力学シンポジウム講演論文集},
+  Title = {固定メッシュに基づくpartitioned solution methodによる3次元大変形FSI解析（流体コードの並列化に関する検討）},
+  Year = {2008},
+  Yomi = {Hashimoto, Gaku and Ono, Kenji}}
+
+@article{Nicolas:08:CFDsympo,
+  Author = {Leduc Nicolas and 沖田 浩平 and 杉山 和靖 and 小野 謙二 and 高木 周 and 松本 洋一郎},
+  Journal = {第22回 数値流体力学シンポジウム講演論文集},
+  Number = {C10-4},
+  Pages = {1--7},
+  Title = {強力集束超音波の数値計算-焦点制御},
+  Year = {2008},
+  Yomi = {Nicolas, Leduc and Okita, Kohei and Sugiyama, Kazuyasu and Ono, Kenji and Takagi, Shu and Matumoto, Yoichiro}}
+
+@article{Ono:08:JSME-CS,
+  Author = {小野 謙二},
+  Journal = {日本機械学会計算力学講演会},
+  Title = {生命体ソフトウェア開発と可視化の環境について},
+  Year = {2008},
+  Yomi = {Ono, Kenji}}
+
+@article{Hashimoto:08:JSME-CMD,
+  Author = {橋本 学 and 小野 謙二 and 野口 裕久},
+  Date-Modified = {2012-02-17 06:14:05 +0000},
+  Journal = {日本機械学会第21回計算力学講演会CD-ROM論文集},
+  Pages = {880--881},
+  Title = {レベルセット関数を利用したエアバッグ展開シミュレーション},
+  Year = {2008},
+  Yomi = {Hashimoto, Gaku and Ono, Kenji and Noguchi, Hirohisa}}
+
+@article{Akasaka:08:JSFM,
+  Author = {赤坂 啓 and 小野 謙二},
+  Journal = {日本流体力学会年会2008講演要旨集},
+  Pages = {78},
+  Title = {直交格子を用いた薄い物体周りの非圧縮流れ計算の検討},
+  Year = {2008},
+  Yomi = {Akasaka, Kei and Ono, Kenji}}
+
+@article{Iwata:08:JSFM,
+  Author = {岩田 正子 and 小野 謙二 and 玉木 剛},
+  Journal = {日本流体力学会年会2008講演要旨集},
+  Pages = {77},
+  Title = {pFTT-AMRによる円柱回りの流れ},
+  Year = {2008},
+  Yomi = {Iwata, Masako and Ono, Kenji and Tamaki, Tsuyoshi}}
+
+@article{Okita:08:JSME-am,
+  Author = {沖田 浩平，小野 謙二，高木 周，松本 洋一郎},
+  Journal = {日本機械学会2008年度年次大会講演論文集},
+  Pages = {105--106},
+  Title = {生体情報を利用した超音波伝播シミュレータの開発},
+  Volume = {6},
+  Year = {2008},
+  Yomi = {Okita, Kohei and Ono, Kenji and Takagi, Shu and Matumoto, Yoichiro}}
+
+@article{Watanabe:08:VSJ-sympo,
+  Author = {渡邊 大介，小野 謙二，茅 暁陽},
+  Journal = {第36回可視化情報シンポジウム講演論文集},
+  Number = {1},
+  Pages = {301--304},
+  Title = {視線に基づく関心領域の特定と流れの可視化への適用},
+  Volume = {28},
+  Year = {2008},
+  Yomi = {Watanabe, Daisuke and Ono, Kenji and Mao, Xiaoyang}}
+
+@article{Hashimoto:08:NCTAM,
+  Author = {橋本 学，小野 謙二，野口 裕久},
+  Journal = {第57回理論応用力学講演会講演論文集 NCTAM 2008},
+  Pages = {609--610},
+  Title = {大変形FSI解析のためのレベルセット粒子による界面処理},
+  Year = {2008},
+  Yomi = {Hashimoto, Gaku and Ono, Kenji and Noguchi, Hirohisa}}
+
+@article{Kakimoto:08:JSCES,
+  Author = {柿本 正憲，西沢 直樹，芳賀 剛士，小野 謙二},
+  Journal = {計算工学講演会論文集},
+  Pages = {593--596},
+  Title = {大規模ボリュームデータのout of core線画レンダリング},
+  Year = {2008},
+  Yomi = {Kakimoto, Masanori and Nishizawa, Naoki and Haga, Takeshi and Ono, Kenji}}
+
+@article{Okita:08:JSCES,
+  Author = {沖田 浩平，小野 謙二，高木 周，松本 洋一郎},
+  Journal = {計算工学講演会論文集},
+  Number = {2},
+  Pages = {609--612},
+  Title = {高密度焦点式超音波療法の支援に向けたシミュレーション},
+  Volume = {13},
+  Year = {2008},
+  Yomi = {Okita, Kohei and Ono, Kenji and Takagi, Shu and Matumoto, Yoichiro}}
+
+@article{Hashimoto:08:JSCES,
+  Author = {橋本 学，小野 謙二，野口 裕久},
+  Journal = {日本流体力学会 第21回数値流体力学シンポジウム講演要旨集},
+  Pages = {84},
+  Title = {レベルセット関数を用いた流体と大変形する弾性構造の連成解析},
+  Year = {2008},
+  Yomi = {Hashimoto, Gaku and Ono, Kenji and Noguchi, Hirohisa}}
+
+@inproceedings{hashimoto:08:CMD,
+  Author = {Hashimoto, Gaku and Ono, Kenji},
+  Booktitle = {日本計算工学会　第13回計算工学講演会},
+  Month = {5},
+  Title = {レベルセット関数を利用した高速流と大変形するシェルの連成解析},
+  Year = {2008}}
+
+@inproceedings{watanabe:08:CADG,
+  Author = {渡辺 彰信，茅 暁陽，渡邊 大介，小野 謙二},
+  Booktitle = {Visual Computing/グラフィクスとCAD合同シンポジウム2008},
+  Organization = {画像電子学会,情報処理学会},
+  Title = {視線情報を用いた非定常流における流脈線と流跡線の自動配置},
+  Year = {2008},
+  note = {\underline{査読有り}},
+  peer_reviewed={true},
+  Yomi = {Watanabe, Akinobu and Mao, Xiaoyang and Watanabe, Daisuke and Ono, Kenji}}
+
+@article{Hashimoto:07:CFD21,
+  Author = {橋本 学，小野 謙二，野口 裕久},
+  Journal = {日本流体力学会 第21回数値流体力学シンポジウム講演要旨集},
+  Month = {12},
+  Title = {レベルセット関数を用いた流体と大変形する弾性構造の連成解析},
+  Year = {2007}}
+
+@inproceedings{ono:07:HPCS,
+  Author = {小野 謙二，玉木 剛，野田 茂穂，岩田 正子，重谷 隆之},
+  Booktitle = {ハイパフォーマンスコンピューティングと計算科学シンポジウム, HPCS2007},
+  Organization = {HPCS2007},
+  Pages = {25--32},
+  Title = {オブジェクト指向並列化クラスライブラリの開発と性能評価},
+  Year = {2007},
+  note = {\underline{査読有り}},
+  peer_reviewed={true},
+  Yomi = {Ono, Kenji and Tamaki, Tsuyoshi and Noda, Shigeho and Iwata, Masako and Shigetani, Takayuki}}
+
+@article{Hashimoto:07:JSME-CS,
+  Author = {橋本 学，小野 謙二，野口 裕久},
+  Journal = {日本機械学会 第20回計算力学講演会論文集},
+  Pages = {683--684},
+  Title = {レベルセット関数を利用したPartitioned Solution Methodによる流体構造連成解析},
+  Year = {2007},
+  Yomi = {Hashimoto, Gaku and Ono, Kenji and Noguchi, Hirohisa}}
+
+@article{Hashimoto:07:JSME-FED,
+  Author = {橋本 学，小野 謙二，野口 裕久},
+  Journal = {日本機械学会 第85期流体工学部門講演会 講演論文集},
+  Pages = {1-4},
+  Title = {レベルセット関数を利用した流体構造連成解析における界面の扱いに対する検討},
+  Year = {2007},
+  Yomi = {Hashimoto, Gaku and Ono, Kenji and Noguchi, Hirohisa}}
+
+@article{Okita:07:JSME-CS,
+  Author = {沖田 浩平，小野 謙二，高木 周，松本 洋一郎},
+  Journal = {日本機械学会 第20回計算力学講演会論文集},
+  Pages = {183--184},
+  Title = {高密度焦点式超音波療法の支援に向けたシミュレーション技術開発},
+  Year = {2007},
+  Yomi = {Okita, Kohei and Ono, Kenji and Takagi, Shu and Matumoto, Yoichiro}}
+
+@article{tamaki:07:JSCES,
+  Author = {玉木 剛，小野 謙二，岩田 正子},
+  Journal = {計算工学講演会論文集},
+  Pages = {537--540},
+  Title = {pFTTデータ構造のライブラリ実装と性能評価},
+  Volume = {12},
+  Year = {2007}}
+
+@article{iwata:07:JSCES,
+  Author = {岩田 正子，小野 謙二，玉木 剛},
+  Journal = {計算工学講演会論文集},
+  Pages = {541--544},
+  Title = {pFTTデータ構造を用いたAMRシミュレーション},
+  Volume = {12},
+  Year = {2007}}
+
+@article{ono:07:nal,
+  Author = {小野 謙二，玉木 剛},
+  Journal = {第 39回流体力学講演会/航空宇宙数値シミュレーション技術シンポジウム2007講演集},
+  Pages = {175--178},
+  Title = {大規模並列連成シミュレータのための開発支援・実行環境ミドルウェアの開発},
+  Year = {2007}}
+
+@article{watanabe:07:vsj,
+  Author = {渡邊 大介，小野 謙二，茅 暁陽},
+  Journal = {可視化情報学会 全国講演会(岐阜2007)},
+  Number = {2},
+  Pages = {119--120},
+  Title = {視線情報を利用した3次元流れ場における関心領域の取得と流線の自動配置},
+  Volume = {27},
+  Year = {2007}}
+
+@article{ono:06:denki,
+  Author = {小野 謙二，玉木 剛},
+  Journal = {電気学会，静止器・回転機合 同研究会資料},
+  Number = {SA-06-14/RM-06-14},
+  Pages = {73--78},
+  Title = {SPHERE -シミュレーションの開発・実行支援環境-},
+  Year = {2006}}
+
+@article{iwata:06:JSME,
+  Author = {岩田 正子，小野 謙二，玉木 剛},
+  Journal = {日本機械学会2006年度年次大会講演論文集},
+  Pages = {75--76},
+  Title = {pFTTデータ構造を用いたオクツリー解適合格子によるシミュレーション},
+  Volume = {1},
+  Year = {2006}}
+
+@article{kato:06:JSME,
+  Author = {加藤 光章，吉澤 晋，小野 謙二，松本 洋一郎},
+  Journal = {日本機械学会 2006年度年次大会講演論文集},
+  Pages = {369--370},
+  Title = {集束超音波医療における温度上昇の数値解析},
+  Year = {2006}}
+
+@article{akasaka:06:JSME,
+  Author = {赤坂 啓，小野 謙二},
+  Journal = {日本機械学会2006年度年次大会講演論文集},
+  Pages = {9--10},
+  Title = {ボクセル法を用いた非圧縮流れ解析の境界条件の実装方法},
+  Volume = {2},
+  Year = {2006}}
+
+@article{enomoto:06:JSME,
+  Author = {榎本 秀喜，小野 謙二},
+  Journal = {日本機械学会関東支部ブロック合同講演会2006},
+  Number = {060-2},
+  Pages = {147--148},
+  Title = {微小圧縮性による流体音の解析},
+  Year = {2006}}
+
+@article{shirasaki:06:JSME,
+  Author = {白崎 実，小野 謙二，大竹豊，俵 丈展，寺島 洋史，茅 暁陽},
+  Journal = {日本機械学会流体工学部門講演会論文集},
+  Pages = {WS4-4},
+  Title = {陰関数形状表現にもとづくボクセル解析のためのCAEフレームワーク},
+  Year = {2006}}
+
+@article{terashima:06:CFD20,
+  Author = {寺島 洋史，小野 謙二},
+  Journal = {日本流体力学会 第20回数値流体力学シンポジウム講演要旨集},
+  Pages = {250},
+  Title = {距離関数を利用した流体構造連成解析法の信頼性評価},
+  Year = {2006}}
+
+@article{tawara:06:CFD20,
+  Author = {俵 丈展，小野 謙二},
+  Journal = {日本流体力学会 第20回数値流体力学シンポジウム講演要旨集},
+  Pages = {238},
+  Title = {大規模ボクセルデータの高速生成アルゴリズム},
+  Year = {2006}}
+
+@article{iwata:06:CFD20,
+  Author = {岩田 正子，小野 謙二，玉木 剛},
+  Journal = {日本流体力学会 第20回数値流体力学シンポジウム講演要旨集},
+  Pages = {237},
+  Title = {pFTTデータ構造によるオクツリー解適合格子を用いたシミュレーション},
+  Year = {2006}}
+
+@article{watanabe:05:vsj,
+  Author = {渡辺 大介，茅 暁陽，小野 謙二，金 小鋼},
+  Journal = {第33回可視化情報 シンポジウム講演論文集},
+  Number = {1},
+  Pages = {255--258},
+  Title = {視線情報に基づく流れの可視化システム},
+  Volume = {25},
+  Year = {2005}}
+
+@article{ono:05:vsj-sympo,
+  Author = {小野 謙二，吉川 広幸，俵 展丈},
+  Journal = {第33回可視化情報シンポジウム講演論文集},
+  Number = {1},
+  Pages = {249--250},
+  Title = {次世代可視化プラットホーム},
+  Volume = {25},
+  Year = {2005}}
+
+@article{ono:05:JSME,
+  Author = {小野 謙二},
+  Journal = {日本機械学会2005年度年次大会 講演論文集},
+  Pages = {147--148},
+  Title = {ビジュアルデータマイニング支援によるPSEの構築},
+  Volume = {8},
+  Year = {2005}}
+
+@article{ono:05:vsj,
+  Author = {小野 謙二，吉川 広幸},
+  Journal = {可視化情報全国講演会(新潟 2005)講演論文集},
+  Number = {2},
+  Pages = {365--366},
+  Title = {マルチプラットホーム可視化APIの設計と開発},
+  Volume = {25},
+  Year = {2005}}
+
+@article{watanabe:05:vc,
+  Author = {渡辺 大介，茅 暁陽，小野 謙二，藤代 一成},
+  Journal = {Visual Computing/グラフィックスとCAD合同シンポジウム},
+  Pages = {149--154},
+  Title = {視線情報に基づく流れ場のストリームライン配置},
+  Year = {2005},
+  note      = "\underline{査読有り}",
+  peer_reviewed={true}
+}
+
+@article{ono:04:JSME-CMD,
+  Author = {小野 謙二，玉木 剛},
+  Journal = {第17回計算力学講演会講演論文集},
+  Pages = {437--438},
+  Title = {重畳装置を用いたインタラクティブボリュームレンダリングの性能評価},
+  Year = {2004}}
+
+@article{hayashi:04:vsj,
+  Author = {林 幸子，宮地 英生，小野 謙二},
+  Journal = {第32回 可視化情報シンポジウム講演論文集},
+  Number = {1},
+  Pages = {299--302},
+  Title = {画像重畳装置とクラスタ装置を使った高速可視化システムの開発},
+  Volume = {24},
+  Year = {2004}}
+
+@article{ono:04:vsj,
+  Author = {小野 謙二，玉木 剛，吉川 広幸，片野 康生，Kwan-Liu Ma},
+  Journal = {第32回可視化情報シンポジウム講演論文集},
+  Number = {1},
+  Pages = {311--313},
+  Title = {非定常大規模データのインタラクティブ可視化システムの開発},
+  Volume = {24},
+  Year = {2004}}
+
+@article{ono:03:JSME-CMD,
+  Author = {小野 謙二，Kwan-Liu Ma},
+  Journal = {第16回計算力学講演会講演論文集},
+  Pages = {11--12},
+  Title = {設計利用のためのインタラクティブボリュームレンダリングシステムの開発},
+  Year = {2003}}
+
+@article{ono:00:CFD14,
+  Author = {小野 謙二，松本 秀樹，姫野 龍太郎},
+  Journal = {第14回数値流体力学シンポジウム講演要旨集},
+  Pages = {35},
+  Title = {自動車の床下風音における音源の可視化},
+  Year = {2000}}
+
+@article{ono:00:CFD14-vr,
+  Author = {小野 謙二，松本 秀樹，姫野 龍太郎},
+  Journal = {第14回数値流体力学シンポジウム講演要旨集},
+  Pages = {124},
+  Title = {ボリュームレンダリング法の車室内空調設計への適用},
+  Year = {2000}}

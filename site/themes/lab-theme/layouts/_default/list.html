@@ -5,63 +5,150 @@
   {{ if eq .Section "publications" }}
     {{ $pages := .RegularPages.ByDate.Reverse }}
     {{ $journal := where $pages "Params.pub_type" "journal" }}
-    {{ $conf := where $pages "Params.pub_type" "international-conference" }}
-    {{ $domestic := where $pages "Params.pub_type" "domestic-conference" }}
+    {{ $conf := union (where $pages "Params.pub_type" "international-conference") (where $pages "Params.pub_type" "international_conference") }}
+    {{ $confReviewed := union (where $conf "Params.peer_reviewed" true) (where $conf "Params.peer_reviewed" "true") }}
+    {{ $confNonReviewed := union (where $conf "Params.peer_reviewed" false) (where $conf "Params.peer_reviewed" "false") }}
+    {{ $confUnspecified := union (where $conf "Params.peer_reviewed" nil) (where $conf "Params.peer_reviewed" "") }}
+    {{ $domestic := union (where $pages "Params.pub_type" "domestic-conference") (where $pages "Params.pub_type" "domestic_conference") }}
+    {{ $domesticReviewed := union (where $domestic "Params.peer_reviewed" true) (where $domestic "Params.peer_reviewed" "true") }}
+    {{ $domesticNonReviewed := union (where $domestic "Params.peer_reviewed" false) (where $domestic "Params.peer_reviewed" "false") }}
+    {{ $domesticUnspecified := union (where $domestic "Params.peer_reviewed" nil) (where $domestic "Params.peer_reviewed" "") }}
     {{ $others := where $pages "Params.pub_type" "others" }}
     {{ $unset := where $pages "Params.pub_type" nil }}
 
+    <h2>Journal</h2>
     {{ if gt (len $journal) 0 }}
-      <h2>Journal</h2>
-      <ul class="clean-list">
-        {{ range $journal }}
-          <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            {{ if .Date }}<span class="meta">{{ .Date.Format "2006-01-02" }}</span>{{ end }}
-          </li>
-        {{ end }}
-      </ul>
+      {{ range ($journal.GroupByDate "2006") }}
+        <h3>{{ .Key }}</h3>
+        <ul class="clean-list">
+          {{ range .Pages }}
+            <li>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    {{ else }}
+      <p class="meta">No entries.</p>
     {{ end }}
 
+    <h2>International Conference</h2>
     {{ if gt (len $conf) 0 }}
-      <h2>International Conference</h2>
-      <ul class="clean-list">
-        {{ range $conf }}
-          <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            {{ if .Date }}<span class="meta">{{ .Date.Format "2006-01-02" }}</span>{{ end }}
-          </li>
+      <h3>Refereed</h3>
+      {{ if gt (len $confReviewed) 0 }}
+        {{ range ($confReviewed.GroupByDate "2006") }}
+          <h4>{{ .Key }}</h4>
+          <ul class="clean-list">
+            {{ range .Pages }}
+              <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </li>
+            {{ end }}
+          </ul>
         {{ end }}
-      </ul>
+      {{ else }}
+        <p class="meta">No entries.</p>
+      {{ end }}
+
+      <h3>Non-Refereed</h3>
+      {{ if gt (len $confNonReviewed) 0 }}
+        {{ range ($confNonReviewed.GroupByDate "2006") }}
+          <h4>{{ .Key }}</h4>
+          <ul class="clean-list">
+            {{ range .Pages }}
+              <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      {{ else }}
+        <p class="meta">No entries.</p>
+      {{ end }}
+
+      {{ if gt (len $confUnspecified) 0 }}
+        <h3>Unspecified</h3>
+        {{ range ($confUnspecified.GroupByDate "2006") }}
+          <h4>{{ .Key }}</h4>
+          <ul class="clean-list">
+            {{ range .Pages }}
+              <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      {{ end }}
+    {{ else }}
+      <p class="meta">No entries.</p>
     {{ end }}
 
+    <h2>Domestic Conference</h2>
     {{ if gt (len $domestic) 0 }}
-      <h2>Domestic Conference</h2>
-      <ul class="clean-list">
-        {{ range $domestic }}
-          <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            {{ if .Date }}<span class="meta">{{ .Date.Format "2006-01-02" }}</span>{{ end }}
-          </li>
+      <h3>Refereed</h3>
+      {{ if gt (len $domesticReviewed) 0 }}
+        {{ range ($domesticReviewed.GroupByDate "2006") }}
+          <h4>{{ .Key }}</h4>
+          <ul class="clean-list">
+            {{ range .Pages }}
+              <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </li>
+            {{ end }}
+          </ul>
         {{ end }}
-      </ul>
+      {{ else }}
+        <p class="meta">No entries.</p>
+      {{ end }}
+
+      <h3>Non-Refereed</h3>
+      {{ if gt (len $domesticNonReviewed) 0 }}
+        {{ range ($domesticNonReviewed.GroupByDate "2006") }}
+          <h4>{{ .Key }}</h4>
+          <ul class="clean-list">
+            {{ range .Pages }}
+              <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      {{ else }}
+        <p class="meta">No entries.</p>
+      {{ end }}
+
+      {{ if gt (len $domesticUnspecified) 0 }}
+        <h3>Unspecified</h3>
+        {{ range ($domesticUnspecified.GroupByDate "2006") }}
+          <h4>{{ .Key }}</h4>
+          <ul class="clean-list">
+            {{ range .Pages }}
+              <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      {{ end }}
+    {{ else }}
+      <p class="meta">No entries.</p>
     {{ end }}
 
-    {{ if or (gt (len $others) 0) (gt (len $unset) 0) }}
-      <h2>Others</h2>
-      <ul class="clean-list">
-        {{ range $others }}
-          <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            {{ if .Date }}<span class="meta">{{ .Date.Format "2006-01-02" }}</span>{{ end }}
-          </li>
-        {{ end }}
-        {{ range $unset }}
-          <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            {{ if .Date }}<span class="meta">{{ .Date.Format "2006-01-02" }}</span>{{ end }}
-          </li>
-        {{ end }}
-      </ul>
+    {{ $othersAll := union $others $unset }}
+    <h2>Others</h2>
+    {{ if gt (len $othersAll) 0 }}
+      {{ range ($othersAll.GroupByDate "2006") }}
+        <h3>{{ .Key }}</h3>
+        <ul class="clean-list">
+          {{ range .Pages }}
+            <li>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    {{ else }}
+      <p class="meta">No entries.</p>
     {{ end }}
   {{ else }}
     <ul class="clean-list">

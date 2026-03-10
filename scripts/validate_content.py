@@ -21,6 +21,7 @@ PUBLICATIONS_DIR = ROOT / "site" / "content" / "publications"
 KEBAB_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*\.md$")
 YEAR_DIR_RE = re.compile(r"^\d{4}$")
 PUB_TYPES = {"journal", "international-conference", "domestic-conference", "others"}
+BOOLISH = {"true", "false", "yes", "no", "1", "0"}
 
 
 def parse_front_matter(path: Path) -> dict[str, str]:
@@ -104,6 +105,13 @@ def validate_publications(errors: list[str]) -> None:
                 errors.append(
                     f"[publications] {path}: pub_type '{fm['pub_type']}' must be one of {sorted(PUB_TYPES)}"
                 )
+
+            if fm.get("peer_reviewed"):
+                value = fm["peer_reviewed"].strip().lower()
+                if value not in BOOLISH:
+                    errors.append(
+                        f"[publications] {path}: peer_reviewed '{fm['peer_reviewed']}' must be boolean-like ({sorted(BOOLISH)})"
+                    )
 
 
 def main() -> int:
