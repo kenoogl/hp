@@ -1286,8 +1286,6 @@
   </url><url>
     <loc>/publications/international-conference/</loc>
   </url><url>
-    <loc>/join/</loc>
-  </url><url>
     <loc>/publications/journal/</loc>
   </url><url>
     <loc>/publications/others/</loc>
@@ -1295,5 +1293,9 @@
     <loc>/projects/</loc>
   </url><url>
     <loc>/tags/</loc>
+  </url><url>
+    <loc>/join/</loc>
+  </url><url>
+    <loc>/teaching/</loc>
   </url>
 </urlset>
