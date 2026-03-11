@@ -2,4 +2,4 @@
 title: "Publications"
 ---
 
-Selected publications by year.
+Publications by year.

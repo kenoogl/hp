@@ -35,6 +35,75 @@
     <loc>/research/reduced-order-modeling/</loc>
     <lastmod>2025-11-11T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/publications/2024/a-data-augmentation-approach-that-ensures-the-reliability-of-foregrounds-in-medi/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2024/effects-of-model-shape-of-hemispheric-head-cyclone-separator-on-collection-perfo/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2024/large-scalewgs-analysis-on-the-supercomputer-fugaku/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2024/on-the-performance-of-distributed-rendering-system-for-3dwebgis-application-on-u/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2023/acceleration-of-bam-i-o-on-distributed-file-systems/</loc>
+    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2023/error-bounded-scalable-parallel-tensor-train-decomposition/</loc>
+    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2023/mixing-data-augmentation-with-preserving-foreground-regions-in-medical-image-seg/</loc>
+    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2023/untitled/</loc>
+    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2022/a-scalable-parallel-partition-tridiagonal-solver-for-many-core-and-low-b-f-proce/</loc>
+    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2022/efficient-compressed-database-of-equilibrated-configurations-of-ring-linear-poly/</loc>
+    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2022/untitled-3/</loc>
+    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2022/untitled-2/</loc>
+    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2022/untitled/</loc>
+    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2021/parareal/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2020/chowder-a-new-approach-for-viewing-3d-web-gis-on-ultra-high-resolution-scalable/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2020/toward-feature-preserving-2d-and-3d-vector-field-compression/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2020/untitled/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2019/effective-pre-processing-of-genetic-programming-for-solving-symbolic-regression/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2019/high-performance-parallel-simulation-of-airflow-for-complex-terrain-surface/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2019/showing-ultra-high-resolution-images-in-vda-based-scalable-displays/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2019/voxel-based-modeling-of-airflow-in-the-human-nasal-cavity/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2019/untitled/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/publications/2018/234compositor-a-flexible-parallel-image-compositing-framework-for-massively-para/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -50,13 +119,22 @@
     <loc>/publications/2018/characterizing-i-o-and-storage-activity-on-the-k-computer-for-post-processing-pu/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/publications/2018/chowder-an-adaptive-tiled-display-wall-driver-for-dynamic-remote-collaboration/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/publications/2018/chowder-dynamic-contents-sharing-through-remote-tiled-display-system/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2018/chowder-dynamic-contents-sharing-through-remote-tiled-display-system-2/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publications/2018/convergence-acceleration-of-the-pint-integration-of-advection-equation-using-acc/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publications/2018/data-i-o-management-approach-for-the-post-hoc-visualization-of-big-simulation-da/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2018/design-of-a-flexible-in-situ-framework-with-a-temporal-buffer-for-data-processin/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publications/2018/estimation-of-functions-representing-data-using-convolution-neural-network/</loc>
@@ -77,16 +155,22 @@
     <loc>/publications/2018/influence-of-the-phase-accuracy-of-the-coarse-solver-calculation-on-the-converge/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publications/2018/performance-evaluation-and-visualization-of-scientific-applications-using-pmlib/</loc>
+    <loc>/publications/2018/influence-of-the-phase-accuracy-of-the-coarse-solver-calculation-on-the-converge-2/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publications/</loc>
+    <loc>/publications/2018/mellanox/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2018/performance-evaluation-and-visualization-of-scientific-applications-using-pmlib/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publications/2018/research-of-finding-formula-that-express-data-without-any-background-information/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publications/2018/two-stage-in-situ-parallel-meshing-for-large-scale-atmospheric-fluid-simulation/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2018/untitled/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publications/2018/11/</loc>
@@ -102,6 +186,9 @@
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publications/2017/flexible-fiber-surface-a-reeb-free-approach/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2017/parareal/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publications/2017/scalable-and-ubiquitous-visualization-in-extreme-scale-computational-environment/</loc>

@@ -6,5 +6,6 @@ journal: 'VG ''03: Proceedings of the 2003 Eurographics/IEEE TVCG Workshop on Vo
 year: '2003'
 pub_type: 'journal'
 doi: 'http://doi.acm.org/10.1145/827051.827072'
+doi_url: 'http://doi.acm.org/10.1145/827051.827072'
 ---
 

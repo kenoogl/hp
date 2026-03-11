@@ -157,6 +157,20 @@ main.container {
   margin: 0;
 }
 
+.members-block + .members-block {
+  margin-top: 1.25rem;
+}
+
+.members-subgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.clean-list.compact li {
+  padding: 0.45rem 0;
+}
+
 .button {
   display: inline-block;
   padding: 0.52rem 0.95rem;
