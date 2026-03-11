@@ -683,7 +683,7 @@ pub_type={journal}
   Journal = {Review of Automotive Engineering},
   Number = {1},
   Pages = {51--60},
-  Title = {Wind Tunnel Testing of {JSAE} Standard Low-aerodynamic-drag Vehicle Body Using 1/5 Scale Model},
+  Title = {Wind Tunnel Testing of JSAE Standard Low-aerodynamic-drag Vehicle Body Using 1/5 Scale Model},
   Volume = {30},
   Year = {2009},
   pub_type={journal}
@@ -989,6 +989,27 @@ peer_reviewed={true}
   month={Sep.},
   peer_reviewed={true}
   }
+
+
+  @inproceedings{10.1145/3368474.3368484,
+author = {Ono, Kenji and Kato, Toshihiro and Ohshima, Satoshi and Nanri, Takeshi},
+title = {Scalable Direct-Iterative Hybrid Solver for Sparse Matrices on Multi-Core and Vector Architectures},
+year = {2020},
+isbn = {9781450372367},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3368474.3368484},
+doi = {10.1145/3368474.3368484},
+abstract = {In the present paper, we propose an efficient direct-iterative hybrid solver for sparse matrices that can derive the scalability of the latest multi-core, many-core, and vector architectures and examine the execution performance of the proposed SLOR-PCR method. We also present an efficient implementation of the PCR algorithm for SIMD and vector architectures so that it is easy to output instructions optimized by the compiler. The proposed hybrid method has high cache reusability, which is favorable for modern low B/F architecture because efficient use of the cache can mitigate the memory bandwidth limitation. The measured performance revealed that the SLOR-PCR solver showed excellent scalability up to 352 cores on the cc-NUMA environment, and the achieved performance was higher than that of the conventional Jacobi and Red-Black ordering method by a factor of 3.6 to 8.3 on the SIMD architecture. In addition, the maximum speedup in computation time was observed to be a factor of 6.3 on the cc-NUMA architecture with 352 cores.},
+booktitle = {Proceedings of the International Conference on High Performance Computing in Asia-Pacific Region},
+pages = {11–21},
+numpages = {11},
+keywords = {cache bandwidth, line successive overrelaxation, parallel cyclic reduction},
+location = {Fukuoka, Japan},
+series = {HPCAsia '20},
+peer_reviewed={true}
+}
+
 
 
 @inproceedings{10.1145/3231622.3232504,
@@ -1462,17 +1483,7 @@ peer_reviewed={true}
   peer_reviewed={true}
   }
 
-@inproceedings{morimoto:10:ISVC,
-  Author = {Morimoto, Yuki and Ono, Kenji},
-  Booktitle = {International Symposium on Visual Computing},
-  Location = {Las Vegas, USA},
-  Month = {Oct.},
-  Pages = {707--718},
-  Title = {Computer-Generated Tie-Dyeing Using a 3D Diffusion Graph},
-  Volume = {1},
-  Year = {2010},
-  peer_reviewed={true}
-  }
+
 
 @inproceedings{ono:10:PCFD,
   Author = {Ono, Kenji and Tamaki, Tsuyoshi},
@@ -1568,7 +1579,7 @@ peer_reviewed={true}
   peer_reviewed={true}
   }
 
-@article{morimoto:10:vc,
+@inproceedings{morimoto:10:vc,
   Author = {Morimoto, Yuki and Ono, Kenji},
   Journal = {Proc.of the 6th Intl. Conf. on Advances in Visual Computing},
   Pages = {707--718},

@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1773196748">
+  <link rel="stylesheet" href="/css/style.css?v=1773236852">
 </head>
 <body>
   <header class="site-header">
@@ -19,6 +19,7 @@
     <nav aria-label="Main navigation">
       <ul class="nav-list">
         <li><a href="/research/">研究 / Research</a></li>
+        <li><a href="/projects/">プロジェクト / Projects</a></li>
         <li><a href="/teaching/">講義 / Teaching</a></li>
         <li><a href="/publications/">論文 / Publications</a></li>
         <li><a href="/members/">メンバー / Members</a></li>
@@ -44,6 +45,12 @@
   <h2>研究ハイライト / Research Highlights</h2>
 
   <div class="grid">
+    
+      <article class="card">
+        <h3>High-Performance Computing</h3>
+        <p>Scalable iterative solvers for large-scale sparse matrix.</p>
+        <a href="/research/hpc/">詳細を見る / Learn more</a>
+      </article>
     
       <article class="card">
         <h3>Data-Driven Wake Modeling</h3>
@@ -118,5 +125,17 @@
 </footer>
 
   
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
 </html>

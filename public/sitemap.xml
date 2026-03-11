@@ -2,8 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/research/hpc/</loc>
+    <lastmod>2026-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/research-en/hpc/</loc>
+    <lastmod>2026-03-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/</loc>
-    <lastmod>2026-03-01T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/research/</loc>
+    <lastmod>2026-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/research-en/</loc>
+    <lastmod>2026-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/news/</loc>
     <lastmod>2026-03-01T00:00:00+00:00</lastmod>
@@ -12,9 +24,6 @@
     <lastmod>2026-03-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/research/wake-modeling/</loc>
-    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/research/</loc>
     <lastmod>2026-02-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/research/ai-for-science/</loc>
@@ -81,6 +90,9 @@
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publications/2020/chowder-a-new-approach-for-viewing-3d-web-gis-on-ultra-high-resolution-scalable/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publications/2020/scalable-direct-iterative-hybrid-solver-for-sparse-matrices-on-multi-core-and-ve/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publications/2020/toward-feature-preserving-2d-and-3d-vector-field-compression/</loc>
@@ -597,9 +609,6 @@
     <lastmod>2010-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publications/2010/application-of-a-partitioned-coupling-algorithm-using-level-set-function-to-fold/</loc>
-    <lastmod>2010-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/publications/2010/computer-generated-tie-dyeing-using-a-3d-diffusion-graph-3/</loc>
     <lastmod>2010-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publications/2010/computer-generated-tie-dyeing-using-a-3d-diffusion-graph-2/</loc>

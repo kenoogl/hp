@@ -6,8 +6,22 @@
     <description>Recent content in Home on Intelligent Modeling Laboratory (IML)</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>High-Performance Computing</title>
+      <link>/research/hpc/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>/research/hpc/</guid>
+      <description>Scalable iterative solvers for large-scale sparse matrix.</description>
+    </item>
+    <item>
+      <title>High-Performance Computing (EN)</title>
+      <link>/research-en/hpc/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>/research-en/hpc/</guid>
+      <description>Scalable iterative solvers for large-scale sparse matrices.</description>
+    </item>
     <item>
       <title>Paper accepted</title>
       <link>/news/2026-paper/</link>
@@ -160,6 +174,13 @@
       <link>/publications/2020/chowder-a-new-approach-for-viewing-3d-web-gis-on-ultra-high-resolution-scalable/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>/publications/2020/chowder-a-new-approach-for-viewing-3d-web-gis-on-ultra-high-resolution-scalable/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scalable Direct-Iterative Hybrid Solver for Sparse Matrices on Multi-Core and Vector Architectures</title>
+      <link>/publications/2020/scalable-direct-iterative-hybrid-solver-for-sparse-matrices-on-multi-core-and-ve/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publications/2020/scalable-direct-iterative-hybrid-solver-for-sparse-matrices-on-multi-core-and-ve/</guid>
       <description></description>
     </item>
     <item>
@@ -1368,13 +1389,6 @@
     </item>
     <item>
       <title>Computer-Generated Tie-Dyeing using a 3D Diffusion Graph</title>
-      <link>/publications/2010/computer-generated-tie-dyeing-using-a-3d-diffusion-graph-3/</link>
-      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
-      <guid>/publications/2010/computer-generated-tie-dyeing-using-a-3d-diffusion-graph-3/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Computer-Generated Tie-Dyeing Using a 3D Diffusion Graph</title>
       <link>/publications/2010/computer-generated-tie-dyeing-using-a-3d-diffusion-graph-2/</link>
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
       <guid>/publications/2010/computer-generated-tie-dyeing-using-a-3d-diffusion-graph-2/</guid>
@@ -1773,7 +1787,7 @@
       <description></description>
     </item>
     <item>
-      <title>Wind Tunnel Testing of {JSAE} Standard Low-aerodynamic-drag Vehicle Body Using 1/5 Scale Model</title>
+      <title>Wind Tunnel Testing of JSAE Standard Low-aerodynamic-drag Vehicle Body Using 1/5 Scale Model</title>
       <link>/publications/2009/wind-tunnel-testing-of-jsae-standard-low-aerodynamic-drag-vehicle-body-using-1-5/</link>
       <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
       <guid>/publications/2009/wind-tunnel-testing-of-jsae-standard-low-aerodynamic-drag-vehicle-body-using-1-5/</guid>

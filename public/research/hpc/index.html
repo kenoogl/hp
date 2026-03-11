@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Computational Science and AI Research">
+  <title>High-Performance Computing | Intelligent Modeling Laboratory (IML)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=1773236852">
+</head>
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/">Intelligent Modeling Laboratory (IML)</a>
+
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="/research/">研究 / Research</a></li>
+        <li><a href="/projects/">プロジェクト / Projects</a></li>
+        <li><a href="/teaching/">講義 / Teaching</a></li>
+        <li><a href="/publications/">論文 / Publications</a></li>
+        <li><a href="/members/">メンバー / Members</a></li>
+        <li><a href="/news/">ニュース / News</a></li>
+        <li><a href="/join/">参加募集 / Join</a></li>
+        <li><a href="/links/">リンク / Links</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    
+<article>
+  <h1>High-Performance Computing</h1>
+  
+  
+    <p class="meta">2026-03-11</p>
+  
+  <div class="content"><p>English version: <a href="/research-en/hpc/">High-Performance Computing (EN)</a></p>
+<h2 id="大規模疎行列の高性能反復計算法">大規模疎行列の高性能反復計算法</h2>
+<h3 id="lsor-pcr法">LSOR-PCR法</h3>
+<p>流体計算の圧力ポアソン方程式から導出される連立一次方程式 $A\mathbf{x}=\mathbf{b}$ の係数行列 $A$ は大規模疎行列となります。近年の高い演算性能をもつ低Byte/Flop(B/F)アーキテクチャにおいては、行列ベクトル積のナイーブな実装はB/F値${}^{※}$が高くなるため、低B/F計算機の性能を引き出すことが難しくなっています。そこで、連立一次方程式の解法として高い演算性能とスケーラビリティを達成できる直接法と反復法のハイブリッド解法SLOR-PCR法を提案しました。
+提案方法は、シンプルなSOR法を基本反復法とし、多重ループの最内側の三重対角行列の反転に効率的なLU分解を組み合わせています。このとき、LU分解だけではB/F値が高くなるため、Parallel Cyclic Reduction (PCR)法を併用し、演算密度とスケーラビリティを向上させています。</p>
+<blockquote>
+<p>※) メモリから演算ユニットまでのデータの移動量 (Byte) と演算ユニットでの浮動小数点演算数の比。計算アルゴリズムやハードウェアの特性を表す指標の一つ。</p></blockquote>
+<img src="/images/SLOR-PCR-UV300.png" alt="SLOR-PCR法とJacobi, SOR法との性能比較" style="max-width:600px; width:100%; height:auto; display:block; margin:0.5rem auto;">
+図　SGI UV300でのSLOR-PCR法とJacobi, SOR法との実行性能比較。スケーラブルな性能向上が確認できる。
+<hr>
+<h3 id="parallel-tree-partitioning-reduction法">Parallel Tree Partitioning Reduction法</h3>
+<p>流体シミュレーションなどに現れる大規模な疎行列を係数にもつ連立一次方程式の求解は、行列・ベクトル積の計算が必要ですが、既存の解法アルゴリズムの要求B/F（演算に対するデータ移動の比率）が大きく、近年の高性能ではあるけれども低B/FのCPUアーキテクチャの性能を引き出せない問題点があります。この研究では、「富岳」でも採用されているメニーコアの計算機において、その性能を引き出せるスレッド・スケーラブルな疎行列解法アルゴリズム開発をめざしています。そのアイデアは、方程式を互いに依存関係の無い多数のグループに分け、多数のコアを十分な演算量で動作できるように式変形を行うところにあります。この方法は、Tree Partitioning Reduction(TPR)法とParallel Cyclic Reduction(PCR)法を組み合わせ（PTPR法）、低B/Fアーキテクチャのコアで重要なL1キャッシュ上にあるデータの再利用性を高めたものになります。左図はスレッド数に対する性能、右図は方程式の数に対する性能を示しています。既存手法のPCR, TPRに比べると、PTPRはスレッド数、方程式の数（連立一次方程式の大きさ）ともに大きくなるとその性能が向上する特性をもっていることがわかり、メニーコアの性能を引き出せることがわかります。</p>
+<img src="/images/PTPR-1.png" alt="提案するPTPR法とPCR, TPR法の性能比較" style="max-width:760px; width:100%; height:auto; display:block; margin:0.5rem auto;">
+図　提案するPTPR法とPCR, TPR法の性能比較
+<h2 id="key-publications">Key publications</h2>
+<ul>
+<li>K. Ono, T. Kato, S. Ohshima, and T. Nanri, <em>Scalable Direct-Iterative Hybrid Solver for Sparse Matrices on Multi-Core and Vector Architectures</em>, Proceedings of the International Conference on High Performance Computing in Asia-Pacific Region, pp.11––21, doi:<a href="https://doi.org/10.1145/3368474.3368484">10.1145/3368474.3368484</a> (2020).</li>
+<li>T. Mitsuda, and K. Ono, <em>A Scalable Parallel Partition Tridiagonal Solver for Many-Core and Low B/F Processors</em>, 2022 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW), doi: <a href="https://ieeexplore.ieee.org/document/9835226">10.1109/IPDPSW55747.2022.00142</a> (2022).</li>
+</ul>
+</div>
+  
+</article>
+
+  </main>
+  
+    <footer class="site-footer">
+  <div class="container">
+    <p>Intelligent Modeling Laboratory (IML)</p>
+    <p>Research Institute for Information Technology (RIIT)</p>
+    <p>Kyushu University</p>
+    <p>Fukuoka Japan</p>
+  </div>
+</footer>
+
+  
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
