@@ -1,50 +1,16 @@
 <section class="section-block">
   <h2>メンバー / Members</h2>
 
-  {{ $members := where .Site.RegularPages "Section" "members" }}
-  {{ $faculty := where $members "File.BaseFileName" "faculty" }}
-  {{ $students := where $members "File.BaseFileName" "students" }}
-  {{ $current := union $faculty $students }}
-  {{ $alumni := where $members "File.BaseFileName" "alumni" }}
-
-  <div class="members-block">
-    <h3>Current Members</h3>
-    {{ if gt (len $current) 0 }}
-      <div class="members-subgrid">
-        {{ range $current.ByTitle }}
-          <article class="member-card">
-            <p class="member-name">{{ .Title }}</p>
-            <ul class="clean-list compact">
-              {{ range (split .RawContent "\n") }}
-                {{ $line := trim . " " }}
-                {{ if strings.HasPrefix $line "- " }}
-                  <li>{{ strings.TrimPrefix "- " $line }}</li>
-                {{ end }}
-              {{ end }}
-            </ul>
-          </article>
-        {{ end }}
-      </div>
-    {{ else }}
-      <p class="meta">No current member entries.</p>
-    {{ end }}
-  </div>
-
-  <div class="members-block">
-    <h3>Alumni</h3>
-    {{ if gt (len $alumni) 0 }}
-      {{ range $alumni }}
-        <ul class="clean-list compact">
-          {{ range (split .RawContent "\n") }}
-            {{ $line := trim . " " }}
-            {{ if strings.HasPrefix $line "- " }}
-              <li>{{ strings.TrimPrefix "- " $line }}</li>
-            {{ end }}
-          {{ end }}
-        </ul>
-      {{ end }}
-    {{ else }}
-      <p class="meta">No alumni entries.</p>
-    {{ end }}
+  <div class="members-subgrid">
+    <article class="member-card">
+      <h3>Current Members</h3>
+      <p class="meta">Faculty, students, and research themes.</p>
+      <a href="{{ "/members/#current-members" | relURL }}">View details</a>
+    </article>
+    <article class="member-card">
+      <h3>Alumni</h3>
+      <p class="meta">Bachelor, Master, Doctor graduates.</p>
+      <a href="{{ "/members/#alumni" | relURL }}">View details</a>
+    </article>
   </div>
 </section>

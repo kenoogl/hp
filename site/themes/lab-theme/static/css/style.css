@@ -171,6 +171,33 @@ main.container {
   padding: 0.45rem 0;
 }
 
+.members-hero p {
+  margin-bottom: 0;
+}
+
+.members-content h3 {
+  margin-top: 1rem;
+}
+
+.members-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.6rem 0 1.2rem;
+  font-size: 0.95rem;
+}
+
+.members-content th,
+.members-content td {
+  border: 1px solid var(--line);
+  padding: 0.5rem 0.6rem;
+  vertical-align: top;
+}
+
+.members-content th {
+  background: #f8fbff;
+  text-align: left;
+}
+
 .button {
   display: inline-block;
   padding: 0.52rem 0.95rem;
