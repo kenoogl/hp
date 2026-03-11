@@ -1,19 +1,50 @@
 <section class="section-block">
   <h2>メンバー / Members</h2>
 
-  <div class="grid">
-    {{ range where .Site.RegularPages "Section" "members" }}
-      {{ $member := . }}
-      <article class="member-card">
-        {{ with $member.Params.photo }}
-          <img class="member-photo" src="{{ . }}" alt="{{ $member.Title }} photo">
-        {{ else }}
-          <div class="member-photo placeholder">写真なし / No Photo</div>
-        {{ end }}
+  {{ $members := where .Site.RegularPages "Section" "members" }}
+  {{ $faculty := where $members "File.BaseFileName" "faculty" }}
+  {{ $students := where $members "File.BaseFileName" "students" }}
+  {{ $current := union $faculty $students }}
+  {{ $alumni := where $members "File.BaseFileName" "alumni" }}
 
-        <p class="member-name">{{ $member.Title }}</p>
-        <p class="member-position">{{ with $member.Params.position }}{{ . }}{{ else }}{{ $member.Summary }}{{ end }}</p>
-      </article>
+  <div class="members-block">
+    <h3>Current Members</h3>
+    {{ if gt (len $current) 0 }}
+      <div class="members-subgrid">
+        {{ range $current.ByTitle }}
+          <article class="member-card">
+            <p class="member-name">{{ .Title }}</p>
+            <ul class="clean-list compact">
+              {{ range (split .RawContent "\n") }}
+                {{ $line := trim . " " }}
+                {{ if strings.HasPrefix $line "- " }}
+                  <li>{{ strings.TrimPrefix "- " $line }}</li>
+                {{ end }}
+              {{ end }}
+            </ul>
+          </article>
+        {{ end }}
+      </div>
+    {{ else }}
+      <p class="meta">No current member entries.</p>
+    {{ end }}
+  </div>
+
+  <div class="members-block">
+    <h3>Alumni</h3>
+    {{ if gt (len $alumni) 0 }}
+      {{ range $alumni }}
+        <ul class="clean-list compact">
+          {{ range (split .RawContent "\n") }}
+            {{ $line := trim . " " }}
+            {{ if strings.HasPrefix $line "- " }}
+              <li>{{ strings.TrimPrefix "- " $line }}</li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      {{ end }}
+    {{ else }}
+      <p class="meta">No alumni entries.</p>
     {{ end }}
   </div>
 </section>
