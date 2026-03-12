@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1773296722">
+  <link rel="stylesheet" href="/css/style.css?v=1773298367">
 </head>
 <body>
   <header class="site-header">
@@ -20,6 +20,7 @@
         <li><a href="/research/">研究 / Research</a></li>
         <li><a href="/projects/">プロジェクト / Projects</a></li>
         <li><a href="/teaching/">講義 / Teaching</a></li>
+        <li><a href="/awards/">受賞 / Awards</a></li>
         <li><a href="/publications/">論文 / Publications</a></li>
         <li><a href="/members/">メンバー / Members</a></li>
         <li><a href="/news/">ニュース / News</a></li>
@@ -47,6 +48,9 @@
     
     
     
+    
+      <h2>Abstract</h2>
+      <p>Leading-edge supercomputers, such as the K computer, have generated a vast amount of simulation results, and most of these datasets were stored on the file system for the post-hoc analysis such as visualization. In this work, we first investigated the data generation trends of the K computer by analyzing some operational log data files. We verified a tendency of generating large amounts of distributed files as simulation outputs, and in most cases, the number of files has been proportional to the number of utilized computational nodes, that is, each computational node producing one or more files. Considering that the computational cost of visualization tasks is usually much smaller than that required for large-scale numerical simulations, a flexible data input/output (I/O) management mechanism becomes highly useful for the post-hoc visualization and analysis. In this work, we focused on the xDMlib data management library, and its flexible data I/O mechanism in order to enable flexible data loading of big computational climate simulation results. In the proposed approach, a pre-processing is executed on the target distributed files for generating a light-weight metadata necessary for the elaboration of the data assignment mapping used in the subsequent data loading process. We evaluated the proposed approach by using a 32-node visualization cluster, and the K computer. Besides the inevitable performance penalty associated with longer data loading time, when using smaller number of processes, there is a benefit for avoiding any data replication via copy, conversion, or extraction. In addition, users will be able to freely select any number of nodes, without caring about the number of distributed files, for the post-hoc visualization and analysis purposes.</p>
     
   
   <div class="content"></div>

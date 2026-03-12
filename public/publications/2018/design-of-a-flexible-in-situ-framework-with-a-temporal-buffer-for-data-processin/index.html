@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1773296722">
+  <link rel="stylesheet" href="/css/style.css?v=1773298367">
 </head>
 <body>
   <header class="site-header">
@@ -20,6 +20,7 @@
         <li><a href="/research/">研究 / Research</a></li>
         <li><a href="/projects/">プロジェクト / Projects</a></li>
         <li><a href="/teaching/">講義 / Teaching</a></li>
+        <li><a href="/awards/">受賞 / Awards</a></li>
         <li><a href="/publications/">論文 / Publications</a></li>
         <li><a href="/members/">メンバー / Members</a></li>
         <li><a href="/news/">ニュース / News</a></li>
@@ -47,6 +48,9 @@
     
     
     
+    
+      <h2>Abstract</h2>
+      <p>This paper presents an in situ framework focused on time-varying simulations, and uses a novel temporal buffer for storing simulation results sampled at user-defined intervals. This framework has been designed to provide flexible data processing and visualization capabilities in modern HPC operational environments composed of powerful front-end systems, for pre-and post-processing purposes, along with traditional back-end HPC systems. The temporal buffer is implemented using the functionalities provided by Open Address Space (OpAS) library, which enables asynchronous one-sided communication from outside processes to any exposed memory region on the simulator side. This buffer can store time-varying simulation results, and can be processed via in situ approaches with different proximities. We present a prototype of our framework, and code integration process with a target simulation code. The proposed in situ framework utilizes separate files to describe the initialization and execution codes, which are in the form of Python scripts. This framework also enables the runtime modification of these Python-based files, thus providing greater flexibility to the users, not only for data processing, such as visualization and analysis, but also for the simulation steering.</p>
     
   
   <div class="content"></div>
