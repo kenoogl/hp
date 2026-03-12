@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Computational Science and AI Research">
+  <title>Equation Discovery | Intelligent Modeling Laboratory (IML)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=1773296722">
+</head>
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/">Intelligent Modeling Laboratory (IML)</a>
+
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="/research/">研究 / Research</a></li>
+        <li><a href="/projects/">プロジェクト / Projects</a></li>
+        <li><a href="/teaching/">講義 / Teaching</a></li>
+        <li><a href="/publications/">論文 / Publications</a></li>
+        <li><a href="/members/">メンバー / Members</a></li>
+        <li><a href="/news/">ニュース / News</a></li>
+        <li><a href="/join/">参加募集 / Join</a></li>
+        <li><a href="/links/">リンク / Links</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    
+<article>
+  <h1>Equation Discovery</h1>
+  
+  
+    <p class="meta">2026-03-12</p>
+  
+  <div class="content"><p>English version: <a href="/research-en/equation-discovery/">Equation Discovery (EN)</a></p>
+<h2 id="遺伝的プログラミングによる方程式発見">遺伝的プログラミングによる方程式発見</h2>
+<p>コンピュータ、観測、シミュレーション技術などの進歩により大量のデータが生成される時代になり、データに含まれる意味や知識をえることがますます重要になっている。 この論文では、与えられたデータを記号回帰問題として記述し，進化計算により支配方程式を見つけるプロセスを構築した。 提案手法では、遺伝的プログラミングに「偏微分関数」を導入して偏微分方程式を自動生成し、生成された方程式とデータを比較評価して誤差の少ない方程式を自動抽出する。 数値実験を行い、流体シミュレーションデータから支配方程式を推定し、提案手法の有効性を評価した。 その結果、元の方程式が高い確率で得られ、提案された方法がデータを表すための有用なモデルを見つけるための有効なツールになることがわかった。</p>
+<img src="/images/GP_overview.png" alt="Genetic Programmingによる方程式探索の概要" style="max-width:600px; width:100%; height:auto; display:block; margin:0.5rem auto;">
+<h3 id="key-publications">Key publications</h3>
+<ul>
+<li>小野謙二, 古賀壱成, 遺伝的プログラミングによる支配方程式の推定, Transactions of JSCES, DOI: <a href="https://doi.org/10.11421/jsces.2020.20201004">10.11421/jsces.2020.20201004</a>, 2020.</li>
+<li>Kenji Ono and Kanae Shiragami, <em>Equation discovery through genetic programming reflecting the importance of generated terms</em>, 16th world congress on computational mechanics / 4th pan american congress on computational mechanics, 2024.</li>
+</ul>
+</div>
+  
+</article>
+
+  </main>
+  
+    <footer class="site-footer">
+  <div class="container">
+    <p>Intelligent Modeling Laboratory (IML)</p>
+    <p>Research Institute for Information Technology (RIIT)</p>
+    <p>Kyushu University</p>
+    <p>Fukuoka Japan</p>
+  </div>
+</footer>
+
+  
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

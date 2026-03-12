@@ -188,6 +188,9 @@ def build_markdown(entry: dict, bib_path: Path) -> str:
     doi = entry.get("doi", "").strip()
     url = entry.get("url", "").strip()
     annote = str(entry.get("annote", "") or entry.get("annotation", "")).strip()
+    abstract = str(entry.get("abstract", "")).strip()
+    if abstract:
+        abstract = re.sub(r"\s+", " ", abstract)
 
     date = f"{year}-01-01" if year.isdigit() else "1970-01-01"
 
@@ -208,6 +211,8 @@ def build_markdown(entry: dict, bib_path: Path) -> str:
         lines.append(f"doi: {yaml_quote(doi)}")
     if url:
         lines.append(f"doi_url: {yaml_quote(url)}")
+    if abstract:
+        lines.append(f"abstract: {yaml_quote(abstract)}")
     lines.extend(["---", ""])
     return "\n".join(lines) + "\n"
 

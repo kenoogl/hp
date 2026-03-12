@@ -60,6 +60,10 @@
       {{ if eq .Params.peer_reviewed false }}<p class="meta"><strong>Peer Review:</strong> Non-Refereed</p>{{ end }}
       {{ if eq .Params.peer_reviewed "false" }}<p class="meta"><strong>Peer Review:</strong> Non-Refereed</p>{{ end }}
     {{ end }}
+    {{ if and (or (eq .Params.pub_type "journal") (eq .Params.pub_type "international-conference") (eq .Params.pub_type "international_conference")) .Params.abstract }}
+      <h2>Abstract</h2>
+      <p>{{ .Params.abstract }}</p>
+    {{ end }}
   {{ else }}
     {{ if .Date }}<p class="meta">{{ .Date.Format "2006-01-02" }}</p>{{ end }}
   {{ end }}

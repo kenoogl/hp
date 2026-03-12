@@ -32,3 +32,5 @@ Please include the following information when contacting us.
 
 研究内容に関心のある方は、まずはお気軽にご連絡ください。  
 If you are interested in our research, feel free to contact us.
+
+E-mail : keno <img src="/images/at.png" style="max-width:18px; width:100%; height:auto;"> cc.kyushu-u.ac.jp
