@@ -1,6 +1,6 @@
 ---
 title: 'Influence of the phase accuracy of the coarse solver calculation on the convergence of the parareal method iteration for hyperbolic PDEs'
-date: 2018-01-01
+date: 2018-06-01
 authors: 'Iizuka, Mikio and Ono, Kenji'
 journal: 'Computing and Visualization in Science'
 year: '2018'

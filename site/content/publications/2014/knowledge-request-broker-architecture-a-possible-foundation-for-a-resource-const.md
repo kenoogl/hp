@@ -1,6 +1,6 @@
 ---
 title: 'Knowledge request-broker architecture: A possible foundation for a resource-constrained dynamic and autonomous global system'
-date: 2014-01-01
+date: 2014-03-01
 authors: 'Khandan, H. and Ono, K.'
 journal: 'Internet of Things (WF-IoT), 2014 IEEE World Forum on'
 year: '2014'

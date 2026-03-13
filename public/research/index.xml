@@ -6,28 +6,42 @@
     <description>Recent content in Research on Intelligent Modeling Laboratory (IML)</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3D-IC Thermal Design</title>
+      <link>/research/3dic-thermal/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>/research/3dic-thermal/</guid>
+      <description>Fast thermal simulation for early-stage 3D-IC design, hotspot prediction, and cooling optimization.</description>
+    </item>
+    <item>
+      <title>Data-Driven Wake Modeling</title>
+      <link>/research/wake-modeling/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>/research/wake-modeling/</guid>
+      <description>LLM-GP-based surrogate modeling for wind turbine wakes and wake interaction in wind farms.</description>
+    </item>
+    <item>
+      <title>Tensor-Train Decomposition</title>
+      <link>/research/ttd/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>/research/ttd/</guid>
+      <description>A scalable parallel Tensor-Train Decomposition method for efficiently compressing and analyzing massive multidimensional data.</description>
+    </item>
     <item>
       <title>Equation Discovery</title>
       <link>/research/equation-discovery/</link>
       <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
       <guid>/research/equation-discovery/</guid>
-      <description>Data-driven approach for discovering mathematical model to describe phenomena.</description>
+      <description>Data-driven discovery of mathematical models for physical phenomena.</description>
     </item>
     <item>
-      <title>High-Performance Computing</title>
-      <link>/research/hpc/</link>
+      <title>Scalable Iterative Solvers</title>
+      <link>/research/iterative-solver/</link>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>/research/hpc/</guid>
-      <description>Scalable iterative solvers for large-scale sparse matrix.</description>
-    </item>
-    <item>
-      <title>Data-Driven Wake Modeling</title>
-      <link>/research/wake-modeling/</link>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>/research/wake-modeling/</guid>
-      <description>Reduced-order and learning-based methods for turbulent wake prediction.</description>
+      <guid>/research/iterative-solver/</guid>
+      <description>Scalable iterative solvers for large-scale sparse matrices.</description>
     </item>
     <item>
       <title>AI for Science</title>
@@ -35,13 +49,6 @@
       <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
       <guid>/research/ai-for-science/</guid>
       <description>Foundation and surrogate models for scientific workflows.</description>
-    </item>
-    <item>
-      <title>Reduced-Order Modeling</title>
-      <link>/research/reduced-order-modeling/</link>
-      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>/research/reduced-order-modeling/</guid>
-      <description>Fast and interpretable reduced-order techniques for high-dimensional systems.</description>
     </item>
   </channel>
 </rss>

@@ -1,6 +1,6 @@
 ---
 title: 'Convergence Acceleration of the PinT Integration of Advection Equation using Accurate Phase Calculation Method'
-date: 2018-01-01
+date: 2018-03-03
 authors: 'Mikio Iizuka and Kenji Ono'
 journal: 'SIAM Conference on Parallel Processing for Scientific Computing'
 year: '2018'

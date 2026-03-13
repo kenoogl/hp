@@ -1,6 +1,6 @@
 ---
 title: 'A Framework for Volume Segmentation and Visualization Using Augmented Reality'
-date: 2010-01-01
+date: 2010-03-20
 authors: 'Tawara, Takehiro and Ono, Kenji'
 journal: 'IEEE Symposium on 3D User Interfaces 2010 Poster'
 year: '2010'

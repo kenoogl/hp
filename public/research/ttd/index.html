@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Computational Science and AI Research">
+  <title>Tensor-Train Decomposition | Intelligent Modeling Laboratory (IML)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=1773381042">
+</head>
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/">Intelligent Modeling Laboratory (IML)</a>
+
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="/research/">研究 / Research</a></li>
+        <li><a href="/projects/">プロジェクト / Projects</a></li>
+        <li><a href="/teaching/">講義 / Teaching</a></li>
+        <li><a href="/awards/">受賞 / Awards</a></li>
+        <li><a href="/publications/">論文 / Publications</a></li>
+        <li><a href="/members/">メンバー / Members</a></li>
+        <li><a href="/news/">ニュース / News</a></li>
+        <li><a href="/join/">参加募集 / Join</a></li>
+        <li><a href="/links/">リンク / Links</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    
+<article>
+  <h1>Tensor-Train Decomposition</h1>
+  
+  
+    <p class="meta">2026-03-13</p>
+  
+  <div class="content"><p>English version: <a href="/research-en/ttd/">Tensor-Train Decomposition (EN)</a></p>
+<h2 id="超大規模データを扱うためのテンソル分解技術">超大規模データを扱うためのテンソル分解技術</h2>
+<h3 id="-並列-tensor-train-decompositionttdによる高速データ圧縮-">― 並列 Tensor-Train Decomposition（TTD）による高速データ圧縮 ―</h3>
+<p>現代の科学計算やAI、物理シミュレーションでは、多次元配列（テンソル）として表される巨大データを扱うことが増えています。しかしテンソルは次元が増えるとデータ量が指数的に増加する「次元の呪い」に直面し、そのままでは保存や解析が困難になります。これを解決する有力な方法が Tensor Train Decomposition（TTD） です。TTDは多次元データを複数の小さなテンソルに分解することで、必要なパラメータ数を大幅に削減し、効率的にデータを扱えるようにする技術です。しかし従来広く使われているTTDアルゴリズム（TT-SVD）は<strong>逐次処理</strong>で動作するため、巨大テンソルに対しては計算時間やメモリ消費が非常に大きくなるという課題がありました。特にスーパーコンピュータのような大規模並列環境を十分に活用できないことが問題でした。</p>
+<p>そこで本研究では、<strong>並列テンソル分解アルゴリズム PTTD</strong>（<strong>Parallel Tensor Train Decomposition</strong>）を提案しました。PTTDでは、巨大テンソルを複数の部分テンソルに分割し、それぞれを独立に分解した後、結果を統合することで全体のTT形式を構築します。さらに統合時には TT-rounding を用いて不要なランクを削減し、効率的なデータ圧縮を実現します。また、計算を高速化するためにQR分解を省略した NOQR-rounding 手法を導入し、計算コストの削減を図りました。</p>
+<p>スーパーコンピュータを用いた実験では、本手法は極めて高い並列性能を示しました。最大8192コアを用いた計算では、従来手法に比べて<strong>3000〜8700倍以上の高速化</strong>を達成し、大規模テンソルでも効率的に分解できることを確認しました。また、近似誤差は理論的に保証された範囲内に収まり、高い圧縮率（99.99%以上）を維持することが示されました。</p>
+<p>この研究は、AI、機械学習、科学シミュレーションなどの分野で重要となる<strong>超大規模データ解析の基盤技術</strong>となるものです。今後はより効率的なアルゴリズムや自動分散戦略を導入することで、さらに大規模なデータ解析への応用を目指しています。</p>
+<img src="/images/pttd-performance.png" alt="PTTD法の性能と精度" style="max-width:1280px; width:100%; height:auto; display:block; margin:0.5rem auto;">
+<h2 id="key-publications">Key publications</h2>
+<ul>
+<li>Xie, Shiyao and Miura, Akinori and Ono, Kenji, <em>Error-bounded Scalable Parallel Tensor Train Decomposition</em>, 2023 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW), 2023.</li>
+</ul>
+</div>
+  
+</article>
+
+  </main>
+  
+    <footer class="site-footer">
+  <div class="container">
+    <p>Intelligent Modeling Laboratory (IML)</p>
+    <p>Research Institute for Information Technology (RIIT)</p>
+    <p>Kyushu University</p>
+    <p>Fukuoka Japan</p>
+  </div>
+</footer>
+
+  
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

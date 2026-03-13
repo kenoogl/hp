@@ -1,6 +1,6 @@
 ---
 title: 'Improving efficiency of symbolic regression to find the formula that express data'
-date: 2018-01-01
+date: 2018-05-05
 authors: 'Issei Koga and Kenji Ono'
 journal: 'The 12th International Workshop on Information Search, Integration, and Personalization (ISIP2018)'
 year: '2018'

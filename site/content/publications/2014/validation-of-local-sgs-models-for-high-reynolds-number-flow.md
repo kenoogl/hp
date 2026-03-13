@@ -1,6 +1,6 @@
 ---
 title: 'Validation of local SGS models for high Reynolds number flow'
-date: 2014-01-01
+date: 2014-07-20
 authors: 'Uzawa, K. and Ono, K. and Uchida, T.'
 journal: '11th World Congress on Computational Mechanics (WCCM XI)'
 year: '2014'

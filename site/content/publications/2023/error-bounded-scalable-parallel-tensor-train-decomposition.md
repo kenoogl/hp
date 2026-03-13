@@ -1,6 +1,6 @@
 ---
 title: 'Error-bounded Scalable Parallel Tensor Train Decomposition'
-date: 2023-01-01
+date: 2023-05-01
 authors: 'Xie, Shiyao and Miura, Akinori and Ono, Kenji'
 journal: '2023 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)'
 year: '2023'

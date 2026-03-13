@@ -1,6 +1,6 @@
 ---
 title: 'Development of fixed mesh-based partitioned solution method for large-deformation FSI analysis with contact'
-date: 2010-01-01
+date: 2010-07-19
 authors: 'Hashimoto, Gaku and Ono, Kenji'
 journal: 'WCCM/APCOM 2010'
 year: '2010'

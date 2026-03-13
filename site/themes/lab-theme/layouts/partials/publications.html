@@ -4,7 +4,7 @@
   <ul class="clean-list">
     {{ range first 3 (sort (where .Site.RegularPages "Section" "publications") "Date" "desc") }}
       <li>
-        <strong>{{ .Title }}</strong><br>
+        <strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong><br>
         <span>{{ .Params.authors }}</span><br>
         <span>{{ with .Params.venue }}{{ . }}{{ else }}{{ .Params.journal }}{{ end }}</span>
       </li>

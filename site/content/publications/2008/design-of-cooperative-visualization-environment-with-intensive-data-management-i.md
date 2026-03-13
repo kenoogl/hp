@@ -1,6 +1,6 @@
 ---
 title: 'Design of cooperative visualization environment with intensive data management in project lifecycle'
-date: 2008-01-01
+date: 2008-11-01
 authors: 'Ono, Kenji and Nonaka, Jorji'
 journal: 'Ultrascale Visualization, 2008. UltraVis 2008. Workshop on'
 year: '2008'

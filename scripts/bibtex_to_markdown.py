@@ -14,6 +14,34 @@ from pathlib import Path
 import bibtexparser
 
 
+MONTH_MAP = {
+    "jan": 1,
+    "january": 1,
+    "feb": 2,
+    "february": 2,
+    "mar": 3,
+    "march": 3,
+    "apr": 4,
+    "april": 4,
+    "may": 5,
+    "jun": 6,
+    "june": 6,
+    "jul": 7,
+    "july": 7,
+    "aug": 8,
+    "august": 8,
+    "sep": 9,
+    "sept": 9,
+    "september": 9,
+    "oct": 10,
+    "october": 10,
+    "nov": 11,
+    "november": 11,
+    "dec": 12,
+    "december": 12,
+}
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Convert BibTeX to Hugo markdown")
     parser.add_argument("bib", nargs="?", default="data/publications.bib", help="BibTeX input path")
@@ -69,6 +97,70 @@ def parse_year(entry: dict) -> str:
         return m.group(0)
 
     return "unknown"
+
+
+def _extract_month_number(raw: str) -> int | None:
+    text = (raw or "").strip().lower()
+    if not text:
+        return None
+
+    for token, month in MONTH_MAP.items():
+        if re.search(rf"\b{re.escape(token)}\.?\b", text):
+            return month
+
+    m = re.search(r"\b(1[0-2]|0?[1-9])\b", text)
+    if m:
+        value = int(m.group(1))
+        if 1 <= value <= 12:
+            return value
+
+    return None
+
+
+def _extract_day_number(raw: str) -> int | None:
+    text = (raw or "").strip().lower()
+    if not text:
+        return None
+
+    for value in re.findall(r"\b([0-3]?\d)(?:st|nd|rd|th)?\b", text):
+        day = int(value)
+        if 1 <= day <= 31:
+            return day
+
+    return None
+
+
+def parse_frontmatter_date(entry: dict) -> str:
+    raw_date = str(entry.get("date", "")).strip()
+    if raw_date:
+        normalized = raw_date.replace("/", "-")
+        m = re.match(r"^((?:19|20)\d{2})-(\d{1,2})(?:-(\d{1,2}))?$", normalized)
+        if m:
+            year = int(m.group(1))
+            month = int(m.group(2))
+            day = int(m.group(3) or 1)
+            if 1 <= month <= 12 and 1 <= day <= 31:
+                return f"{year:04d}-{month:02d}-{day:02d}"
+
+        year_match = re.search(r"(19|20)\d{2}", normalized)
+        if year_match:
+            year = int(year_match.group(0))
+            month = _extract_month_number(normalized)
+            day = _extract_day_number(normalized)
+            if month is not None:
+                return f"{year:04d}-{month:02d}-{(day or 1):02d}"
+            return f"{year:04d}-01-01"
+
+    year = parse_year(entry)
+    if not year.isdigit():
+        return "1970-01-01"
+
+    month = _extract_month_number(str(entry.get("month", "")).strip())
+    day = _extract_day_number(str(entry.get("month", "")).strip())
+    if month is not None:
+        return f"{int(year):04d}-{month:02d}-{(day or 1):02d}"
+
+    return f"{int(year):04d}-01-01"
 
 
 def _is_domestic_conference_venue(venue: str) -> bool:
@@ -192,7 +284,7 @@ def build_markdown(entry: dict, bib_path: Path) -> str:
     if abstract:
         abstract = re.sub(r"\s+", " ", abstract)
 
-    date = f"{year}-01-01" if year.isdigit() else "1970-01-01"
+    date = parse_frontmatter_date(entry)
 
     lines = [
         "---",

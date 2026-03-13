@@ -1,6 +1,6 @@
 ---
 title: 'Big Data Visual Analytics'
-date: 2015-01-01
+date: 2015-11-11
 authors: 'Nonaka, Jorji and Ono, Kenji'
 journal: 'NII Shonan Meeting Report No. 2015-7'
 year: '2015'

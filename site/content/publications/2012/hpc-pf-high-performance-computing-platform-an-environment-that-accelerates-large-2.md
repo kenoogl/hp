@@ -1,6 +1,6 @@
 ---
 title: 'HPC/PF - High Performance Computing Platform: An Environment that Accelerates Large-Scale Simulations'
-date: 2012-01-01
+date: 2012-07-07
 authors: 'Ono, Kenji and Kawanabe, Tomohiro and Hatada, Toshio'
 journal: 'VECPAR 2012'
 year: '2012'

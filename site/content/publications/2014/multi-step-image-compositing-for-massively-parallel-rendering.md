@@ -1,6 +1,6 @@
 ---
 title: 'Multi-step image compositing for massively parallel rendering'
-date: 2014-01-01
+date: 2014-07-01
 authors: 'Nonaka, J. and Ono, K. and Fujita, M.'
 journal: 'High Performance Computing Simulation (HPCS), 2014 International Conference on'
 year: '2014'

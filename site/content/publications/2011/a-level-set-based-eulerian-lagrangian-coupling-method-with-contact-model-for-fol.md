@@ -1,6 +1,6 @@
 ---
 title: 'A level-set-based eulerian-lagrangian coupling method with contact model for folded airbag deployment analysis'
-date: 2011-01-01
+date: 2011-07-25
 authors: 'Hashimoto, Gaku and Ono, Kenji'
 journal: 'USNCCM 11'
 year: '2011'

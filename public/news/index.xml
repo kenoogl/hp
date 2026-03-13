@@ -6,14 +6,133 @@
     <description>Recent content in News on Intelligent Modeling Laboratory (IML)</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Paper accepted</title>
-      <link>/news/2026-paper/</link>
-      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>/news/2026-paper/</guid>
-      <description>&lt;p&gt;Our paper on data-driven wake modeling was accepted.&lt;/p&gt;</description>
+      <title>JHPCN課題採択</title>
+      <link>/news/2026-jhpcn-asai/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>/news/2026-jhpcn-asai/</guid>
+      <description>&lt;p&gt;2026年度学際大規模情報基盤共同利用・共同研究拠点(JHPCN)公募型共同研究のカテゴリA課題「多数GPU並列計算による変分マルチスケール粒子法の高速化」（課題代表：浅井 光輝 准教授）に採択されました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Talk in ATAT2026</title>
+      <link>/news/2026-atat/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>/news/2026-atat/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://sites.google.com/site/atathpsc/2026&#34;&gt;ATAT2026&lt;/a&gt;で講演します。後藤颯斗さんも発表です。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>企業セミナー</title>
+      <link>/news/2026-seminar/</link>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>/news/2026-seminar/</guid>
+      <description>&lt;p&gt;とある元自動車会社の参事だったエンジニアの大島宗彦氏に「自動車会社で働くということ」というタイトルで学生向けに講演をしていただきました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>台湾国立成功大から短期交換留学生</title>
+      <link>/news/2026-fromncku/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>/news/2026-fromncku/</guid>
+      <description>&lt;p&gt;本センターの客員准教授の台湾国立成功大学の李 崇綱（ChungGang Li）先生の研究室の学生　俞 天心さん、高 廷榕さんが1週間ほど研究室に滞在します。その後、当研究室の後藤颯斗さんが10日間ほど成功大学に滞在します。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Talk in CAMM</title>
+      <link>/news/2026-camm/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>/news/2026-camm/</guid>
+      <description>&lt;p&gt;コンピュータによる材料開発・物質設計を考える会（&lt;a href=&#34;https://www.bri.or.jp/camm/&#34;&gt;CAMMフォーラム&lt;/a&gt;）で「AIは材料科学者を不要にするのか？」という題目で話題提供しました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Talk in DX activity share</title>
+      <link>/news/2025-dxtalk/</link>
+      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>/news/2025-dxtalk/</guid>
+      <description>&lt;p&gt;学内のDX推進本部アクティビティシェア研究会で、話題提供しました。&lt;/p&gt;&#xA;&lt;p&gt;題目は「LLMを援用した研究のリファインメント　― サイエンスワークフロー・文系研究・理系研究・大学運営 ―」&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Talk in Qdai NOW in Taipei 2025</title>
+      <link>/news/2025-qdainow/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>/news/2025-qdainow/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://q-aos.kyushu-u.ac.jp/en/events/events_view.php?cId=1239&#34;&gt;KYUDAI NOW in Taiwan&lt;/a&gt;で話題提供。鳥井公平さんも学生セッションで講演しました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Presentation in APCOW2025</title>
+      <link>/news/2025-apcow/</link>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>/news/2025-apcow/</guid>
+      <description>&lt;p&gt;斉済さんと嬉野公亮さんが&lt;a href=&#34;https://www.apcow2025.com&#34;&gt;APCOW2025&lt;/a&gt;で講演しました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Presentation in APCOW2025</title>
+      <link>/news/2025-topoinvis/</link>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>/news/2025-topoinvis/</guid>
+      <description>&lt;p&gt;藤井彬人さんが&lt;a href=&#34;https://doi.ieeecomputersociety.org/10.1109/TopoInVis68599.2025.00009&#34;&gt;TopoInVis&lt;/a&gt;に採択され、講演しました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>福岡中央高校の生徒に模擬授業</title>
+      <link>/news/2025-lecture2/</link>
+      <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>/news/2025-lecture2/</guid>
+      <description>&lt;p&gt;福岡中央高校の1-2年生に「君の1日は、何万回も”計算”されている」というタイトルで話をしました。元ネタは今年のオープンキャンパスでの講義内容。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AT マイクロワークショップ 2025</title>
+      <link>/news/2025-microat/</link>
+      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>/news/2025-microat/</guid>
+      <description>&lt;p&gt;AT マイクロワークショップ 2025にて話題提供。「生成AIを援用したシミュレータ開発の新潮流」&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Talk in IMPACT 2025</title>
+      <link>/news/2025-impact/</link>
+      <pubDate>Tue, 21 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>/news/2025-impact/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.impact.org.tw/site/mypage.aspx?pid=305&amp;amp;lang=en&amp;amp;sid=1283&#34;&gt;IMPACT2025&lt;/a&gt;に採択され、講演をしました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Presentation in JSIAM anual meeting 2025</title>
+      <link>/news/2025-jsiam/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>/news/2025-jsiam/</guid>
+      <description>&lt;p&gt;鳥井公平さんが&lt;a href=&#34;https://jsiam.org/jsiam_archive/past_meetings/annual2025/&#34;&gt;応用数理学会2025年会&lt;/a&gt;で発表しました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>第28回 進化計算学会研究会</title>
+      <link>/news/2025-jpnsec/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>/news/2025-jpnsec/</guid>
+      <description>&lt;p&gt;白神叶衣さんが&lt;a href=&#34;https://www.jpnsec.org/symposium202502.html&#34;&gt;第28回 進化計算学会研究会&lt;/a&gt;で発表しました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>オープンキャンパス2025で模擬授業</title>
+      <link>/news/2025-lecture1/</link>
+      <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>/news/2025-lecture1/</guid>
+      <description>&lt;p&gt;今年のオープンキャンパスで、模擬授業を担当。「君の1日は、何万回も”計算”されている – 計算科学と日常」というタイトル。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Talk in ChinaVis 2025</title>
+      <link>/news/2025-chinavis/</link>
+      <pubDate>Sat, 19 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>/news/2025-chinavis/</guid>
+      <description>&lt;p&gt;ChinaVis 2025併催の&lt;a href=&#34;https://chinavis.org/2025/en/cjkworkshop&#34;&gt;China-Japan-Korea Joint Workshop&lt;/a&gt;で&lt;em&gt;Equation Discovery as a Form of Visualization – Understanding Phenomena through Data&lt;/em&gt;の講演を行い、Honered Speakerをいただきました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Talk in ATAT2025</title>
+      <link>/news/2025-atat/</link>
+      <pubDate>Fri, 21 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>/news/2025-atat/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://sites.google.com/site/atathpsc/previous-conf/2025&#34;&gt;ATAT2025&lt;/a&gt;でテンソルトレイン分解の話をしました。白神叶衣さんも方程式推定の講演をしました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>元岡キッズサイエンスでスプラトゥーンの話</title>
+      <link>/news/2025-moks/</link>
+      <pubDate>Sat, 25 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>/news/2025-moks/</guid>
+      <description>&lt;p&gt;元岡キッズサイエンスで、小学生の高学年向けに、ゲームの裏側、コンピュータグラフィクスのしくみという話をしました。フライヤーは&lt;a href=&#34;/pdfs/moks2024.pdf&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

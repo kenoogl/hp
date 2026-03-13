@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Computational Science and AI Research">
+  <title>3D-IC Thermal Design | Intelligent Modeling Laboratory (IML)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=1773381042">
+</head>
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/">Intelligent Modeling Laboratory (IML)</a>
+
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="/research/">研究 / Research</a></li>
+        <li><a href="/projects/">プロジェクト / Projects</a></li>
+        <li><a href="/teaching/">講義 / Teaching</a></li>
+        <li><a href="/awards/">受賞 / Awards</a></li>
+        <li><a href="/publications/">論文 / Publications</a></li>
+        <li><a href="/members/">メンバー / Members</a></li>
+        <li><a href="/news/">ニュース / News</a></li>
+        <li><a href="/join/">参加募集 / Join</a></li>
+        <li><a href="/links/">リンク / Links</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    
+<article>
+  <h1>3D-IC Thermal Design</h1>
+  
+  
+    <p class="meta">2026-03-13</p>
+  
+  <div class="content"><p>日本語版: <a href="/research/3dic-thermal/">3D-IC Thermal Design (JP)</a></p>
+<h2 id="thermal-design-of-semiconductor-chips">Thermal Design of Semiconductor Chips</h2>
+<p>With the rapid development of AI and high-performance computing, semiconductor chips are now required to achieve both higher performance and lower power consumption. One promising solution is the <strong>three-dimensional integrated circuit (3D-IC)</strong>, in which chips are stacked vertically. However, stacking chips increases internal heat density and can create localized high-temperature regions, or <strong>hot spots</strong>, which lead to performance degradation and reduced device lifetime. To address this issue, it is important to predict the temperature distribution inside the chip from the early design stage and optimize placement and cooling structures accordingly. Conventional simulation, however, is computationally expensive, making it difficult to evaluate many design patterns during development. In addition, simplified models often cannot reproduce complex material structures or localized heat generation with sufficient accuracy.</p>
+<p>In this research, we developed a <strong>thermal analysis system capable of computing temperature distributions both quickly and accurately</strong>. The chip structure is generated automatically as a combination of basic geometric components such as cuboids and cylinders, and the heat conduction equation is solved efficiently using a tailored numerical method. In addition, the computational grid is optimized according to the stacked-layer structure, which significantly reduces the computational cost.</p>
+<p>As a result, the proposed method achieved <strong>up to about 40 times faster performance</strong> than conventional uniform-grid approaches, and demonstrated that the temperature distribution of an entire chip can be computed <strong>within a few seconds on a standard laptop PC</strong>. This enables rapid evaluation of design parameters such as chip placement, power distribution, and cooling conditions, making <strong>thermal exploration in the early stage of semiconductor design</strong> practical.</p>
+<p>This work contributes not only to higher-performance semiconductor systems, but also to improved <strong>energy efficiency</strong> in data centers and AI computing. Based on this high-throughput physical simulation framework, we plan to extend the approach toward next-generation semiconductor design support combined with machine learning.</p>
+<img src="/images/NUgrid.png" alt="Model cross-section and through-layer temperature distribution" style="max-width:1280px; width:100%; height:auto; display:block; margin:0.5rem auto;">
+<h2 id="key-publications">Key Publications</h2>
+<ul>
+<li>Kenji Ono, Takanori Iwasaki, and Takeshi Ohkawa, <em>High-Throughput Thermal Simulation for Early-Stage 3D-IC Design Using Automated Meshing and Pseudo-3D Modeling</em>, 2025 20th International Microsystems, Packaging, Assembly and Circuits Technology Conference (IMPACT), <a href="https://www.impact.org.tw/site/page.aspx?pid=901&amp;sid=1283&amp;lang=en">https://www.impact.org.tw/site/page.aspx?pid=901&amp;sid=1283&amp;lang=en</a>, 2025.</li>
+</ul>
+</div>
+  
+</article>
+
+  </main>
+  
+    <footer class="site-footer">
+  <div class="container">
+    <p>Intelligent Modeling Laboratory (IML)</p>
+    <p>Research Institute for Information Technology (RIIT)</p>
+    <p>Kyushu University</p>
+    <p>Fukuoka Japan</p>
+  </div>
+</footer>
+
+  
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Computational Science and AI Research">
-  <title>Equation Discovery (EN) | Intelligent Modeling Laboratory (IML)</title>
+  <title>Equation Discovery | Intelligent Modeling Laboratory (IML)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1773298367">
+  <link rel="stylesheet" href="/css/style.css?v=1773381042">
 </head>
 <body>
   <header class="site-header">
@@ -34,7 +34,7 @@
   <main class="container">
     
 <article>
-  <h1>Equation Discovery (EN)</h1>
+  <h1>Equation Discovery</h1>
   
   
     <p class="meta">2026-03-12</p>
@@ -45,7 +45,24 @@
 In this work, the target data are formulated as a symbolic regression problem, and a process is established to discover governing equations through evolutionary computation.</p>
 <p>The proposed method introduces partial-derivative operators into genetic programming to automatically construct candidate partial differential equations. These generated equations are evaluated against data, and equations with lower error are selected automatically.</p>
 <p>Through numerical experiments on fluid simulation data, the method was used to estimate governing equations and its effectiveness was evaluated. The results showed that the original equations can be recovered with high probability, indicating that the proposed approach is an effective tool for discovering useful models from data.</p>
-<img src="/images/GP_overview.png" alt="Overview of equation discovery by genetic programming" style="max-width:600px; width:100%; height:auto; display:block; margin:0.5rem auto;">
+<img src="/images/GP_overview.png" alt="Overview of equation discovery by genetic programming" style="max-width:720px; width:100%; height:auto; display:block; margin:0.5rem auto;">
+<h2 id="equation-discovery-via-genetic-programming-assisted-by-a-large-language-model">Equation Discovery via Genetic Programming Assisted by a Large Language Model</h2>
+<p>Genetic Programming (GP) is a powerful approach for discovering mathematical models directly from data. However, GP is fundamentally a heuristic search method, and the search space is extremely large. As a result, substantial computation is often required before a high-quality model is found.</p>
+<p>To address this issue, we are developing an <strong>LLM-GP system</strong> that combines conventional program-based search with a Large Language Model (LLM). In this framework, part of the search process, which was previously implemented only in code, is delegated to the LLM. By leveraging pretrained knowledge and language understanding, the LLM can generate mathematically and physically meaningful candidate expressions.</p>
+<p>The LLM plays two main roles in this system:</p>
+<ol>
+<li><strong>Generating candidate model equations</strong><br>
+The LLM proposes expressions with meaningful structural patterns, allowing the search to start from more promising candidates than purely random initialization.</li>
+<li><strong>Controlling the evolutionary computation workflow</strong><br>
+Each stage of the evolutionary process, such as initialization, mutation, crossover, and selection, can be guided through natural-language prompts. This makes it possible to modify the search strategy and evaluation policy more flexibly.</li>
+</ol>
+<p>The quantitative consistency between a proposed model and the data is still evaluated on the program side using numerical criteria such as mean squared error. In other words, the system separates responsibilities as follows:</p>
+<ul>
+<li><strong>LLM</strong>: search strategy and model generation</li>
+<li><strong>Program</strong>: numerical evaluation and optimization</li>
+</ul>
+<p>This division enables more efficient exploration of candidate equations. In addition, because both interactive operation and fully automated execution can be instructed in natural language, the system provides a level of flexibility that is difficult to achieve with a purely programmatic pipeline.</p>
+<img src="/images/LLM-GP_system.png" alt="Processing diagram of the LLM-GP system" style="max-width:720px; width:100%; height:auto; display:block; margin:0.5rem auto;">
 <h3 id="key-publications">Key Publications</h3>
 <ul>
 <li>Kenji Ono and Issei Koga, <em>Estimation of Governing Equations by Genetic Programming</em>, Transactions of JSCES, DOI: <a href="https://doi.org/10.11421/jsces.2020.20201004">10.11421/jsces.2020.20201004</a>, 2020.</li>

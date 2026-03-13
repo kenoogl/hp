@@ -1,6 +1,6 @@
 ---
 title: 'Development of Techniques for Identifying the Factors Determining the Temperatures of Engine Compartment Components and for Predicting their Temperatures'
-date: 1999-01-01
+date: 1999-05-01
 authors: 'Ishikawa, Teruaki and Shiozawa, Hiroyuki and Oshima, Munehiko and Ono, Kenji'
 journal: 'Vehicle Thermal Management Systems'
 year: '1999'

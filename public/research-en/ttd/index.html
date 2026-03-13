@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Computational Science and AI Research">
+  <title>Tensor-Train Decomposition | Intelligent Modeling Laboratory (IML)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=1773381042">
+</head>
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/">Intelligent Modeling Laboratory (IML)</a>
+
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="/research/">研究 / Research</a></li>
+        <li><a href="/projects/">プロジェクト / Projects</a></li>
+        <li><a href="/teaching/">講義 / Teaching</a></li>
+        <li><a href="/awards/">受賞 / Awards</a></li>
+        <li><a href="/publications/">論文 / Publications</a></li>
+        <li><a href="/members/">メンバー / Members</a></li>
+        <li><a href="/news/">ニュース / News</a></li>
+        <li><a href="/join/">参加募集 / Join</a></li>
+        <li><a href="/links/">リンク / Links</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    
+<article>
+  <h1>Tensor-Train Decomposition</h1>
+  
+  
+    <p class="meta">2026-03-13</p>
+  
+  <div class="content"><p>日本語版: <a href="/research/ttd/">Tensor-Train Decomposition (JP)</a></p>
+<h2 id="tensor-decomposition-technology-for-massive-data">Tensor Decomposition Technology for Massive Data</h2>
+<h3 id="fast-data-compression-via-parallel-tensor-train-decomposition-ttd">Fast Data Compression via Parallel Tensor-Train Decomposition (TTD)</h3>
+<p>Modern scientific computing, AI, and physical simulation increasingly rely on massive data represented as multidimensional arrays, or tensors. However, as the number of dimensions grows, the data size increases exponentially, leading to the well-known &ldquo;curse of dimensionality.&rdquo; This makes storage and analysis difficult if the data are handled in their original form. A powerful approach to this problem is <strong>Tensor Train Decomposition (TTD)</strong>, which represents a high-dimensional tensor as a sequence of smaller tensors. By doing so, TTD dramatically reduces the number of parameters required to represent the data and enables efficient storage and computation.</p>
+<p>Conventional TTD algorithms such as <strong>TT-SVD</strong> are based on sequential processing, which makes both computation time and memory consumption very large for massive tensors. In particular, these methods do not take full advantage of large-scale parallel environments such as supercomputers.</p>
+<p>To address this issue, we proposed <strong>PTTD (Parallel Tensor Train Decomposition)</strong>, a parallel tensor decomposition algorithm. In PTTD, a massive tensor is divided into multiple subtensors, each subtensor is decomposed independently, and the results are then integrated to construct the global TT representation. During integration, <strong>TT-rounding</strong> is used to remove unnecessary ranks and achieve efficient compression. In addition, we introduced a <strong>NOQR-rounding</strong> scheme that omits QR decomposition in order to further reduce the computational cost.</p>
+<p>Experiments on a supercomputer demonstrated extremely high parallel performance. Using up to 8192 cores, the proposed method achieved <strong>more than 3000x to 8700x speedup</strong> compared with conventional methods, showing that even very large tensors can be decomposed efficiently. The approximation error remained within the theoretically guaranteed range, while maintaining a very high compression ratio of <strong>more than 99.99%</strong>.</p>
+<p>This work provides a core technology for <strong>massive-scale data analysis</strong> in fields such as AI, machine learning, and scientific simulation. Future work will extend the method to even larger data analysis problems through more efficient algorithms and automated data distribution strategies.</p>
+<img src="/images/pttd-performance.png" alt="Performance and accuracy of the PTTD method" style="max-width:1280px; width:100%; height:auto; display:block; margin:0.5rem auto;">
+<h2 id="key-publications">Key Publications</h2>
+<ul>
+<li>Shiyao Xie, Akinori Miura, and Kenji Ono, <em>Error-bounded Scalable Parallel Tensor Train Decomposition</em>, 2023 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW), 2023.</li>
+</ul>
+</div>
+  
+</article>
+
+  </main>
+  
+    <footer class="site-footer">
+  <div class="container">
+    <p>Intelligent Modeling Laboratory (IML)</p>
+    <p>Research Institute for Information Technology (RIIT)</p>
+    <p>Kyushu University</p>
+    <p>Fukuoka Japan</p>
+  </div>
+</footer>
+
+  
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

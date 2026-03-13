@@ -1,13 +1,23 @@
 ---
 title: "Data-Driven Wake Modeling"
-date: 2026-02-10
-summary: "Reduced-order and learning-based methods for turbulent wake prediction."
+date: 2026-03-13
+summary: "LLM-GP-based surrogate modeling for wind turbine wakes and wake interaction in wind farms."
+thumbnail: "/images/research-wake.svg"
+top_highlight: true
 ---
 
-![Wake modeling illustration](/images/research-wake.svg)
+English version: [Data-Driven Wake Modeling (EN)](/research-en/wake-modeling/)
 
-## Short description
-We develop hybrid physics-informed and machine-learning models for efficient wake prediction in engineering systems.
+## 風車の後流モデリング
+風力発電では、風の強い地域に多数の風車を設置した**ウインドファーム**によって、大きな電力を供給するシステムが用いられています。しかし、複数の風車が並ぶと、後方にある風車は上流の風車が作る後流（ウェイク）の影響を受けます。その結果、乱れた風が風車に当たったり、風車同士の後流が干渉したりして、設計した発電能力が十分に得られない場合があります。このため、風車の配置の最適化や運転制御は、ウインドファーム設計において重要な課題となっています。この問題を理解するためには、風車の後ろでどのような流れが生じているのかを詳しく調べる必要があります。しかし、風車周りの流れを高精度にシミュレーションするには非常に大きな計算量が必要で、**現在のスーパーコンピューターを使っても、ウインドファーム全体をそのまま計算することは現実的ではありません**。
+
+そこで従来は、風車の後流の速度分布を近似的に表す工学モデル（簡易な数式モデル、engineering wake models）が用いられてきました。これらのモデルは計算が非常に速いという利点がありますが、**適用できる条件が限られることや、風車同士の後流干渉を十分に表現できない**といった課題もあります。
+
+本研究では、従来の工学モデルに代わる、より精度が高く適用範囲の広い数式モデルを見つけるために、LLM-GP（大規模言語モデルと進化計算を組み合わせた方法）を用いたサロゲートモデル探索を行いました。その結果、従来の遺伝的プログラミング（GP）よりも短い探索時間で既存の工学モデルと同程度の性能を持つモデルを発見することができました。さらに、この方法を2基の風車の後流モデリングに適用したところ、従来よく使われている線形重ね合わせモデルよりも有効なモデルを見つけることができました。
+
+
+
+<img src="/images/WindTurbineLLMGP.png" alt="LLM-GPシステムを用いた後流モデリング" style="max-width:900px; width:100%; height:auto; display:block; margin:0.5rem auto;">
 
 ## Key publications
-- S. Yamada, K. Ito, and M. Chen, *Physics-guided wake emulation with uncertainty quantification*, Journal of Fluid Mechanics, 2026.
+- 小野 謙二、白神 叶衣、嬉野 公亮、LLM駆動による進化計算フレームワーク、第31回計算工学講演会、2026.

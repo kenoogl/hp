@@ -63,6 +63,12 @@
 - FR-001: コンテンツは `site/content/*` のMarkdownで管理する。
 - FR-002: Hugo buildは `public/` に出力する。
 - FR-003: build時は古い生成物を残さない（`--cleanDestinationDir`）。
+- FR-004: News は `1ニュース = 1 Markdown` として `site/content/news/` で管理する。
+- FR-005: トップページの News セクションは最新5件を `日付 + 本文抜粋` で表示する。
+- FR-006: `/news/` は年ごとの時系列アーカイブとし、各ニュースの本文を表示する。
+- FR-007: トップページの Research Highlights は `site/content/research/*.md` の `top_highlight: true` を持つページのみを表示対象とする。
+- FR-008: トップページの Research Highlights は最大5件を表示する。
+- FR-009: トップページの Latest Publications は最新3件を表示し、各論文タイトルは詳細ページへのリンクを持つ。
 
 ### 4.2 Publication management
 - FR-101: Publicationsは年別ディレクトリで管理する（`site/content/publications/<year>/`）。
@@ -125,8 +131,12 @@
 ### 6.1 Naming
 - `site/content/research/*.md`: kebab-case
 - `site/content/publications/<year>/*.md`: kebab-case
+- `site/content/news/*.md`: kebab-case
 
-### 6.2 Publications metadata
+### 6.2 Research metadata
+- トップページの Research Highlights に表示する研究ページは `top_highlight: true` を持つこと。
+
+### 6.3 Publications metadata
 各publicationページは以下を持つこと。
 - `title`
 - `date`
@@ -138,7 +148,7 @@
 - `annote`（任意、`talk` の補助属性。`invited` など）
 - `doi` または `doi_url`（推奨）
 
-### 6.3 Year consistency
+### 6.4 Year consistency
 - publicationの `year` は所属ディレクトリ `<year>` と一致すること。
 - `date` は `<year>-` で始まること。
 

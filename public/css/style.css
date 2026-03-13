@@ -105,12 +105,65 @@ main.container {
   gap: 20px;
 }
 
+.research-stack {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
 .card,
 .member-card {
   border: 1px solid var(--line);
   border-radius: 10px;
   padding: 1rem;
   background: #fff;
+}
+
+.research-card {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  padding: 0.85rem;
+}
+
+.research-card-media {
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #f6f8fb;
+  aspect-ratio: 4 / 3;
+}
+
+.research-card-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.research-card-placeholder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+.research-card-body {
+  min-width: 0;
+}
+
+.research-card-body h3 {
+  margin-bottom: 0.45rem;
+}
+
+.research-card-body p {
+  margin-bottom: 0.75rem;
+  color: var(--muted);
 }
 
 .clean-list {
@@ -198,6 +251,53 @@ main.container {
   text-align: left;
 }
 
+.news-archive {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.news-teasers {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.news-teaser {
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.news-teaser:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.news-teaser p:last-child {
+  margin-bottom: 0;
+}
+
+.news-more-link {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.news-entry {
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.news-entry:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.news-entry h2 {
+  margin-bottom: 0.35rem;
+}
+
+.news-year-block + .news-year-block {
+  margin-top: 0.4rem;
+}
+
 .button {
   display: inline-block;
   padding: 0.52rem 0.95rem;
@@ -222,6 +322,14 @@ main.container {
   .header-inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .research-card {
+    grid-template-columns: 1fr;
+  }
+
+  .research-card-media {
+    aspect-ratio: 16 / 9;
   }
 
   .member-photo {
