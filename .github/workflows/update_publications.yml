@@ -11,9 +11,11 @@ jobs:
 
     permissions:
       contents: write
+    env:
+      HUGO_VERSION: "0.151.0"
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -39,11 +41,13 @@ jobs:
       - name: Validate content conventions
         run: python scripts/validate_content.py
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: '0.151.0'
-          extended: true
+      - name: Install Hugo
+        run: |
+          set -euo pipefail
+          HUGO_DEB="hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
+          curl -fsSL -o "/tmp/${HUGO_DEB}" "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_DEB}"
+          sudo dpkg -i "/tmp/${HUGO_DEB}"
+          hugo version
 
       - name: Build Hugo output
         run: |

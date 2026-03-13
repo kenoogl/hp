@@ -54,8 +54,12 @@ The current implementation is aligned with the defined system specification for 
 
 - Weekly publication update workflow: **PASS**
   - `.github/workflows/update_publications.yml`
-- Lightweight checks on PR/main push: **PASS**
+- Lightweight checks on PR/develop/main push: **PASS**
   - `.github/workflows/site_checks.yml`
+- Deploy workflows gated by `site checks`: **PASS**
+  - `.github/workflows/deploy_staging.yml`
+  - `.github/workflows/deploy_production.yml`
+  - Implemented with `workflow_run` + successful-conclusion branch gating
 - Monthly full audit workflow: **PASS**
   - `.github/workflows/site_audit.yml`
 - Monthly report output pattern: **PASS**
@@ -80,7 +84,8 @@ The current implementation is aligned with the defined system specification for 
 ## 3. Acceptance Criteria Verification
 
 - AC-001 `make check` succeeds: **PASS**
-- AC-002 `site_checks.yml` defined for main/PR: **PASS**
+- AC-002 `site_checks.yml` defined for develop/main/PR: **PASS**
+- AC-002a Deploy workflows run only after successful checks: **PASS**
 - AC-003 `update_publications.yml` executable manually: **PASS** (`workflow_dispatch` present)
 - AC-004 `site_audit.yml` monthly report generation flow exists: **PASS**
 - AC-005 Publication naming/year convention enforced: **PASS**

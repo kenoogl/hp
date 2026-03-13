@@ -12,7 +12,8 @@
   - Markdown, theme, layouts, scripts, CI設定
 
       ↑ push / pull
-      ↓ deploy trigger
+      ↓ CI checks
+      ↓ deploy trigger (checks success only)
 
 [自分のPC]
   - 開発
@@ -172,13 +173,13 @@ feature/* -> 個別作業
 静的サイトのため、デプロイは単純です。
 
 ```text
-GitHub Actions -> Hugo build -> rsync/scp -> Ubuntu (/var/www/...)
+GitHub Actions -> site checks -> Hugo build -> rsync/scp -> Ubuntu (/var/www/...)
 ```
 
 方針:
 
-- `develop` push: staging デプロイ
-- `main` push: production デプロイ
+- `develop` push: `site checks` 成功後に staging デプロイ
+- `main` push: `site checks` 成功後に production デプロイ
 
 ------
 

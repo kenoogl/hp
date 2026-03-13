@@ -56,9 +56,11 @@ Implementation scripts:
 
 - `develop` push:
   - Run lightweight checks
+  - `site checks` 成功後に deploy workflow が起動
   - Deploy generated `public/` to staging (`/var/www/mercury-staging`)
 - `main` push:
   - Run lightweight checks
+  - `site checks` 成功後に deploy workflow が起動
   - Deploy generated `public/` to production (`/var/www/html`)
 
 Deploy transport:
@@ -109,6 +111,8 @@ Google Scholar update
 publication automation
 ↓
 site update (develop)
+↓
+CI checks pass
 ↓
 staging check
 ↓

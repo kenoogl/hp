@@ -42,7 +42,7 @@
 1. 編集者が `site/content` を更新
 2. Hugoで `public/` を生成
 3. CIで品質チェック
-4. `develop` は staging、`main` は production へ配信
+4. `site_checks.yml` 成功後に `develop` は staging、`main` は production へ配信
 5. 月次でCodex監査レポートを生成
 
 ### 3.3 Directory contract
@@ -96,6 +96,7 @@
 - FR-302: production の `DocumentRoot` は `/var/www/html` を基準とする。
 - FR-303: `develop` は staging、`main` は production へ GitHub Actions から rsync/scp で配信する。
 - FR-304: サーバ側反映前に `apache2ctl configtest` を実行し、成功時のみ reload する。
+- FR-305: `deploy_staging.yml` と `deploy_production.yml` は `site_checks.yml` 成功後にのみ実行する。
 
 ### 4.5 CI/CD workflows
 - FR-401: `update_publications.yml` は weekly で publication更新を実行する。
@@ -103,6 +104,7 @@
 - FR-402: `site_checks.yml` は PR および develop/main push で軽量品質チェックを実行する。
 - FR-403: `site_audit.yml` は monthly でフル監査を実行する。
 - FR-404: 月次監査レポートは `reports/monthly_site_audit_YYYY-MM-DD.md` を出力する。
+- FR-405: deploy workflows は `workflow_run` により `site checks` 完了イベントを受け、成功した branch のみ配信する。
 
 ---
 
@@ -210,7 +212,21 @@
   - internal links
   - image size threshold
 
-### 8.3 site_audit.yml
+### 8.3 deploy_staging.yml / deploy_production.yml
+- Trigger: `workflow_run` (`site checks` completed)
+- Branch gate:
+  - `develop` -> staging
+  - `main` -> production
+- Precondition:
+  - `github.event.workflow_run.conclusion == 'success'`
+- Steps:
+  - checkout target commit (`head_sha`)
+  - install Hugo
+  - build `public/`
+  - deploy over SSH
+  - `apache2ctl configtest` + reload
+
+### 8.4 site_audit.yml
 - Trigger: monthly schedule + manual dispatch
 - Steps:
   - baseline lightweight checks
@@ -247,6 +263,7 @@
 
 - AC-001: `make check` が成功する。
 - AC-002: `site_checks.yml` が develop/main/PR で成功する。
+- AC-002a: `deploy_staging.yml` / `deploy_production.yml` は `site_checks.yml` 成功時のみ実行される。
 - AC-003: `update_publications.yml` が手動実行で成功する。
 - AC-004: `site_audit.yml` が月次実行でレポートを生成する。
 - AC-005: publicationページが年別/kebab-case規約を満たす。

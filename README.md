@@ -40,8 +40,8 @@ make down
 
 ## デプロイ方針（本番）
 
-- `develop` への push: CIチェック + staging 配信
-- `main` への push: CIチェック + production 配信
+- `develop` への push: `site_checks.yml` 実行後、成功時のみ staging 配信
+- `main` への push: `site_checks.yml` 実行後、成功時のみ production 配信
 - 配信先は Ubuntu + Apache2（`/var/www/...`）
 - 配信方式は `rsync`/`scp`（GitHub Actions 実行）
 - `public/` は GitHub Actions 上でビルドし、配信用 artifact として扱う

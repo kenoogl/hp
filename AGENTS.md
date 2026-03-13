@@ -32,6 +32,7 @@ Do not repurpose `docs/` for audit prompts. Keep audit prompts under `audits/`.
 - Do not assume direct edits on the production server.
 - Do not redesign the site structure unless the user explicitly asks for it.
 - Prefer incremental changes over broad rewrites.
+- Treat deployment as gated: `deploy_staging.yml` / `deploy_production.yml` are expected to run only after successful `site_checks.yml`.
 - If a change affects behavior, navigation, workflows, or repository structure, update the relevant documentation in the same turn.
 
 ## Content Rules
@@ -57,6 +58,7 @@ Do not repurpose `docs/` for audit prompts. Keep audit prompts under `audits/`.
 - Japanese explanatory pages should use polite `です・ます` style unless the user requests otherwise.
 - Keep technical language precise and concise.
 - Avoid decorative or marketing-heavy wording.
+- Audit reports, review reports, and repository assessment summaries should be written in Japanese unless the user explicitly requests another language.
 
 ## Research Page Rules
 
