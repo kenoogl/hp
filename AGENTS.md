@@ -181,6 +181,11 @@ Audit prompts are not documentation pages. They live under `audits/`.
 - Use direct, factual commit messages.
 - Do not amend prior commits unless explicitly requested.
 
+### Shorthand
+
+- `git-cp` means: commit the current relevant changes and push them to `origin/main`.
+- When this shorthand is used, treat it as an explicit request to perform both `git commit` and `git push`.
+
 ## Audit Rules
 
 - `audits/` contains prompts intended for LLM/Codex execution.
