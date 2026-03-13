@@ -157,9 +157,11 @@
 ## 7. Operational Workflows
 
 ### 7.1 Local development
-1. `make check`
-2. `cd site && hugo server`
-3. ブラウザで `http://localhost:1313` を確認
+1. `make build`
+2. `make up`
+3. `make ps`
+4. ブラウザで `http://127.0.0.1` を確認
+5. 必要に応じて補助的に `cd site && hugo server` を使う
 
 ### 7.2 Manual publication update
 1. `site/content/publications/<year>/` にMarkdown追加

@@ -16,11 +16,13 @@ The current implementation is aligned with the defined system specification for 
 
 ### 2.1 Architecture
 
-- Static stack (Hugo + Nginx + Docker): **PASS**
+- Static stack (Hugo + Apache2 on Ubuntu, optional Docker/Nginx for local verification): **PASS**
+  - `site/config.toml`
+  - `apache/sites-available/mercury.conf`
+  - `apache/sites-available/staging.mercury.conf`
   - `docker/Dockerfile`
   - `docker/docker-compose.yml`
   - `nginx/nginx.conf`
-  - `site/config.toml`
 - Dynamic backend exclusion (PHP/DB/WordPress): **PASS**
 
 ### 2.2 Publication management
@@ -63,7 +65,13 @@ The current implementation is aligned with the defined system specification for 
 
 - Build with clean destination: **PASS**
   - `hugo --destination ../public --cleanDestinationDir`
-- Static artifact serving from container image: **PASS**
+- Apache production/staging configuration present: **PASS**
+  - `apache/sites-available/mercury.conf`
+  - `apache/sites-available/staging.mercury.conf`
+- Local verification via Docker/Nginx is available: **PASS**
+  - `docker/Dockerfile`
+  - `docker/docker-compose.yml`
+  - `nginx/nginx.conf`
 - Makefile operational entry points: **PASS**
   - `make build`, `make up`, `make check`, `make down`
 
@@ -90,7 +98,8 @@ Validation run evidence (local):
 ## 4. Minor Notes
 
 1. `reports/` is generated at runtime by monthly audit workflow and may not exist in a clean checkout before first audit execution.
-2. The implementation currently includes additional UI redesign assets/partials beyond the minimum required by `spec.md`; these do not violate the specification.
+2. `audits/` now stores LLM/Codex audit prompts and is intentionally separate from `docs/`.
+3. Docker/Nginx is used for local verification; production delivery assumptions are Apache2-based.
 
 ---
 

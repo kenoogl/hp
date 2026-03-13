@@ -1,7 +1,5 @@
 # 研究室HP
 
-[マシンのセットアップ](./mercury_setup.md)
-
 ------
 
 ## 1. 全体構成
@@ -53,14 +51,16 @@ lab-website/
 │  ├─ assets/
 │  └─ themes/   (または theme は submodule / module)
 ├─ scripts/
-│  ├─ deploy.sh
+│  ├─ deploy_staging.sh
+│  ├─ deploy_production.sh
 │  ├─ bibtex_to_markdown.py
 │  └─ scholar_fetch.py
 ├─ apache/
-│  └─ lab.conf
+│  └─ sites-available/
 ├─ .github/
 │  └─ workflows/
 ├─ docs/        (運用メモ)
+├─ audits/      (LLM監査プロンプト)
 └─ README.md
 ```
 
@@ -79,15 +79,26 @@ PC は **開発専用**です。
 ~/work/lab-website/
 ```
 
-開発時の基本操作:
+開発時の基本操作（推奨）:
 
 ```bash
 git clone <repo>
-cd lab-website/site
-hugo server
+cd lab-website
+make build
+make up
+make ps
 ```
 
 確認URL:
+
+`http://127.0.0.1`
+
+補助的に Hugo 開発サーバを使う場合:
+
+```bash
+cd lab-website/site
+hugo server
+```
 
 `http://localhost:1313`
 
@@ -98,8 +109,8 @@ PC 側でやること:
 - CSS 修正
 - 画像追加
 - publication 自動生成スクリプト実行
-- `hugo server` で見た目確認
-- `hugo` で本番生成確認
+- `make build` / `make up` で公開相当の見た目確認
+- 必要に応じて `hugo server` で執筆中プレビュー確認
 
 ------
 
@@ -204,7 +215,7 @@ main へ反映
 ### 通常更新
 
 1. PC で編集
-2. `hugo server` で確認
+2. `make build && make up && make ps` で確認
 3. feature ブランチで commit
 4. GitHub に push
 5. PR

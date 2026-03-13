@@ -69,74 +69,20 @@ make down
 - `date` はイベント開催日ではなく、ニュースを公開した日を入れる
 - 未来日付を入れると Hugo の通常ビルドでは除外され、トップページや `/news/` に表示されない
 
+詳細: [spec.md](/Users/Daily/Development/HP/lab-website/docs/spec.md)
+
 ## Publications メンテナンス
 
-### 手動
-
-- `site/content/publications/<year>/` に Markdown を追加
-- `hugo --destination ../public --cleanDestinationDir` で確認
-
-論文ページの Front Matter には `pub_type` を設定します。
-
-- `journal`
-- `international-conference`
-- `domestic-conference`
-- `talk`
-- `others`
-
-例:
-
-```yaml
-pub_type: "journal"
-```
-
-`international-conference` / `domestic-conference` の場合は、査読有無を `peer_reviewed` で明示できます。
-
-```yaml
-pub_type: "international-conference"
-peer_reviewed: true
-```
-
-### 半自動（BibTeX）
+標準の更新方法は BibTeX ベースです。
 
 ```bash
 cd /Users/Daily/Development/HP/lab-website
 ./scripts/update_publications.sh  # publication を更新してページ反映
 ```
 
-`bibtex_to_markdown.py` は BibTeX の種別から `pub_type` を自動設定します。
-
-- `pub_type` がBibTeXに明示されている場合は、その値を最優先で採用
-- `@article` -> `journal`
-- `@inproceedings` / `@conference` / `@proceedings` -> `international-conference`（国内会議判定時は `domestic-conference`）
-- それ以外 -> `others`
-
-`pub_type: "talk"` を指定した場合は、表示上は `Others` カテゴリに入ります。
-`pub_type: "talk"` かつ `annote: "invited"` の場合は、一覧と詳細で `Invited talk` を表示します。
-
-ジャーナル判定ルール：
-
-- `article`はジャーナルとして判定するが、日本語処理が優先のため、日本語論文の場合には`pub_type={journal}`をbibに入れておく
-
-国内会議判定ルール（追加）:
-
-- `journal` / `booktitle` に日本語を含む場合 -> `domestic-conference`
-- `author` に日本語を含む場合 -> `domestic-conference`
-
-会議論文（国際/国内）の査読有無（`peer_reviewed`）:
-
-- BibTeX の明示値（`peer_reviewed` / `peerreviewed` / `refereed` / `reviewed`）を最優先
-- `note` / `keywords` のキーワードで推定（`non-refereed`, `査読なし` など）
-- 入力Bibファイル名で補助推定（`*_refereed.bib`, `*_non_refereed.bib`）
-
-- タイトルの後ろにRefereedを表示する
-- `doi` / `doi_url`（または `url`）があれば詳細ページに表示する
-
-
-### 自動
-
-- `.github/workflows/update_publications.yml` を weekly 実行
-- Scholar/BibTeX から更新 → Markdown 生成 → CI 検証
+- 手動更新・分類ルール・表示ルール: [publications_workflow.md](/Users/Daily/Development/HP/lab-website/docs/publications_workflow.md)
+- Scholar 連携と自動更新: [scholar_to_website_pipeline.md](/Users/Daily/Development/HP/lab-website/docs/scholar_to_website_pipeline.md)
+- 仕様上の要件: [spec.md](/Users/Daily/Development/HP/lab-website/docs/spec.md)
 
 ### `scholar_fetch.py` 利用法（ローカル）
 
@@ -180,8 +126,6 @@ python scripts/validate_content.py
 cd site && hugo --destination ../public --cleanDestinationDir
 ```
 
-詳細: [publications_workflow.md](/Users/Daily/Development/HP/lab-website/docs/publications_workflow.md)
-
 ## QA パイプライン
 
 - 軽量チェック: `.github/workflows/site_checks.yml`
@@ -197,7 +141,9 @@ cd site && hugo --destination ../public --cleanDestinationDir
 
 監査用の LLM プロンプトは `docs/` ではなく `audits/` に分離して管理します。
 
-詳細: [lab_site_qa_pipeline.md](/Users/Daily/Development/HP/lab-website/docs/lab_site_qa_pipeline.md)
+詳細:
+- [lab_site_qa_pipeline.md](/Users/Daily/Development/HP/lab-website/docs/lab_site_qa_pipeline.md)
+- [docs/README.md](/Users/Daily/Development/HP/lab-website/docs/README.md)
 
 ## 補足
 
