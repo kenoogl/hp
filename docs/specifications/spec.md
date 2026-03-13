@@ -264,8 +264,8 @@
 ## 12. Reference Documents
 
 - `README.md`
-- `DEPLOY_CHECKLIST.md`
-- `docs/publications_workflow.md`
-- `docs/scholar_to_website_pipeline.md`
-- `docs/lab_site_qa_pipeline.md`
+- `docs/procedures/DEPLOY_CHECKLIST.md`
+- `docs/procedures/publications_workflow.md`
+- `docs/procedures/scholar_to_website_pipeline.md`
+- `docs/operations/lab_site_qa_pipeline.md`
 - `audits/lab_website_quality_audit.md`

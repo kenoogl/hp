@@ -153,7 +153,7 @@ Update documentation in the same turn when changing any of the following:
 Primary documents:
 
 - `README.md`
-- `docs/spec.md`
+- `docs/specifications/spec.md`
 - `docs/README.md`
 - workflow-specific docs under `docs/`
 
@@ -195,6 +195,5 @@ When moving or renaming audit prompts, update:
 
 - `README.md`
 - `docs/README.md`
-- `docs/spec.md`
+- `docs/specifications/spec.md`
 - any GitHub Actions workflows that reference them
-

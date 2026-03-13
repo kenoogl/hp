@@ -1,24 +1,21 @@
 # Documentation Index
 
-## Core Documents
+## Specifications
 
-- [`spec.md`](./spec.md): システム仕様
-- [`spec_conformance_report.md`](./spec_conformance_report.md): 仕様整合レポート
+- [`specifications/spec.md`](./specifications/spec.md): システム仕様
+- [`specifications/spec_conformance_report.md`](./specifications/spec_conformance_report.md): 仕様整合レポート
+- [`specifications/lab_website_ui_design_rules.md`](./specifications/lab_website_ui_design_rules.md): UI設計ルール
 
 ## Operations
 
-- [`lab_site_operations_design_memo.md`](./lab_site_operations_design_memo.md): 運用方針
-- [`DEPLOY_CHECKLIST.md`](./DEPLOY_CHECKLIST.md): デプロイ手順
-- [`lab_site_qa_pipeline.md`](./lab_site_qa_pipeline.md): QA運用
+- [`operations/lab_site_operations_design_memo.md`](./operations/lab_site_operations_design_memo.md): 運用方針
+- [`operations/lab_site_qa_pipeline.md`](./operations/lab_site_qa_pipeline.md): QA運用
 
-## Content and Automation
+## Procedures
 
-- [`publications_workflow.md`](./publications_workflow.md): publications運用
-- [`scholar_to_website_pipeline.md`](./scholar_to_website_pipeline.md): Scholar連携運用
-
-## Design
-
-- [`lab_website_ui_design_rules.md`](./lab_website_ui_design_rules.md): UI設計ルール
+- [`procedures/DEPLOY_CHECKLIST.md`](./procedures/DEPLOY_CHECKLIST.md): デプロイ手順
+- [`procedures/publications_workflow.md`](./procedures/publications_workflow.md): publications運用
+- [`procedures/scholar_to_website_pipeline.md`](./procedures/scholar_to_website_pipeline.md): Scholar連携運用
 
 ## Audit Prompts
 

@@ -69,7 +69,7 @@ make down
 - `date` はイベント開催日ではなく、ニュースを公開した日を入れる
 - 未来日付を入れると Hugo の通常ビルドでは除外され、トップページや `/news/` に表示されない
 
-詳細: [spec.md](/Users/Daily/Development/HP/lab-website/docs/spec.md)
+詳細: [spec.md](/Users/Daily/Development/HP/lab-website/docs/specifications/spec.md)
 
 ## Publications メンテナンス
 
@@ -80,9 +80,9 @@ cd /Users/Daily/Development/HP/lab-website
 ./scripts/update_publications.sh  # publication を更新してページ反映
 ```
 
-- 手動更新・分類ルール・表示ルール: [publications_workflow.md](/Users/Daily/Development/HP/lab-website/docs/publications_workflow.md)
-- Scholar 連携と自動更新: [scholar_to_website_pipeline.md](/Users/Daily/Development/HP/lab-website/docs/scholar_to_website_pipeline.md)
-- 仕様上の要件: [spec.md](/Users/Daily/Development/HP/lab-website/docs/spec.md)
+- 手動更新・分類ルール・表示ルール: [publications_workflow.md](/Users/Daily/Development/HP/lab-website/docs/procedures/publications_workflow.md)
+- Scholar 連携と自動更新: [scholar_to_website_pipeline.md](/Users/Daily/Development/HP/lab-website/docs/procedures/scholar_to_website_pipeline.md)
+- 仕様上の要件: [spec.md](/Users/Daily/Development/HP/lab-website/docs/specifications/spec.md)
 
 ### `scholar_fetch.py` 利用法（ローカル）
 
@@ -142,7 +142,7 @@ cd site && hugo --destination ../public --cleanDestinationDir
 監査用の LLM プロンプトは `docs/` ではなく `audits/` に分離して管理します。
 
 詳細:
-- [lab_site_qa_pipeline.md](/Users/Daily/Development/HP/lab-website/docs/lab_site_qa_pipeline.md)
+- [lab_site_qa_pipeline.md](/Users/Daily/Development/HP/lab-website/docs/operations/lab_site_qa_pipeline.md)
 - [docs/README.md](/Users/Daily/Development/HP/lab-website/docs/README.md)
 
 ## 補足
