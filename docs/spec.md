@@ -209,11 +209,13 @@
 - Trigger: monthly schedule + manual dispatch
 - Steps:
   - baseline lightweight checks
-  - Codex deep audit (`docs/lab_website_quality_audit.md` 指示)
+  - Codex deep audit (`audits/lab_website_quality_audit.md` 指示)
   - report artifact upload
   - report commit/push
 - Secret dependency:
   - `OPENAI_API_KEY`（未設定時はスキップ理由つきレポート生成）
+- Audit prompts:
+  - LLM に渡す監査プロンプトは `audits/` 配下で管理する
 
 ---
 
@@ -264,4 +266,4 @@
 - `docs/publications_workflow.md`
 - `docs/scholar_to_website_pipeline.md`
 - `docs/lab_site_qa_pipeline.md`
-- `docs/lab_website_quality_audit.md`
+- `audits/lab_website_quality_audit.md`

@@ -77,13 +77,13 @@ Trigger:
 
 Flow:
 1. Run baseline lightweight checks
-2. Execute Codex audit prompt based on `docs/lab_website_quality_audit.md`
+2. Execute Codex audit prompt based on `audits/lab_website_quality_audit.md`
 3. Save report to `reports/monthly_site_audit_YYYY-MM-DD.md`
 4. Upload report artifact
 5. Commit report back to repository
 
 Codex prompt:
-- "Read the repository and execute the instructions in `docs/lab_website_quality_audit.md`. Output a full audit report in markdown."
+- "Read the repository and execute the instructions in `audits/lab_website_quality_audit.md`. Output a full audit report in markdown."
 
 Requirements:
 - GitHub secret `OPENAI_API_KEY` must be configured for Codex execution.

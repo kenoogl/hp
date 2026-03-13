@@ -182,7 +182,7 @@ publication 同期後に、以下の品質チェックを実行する。
   - image size threshold（500KB）
 - `.github/workflows/site_audit.yml`
   - 月次フル監査
-  - `docs/lab_website_quality_audit.md` ベースの深掘り監査
+  - `audits/lab_website_quality_audit.md` ベースの深掘り監査
 
 ---
 

@@ -192,8 +192,10 @@ cd site && hugo --destination ../public --cleanDestinationDir
 - 月次監査: `.github/workflows/site_audit.yml`
   - `reports/monthly_site_audit_YYYY-MM-DD.md` を生成
 - 半年ごと監査（手動）
-  - `docs/research_visibility_audit.md`
-  - `docs/research_impact_audit.md`
+  - `audits/research_visibility_audit.md`
+  - `audits/research_impact_audit.md`
+
+監査用の LLM プロンプトは `docs/` ではなく `audits/` に分離して管理します。
 
 詳細: [lab_site_qa_pipeline.md](/Users/Daily/Development/HP/lab-website/docs/lab_site_qa_pipeline.md)
 
