@@ -31,7 +31,7 @@ Python 変換
   ↓
 Markdown（site/content/publications）
   ↓
-Hugo build（public/）
+Hugo build（public/ を生成）
   ↓
 Ubuntu + Apache2 へ配信
   ↓
@@ -133,7 +133,7 @@ hugo --destination ../public --cleanDestinationDir
 
 出力:
 
-- `public/`
+- `public/`（build artifact。Git 管理しない）
 
 ---
 
@@ -166,7 +166,7 @@ GitHub Actions -> rsync/scp -> /var/www/html（main）
 3. BibTeX -> Markdown 変換
 4. content validation
 5. Hugo build
-6. commit/push
+6. `data/publications.bib` と `site/content/publications/` を commit/push
 
 ---
 

@@ -65,6 +65,7 @@ lab-website/
 ```
 
 GitHub を正本にするなら、**Ubuntu サーバ側で直接編集しない**のが重要です。
+`public/` はローカルまたは GitHub Actions で生成する build artifact とし、Git 管理しません。
 
 ------
 

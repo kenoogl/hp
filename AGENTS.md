@@ -22,7 +22,7 @@ Agents working in this repository should preserve the current operating model an
 - `scripts/`: generation and validation scripts
 - `docs/`: human-facing documentation
 - `audits/`: LLM/Codex audit prompts
-- `public/`: Hugo build output
+- `public/`: Hugo build output (generated locally/CI, not version-controlled)
 
 Do not repurpose `docs/` for audit prompts. Keep audit prompts under `audits/`.
 
@@ -171,6 +171,7 @@ Audit prompts are not documentation pages. They live under `audits/`.
 ## Safety Rules
 
 - Do not edit `public/` by hand unless debugging generated output.
+- Do not commit `public/`; it is a build artifact.
 - Do not commit unrelated generated noise.
 - Do not remove existing bilingual links without replacing them appropriately.
 - Do not change URL structure casually; if a filename changes, preserve routing with `slug` when needed.
@@ -183,7 +184,7 @@ Audit prompts are not documentation pages. They live under `audits/`.
 
 ### Shorthand
 
-- `git-cp` means: commit the current relevant changes and push them to `origin/main`.
+- `git-cp` means: commit the current relevant source/documentation changes and push them to `origin/main`.
 - When this shorthand is used, treat it as an explicit request to perform both `git commit` and `git push`.
 
 ## Audit Rules

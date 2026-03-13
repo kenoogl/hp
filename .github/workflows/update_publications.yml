@@ -54,6 +54,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add data/publications.bib site/content/publications public
+          git add data/publications.bib site/content/publications
           git commit -m "update publications" || echo "No changes to commit"
           git push

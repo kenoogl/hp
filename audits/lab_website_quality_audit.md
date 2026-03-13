@@ -58,12 +58,12 @@ Expected directories:
 - `scripts/`
 - `data/`
 - `.github/workflows/`
-- `public/`
 - `apache/` (if production config is versioned)
 
 Optional local directories:
 - `docker/`
 - `nginx/`
+- `public/` (generated build output; may be absent in a clean checkout)
 
 Check for missing directories and document impact.
 

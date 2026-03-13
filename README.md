@@ -13,7 +13,7 @@ Hugo で構築した研究室向け静的Webサイトです。
 ## 構成
 
 - `site/`: Hugo ソース（テーマ、レイアウト、コンテンツ、静的アセット）
-- `public/`: Hugo のビルド出力
+- `public/`: Hugo のビルド出力（ローカル/CI生成物。Git 管理しない）
 - `scripts/`: 自動化/検証スクリプト
 - `data/`: BibTeX などのデータソース
 - `.github/workflows/`: CI/CD
@@ -44,6 +44,7 @@ make down
 - `main` への push: CIチェック + production 配信
 - 配信先は Ubuntu + Apache2（`/var/www/...`）
 - 配信方式は `rsync`/`scp`（GitHub Actions 実行）
+- `public/` は GitHub Actions 上でビルドし、配信用 artifact として扱う
 
 ## コンテンツ更新フロー
 

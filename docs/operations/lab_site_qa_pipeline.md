@@ -63,6 +63,7 @@ Implementation scripts:
 
 Deploy transport:
 - `rsync` or `scp` over SSH from GitHub Actions
+- `public/` is built inside GitHub Actions and is not committed to Git.
 
 ---
 

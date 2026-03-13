@@ -47,7 +47,7 @@
 
 ### 3.3 Directory contract
 - `site/` : Hugo source
-- `public/` : Hugo build output
+- `public/` : Hugo build output (generated locally/CI, not version-controlled)
 - `data/` : Publications source data (`publications.bib`)
 - `scripts/` : automation/validation scripts
 - `.github/workflows/` : CI workflows
@@ -62,6 +62,7 @@
 ### 4.1 Site content management
 - FR-001: コンテンツは `site/content/*` のMarkdownで管理する。
 - FR-002: Hugo buildは `public/` に出力する。
+- FR-002a: `public/` は生成物であり、Git 管理対象にしない。
 - FR-003: build時は古い生成物を残さない（`--cleanDestinationDir`）。
 - FR-004: News は `1ニュース = 1 Markdown` として `site/content/news/` で管理する。
 - FR-005: トップページの News セクションは最新5件を `日付 + 本文抜粋` で表示する。
@@ -98,6 +99,7 @@
 
 ### 4.5 CI/CD workflows
 - FR-401: `update_publications.yml` は weekly で publication更新を実行する。
+- FR-401a: publication 自動更新 workflow は生成された `public/` を commit しない。
 - FR-402: `site_checks.yml` は PR および develop/main push で軽量品質チェックを実行する。
 - FR-403: `site_audit.yml` は monthly でフル監査を実行する。
 - FR-404: 月次監査レポートは `reports/monthly_site_audit_YYYY-MM-DD.md` を出力する。
