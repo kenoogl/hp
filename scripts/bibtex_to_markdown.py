@@ -70,6 +70,19 @@ def yaml_quote(value: str) -> str:
     return "'" + value.replace("'", "''") + "'"
 
 
+def build_doi_url(doi: str, url: str) -> str:
+    normalized_url = (url or "").strip()
+    if normalized_url:
+        return normalized_url
+
+    normalized_doi = (doi or "").strip()
+    if not normalized_doi:
+        return ""
+
+    normalized_doi = re.sub(r"^https?://(?:dx\.)?doi\.org/", "", normalized_doi, flags=re.IGNORECASE)
+    return f"https://doi.org/{normalized_doi}"
+
+
 def get_venue(entry: dict) -> str:
     return entry.get("journal") or entry.get("booktitle") or entry.get("publisher") or ""
 
@@ -278,7 +291,7 @@ def build_markdown(entry: dict, bib_path: Path) -> str:
     pub_type = detect_pub_type(entry)
     peer_reviewed = detect_peer_reviewed(entry, bib_path, pub_type)
     doi = entry.get("doi", "").strip()
-    url = entry.get("url", "").strip()
+    url = build_doi_url(doi, entry.get("url", "").strip())
     annote = str(entry.get("annote", "") or entry.get("annotation", "")).strip()
     abstract = str(entry.get("abstract", "")).strip()
     if abstract:

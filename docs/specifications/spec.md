@@ -82,6 +82,7 @@
 - FR-109: 各カテゴリリンク先ページ（`/publications/journal/` など）は年別に論文一覧を表示する。
 - FR-110: `pub_type=talk` かつ `annote=invited` の場合、一覧タイトル末尾と詳細ページに `Invited talk` を表示する。
 - FR-111: publication詳細ページでは `doi` / `doi_url`（または `url`）が存在する場合に表示する。
+- FR-112: BibTeX に `doi` があり `url` がない場合、`https://doi.org/<doi>` を補完して詳細ページのリンクとして表示する。
 
 ### 4.3 Validation and QA
 - FR-201: `scripts/validate_content.py` は命名規約・Front Matter整合を検証する。

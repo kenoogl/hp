@@ -36,6 +36,47 @@ git commit -m "..."
 git push
 ```
 
+### GitHub Actions 用 SSH 鍵の注意
+
+- GitHub Actions 用の deploy 鍵は、通常のログイン鍵と分けて専用鍵にする。
+- GitHub Actions 用の秘密鍵は、**パスフレーズなし** で作成する。
+- `Permission denied (publickey)` が出た場合は、まず以下を確認する。
+  - `DEPLOY_SSH_KEY` が正しい秘密鍵か
+  - `DEPLOY_HOST` / `DEPLOY_USER` / `DEPLOY_PORT` がローカル成功時と一致しているか
+  - サーバ側 `deploy` ユーザの `~/.ssh/authorized_keys` に対応する公開鍵が登録されているか
+  - `~/.ssh` と `authorized_keys` の権限が適切か
+
+GitHub Actions 用の鍵作成例:
+
+```bash
+cd /Users/Daily/Development/HP/lab-website
+mkdir -p .deploy-keys
+ssh-keygen -t ed25519 -N "" -f .deploy-keys/github_actions_deploy_nopass -C "github-actions-deploy"
+```
+
+公開鍵をサーバの `deploy` ユーザへ登録する例:
+
+```bash
+cat /Users/Daily/Development/HP/lab-website/.deploy-keys/github_actions_deploy_nopass.pub | \
+ssh -p 10022 deploy@mercury.cc.kyushu-u.ac.jp 'umask 077; mkdir -p ~/.ssh; cat > ~/.ssh/authorized_keys'
+```
+
+ローカル疎通確認:
+
+```bash
+ssh -i /Users/Daily/Development/HP/lab-website/.deploy-keys/github_actions_deploy_nopass \
+  -p 10022 deploy@mercury.cc.kyushu-u.ac.jp
+```
+
+GitHub secret 登録例:
+
+```bash
+gh secret set DEPLOY_SSH_KEY < /Users/Daily/Development/HP/lab-website/.deploy-keys/github_actions_deploy_nopass
+printf '%s' 'mercury.cc.kyushu-u.ac.jp' | gh secret set DEPLOY_HOST
+printf '%s' 'deploy' | gh secret set DEPLOY_USER
+printf '%s' '10022' | gh secret set DEPLOY_PORT
+```
+
 5. CI 結果を確認
 
 - `site_checks.yml` が成功していること

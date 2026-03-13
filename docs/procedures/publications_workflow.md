@@ -152,6 +152,10 @@ python scripts/validate_content.py
   - 一覧ページ: タイトル末尾に `(Invited talk)` を表示
   - 詳細ページ: `Talk Type: Invited talk` を表示
 
+DOI URL 補完:
+
+- BibTeX に `doi` のみがあり `url` がない場合は、`https://doi.org/<doi>` を自動生成して詳細ページのリンクに利用する
+
 出力先:
 
 ```text
