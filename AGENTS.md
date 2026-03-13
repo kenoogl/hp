@@ -188,6 +188,11 @@ Audit prompts are not documentation pages. They live under `audits/`.
 
 - `git-cp` means: commit the current relevant source/documentation changes and push them to `origin/main`.
 - When this shorthand is used, treat it as an explicit request to perform both `git commit` and `git push`.
+- Execute `git-cp` sequentially for safety:
+  1. `git add`
+  2. `git commit`
+  3. `git push`
+  Do not run commit and push in parallel.
 
 ## Audit Rules
 
