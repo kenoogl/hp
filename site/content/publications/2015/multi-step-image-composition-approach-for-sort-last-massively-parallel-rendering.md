@@ -6,5 +6,6 @@ journal: 'Journal of Advanced Simulation in Science and Engineering'
 year: '2015'
 pub_type: 'journal'
 doi: '10.15748/jasse.2.108'
+doi_url: 'https://doi.org/10.15748/jasse.2.108'
 ---
 

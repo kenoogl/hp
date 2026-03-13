@@ -7,5 +7,6 @@ year: '2013'
 pub_type: 'international-conference'
 peer_reviewed: true
 doi: '10.1109/LDAV.2013.6675169'
+doi_url: 'https://doi.org/10.1109/LDAV.2013.6675169'
 ---
 

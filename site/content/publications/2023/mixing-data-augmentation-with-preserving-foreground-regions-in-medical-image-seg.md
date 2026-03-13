@@ -7,5 +7,6 @@ year: '2023'
 pub_type: 'international-conference'
 peer_reviewed: true
 doi: '10.1109/ISBI53787.2023.10230495'
+doi_url: 'https://doi.org/10.1109/ISBI53787.2023.10230495'
 ---
 

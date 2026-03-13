@@ -7,5 +7,6 @@ year: '2014'
 pub_type: 'international-conference'
 peer_reviewed: true
 doi: '10.1109/PacificVis.2014.28'
+doi_url: 'https://doi.org/10.1109/PacificVis.2014.28'
 ---
 

@@ -6,5 +6,6 @@ journal: 'Transactions of JSCES'
 year: '2020'
 pub_type: 'journal'
 doi: 'https://doi.org/10.11421/jsces.2020.20201004'
+doi_url: 'https://doi.org/10.11421/jsces.2020.20201004'
 ---
 

@@ -7,5 +7,6 @@ year: '2008'
 pub_type: 'international-conference'
 peer_reviewed: true
 doi: '10.1109/ULTRAVIS.2008.5154064'
+doi_url: 'https://doi.org/10.1109/ULTRAVIS.2008.5154064'
 ---
 

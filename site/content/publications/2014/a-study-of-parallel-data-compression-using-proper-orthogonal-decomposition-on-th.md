@@ -7,5 +7,6 @@ year: '2014'
 pub_type: 'international-conference'
 peer_reviewed: true
 doi: '10.2312/pgv.20141078'
+doi_url: 'https://doi.org/10.2312/pgv.20141078'
 ---
 
