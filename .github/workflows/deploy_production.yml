@@ -28,7 +28,7 @@ jobs:
       - name: Build Hugo output
         run: |
           cd site
-          hugo --destination ../public --cleanDestinationDir
+          TZ=Asia/Tokyo hugo --destination ../public --cleanDestinationDir
 
       - name: Install SSH key
         env:

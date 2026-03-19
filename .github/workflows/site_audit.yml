@@ -27,7 +27,7 @@ jobs:
       - name: Run lightweight baseline checks
         run: |
           python scripts/validate_content.py
-          cd site && hugo --destination ../public --cleanDestinationDir
+          cd site && TZ=Asia/Tokyo hugo --destination ../public --cleanDestinationDir
           cd ..
           python scripts/check_markdown_validity.py --root .
           python scripts/check_internal_links.py --public-dir public

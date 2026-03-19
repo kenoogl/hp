@@ -52,7 +52,7 @@ jobs:
       - name: Build Hugo output
         run: |
           cd site
-          hugo --destination ../public --cleanDestinationDir
+          TZ=Asia/Tokyo hugo --destination ../public --cleanDestinationDir
 
       - name: Commit and push updates
         run: |

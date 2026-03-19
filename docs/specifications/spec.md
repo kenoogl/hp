@@ -70,6 +70,7 @@
 - FR-007: トップページの Research Highlights は `site/content/research/*.md` の `top_highlight: true` を持つページのみを表示対象とする。
 - FR-008: トップページの Research Highlights は最大5件を表示する。
 - FR-009: トップページの Latest Publications は最新3件を表示し、各論文タイトルは詳細ページへのリンクを持つ。
+- FR-010: トップページのフッターには、ビルド時点の最終更新日時を日本時間で表示する。
 
 ### 4.2 Publication management
 - FR-101: Publicationsは年別ディレクトリで管理する（`site/content/publications/<year>/`）。

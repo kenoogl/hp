@@ -318,6 +318,11 @@ main.container {
   margin: 0.2rem 0;
 }
 
+.site-footer-updated {
+  margin-top: 0.7rem;
+  font-size: 0.94rem;
+}
+
 @media (max-width: 760px) {
   .header-inner {
     flex-direction: column;

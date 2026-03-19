@@ -17,7 +17,7 @@ help:
 	@echo "  make clean   - Remove generated public output"
 
 build:
-	cd $(SITE_DIR) && hugo --destination ../$(PUBLIC_DIR) --cleanDestinationDir
+	cd $(SITE_DIR) && TZ=Asia/Tokyo hugo --destination ../$(PUBLIC_DIR) --cleanDestinationDir
 
 up:
 	cd $(DOCKER_DIR) && docker-compose up -d --build
