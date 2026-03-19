@@ -52,7 +52,6 @@ title: "Alumni Members"
 | 2021 | Tian Ye | Study on Enhancing Memory Efficiency in Communication Improved Stencil Computation |
 | 2021 | 三浦 尭徳 / <br/>Akinori Miura | テンソルトレイン分解の分散メモリ型並列計算<br>Distributed-Memory Parallel Computation for Tensor Train Decomposition |
 | 2021 | 劉 暁慶  / <br/> Xiaoqing Liu | Mixing Data Augmentation for Medical Image Segmentation |
-| 2020 | 南 優斗 / <br/>Yuuto Minami | ––– |
 | 2019 | 衛藤 大甲 / <br/> Taiki Etoh | 360度カメラを用いたMo$^2$Cap$^2$の姿勢推定精度改善に関する研究<br>Improving the Pose Estimation Accuracy of Mo²Cap² Using a 360-Degree Camera |
 | 2018 | 古賀 壱成 / <br/>Issei Koga | Research on estimating governing equations from observational data |
 

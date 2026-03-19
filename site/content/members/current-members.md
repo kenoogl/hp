@@ -25,10 +25,11 @@ title: "Current Members"
 | M1 | 大屋 蒼真 / <br/>Souma Daioku | Thermal Analysis for 3D Integrated Circuits |
 | M1 | 後藤 駿斗 / <br/>Hayato Goto | Anormaly Detection Using LLM |
 
+
 ### 学部生 / Undergraduate Students
 
 | 学年 / Grade | 氏名 / Name | 研究テーマ / Research |
 | --- | --- | --- |
-| B4 |  |  |
-| B4 |  |  |
-| B4 |  |  |
+| B4 | 沓脱 聖 / <br/>Hijiri Kutsunugi | – |
+| B4 | 中村 彰吾 / <br/>Shogo Nakamura | – |
+

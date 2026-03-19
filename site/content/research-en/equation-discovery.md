@@ -21,7 +21,7 @@ Through numerical experiments on fluid simulation data, the method was used to e
 
 Genetic Programming (GP) is a powerful approach for discovering mathematical models directly from data. However, GP is fundamentally a heuristic search method, and the search space is extremely large. As a result, substantial computation is often required before a high-quality model is found.
 
-To address this issue, we are developing an **LLM-GP system** that combines conventional program-based search with a Large Language Model (LLM). In this framework, part of the search process, which was previously implemented only in code, is delegated to the LLM. By leveraging pretrained knowledge and language understanding, the LLM can generate mathematically and physically meaningful candidate expressions.
+To address this issue, we are developing an **LLM-Guided GP system** that combines conventional program-based search with a Large Language Model (LLM). In this framework, part of the search process, which was previously implemented only in code, is delegated to the LLM. By leveraging pretrained knowledge and language understanding, the LLM can generate mathematically and physically meaningful candidate expressions.
 
 The LLM plays two main roles in this system:
 
