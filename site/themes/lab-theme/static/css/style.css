@@ -28,6 +28,16 @@ h3 {
   font-family: "Inter", sans-serif;
 }
 
+h1 a.hero-title-link,
+h1 a.hero-title-link:visited {
+  color: inherit;
+}
+
+h1 a.hero-title-link:hover {
+  text-decoration: none;
+  color: var(--accent);
+}
+
 p {
   margin: 0 0 1rem;
 }
