@@ -8,7 +8,7 @@ English version: [About the Laboratory (EN)](/about-en/)
 
 私たちの研究室では、自然現象や社会現象を数理モデルやシミュレーションによって理解するとともに、AIを活用して研究の進め方そのものを高度化する取り組みも行っています。現実の世界は複雑ですが、重要な仕組みを抜き出してモデル化することで、現象の本質を捉えやすくなります。この考え方は、流れや熱といった自然現象だけでなく、人や物の移動、情報の広がりといった社会現象の分析にも役立ちます。さらに、私たちは大規模言語モデル（LLM）と研究者が協働するための仕組みにも関心を持ち、モデル構築、解釈、仮説の整理、科学的な説明の支援などにAIをどう活用できるかを探っています。数理、計算、AIを組み合わせることで、複雑な現実をより深く理解し、社会に役立つ知見へとつなげることを目指しています。<br><br>
 
-<img src="/images/lab_image.png" alt="研究イメージ" style="max-width:1280px; width:100%; height:auto; display:block; margin:0.5rem auto;"><br><br>
+<img src="/images/lab_image.jpg" alt="研究イメージ" style="max-width:1280px; width:100%; height:auto; display:block; margin:0.5rem auto;"><br><br>
 
 ## [Intelligent Modeling Laboratory (IML)](https://da.dl.itc.u-tokyo.ac.jp/portal/assets/6876f119-d6f7-4d1b-9a14-d15b0f85a09a)とは
 
