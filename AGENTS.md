@@ -85,7 +85,13 @@ Do not repurpose `docs/` for audit prompts. Keep audit prompts under `audits/`.
 
 ## Publication Rules
 
-- The authoritative BibTeX source is `data/publications.bib`.
+- The authoritative publication BibTeX sources live under `data/publications/`.
+- Managed source files are:
+  - `journal.bib`
+  - `intl_conf.bib`
+  - `domestic_conf.bib`
+  - `others.bib`
+  - `generated.bib`
 - Main update entrypoint: `scripts/update_publications.sh`
 - Main generator: `scripts/bibtex_to_markdown.py`
 - Main validation: `scripts/validate_content.py`
@@ -110,6 +116,7 @@ Do not repurpose `docs/` for audit prompts. Keep audit prompts under `audits/`.
 ### Publication Editing Policy
 
 - Prefer changing BibTeX and regenerating pages rather than editing generated Markdown by hand.
+- `generated.bib` is the default output target for `scholar_fetch.py`; review and reclassify entries into the managed category files as needed.
 - If generation rules are wrong, fix `scripts/bibtex_to_markdown.py`.
 - After publication regeneration, run validation and build checks before considering the work complete.
 

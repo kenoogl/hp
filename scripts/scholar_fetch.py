@@ -26,7 +26,7 @@ def parse_args() -> argparse.Namespace:
         default=os.getenv("SCHOLAR_AUTHOR_NAME"),
         help="Author name query if author-id is unavailable",
     )
-    parser.add_argument("--output", default="data/publications.bib", help="Output BibTeX file path")
+    parser.add_argument("--output", default="data/publications/generated.bib", help="Output BibTeX file path")
     parser.add_argument("--max-pubs", type=int, default=0, help="Maximum number of publications to fetch (0: no limit)")
     parser.add_argument("--min-year", type=int, default=0, help="Skip publications older than this year (0: disabled)")
     parser.add_argument("--delay", type=float, default=0.3, help="Delay seconds between publication fetches")

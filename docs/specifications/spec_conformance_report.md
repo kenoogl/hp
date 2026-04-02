@@ -30,7 +30,7 @@ The current implementation is aligned with the defined system specification for 
 - Year-based publication structure: **PASS**
   - `site/content/publications/<year>/`
 - Single BibTeX source of truth: **PASS**
-  - `data/publications.bib`
+  - `data/publications/`
 - Conversion automation: **PASS**
   - `scripts/bibtex_to_markdown.py`
 - Scholar fetch support: **PASS**

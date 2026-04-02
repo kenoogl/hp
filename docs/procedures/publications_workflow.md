@@ -18,7 +18,7 @@
 
 - 静的サイト生成: Hugo
 - コンテンツ管理: Markdown
-- 論文データソース: BibTeX (`data/publications.bib`)
+- 論文データソース: BibTeX (`data/publications/*.bib`)
 - 品質チェック: `scripts/validate_content.py` など
 
 ---
@@ -78,10 +78,15 @@ hugo --destination ../public --cleanDestinationDir
 
 ## 方法2: BibTeX 半自動更新
 
-単一ソースとして `data/publications.bib` を使う。
+ソースは `data/publications/` 配下の 5 ファイルで管理する。
 
 ```text
-data/publications.bib
+data/publications/
+  journal.bib
+  intl_conf.bib
+  domestic_conf.bib
+  others.bib
+  generated.bib
 ```
 
 BibTeX 例:
@@ -107,17 +112,19 @@ BibTeX 例:
 保存先:
 
 ```text
-data/publications.bib
+data/publications/journal.bib
 ```
+
+Scholar などの自動取得結果は、まず `data/publications/generated.bib` に保存する。そこから内容を確認し、必要に応じて `journal.bib` / `intl_conf.bib` / `domestic_conf.bib` / `others.bib` へ移す。
 
 ### Step 2: 変換スクリプトを実行
 
 ```bash
-python scripts/bibtex_to_markdown.py data/publications.bib --clean
+python scripts/bibtex_to_markdown.py --clean
 python scripts/validate_content.py
 ```
 
-`bibtex_to_markdown.py` は `pub_type` を自動設定する。
+`bibtex_to_markdown.py` は既定で `data/publications/` 配下の 5 ファイルを統合して読み込み、`pub_type` を自動設定する。
 
 出力ファイル名は BibTeX key を元に生成する。  
 そのため、BibTeX key は ASCII ベースで一意に管理すること。
@@ -250,6 +257,7 @@ site
 - `year` と配置ディレクトリ（`publications/<year>/`）を一致させる
 - `date` は `<year>-` で始める
 - 生成されるファイル名は BibTeX key ベースの kebab-case とする
+- `generated.bib` は自動取得の置き場であり、最終的な分類結果の正本ではない
 - `pub_type` は `journal` / `international-conference` / `domestic-conference` / `talk` / `others` のいずれかにする
 - `talk` は公開ページ上では `Others` に集約される
 - `annote` を利用する場合は `invited` などの値を統一して使う

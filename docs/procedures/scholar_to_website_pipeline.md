@@ -49,7 +49,12 @@ site/
   content/publications/
 
 data/
-  publications.bib
+  publications/
+    journal.bib
+    intl_conf.bib
+    domestic_conf.bib
+    others.bib
+    generated.bib
 
 scripts/
   scholar_fetch.py
@@ -77,12 +82,12 @@ pip install scholarly
 実行例:
 
 ```bash
-python scripts/scholar_fetch.py --author-id "<YOUR_SCHOLAR_ID>" --output data/publications.bib
+python scripts/scholar_fetch.py --author-id "<YOUR_SCHOLAR_ID>" --output data/publications/generated.bib
 ```
 
 出力:
 
-- `data/publications.bib`
+- `data/publications/generated.bib`
 
 ---
 
@@ -92,7 +97,7 @@ python scripts/scholar_fetch.py --author-id "<YOUR_SCHOLAR_ID>" --output data/pu
 
 ```bash
 pip install bibtexparser
-python scripts/bibtex_to_markdown.py data/publications.bib --clean
+python scripts/bibtex_to_markdown.py --clean
 python scripts/validate_content.py
 ```
 
@@ -166,7 +171,7 @@ GitHub Actions -> rsync/scp -> /var/www/html（main）
 3. BibTeX -> Markdown 変換
 4. content validation
 5. Hugo build
-6. `data/publications.bib` と `site/content/publications/` を commit/push
+6. `data/publications/` と `site/content/publications/` を commit/push
 
 ---
 

@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 """Convert BibTeX entries into Hugo publication markdown files.
 
-Input:  data/publications.bib
-Output: site/content/publications/<year>/<bibtex-key>.md
+Default inputs:
+  data/publications/journal.bib
+  data/publications/intl_conf.bib
+  data/publications/domestic_conf.bib
+  data/publications/others.bib
+  data/publications/generated.bib
+Output:
+  site/content/publications/<year>/<bibtex-key>.md
 """
 
 from __future__ import annotations
@@ -44,7 +50,7 @@ MONTH_MAP = {
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Convert BibTeX to Hugo markdown")
-    parser.add_argument("bib", nargs="?", default="data/publications.bib", help="BibTeX input path")
+    parser.add_argument("bib", nargs="*", help="BibTeX input path(s)")
     parser.add_argument(
         "--output-dir",
         default="site/content/publications",
@@ -56,6 +62,15 @@ def parse_args() -> argparse.Namespace:
         help="Remove generated publication files before writing new ones",
     )
     return parser.parse_args()
+
+
+DEFAULT_BIB_PATHS = [
+    "data/publications/journal.bib",
+    "data/publications/intl_conf.bib",
+    "data/publications/domestic_conf.bib",
+    "data/publications/others.bib",
+    "data/publications/generated.bib",
+]
 
 
 def slugify(text: str) -> str:
@@ -354,7 +369,9 @@ def validate_unique_bibtex_keys(entries: list[dict]) -> None:
         key = str(entry.get("ID", "")).strip()
         if not key:
             continue
-        seen.setdefault(key, []).append(f"entry#{index}")
+        source = str(entry.get("__source_bib", "")).strip()
+        ref = f"{source}:entry#{index}" if source else f"entry#{index}"
+        seen.setdefault(key, []).append(ref)
 
     duplicates = {key: refs for key, refs in seen.items() if len(refs) > 1}
     if duplicates:
@@ -376,7 +393,10 @@ def validate_unique_output_paths(entries: list[dict], output_dir: Path) -> None:
         year_dir = output_dir / year
         slug = resolve_output_slug(entry, title)
         md_path = year_dir / f"{slug}.md"
+        source = str(entry.get("__source_bib", "")).strip()
         key = str(entry.get("ID", "")).strip() or title
+        if source:
+            key = f"{key} ({source})"
         collisions.setdefault(md_path, []).append(key)
 
     duplicates = {path: keys for path, keys in collisions.items() if len(keys) > 1}
@@ -406,27 +426,42 @@ def resolve_output_slug(entry: dict, title: str) -> str:
     return title_slug
 
 
+def resolve_bib_inputs(raw_inputs: list[str]) -> list[Path]:
+    paths = [Path(p) for p in (raw_inputs or DEFAULT_BIB_PATHS)]
+    missing = [str(path) for path in paths if not path.exists()]
+    if missing:
+        missing_list = "\n".join(f"- {path}" for path in missing)
+        raise SystemExit(f"BibTeX file(s) not found:\n{missing_list}")
+    return paths
+
+
+def load_entries(bib_paths: list[Path]) -> list[dict]:
+    entries: list[dict] = []
+    for bib_path in bib_paths:
+        with bib_path.open(encoding="utf-8") as bibfile:
+            db = bibtexparser.load(bibfile)
+        for entry in db.entries:
+            copied = dict(entry)
+            copied["__source_bib"] = str(bib_path)
+            entries.append(copied)
+    return entries
+
+
 def main() -> int:
     args = parse_args()
-    bib_path = Path(args.bib)
     out_root = Path(args.output_dir)
+    bib_paths = resolve_bib_inputs(args.bib)
+    entries = load_entries(bib_paths)
 
-    if not bib_path.exists():
-        raise SystemExit(f"BibTeX file not found: {bib_path}")
-
-    with bib_path.open(encoding="utf-8") as bibfile:
-        db = bibtexparser.load(bibfile)
-
-    validate_unique_bibtex_keys(db.entries)
-
-    validate_unique_output_paths(db.entries, out_root)
+    validate_unique_bibtex_keys(entries)
+    validate_unique_output_paths(entries, out_root)
 
     out_root.mkdir(parents=True, exist_ok=True)
     if args.clean:
         clean_generated_files(out_root)
 
     written = 0
-    for entry in db.entries:
+    for entry in entries:
         title = entry.get("title", "").strip()
         if not title:
             continue
@@ -437,7 +472,7 @@ def main() -> int:
 
         slug = resolve_output_slug(entry, title)
         md_path = year_dir / f"{slug}.md"
-        md_path.write_text(build_markdown(entry, bib_path), encoding="utf-8")
+        md_path.write_text(build_markdown(entry, Path(str(entry.get("__source_bib", "")))), encoding="utf-8")
         written += 1
 
     print(f"Generated {written} publication markdown files under {out_root}")

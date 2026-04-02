@@ -137,7 +137,7 @@ Also verify publications can be grouped into:
   - `pub_type=talk` かつ `annote=invited` で `Invited talk` が表示されること
 
 Check automation assets:
-- `data/publications.bib`
+- `data/publications/`
 - `scripts/bibtex_to_markdown.py`
 - `scripts/scholar_fetch.py`
 

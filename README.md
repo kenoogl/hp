@@ -84,6 +84,12 @@ cd /Users/Daily/Development/HP/lab-website
 - publication Markdown のファイル名は BibTeX key を元に生成されます
 - BibTeX key が重複している場合、変換はエラーで停止します
 - BibTeX key は ASCII ベースで一意に管理してください
+- BibTeX ソースは `data/publications/` 配下の 5 ファイルで管理します
+  - `journal.bib`
+  - `intl_conf.bib`
+  - `domestic_conf.bib`
+  - `others.bib`
+  - `generated.bib`（Scholar 取得結果の一時置き場）
 
 - 手動更新・分類ルール・表示ルール: [publications_workflow.md](/Users/Daily/Development/HP/lab-website/docs/procedures/publications_workflow.md)
 - Scholar 連携と自動更新: [scholar_to_website_pipeline.md](/Users/Daily/Development/HP/lab-website/docs/procedures/scholar_to_website_pipeline.md)
@@ -101,13 +107,13 @@ source .venv/bin/activate
 基本例（著者ID指定）:
 
 ```bash
-python scripts/scholar_fetch.py --author-id "kDMq7r4AAAAJ" --output data/publications.bib
+python scripts/scholar_fetch.py --author-id "kDMq7r4AAAAJ" --output data/publications/generated.bib
 ```
 
 著者名検索で取得する例:
 
 ```bash
-python scripts/scholar_fetch.py --author-name "Kenji Ono" --output data/publications.bib
+python scripts/scholar_fetch.py --author-name "Kenji Ono" --output data/publications/generated.bib
 ```
 
 実運用例（年フィルタ・件数上限・リトライ付き）:
@@ -115,7 +121,7 @@ python scripts/scholar_fetch.py --author-name "Kenji Ono" --output data/publicat
 ```bash
 python scripts/scholar_fetch.py \
   --author-id "kDMq7r4AAAAJ" \
-  --output data/publications.bib \
+  --output data/publications/generated.bib \
   --min-year 1990 \
   --max-pubs 200 \
   --retries 3 \
@@ -126,7 +132,7 @@ python scripts/scholar_fetch.py \
 取得後の更新フロー:
 
 ```bash
-python scripts/bibtex_to_markdown.py data/publications.bib --clean
+python scripts/bibtex_to_markdown.py --clean
 python scripts/validate_content.py
 cd site && hugo --destination ../public --cleanDestinationDir
 ```

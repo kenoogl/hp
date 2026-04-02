@@ -48,7 +48,7 @@
 ### 3.3 Directory contract
 - `site/` : Hugo source
 - `public/` : Hugo build output (generated locally/CI, not version-controlled)
-- `data/` : Publications source data (`publications.bib`)
+- `data/` : Publications source data (`publications/`)
 - `scripts/` : automation/validation scripts
 - `.github/workflows/` : CI workflows
 - `reports/` : monthly audit reports (generated)
@@ -75,7 +75,8 @@
 
 ### 4.2 Publication management
 - FR-101: Publicationsは年別ディレクトリで管理する（`site/content/publications/<year>/`）。
-- FR-102: BibTeXソースは `data/publications.bib` を単一ソースとする。
+- FR-102: BibTeXソースは `data/publications/` 配下で管理し、`journal.bib` / `intl_conf.bib` / `domestic_conf.bib` / `others.bib` / `generated.bib` を扱う。
+- FR-102a: `generated.bib` は Scholar 取得結果の一時置き場とし、手動分類済みの正本カテゴリとは分離する。
 - FR-103: `scripts/bibtex_to_markdown.py` は BibTeX を Hugo Markdown に変換する。
 - FR-103a: publication Markdown のファイル名は BibTeX key を元に生成する。
 - FR-103b: BibTeX key が重複している場合、変換はエラーで停止する。
@@ -179,8 +180,8 @@
 3. PR経由で `develop` へ反映
 
 ### 7.3 Semi-automatic publication update
-1. `data/publications.bib` 更新
-2. `python scripts/bibtex_to_markdown.py data/publications.bib --clean`
+1. `data/publications/` 更新
+2. `python scripts/bibtex_to_markdown.py --clean`
 3. `python scripts/validate_content.py`
 4. `make check`
 
