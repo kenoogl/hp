@@ -89,6 +89,8 @@ Do not repurpose `docs/` for audit prompts. Keep audit prompts under `audits/`.
 - Main update entrypoint: `scripts/update_publications.sh`
 - Main generator: `scripts/bibtex_to_markdown.py`
 - Main validation: `scripts/validate_content.py`
+- Publication filenames are generated from BibTeX keys.
+- BibTeX keys must be unique and ASCII-safe before regeneration.
 
 ### Publication Categories
 

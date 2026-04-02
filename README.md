@@ -81,6 +81,10 @@ cd /Users/Daily/Development/HP/lab-website
 ./scripts/update_publications.sh  # publication を更新してページ反映
 ```
 
+- publication Markdown のファイル名は BibTeX key を元に生成されます
+- BibTeX key が重複している場合、変換はエラーで停止します
+- BibTeX key は ASCII ベースで一意に管理してください
+
 - 手動更新・分類ルール・表示ルール: [publications_workflow.md](/Users/Daily/Development/HP/lab-website/docs/procedures/publications_workflow.md)
 - Scholar 連携と自動更新: [scholar_to_website_pipeline.md](/Users/Daily/Development/HP/lab-website/docs/procedures/scholar_to_website_pipeline.md)
 - 仕様上の要件: [spec.md](/Users/Daily/Development/HP/lab-website/docs/specifications/spec.md)

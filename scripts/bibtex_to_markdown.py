@@ -2,7 +2,7 @@
 """Convert BibTeX entries into Hugo publication markdown files.
 
 Input:  data/publications.bib
-Output: site/content/publications/<year>/<slug>.md
+Output: site/content/publications/<year>/<bibtex-key>.md
 """
 
 from __future__ import annotations
@@ -63,6 +63,21 @@ def slugify(text: str) -> str:
     if not slug:
         return "untitled"
     return slug[:80].strip("-") or "untitled"
+
+
+def filename_slug_from_bibtex_key(key: str) -> str:
+    parts: list[str] = []
+    for char in (key or "").strip():
+        if char.isalnum():
+            parts.append(char.lower())
+        elif char == "-":
+            parts.append(char)
+        else:
+            parts.append(f"-x{ord(char):02x}-")
+
+    slug = "".join(parts)
+    slug = re.sub(r"-{2,}", "-", slug).strip("-")
+    return slug[:120].strip("-")
 
 
 def yaml_quote(value: str) -> str:
@@ -332,17 +347,63 @@ def clean_generated_files(root: Path) -> None:
             path.unlink()
 
 
-def resolve_unique_md_path(year_dir: Path, slug: str) -> Path:
-    base = year_dir / f"{slug}.md"
-    if not base.exists():
-        return base
+def validate_unique_bibtex_keys(entries: list[dict]) -> None:
+    seen: dict[str, list[str]] = {}
 
-    n = 2
-    while True:
-        candidate = year_dir / f"{slug}-{n}.md"
-        if not candidate.exists():
-            return candidate
-        n += 1
+    for index, entry in enumerate(entries, start=1):
+        key = str(entry.get("ID", "")).strip()
+        if not key:
+            continue
+        seen.setdefault(key, []).append(f"entry#{index}")
+
+    duplicates = {key: refs for key, refs in seen.items() if len(refs) > 1}
+    if duplicates:
+        lines = ["Duplicate BibTeX keys found:"]
+        for key in sorted(duplicates):
+            lines.append(f"- {key}: {', '.join(duplicates[key])}")
+        raise SystemExit("\n".join(lines))
+
+
+def validate_unique_output_paths(entries: list[dict], output_dir: Path) -> None:
+    collisions: dict[Path, list[str]] = {}
+
+    for entry in entries:
+        title = entry.get("title", "").strip()
+        if not title:
+            continue
+
+        year = parse_year(entry)
+        year_dir = output_dir / year
+        slug = resolve_output_slug(entry, title)
+        md_path = year_dir / f"{slug}.md"
+        key = str(entry.get("ID", "")).strip() or title
+        collisions.setdefault(md_path, []).append(key)
+
+    duplicates = {path: keys for path, keys in collisions.items() if len(keys) > 1}
+    if duplicates:
+        lines = ["Multiple BibTeX entries resolve to the same output path:"]
+        for path in sorted(duplicates):
+            lines.append(f"- {path}: {', '.join(duplicates[path])}")
+        raise SystemExit("\n".join(lines))
+
+
+def resolve_output_slug(entry: dict, title: str) -> str:
+    key = str(entry.get("ID", "")).strip()
+    if key:
+        key_slug = filename_slug_from_bibtex_key(key)
+        if not key_slug:
+            raise SystemExit(
+                "BibTeX key cannot be converted into a safe filename. "
+                f"Use an ASCII key: {key}"
+            )
+        return key_slug
+
+    title_slug = slugify(title)
+    if title_slug == "untitled":
+        raise SystemExit(
+            "Entry is missing a usable BibTeX key and the title cannot be converted into a safe filename."
+        )
+    return title_slug
 
 
 def main() -> int:
@@ -355,6 +416,10 @@ def main() -> int:
 
     with bib_path.open(encoding="utf-8") as bibfile:
         db = bibtexparser.load(bibfile)
+
+    validate_unique_bibtex_keys(db.entries)
+
+    validate_unique_output_paths(db.entries, out_root)
 
     out_root.mkdir(parents=True, exist_ok=True)
     if args.clean:
@@ -370,8 +435,8 @@ def main() -> int:
         year_dir = out_root / year
         year_dir.mkdir(parents=True, exist_ok=True)
 
-        slug = slugify(title)
-        md_path = resolve_unique_md_path(year_dir, slug)
+        slug = resolve_output_slug(entry, title)
+        md_path = year_dir / f"{slug}.md"
         md_path.write_text(build_markdown(entry, bib_path), encoding="utf-8")
         written += 1
 

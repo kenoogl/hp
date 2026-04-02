@@ -77,6 +77,8 @@
 - FR-101: Publicationsは年別ディレクトリで管理する（`site/content/publications/<year>/`）。
 - FR-102: BibTeXソースは `data/publications.bib` を単一ソースとする。
 - FR-103: `scripts/bibtex_to_markdown.py` は BibTeX を Hugo Markdown に変換する。
+- FR-103a: publication Markdown のファイル名は BibTeX key を元に生成する。
+- FR-103b: BibTeX key が重複している場合、変換はエラーで停止する。
 - FR-104: `scripts/scholar_fetch.py` は Google Scholar から BibTeX を取得可能とする。
 - FR-105: 各publicationに `pub_type` を保持し、`journal` / `international-conference` / `domestic-conference` / `talk` / `others` を扱えること。表示上は `talk` を `others` に集約する。
 - FR-106: `international-conference` および `domestic-conference` は任意メタデータ `peer_reviewed`（boolean）で `Refereed` / `Non-Refereed` / `Unspecified` 表示を可能にする。
@@ -139,6 +141,7 @@
 - `site/content/research/*.md`: kebab-case
 - `site/content/publications/<year>/*.md`: kebab-case
 - `site/content/news/*.md`: kebab-case
+- publication の生成ファイル名は BibTeX key ベースの kebab-case とする
 
 ### 6.2 Research metadata
 - トップページの Research Highlights に表示する研究ページは `top_highlight: true` を持つこと。

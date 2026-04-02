@@ -2,9 +2,9 @@
 title: 'Life cycle management of big data for extreme-scale simulation'
 date: 2013-04-04
 authors: 'Ono, Kenji'
-journal: 'NSF workshop on Big Data and Extreme-scale Computing'
+journal: 'Big data and extreme-scale computing'
 year: '2013'
 pub_type: 'talk'
-annote: 'Invited'
+doi_url: 'http://www.exascale.org/bdec/'
 ---
 

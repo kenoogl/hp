@@ -119,6 +119,12 @@ python scripts/validate_content.py
 
 `bibtex_to_markdown.py` は `pub_type` を自動設定する。
 
+出力ファイル名は BibTeX key を元に生成する。  
+そのため、BibTeX key は ASCII ベースで一意に管理すること。
+
+- BibTeX key が重複している場合、変換は停止する
+- BibTeX key から安全なファイル名を生成できない場合も停止する
+
 判定優先順位:
 
 1. BibTeXの明示値 `pub_type`（最優先）
@@ -243,7 +249,7 @@ site
 
 - `year` と配置ディレクトリ（`publications/<year>/`）を一致させる
 - `date` は `<year>-` で始める
-- ファイル名は kebab-case を使う
+- 生成されるファイル名は BibTeX key ベースの kebab-case とする
 - `pub_type` は `journal` / `international-conference` / `domestic-conference` / `talk` / `others` のいずれかにする
 - `talk` は公開ページ上では `Others` に集約される
 - `annote` を利用する場合は `invited` などの値を統一して使う
