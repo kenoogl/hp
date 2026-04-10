@@ -24,7 +24,7 @@ title: "Current Members"
 | M2 | 鳥井 公平 / <br/>Kohei Torii | Tensor Train Decomposition |
 | M1 | 大屋 蒼真 / <br/>Souma Daioku | Thermal Analysis for 3D Integrated Circuits |
 | M1 | 後藤 駿斗 / <br/>Hayato Goto | Anormaly Detection Using LLM |
-
+| M1 | ShanDong He / <br/>ShanDong He | Wake Modeling using LLM |
 
 ### 学部生 / Undergraduate Students
 
