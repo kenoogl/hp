@@ -6,5 +6,7 @@ journal: 'The 2nd International Conference on Mechanics (ICM 2018), jointing con
 year: '2018'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2018/ono-x3a-2018-x3a-acfd/'
+bibtex_download: '/bibtex/publications/2018/ono-x3a-2018-x3a-acfd.bib'
 ---
 

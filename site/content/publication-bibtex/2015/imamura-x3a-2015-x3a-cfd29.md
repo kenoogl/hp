@@ -1,0 +1,22 @@
+---
+title: 'BibTeX: 共通の係数行列を持つ複数の連立一次方程式のための反復ソルバの実装と性能評価'
+date: 2015-01-01
+publication_title: '共通の係数行列を持つ複数の連立一次方程式のための反復ソルバの実装と性能評価'
+publication_page: '/publications/2015/imamura-x3a-2015-x3a-cfd29/'
+bibtex_download: '/bibtex/publications/2015/imamura-x3a-2015-x3a-cfd29.bib'
+bibtex_source: |
+  @conference{imamura:2015:CFD29,
+    title = {共通の係数行列を持つ複数の連立一次方程式のための反復ソルバの実装と性能評価},
+    author = {今村 成吾 and 小野 謙二 and 横川 三津夫},
+    booktitle = {第29回数値流体力学シンポジウム講演予稿集},
+    year = {2015},
+    month = {12月15日-17日},
+    pages = {},
+    url = {},
+    annote = {},
+    issn = {},
+    location = {九州大学筑紫キャンパス},
+    organization = {},
+  }
+---
+

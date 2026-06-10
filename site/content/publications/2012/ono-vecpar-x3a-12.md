@@ -6,5 +6,7 @@ journal: 'VECPAR 2012'
 year: '2012'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2012/ono-vecpar-x3a-12/'
+bibtex_download: '/bibtex/publications/2012/ono-vecpar-x3a-12.bib'
 ---
 

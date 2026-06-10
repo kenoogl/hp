@@ -5,5 +5,7 @@ authors: 'Ono, Kenji'
 journal: '第21回ビジュアリゼーションカンファレンス'
 year: '2015'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2015/ono-x3a-2015-x3a-visconf/'
+bibtex_download: '/bibtex/publications/2015/ono-x3a-2015-x3a-visconf.bib'
 ---
 

@@ -5,5 +5,7 @@ authors: '小野 謙二，松本 秀樹，姫野 龍太郎'
 journal: '第14回数値流体力学シンポジウム講演要旨集'
 year: '2000'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2000/ono-x3a-00-x3a-cfd14/'
+bibtex_download: '/bibtex/publications/2000/ono-x3a-00-x3a-cfd14.bib'
 ---
 

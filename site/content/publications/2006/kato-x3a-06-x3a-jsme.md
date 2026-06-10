@@ -5,5 +5,7 @@ authors: '加藤 光章，吉澤 晋，小野 謙二，松本 洋一郎'
 journal: '日本機械学会 2006年度年次大会講演論文集'
 year: '2006'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2006/kato-x3a-06-x3a-jsme/'
+bibtex_download: '/bibtex/publications/2006/kato-x3a-06-x3a-jsme.bib'
 ---
 

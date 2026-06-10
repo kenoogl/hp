@@ -6,5 +6,7 @@ journal: 'ISTU2009'
 year: '2009'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2009/okita-x3a-09-x3a-istu/'
+bibtex_download: '/bibtex/publications/2009/okita-x3a-09-x3a-istu.bib'
 ---
 

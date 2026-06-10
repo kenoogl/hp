@@ -7,5 +7,7 @@ year: '2014'
 pub_type: 'international-conference'
 peer_reviewed: true
 doi_url: 'http://www.sciencedirect.com/science/article/pii/S1877050914011934'
+bibtex_page: '/publication-bibtex/2014/ishikawa-x3a-2014-x3a-kes/'
+bibtex_download: '/bibtex/publications/2014/ishikawa-x3a-2014-x3a-kes.bib'
 ---
 

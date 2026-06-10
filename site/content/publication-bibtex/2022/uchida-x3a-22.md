@@ -1,0 +1,18 @@
+---
+title: 'BibTeX: スパコン版リアムコンパクトによる風車ウエイクの相互干渉に関する大規模数値シミュレーション : ウエイク領域内の平均風速欠損量の予測精度検証'
+date: 2022-01-01
+publication_title: 'スパコン版リアムコンパクトによる風車ウエイクの相互干渉に関する大規模数値シミュレーション : ウエイク領域内の平均風速欠損量の予測精度検証'
+publication_page: '/publications/2022/uchida-x3a-22/'
+bibtex_download: '/bibtex/publications/2022/uchida-x3a-22.bib'
+bibtex_source: |
+  @inproceedings{uchida:22,
+    title = {スパコン版リアムコンパクトによる風車ウエイクの相互干渉に関する大規模数値シミュレーション : ウエイク領域内の平均風速欠損量の予測精度検証},
+    author = {内田 孝紀, 小野 謙二, 飯田 明由, 吉村 忍, 加藤 千幸, 山出 吉伸, 今村 博, 植田 祐子},
+    booktitle = {日本風力エネルギー学会論文集},
+    year = {2022},
+    month = {},
+    volume = {45(4)},
+    pages = {71--82},
+  }
+---
+

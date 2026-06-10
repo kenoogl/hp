@@ -5,5 +5,7 @@ authors: '内田 孝紀, 小野 謙二, 飯田 明由, 吉村 忍, 加藤 千幸
 journal: '日本風力エネルギー学会論文集'
 year: '2022'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2022/uchida-x3a-22/'
+bibtex_download: '/bibtex/publications/2022/uchida-x3a-22.bib'
 ---
 

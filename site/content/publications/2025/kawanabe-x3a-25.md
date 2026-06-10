@@ -6,5 +6,7 @@ journal: 'The 7th R-CCS International Symposium'
 year: '2025'
 pub_type: 'talk'
 doi_url: 'https://www.r-ccs.riken.jp/R-CCS-Symposium/2025/'
+bibtex_page: '/publication-bibtex/2025/kawanabe-x3a-25/'
+bibtex_download: '/bibtex/publications/2025/kawanabe-x3a-25.bib'
 ---
 

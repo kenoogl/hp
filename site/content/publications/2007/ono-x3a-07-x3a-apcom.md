@@ -6,5 +6,7 @@ journal: 'APCOM ''07 in conjunction with EPMESC XI'
 year: '2007'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2007/ono-x3a-07-x3a-apcom/'
+bibtex_download: '/bibtex/publications/2007/ono-x3a-07-x3a-apcom.bib'
 ---
 

@@ -5,5 +5,7 @@ authors: '林 幸子，宮地 英生，小野 謙二'
 journal: '第32回 可視化情報シンポジウム講演論文集'
 year: '2004'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2004/hayashi-x3a-04-x3a-vsj/'
+bibtex_download: '/bibtex/publications/2004/hayashi-x3a-04-x3a-vsj.bib'
 ---
 

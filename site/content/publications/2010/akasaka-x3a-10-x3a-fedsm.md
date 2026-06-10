@@ -6,5 +6,7 @@ journal: 'ASME 2010 3rd Joint US-European Fluids Engineering Summer Meeting and 
 year: '2010'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2010/akasaka-x3a-10-x3a-fedsm/'
+bibtex_download: '/bibtex/publications/2010/akasaka-x3a-10-x3a-fedsm.bib'
 ---
 

@@ -7,5 +7,7 @@ year: '2025'
 pub_type: 'talk'
 annote: 'Invited'
 doi_url: 'https://chinavis.org/2025/en/cjkworkshop'
+bibtex_page: '/publication-bibtex/2025/chinavis-x3a-25/'
+bibtex_download: '/bibtex/publications/2025/chinavis-x3a-25.bib'
 ---
 

@@ -6,5 +6,7 @@ journal: 'Visual Computing/グラフィックスとCAD合同シンポジウム'
 year: '2005'
 pub_type: 'domestic-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2005/watanabe-x3a-05-x3a-vc/'
+bibtex_download: '/bibtex/publications/2005/watanabe-x3a-05-x3a-vc.bib'
 ---
 

@@ -6,5 +6,7 @@ journal: 'In Proc. of International Conference on High Performance Computing in 
 year: '2018'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2018/nonaka-x3a-2018-x3a-ichcpa/'
+bibtex_download: '/bibtex/publications/2018/nonaka-x3a-2018-x3a-ichcpa.bib'
 ---
 

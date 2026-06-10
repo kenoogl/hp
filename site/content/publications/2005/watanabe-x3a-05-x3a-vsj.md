@@ -5,5 +5,7 @@ authors: '渡辺 大介，茅 暁陽，小野 謙二，金 小鋼'
 journal: '第33回可視化情報 シンポジウム講演論文集'
 year: '2005'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2005/watanabe-x3a-05-x3a-vsj/'
+bibtex_download: '/bibtex/publications/2005/watanabe-x3a-05-x3a-vsj.bib'
 ---
 

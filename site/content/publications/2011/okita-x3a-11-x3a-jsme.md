@@ -5,5 +5,7 @@ authors: '沖田 浩平，小野 謙二'
 journal: '日本機械学会論文集 B編'
 year: '2011'
 pub_type: 'journal'
+bibtex_page: '/publication-bibtex/2011/okita-x3a-11-x3a-jsme/'
+bibtex_download: '/bibtex/publications/2011/okita-x3a-11-x3a-jsme.bib'
 ---
 

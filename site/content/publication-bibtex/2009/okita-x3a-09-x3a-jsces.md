@@ -1,0 +1,17 @@
+---
+title: 'BibTeX: 高密度焦点式超音波療法において組織の加熱凝固が音場に与える影響'
+date: 2009-01-01
+publication_title: '高密度焦点式超音波療法において組織の加熱凝固が音場に与える影響'
+publication_page: '/publications/2009/okita-x3a-09-x3a-jsces/'
+bibtex_download: '/bibtex/publications/2009/okita-x3a-09-x3a-jsces.bib'
+bibtex_source: |
+  @article{okita:09:JSCES,
+    title = {高密度焦点式超音波療法において組織の加熱凝固が音場に与える影響},
+    author = {沖田浩平 and 小野 謙二 and 杉山和靖 and 高木周 and 松本洋一郎},
+    journal = {計算工学講演会論文集},
+    year = {2009},
+    volume = {14},
+    yomi = {Okita, kohei and Ono, Kenji and Sugiyama Kazuyasu and Takagi Shu and Matsumoto Yoichiro},
+  }
+---
+

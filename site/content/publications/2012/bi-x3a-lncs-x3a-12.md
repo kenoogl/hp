@@ -7,5 +7,7 @@ year: '2012'
 pub_type: 'journal'
 doi: '10.1007/978-3-642-33191-6_72'
 doi_url: 'http://dx.doi.org/10.1007/978-3-642-33191-6_72'
+bibtex_page: '/publication-bibtex/2012/bi-x3a-lncs-x3a-12/'
+bibtex_download: '/bibtex/publications/2012/bi-x3a-lncs-x3a-12.bib'
 ---
 

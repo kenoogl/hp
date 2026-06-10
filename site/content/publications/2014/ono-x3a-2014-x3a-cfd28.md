@@ -5,5 +5,7 @@ authors: '小野 謙二'
 journal: '数値流体力学シンポジウムCFD28'
 year: '2014'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2014/ono-x3a-2014-x3a-cfd28/'
+bibtex_download: '/bibtex/publications/2014/ono-x3a-2014-x3a-cfd28.bib'
 ---
 

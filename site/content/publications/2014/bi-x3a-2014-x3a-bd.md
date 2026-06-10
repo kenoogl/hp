@@ -5,5 +5,7 @@ authors: 'Bi, Chongke and Ono, kenji and Yang, Lu'
 journal: '3rd International Congress on Big Data'
 year: '2014'
 pub_type: 'international-conference'
+bibtex_page: '/publication-bibtex/2014/bi-x3a-2014-x3a-bd/'
+bibtex_download: '/bibtex/publications/2014/bi-x3a-2014-x3a-bd.bib'
 ---
 

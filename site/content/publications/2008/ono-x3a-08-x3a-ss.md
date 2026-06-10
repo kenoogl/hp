@@ -6,5 +6,7 @@ journal: 'SS研HPCフォーラム2008'
 year: '2008'
 pub_type: 'talk'
 annote: 'Invited'
+bibtex_page: '/publication-bibtex/2008/ono-x3a-08-x3a-ss/'
+bibtex_download: '/bibtex/publications/2008/ono-x3a-08-x3a-ss.bib'
 ---
 

@@ -5,5 +5,7 @@ authors: '橋本 学，小野 謙二，野口 裕久'
 journal: '日本機械学会 第85期流体工学部門講演会 講演論文集'
 year: '2007'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2007/hashimoto-x3a-07-x3a-jsme-fed/'
+bibtex_download: '/bibtex/publications/2007/hashimoto-x3a-07-x3a-jsme-fed.bib'
 ---
 

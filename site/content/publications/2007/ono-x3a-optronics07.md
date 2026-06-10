@@ -5,5 +5,7 @@ authors: '小野 謙二'
 journal: 'オプトロニクス'
 year: '2007'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2007/ono-x3a-optronics07/'
+bibtex_download: '/bibtex/publications/2007/ono-x3a-optronics07.bib'
 ---
 

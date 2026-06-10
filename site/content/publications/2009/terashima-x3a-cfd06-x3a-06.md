@@ -7,5 +7,7 @@ year: '2009'
 pub_type: 'journal'
 doi: '10.1007/978-3-540-92779-2_133'
 doi_url: 'http://dx.doi.org/10.1007/978-3-540-92779-2_133'
+bibtex_page: '/publication-bibtex/2009/terashima-x3a-cfd06-x3a-06/'
+bibtex_download: '/bibtex/publications/2009/terashima-x3a-cfd06-x3a-06.bib'
 ---
 

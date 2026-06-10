@@ -8,5 +8,7 @@ pub_type: 'international-conference'
 peer_reviewed: true
 doi: '10.1109/SIMS.2014.21'
 doi_url: 'http://dx.doi.org/10.1109/SIMS.2014.21'
+bibtex_page: '/publication-bibtex/2014/nonaka-x3a-2014-x3a-sims/'
+bibtex_download: '/bibtex/publications/2014/nonaka-x3a-2014-x3a-sims.bib'
 ---
 

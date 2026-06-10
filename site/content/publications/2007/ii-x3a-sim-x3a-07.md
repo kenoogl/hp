@@ -7,5 +7,7 @@ year: '2007'
 pub_type: 'journal'
 doi: '10.1007/978-4-431-49022-7_24'
 doi_url: 'http://dx.doi.org/10.1007/978-4-431-49022-7_24'
+bibtex_page: '/publication-bibtex/2007/ii-x3a-sim-x3a-07/'
+bibtex_download: '/bibtex/publications/2007/ii-x3a-sim-x3a-07.bib'
 ---
 

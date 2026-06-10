@@ -1,0 +1,22 @@
+---
+title: 'BibTeX: Improving efficiency of symbolic regression to find the formula that express data'
+date: 2018-05-05
+publication_title: 'Improving efficiency of symbolic regression to find the formula that express data'
+publication_page: '/publications/2018/koga-x3a-2018-x3a-isip/'
+bibtex_download: '/bibtex/publications/2018/koga-x3a-2018-x3a-isip.bib'
+bibtex_source: |
+  @inproceedings{koga:2018:ISIP,
+    title = {Improving efficiency of symbolic regression to find the formula that express data},
+    author = {Issei Koga and Kenji Ono},
+    booktitle = {The 12th International Workshop on Information Search, Integration, and Personalization (ISIP2018)},
+    year = {2018},
+    month = {5},
+    pages = {},
+    doi = {},
+    url = {https://sites.google.com/view/isip2018/home},
+    peer_reviewed = {true},
+    isbn = {},
+    location = {},
+  }
+---
+

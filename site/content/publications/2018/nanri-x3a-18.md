@@ -5,5 +5,7 @@ authors: 'Takeshi Nanri, Satoshi Ohshima, Kenji Ono'
 journal: '研究報告ハイパフォーマンスコンピューティング（HPC）'
 year: '2018'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2018/nanri-x3a-18/'
+bibtex_download: '/bibtex/publications/2018/nanri-x3a-18.bib'
 ---
 

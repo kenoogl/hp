@@ -6,5 +6,7 @@ journal: 'SIAM Conference on Parallel Processing for Scientific Computing 2018 (
 year: '2018'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2018/koga-x3a-2018-x3a-siam-pp/'
+bibtex_download: '/bibtex/publications/2018/koga-x3a-2018-x3a-siam-pp.bib'
 ---
 

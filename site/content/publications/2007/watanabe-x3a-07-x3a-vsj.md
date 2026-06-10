@@ -5,5 +5,7 @@ authors: '渡邊 大介，小野 謙二，茅 暁陽'
 journal: '可視化情報学会 全国講演会(岐阜2007)'
 year: '2007'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2007/watanabe-x3a-07-x3a-vsj/'
+bibtex_download: '/bibtex/publications/2007/watanabe-x3a-07-x3a-vsj.bib'
 ---
 

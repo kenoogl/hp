@@ -5,5 +5,7 @@ authors: 'Sakata, Takuya and Sera, Toshihiro and Kakusho, Nobunori and Yokota, H
 journal: 'Computer Methods in Biomechanics and Biomedical Engineering 2010'
 year: '2010'
 pub_type: 'international-conference'
+bibtex_page: '/publication-bibtex/2010/sakata-x3a-10-x3a-cmb/'
+bibtex_download: '/bibtex/publications/2010/sakata-x3a-10-x3a-cmb.bib'
 ---
 

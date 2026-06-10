@@ -7,5 +7,7 @@ year: '2022'
 pub_type: 'domestic-conference'
 doi: '10.1299/jsmebiofro.2022.33.1d07'
 doi_url: 'https://www.jstage.jst.go.jp/article/jsmebiofro/2022.33/0/2022.33_1D07/_pdf'
+bibtex_page: '/publication-bibtex/2022/katou-x3a-22/'
+bibtex_download: '/bibtex/publications/2022/katou-x3a-22.bib'
 ---
 

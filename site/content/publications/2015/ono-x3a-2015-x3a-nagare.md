@@ -5,5 +5,7 @@ authors: '小野 謙二'
 journal: 'ながれ'
 year: '2015'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2015/ono-x3a-2015-x3a-nagare/'
+bibtex_download: '/bibtex/publications/2015/ono-x3a-2015-x3a-nagare.bib'
 ---
 

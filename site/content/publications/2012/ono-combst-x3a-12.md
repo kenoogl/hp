@@ -5,5 +5,7 @@ authors: '小野 謙二'
 journal: '戦略分野４燃焼コンソーシアム研究会'
 year: '2012'
 pub_type: 'talk'
+bibtex_page: '/publication-bibtex/2012/ono-combst-x3a-12/'
+bibtex_download: '/bibtex/publications/2012/ono-combst-x3a-12.bib'
 ---
 

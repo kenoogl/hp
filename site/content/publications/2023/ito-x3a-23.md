@@ -7,5 +7,7 @@ year: '2023'
 pub_type: 'international-conference'
 peer_reviewed: true
 doi_url: 'https://www.iscb.org/iscb-news-items/5157-november-10-2023-giw-iscb-asia-2023-announcing-the-conference-programme'
+bibtex_page: '/publication-bibtex/2023/ito-x3a-23/'
+bibtex_download: '/bibtex/publications/2023/ito-x3a-23.bib'
 ---
 

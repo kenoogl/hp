@@ -6,5 +6,7 @@ journal: 'SIGGRAPH ASIA Symposium on Visualization (SA17)'
 year: '2017'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2017/nonaka-x3a-2017-x3a-sigasia/'
+bibtex_download: '/bibtex/publications/2017/nonaka-x3a-2017-x3a-sigasia.bib'
 ---
 

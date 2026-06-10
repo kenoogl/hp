@@ -7,5 +7,7 @@ year: '2024'
 pub_type: 'international-conference'
 peer_reviewed: true
 doi_url: 'https://clustercomp.org/2024/'
+bibtex_page: '/publication-bibtex/2024/cluster-x5f-kawanabe-x3a-2024/'
+bibtex_download: '/bibtex/publications/2024/cluster-x5f-kawanabe-x3a-2024.bib'
 ---
 

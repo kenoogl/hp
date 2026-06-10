@@ -1,0 +1,17 @@
+---
+title: 'BibTeX: Numerical Analysis on Ultrasound Propagation and Temperature Rise in Focused Ultrasound Treatment with Navier-Stokes Equation'
+date: 2006-01-01
+publication_title: 'Numerical Analysis on Ultrasound Propagation and Temperature Rise in Focused Ultrasound Treatment with Navier-Stokes Equation'
+publication_page: '/publications/2006/kato-x3a-06-x3a-dfd/'
+bibtex_download: '/bibtex/publications/2006/kato-x3a-06-x3a-dfd.bib'
+bibtex_source: |
+  @inproceedings{Kato:06:DFD,
+    title = {Numerical Analysis on Ultrasound Propagation and Temperature Rise in Focused Ultrasound Treatment with Navier-Stokes Equation},
+    author = {Kato, Mitsuaki and Yoshizawa, Shin and Ono, Kenji and Matsumoto, Yoichiro},
+    booktitle = {The 2006 APS Division of Fluid Dynamics 59th Annual Meeting (DFD06)},
+    year = {2006},
+    pages = {178},
+    location = {Florida, USA},
+  }
+---
+

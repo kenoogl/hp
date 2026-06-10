@@ -6,5 +6,7 @@ journal: '5th Europian Congress on Computational methods in Applied Science and 
 year: '2008'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2008/hashimoto-x3a-08-x3a-eccomas/'
+bibtex_download: '/bibtex/publications/2008/hashimoto-x3a-08-x3a-eccomas.bib'
 ---
 

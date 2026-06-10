@@ -6,5 +6,7 @@ journal: '2025 Conference on Advanced Topics and Auto Tuning in High-Performance
 year: '2025'
 pub_type: 'talk'
 doi_url: 'https://sites.google.com/site/atathpsc/previous-conf/2025'
+bibtex_page: '/publication-bibtex/2025/atat-x5f-shiragami-x3a-25/'
+bibtex_download: '/bibtex/publications/2025/atat-x5f-shiragami-x3a-25.bib'
 ---
 

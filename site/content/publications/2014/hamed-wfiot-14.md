@@ -8,5 +8,7 @@ pub_type: 'international-conference'
 peer_reviewed: true
 doi: '10.1109/WF-IoT.2014.6803219'
 doi_url: 'https://doi.org/10.1109/WF-IoT.2014.6803219'
+bibtex_page: '/publication-bibtex/2014/hamed-wfiot-14/'
+bibtex_download: '/bibtex/publications/2014/hamed-wfiot-14.bib'
 ---
 

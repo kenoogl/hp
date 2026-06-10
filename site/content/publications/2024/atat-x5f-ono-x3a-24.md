@@ -7,5 +7,7 @@ year: '2024'
 pub_type: 'talk'
 annote: 'Invited'
 doi_url: 'https://sites.google.com/site/atathpsc/'
+bibtex_page: '/publication-bibtex/2024/atat-x5f-ono-x3a-24/'
+bibtex_download: '/bibtex/publications/2024/atat-x5f-ono-x3a-24.bib'
 ---
 

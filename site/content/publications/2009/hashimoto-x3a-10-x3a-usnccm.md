@@ -5,5 +5,7 @@ authors: 'Hashimoto, Gaku and Ono, Kenji'
 journal: 'USNCCM 10'
 year: '2009'
 pub_type: 'international-conference'
+bibtex_page: '/publication-bibtex/2009/hashimoto-x3a-10-x3a-usnccm/'
+bibtex_download: '/bibtex/publications/2009/hashimoto-x3a-10-x3a-usnccm.bib'
 ---
 

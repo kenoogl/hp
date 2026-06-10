@@ -5,5 +5,7 @@ authors: '小野 謙二'
 journal: '第9回創成シンポジウムスーパーコンピュータ京でせまる最先端の科学技術'
 year: '2013'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2013/ono-hokudai-x3a-13/'
+bibtex_download: '/bibtex/publications/2013/ono-hokudai-x3a-13.bib'
 ---
 

@@ -7,5 +7,7 @@ year: '2003'
 pub_type: 'journal'
 doi: 'http://doi.acm.org/10.1145/827051.827072'
 doi_url: 'http://doi.acm.org/10.1145/827051.827072'
+bibtex_page: '/publication-bibtex/2003/rosa-x3a-03-x3a-vg/'
+bibtex_download: '/bibtex/publications/2003/rosa-x3a-03-x3a-vg.bib'
 ---
 

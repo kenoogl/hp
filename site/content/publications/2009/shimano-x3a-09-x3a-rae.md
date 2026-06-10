@@ -5,5 +5,7 @@ authors: 'SHIMANO, Kenjiro and KUMANO, Takahiro and TAKAGI, Michitoshi and ONO, 
 journal: 'Review of Automotive Engineering'
 year: '2009'
 pub_type: 'journal'
+bibtex_page: '/publication-bibtex/2009/shimano-x3a-09-x3a-rae/'
+bibtex_download: '/bibtex/publications/2009/shimano-x3a-09-x3a-rae.bib'
 ---
 

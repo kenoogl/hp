@@ -5,5 +5,7 @@ authors: '小野 謙二'
 journal: '計算工学'
 year: '2005'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2005/ono-x3a-jsces05/'
+bibtex_download: '/bibtex/publications/2005/ono-x3a-jsces05.bib'
 ---
 

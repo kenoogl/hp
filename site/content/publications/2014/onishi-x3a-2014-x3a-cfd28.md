@@ -5,5 +5,7 @@ authors: '大西 順也 and 野々村 拓 and 小野 謙二'
 journal: '数値流体力学シンポジウムCFD28'
 year: '2014'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2014/onishi-x3a-2014-x3a-cfd28/'
+bibtex_download: '/bibtex/publications/2014/onishi-x3a-2014-x3a-cfd28.bib'
 ---
 

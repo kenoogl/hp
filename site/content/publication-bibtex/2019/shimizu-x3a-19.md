@@ -1,0 +1,23 @@
+---
+title: 'BibTeX: 嗅動作時における鼻腔内流れのボクセルシミュレーション'
+date: 2019-01-01
+publication_title: '嗅動作時における鼻腔内流れのボクセルシミュレーション'
+publication_page: '/publications/2019/shimizu-x3a-19/'
+bibtex_download: '/bibtex/publications/2019/shimizu-x3a-19.bib'
+bibtex_source: |
+  @conference{shimizu:19,
+    title = {嗅動作時における鼻腔内流れのボクセルシミュレーション},
+    author = {清水 崇文, 平井 康幸, 木村 真也, 世良 俊博, 横田 秀夫, 小野 謙二, 田中 学},
+    booktitle = {バイオエンジニアリング講演会講演論文集},
+    year = {2019},
+    month = {},
+    pages = {},
+    doi = {10.1299/jsmebio.2019.31.1G22},
+    url = {https://doi.org/10.1299/jsmebio.2019.31.1G22},
+    annote = {},
+    issn = {},
+    location = {},
+    organization = {一般社団法人 日本機械学会},
+  }
+---
+

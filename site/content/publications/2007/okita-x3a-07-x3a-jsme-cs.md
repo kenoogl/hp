@@ -5,5 +5,7 @@ authors: '沖田 浩平，小野 謙二，高木 周，松本 洋一郎'
 journal: '日本機械学会 第20回計算力学講演会論文集'
 year: '2007'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2007/okita-x3a-07-x3a-jsme-cs/'
+bibtex_download: '/bibtex/publications/2007/okita-x3a-07-x3a-jsme-cs.bib'
 ---
 

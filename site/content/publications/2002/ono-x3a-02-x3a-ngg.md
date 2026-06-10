@@ -6,5 +6,7 @@ journal: '8th International Conference on Numerical Grid Generation in Computati
 year: '2002'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2002/ono-x3a-02-x3a-ngg/'
+bibtex_download: '/bibtex/publications/2002/ono-x3a-02-x3a-ngg.bib'
 ---
 

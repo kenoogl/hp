@@ -6,5 +6,7 @@ journal: '10th International Symposium on Therapeutic Ultrasound'
 year: '2010'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2010/okita-x3a-10-x3a-istu/'
+bibtex_download: '/bibtex/publications/2010/okita-x3a-10-x3a-istu.bib'
 ---
 

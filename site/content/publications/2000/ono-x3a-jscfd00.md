@@ -5,5 +5,7 @@ authors: '小野 謙二 and 姫野 龍太郎'
 journal: '日本数値流体力学会誌'
 year: '2000'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2000/ono-x3a-jscfd00/'
+bibtex_download: '/bibtex/publications/2000/ono-x3a-jscfd00.bib'
 ---
 

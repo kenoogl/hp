@@ -7,5 +7,7 @@ year: '2025'
 pub_type: 'international-conference'
 peer_reviewed: true
 doi_url: 'https://www.apcow2025.com'
+bibtex_page: '/publication-bibtex/2025/apcow-x3a-sei-x3a-2025/'
+bibtex_download: '/bibtex/publications/2025/apcow-x3a-sei-x3a-2025.bib'
 ---
 

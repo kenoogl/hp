@@ -5,5 +5,7 @@ authors: 'Nonaka, Jorji and Ono, Kenji'
 journal: 'NII Shonan Meeting Report No. 2015-7'
 year: '2015'
 pub_type: 'international-conference'
+bibtex_page: '/publication-bibtex/2015/nonaka-x3a-2015-x3a-sm/'
+bibtex_download: '/bibtex/publications/2015/nonaka-x3a-2015-x3a-sm.bib'
 ---
 

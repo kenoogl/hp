@@ -7,5 +7,7 @@ year: '2015'
 pub_type: 'journal'
 doi: '10.1007/978-3-319-17353-5_17'
 doi_url: 'http://dx.doi.org/10.1007/978-3-319-17353-5_17'
+bibtex_page: '/publication-bibtex/2015/ono-x3a-2015-x3a-lncs/'
+bibtex_download: '/bibtex/publications/2015/ono-x3a-2015-x3a-lncs.bib'
 ---
 

@@ -7,5 +7,7 @@ year: '2024'
 pub_type: 'talk'
 annote: 'Invited'
 doi_url: 'https://kumamotodx.jp/news/post-10964/'
+bibtex_page: '/publication-bibtex/2024/rist-x5f-ono-x3a-25/'
+bibtex_download: '/bibtex/publications/2024/rist-x5f-ono-x3a-25.bib'
 ---
 

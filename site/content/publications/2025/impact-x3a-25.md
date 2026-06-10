@@ -7,5 +7,7 @@ year: '2025'
 pub_type: 'international-conference'
 peer_reviewed: true
 doi_url: 'https://www.impact.org.tw/site/mypage.aspx?pid=305&lang=en&sid=1283'
+bibtex_page: '/publication-bibtex/2025/impact-x3a-25/'
+bibtex_download: '/bibtex/publications/2025/impact-x3a-25.bib'
 ---
 

@@ -1,0 +1,25 @@
+---
+title: 'BibTeX: Computer-Generated Tie-Dyeing Using a 3D Diffusion Graph'
+date: 2010-01-01
+publication_title: 'Computer-Generated Tie-Dyeing Using a 3D Diffusion Graph'
+publication_page: '/publications/2010/morimoto-x3a-vc/'
+bibtex_download: '/bibtex/publications/2010/morimoto-x3a-vc.bib'
+bibtex_source: |
+  @incollection{morimoto:vc,
+    title = {Computer-Generated Tie-Dyeing Using a 3D Diffusion Graph},
+    author = {Morimoto, Yuki and Ono, Kenji},
+    booktitle = {Advances in Visual Computing},
+    publisher = {Springer Berlin Heidelberg},
+    year = {2010},
+    volume = {6453},
+    pages = {707-718},
+    doi = {10.1007/978-3-642-17289-2_68},
+    url = {http://dx.doi.org/10.1007/978-3-642-17289-2_68},
+    pub_type = {journal},
+    editor = {Bebis, George and Boyle, Richard and Parvin, Bahram and Koracin, Darko and Chung, Ronald and Hammoud, Riad and Hussain, Muhammad and Kar-Han, Tan and Crawfis, Roger and Thalmann, Daniel and Kao, David and Avila, Lisa},
+    isbn = {978-3-642-17288-5},
+    language = {English},
+    series = {Lecture Notes in Computer Science},
+  }
+---
+

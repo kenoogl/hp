@@ -5,5 +5,7 @@ authors: '寺島 洋史，小野 謙二'
 journal: '日本流体力学会 第20回数値流体力学シンポジウム講演要旨集'
 year: '2006'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2006/terashima-x3a-06-x3a-cfd20/'
+bibtex_download: '/bibtex/publications/2006/terashima-x3a-06-x3a-cfd20.bib'
 ---
 

@@ -1,0 +1,19 @@
+---
+title: 'BibTeX: Parallel POD Compression of Time-Varying Big Datasets Using m-Swap on the K Computer'
+date: 2014-06-01
+publication_title: 'Parallel POD Compression of Time-Varying Big Datasets Using m-Swap on the K Computer'
+publication_page: '/publications/2014/bi-x3a-2014-x3a-bigdata/'
+bibtex_download: '/bibtex/publications/2014/bi-x3a-2014-x3a-bigdata.bib'
+bibtex_source: |
+  @inproceedings{Bi:2014:BigData,
+    title = {Parallel POD Compression of Time-Varying Big Datasets Using m-Swap on the K Computer},
+    author = {Chongke Bi and Ono, K. and Lu Yang},
+    booktitle = {Big Data (BigData Congress), 2014 IEEE International Congress on},
+    year = {2014},
+    month = {June},
+    pages = {438-445},
+    doi = {10.1109/BigData.Congress.2014.70},
+    peer_reviewed = {true},
+  }
+---
+

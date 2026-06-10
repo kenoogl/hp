@@ -5,5 +5,7 @@ authors: '小野 謙二'
 journal: 'VCADシステム研究会'
 year: '2009'
 pub_type: 'talk'
+bibtex_page: '/publication-bibtex/2009/ono-x3a-09-x3a-vcadsys-jun/'
+bibtex_download: '/bibtex/publications/2009/ono-x3a-09-x3a-vcadsys-jun.bib'
 ---
 

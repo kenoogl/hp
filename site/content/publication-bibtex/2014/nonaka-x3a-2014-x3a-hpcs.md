@@ -1,0 +1,20 @@
+---
+title: 'BibTeX: Multi-step image compositing for massively parallel rendering'
+date: 2014-07-01
+publication_title: 'Multi-step image compositing for massively parallel rendering'
+publication_page: '/publications/2014/nonaka-x3a-2014-x3a-hpcs/'
+bibtex_download: '/bibtex/publications/2014/nonaka-x3a-2014-x3a-hpcs.bib'
+bibtex_source: |
+  @inproceedings{Nonaka:2014:HPCS,
+    title = {Multi-step image compositing for massively parallel rendering},
+    author = {Nonaka, J. and Ono, K. and Fujita, M.},
+    booktitle = {High Performance Computing Simulation (HPCS), 2014 International Conference on},
+    year = {2014},
+    month = {July},
+    pages = {627--634},
+    doi = {10.1109/HPCSim.2014.6903746},
+    peer_reviewed = {true},
+    keywords = {data visualisation;iterative methods;parallel processing;rendering (computer graphics);RIKEN K computer;binary-swap method;computational scientists;computer-aided scientific discovery;high performance visualization;high-end massively parallel HPC systems;large scale scientific computing;massively parallel rendering;multistep image compositing method;sort-last parallel rendering;theoretically scalable image compositing algortithms;visual data analytics;Computers;Data visualization;Degradation;Equations;Image color analysis;Pipelines;Rendering (computer graphics);K computer;Parallel image compositing;parallel rendering;scientific visualization},
+  }
+---
+

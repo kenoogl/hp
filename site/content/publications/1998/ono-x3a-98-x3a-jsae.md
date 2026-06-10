@@ -6,5 +6,7 @@ journal: 'Society of Automotive Engineers of Japan, Spring Convention'
 year: '1998'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/1998/ono-x3a-98-x3a-jsae/'
+bibtex_download: '/bibtex/publications/1998/ono-x3a-98-x3a-jsae.bib'
 ---
 

@@ -7,5 +7,7 @@ year: '2023'
 pub_type: 'international-conference'
 peer_reviewed: true
 doi_url: 'https://www.isc-hpc.com/project-posters-2023.html'
+bibtex_page: '/publication-bibtex/2023/isc-x5f-bi-x3a-23/'
+bibtex_download: '/bibtex/publications/2023/isc-x5f-bi-x3a-23.bib'
 ---
 

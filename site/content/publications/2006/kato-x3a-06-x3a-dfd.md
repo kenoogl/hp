@@ -5,5 +5,7 @@ authors: 'Kato, Mitsuaki and Yoshizawa, Shin and Ono, Kenji and Matsumoto, Yoich
 journal: 'The 2006 APS Division of Fluid Dynamics 59th Annual Meeting (DFD06)'
 year: '2006'
 pub_type: 'international-conference'
+bibtex_page: '/publication-bibtex/2006/kato-x3a-06-x3a-dfd/'
+bibtex_download: '/bibtex/publications/2006/kato-x3a-06-x3a-dfd.bib'
 ---
 

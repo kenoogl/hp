@@ -6,5 +6,7 @@ journal: 'Workflow system deriving the potential of coming exascale HPC for real
 year: '2018'
 pub_type: 'talk'
 annote: 'Invited'
+bibtex_page: '/publication-bibtex/2018/ono-rikensympo-x3a-18/'
+bibtex_download: '/bibtex/publications/2018/ono-rikensympo-x3a-18.bib'
 ---
 

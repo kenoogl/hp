@@ -7,5 +7,7 @@ year: '2018'
 pub_type: 'international-conference'
 peer_reviewed: true
 doi_url: 'https://sites.google.com/view/isip2018/home'
+bibtex_page: '/publication-bibtex/2018/koga-x3a-2018-x3a-isip/'
+bibtex_download: '/bibtex/publications/2018/koga-x3a-2018-x3a-isip.bib'
 ---
 

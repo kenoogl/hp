@@ -7,5 +7,7 @@ year: '2019'
 pub_type: 'domestic-conference'
 doi: '10.1299/jsmebio.2019.31.1G22'
 doi_url: 'https://doi.org/10.1299/jsmebio.2019.31.1G22'
+bibtex_page: '/publication-bibtex/2019/shimizu-x3a-19/'
+bibtex_download: '/bibtex/publications/2019/shimizu-x3a-19.bib'
 ---
 

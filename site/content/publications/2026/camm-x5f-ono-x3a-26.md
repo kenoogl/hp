@@ -7,5 +7,7 @@ year: '2026'
 pub_type: 'talk'
 annote: 'Invited'
 doi_url: 'https://www.bri.or.jp/camm/'
+bibtex_page: '/publication-bibtex/2026/camm-x5f-ono-x3a-26/'
+bibtex_download: '/bibtex/publications/2026/camm-x5f-ono-x3a-26.bib'
 ---
 

@@ -7,5 +7,7 @@ year: '2022'
 pub_type: 'domestic-conference'
 doi: '10.1299/jsmefed.2022.os04-18'
 doi_url: 'https://www.jstage.jst.go.jp/article/jsmefed/2022/0/2022_OS04-18/_pdf'
+bibtex_page: '/publication-bibtex/2022/nasu-x3a-22/'
+bibtex_download: '/bibtex/publications/2022/nasu-x3a-22.bib'
 ---
 

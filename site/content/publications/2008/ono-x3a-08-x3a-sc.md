@@ -8,5 +8,7 @@ pub_type: 'international-conference'
 peer_reviewed: true
 doi: '10.1109/ULTRAVIS.2008.5154064'
 doi_url: 'https://doi.org/10.1109/ULTRAVIS.2008.5154064'
+bibtex_page: '/publication-bibtex/2008/ono-x3a-08-x3a-sc/'
+bibtex_download: '/bibtex/publications/2008/ono-x3a-08-x3a-sc.bib'
 ---
 

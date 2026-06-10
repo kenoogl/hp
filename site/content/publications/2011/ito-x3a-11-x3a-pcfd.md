@@ -6,5 +6,7 @@ journal: '23nd International Conference on Parallel Computational Fluid Dynamics
 year: '2011'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2011/ito-x3a-11-x3a-pcfd/'
+bibtex_download: '/bibtex/publications/2011/ito-x3a-11-x3a-pcfd.bib'
 ---
 

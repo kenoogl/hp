@@ -7,5 +7,7 @@ year: '2014'
 pub_type: 'journal'
 doi: 'http://dx.doi.org/10.1016/j.procs.2014.08.228'
 doi_url: 'http://www.sciencedirect.com/science/article/pii/S1877050914011934'
+bibtex_page: '/publication-bibtex/2014/ishikawa-x3a-2014-x3a-precedia/'
+bibtex_download: '/bibtex/publications/2014/ishikawa-x3a-2014-x3a-precedia.bib'
 ---
 

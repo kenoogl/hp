@@ -5,5 +5,7 @@ authors: '小野 謙二'
 journal: '文部科学省「HPCI戦略プログラム」分野４ものづくり 第6回次世代ものづくりシンポジウム(最終成果報告会）'
 year: '2016'
 pub_type: 'talk'
+bibtex_page: '/publication-bibtex/2016/ono-x3a-15-x3a-finalsympo/'
+bibtex_download: '/bibtex/publications/2016/ono-x3a-15-x3a-finalsympo.bib'
 ---
 

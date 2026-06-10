@@ -5,5 +5,7 @@ authors: 'Nonaka, J. and Bi, Change and Ono, Kenji and Fujita, Masahiro'
 journal: 'Proc. of UKSim-AMSS 1st International Conference on Systems Informatics, Modelling and Simulation'
 year: '2014'
 pub_type: 'international-conference'
+bibtex_page: '/publication-bibtex/2014/nonaka-x3a-2014-x3a-sims-conf/'
+bibtex_download: '/bibtex/publications/2014/nonaka-x3a-2014-x3a-sims-conf.bib'
 ---
 

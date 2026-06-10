@@ -5,5 +5,7 @@ authors: '橋本 学，小野 謙二，野口 裕久'
 journal: 'Transaction of JSCES'
 year: '2008'
 pub_type: 'journal'
+bibtex_page: '/publication-bibtex/2008/hashimoto-x3a-08-x3a-jsces/'
+bibtex_download: '/bibtex/publications/2008/hashimoto-x3a-08-x3a-jsces.bib'
 ---
 

@@ -6,5 +6,7 @@ journal: 'The 10th ISGG Conference on Numerical Grid Generation'
 year: '2007'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2007/iwata-x3a-07-x3a-isgg/'
+bibtex_download: '/bibtex/publications/2007/iwata-x3a-07-x3a-isgg.bib'
 ---
 

@@ -1,0 +1,17 @@
+---
+title: 'BibTeX: 固定メッシュに基づくpartitioned solution methodによる3次元大変形FSI解析（流体コードの並列化に関する検討）'
+date: 2008-01-01
+publication_title: '固定メッシュに基づくpartitioned solution methodによる3次元大変形FSI解析（流体コードの並列化に関する検討）'
+publication_page: '/publications/2008/hashimoto-x3a-08-x3a-cfd22/'
+bibtex_download: '/bibtex/publications/2008/hashimoto-x3a-08-x3a-cfd22.bib'
+bibtex_source: |
+  @article{Hashimoto:08:CFD22,
+    title = {固定メッシュに基づくpartitioned solution methodによる3次元大変形FSI解析（流体コードの並列化に関する検討）},
+    author = {橋本 学 and 小野 謙二},
+    journal = {第22回 数値流体力学シンポジウム講演論文集},
+    year = {2008},
+    date-modified = {2012-02-17 06:14:31 +0000},
+    yomi = {Hashimoto, Gaku and Ono, Kenji},
+  }
+---
+

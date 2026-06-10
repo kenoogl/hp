@@ -1,0 +1,23 @@
+---
+title: 'BibTeX: 嗅動作時における鼻腔内流れの直接数値シミュレーション'
+date: 2022-01-01
+publication_title: '嗅動作時における鼻腔内流れの直接数値シミュレーション'
+publication_page: '/publications/2022/katou-x3a-22/'
+bibtex_download: '/bibtex/publications/2022/katou-x3a-22.bib'
+bibtex_source: |
+  @conference{katou:22,
+    title = {嗅動作時における鼻腔内流れの直接数値シミュレーション},
+    author = {加藤 扶尭, 吉岡 慧一郎, 木村 真也, 世良 俊博, 小野 謙二, 田中 学},
+    booktitle = {バイオフロンティア講演会講演論文集},
+    year = {2022},
+    month = {},
+    pages = {},
+    doi = {10.1299/jsmebiofro.2022.33.1d07},
+    url = {https://www.jstage.jst.go.jp/article/jsmebiofro/2022.33/0/2022.33_1D07/_pdf},
+    annote = {},
+    issn = {},
+    location = {},
+    organization = {一般社団法人 日本機械学会},
+  }
+---
+

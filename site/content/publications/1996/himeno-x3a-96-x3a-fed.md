@@ -5,5 +5,7 @@ authors: 'Himeno, Ryutaro and Fukushima, Tatsuya and Ono, Kenji'
 journal: 'Proceedings of the ASME Fluids Engineering Division'
 year: '1996'
 pub_type: 'international-conference'
+bibtex_page: '/publication-bibtex/1996/himeno-x3a-96-x3a-fed/'
+bibtex_download: '/bibtex/publications/1996/himeno-x3a-96-x3a-fed.bib'
 ---
 

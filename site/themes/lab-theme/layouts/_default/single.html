@@ -51,6 +51,7 @@
     {{ with .Params.doi }}<p class="meta"><strong>DOI:</strong> {{ . }}</p>{{ end }}
     {{ with .Params.doi_url }}<p class="meta"><strong>URL:</strong> <a href="{{ . }}">{{ . }}</a></p>{{ end }}
     {{ if and (not .Params.doi_url) .Params.url }}<p class="meta"><strong>URL:</strong> <a href="{{ .Params.url }}">{{ .Params.url }}</a></p>{{ end }}
+    {{ with .Params.bibtex_page }}<p class="meta"><strong>BibTeX:</strong> <a href="{{ . }}">BibTeX source</a></p>{{ end }}
     {{ if and (eq .Params.pub_type "talk") (eq (lower (printf "%v" .Params.annote)) "invited") }}
       <p class="meta"><strong>Talk Type:</strong> Invited talk</p>
     {{ end }}

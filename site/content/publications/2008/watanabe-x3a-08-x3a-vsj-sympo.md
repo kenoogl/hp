@@ -5,5 +5,7 @@ authors: '渡邊 大介，小野 謙二，茅 暁陽'
 journal: '第36回可視化情報シンポジウム講演論文集'
 year: '2008'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2008/watanabe-x3a-08-x3a-vsj-sympo/'
+bibtex_download: '/bibtex/publications/2008/watanabe-x3a-08-x3a-vsj-sympo.bib'
 ---
 

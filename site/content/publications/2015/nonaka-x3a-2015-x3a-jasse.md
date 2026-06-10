@@ -7,5 +7,7 @@ year: '2015'
 pub_type: 'journal'
 doi: '10.15748/jasse.2.108'
 doi_url: 'https://doi.org/10.15748/jasse.2.108'
+bibtex_page: '/publication-bibtex/2015/nonaka-x3a-2015-x3a-jasse/'
+bibtex_download: '/bibtex/publications/2015/nonaka-x3a-2015-x3a-jasse.bib'
 ---
 

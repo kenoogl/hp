@@ -57,6 +57,16 @@ def parse_args() -> argparse.Namespace:
         help="Hugo publications content root",
     )
     parser.add_argument(
+        "--bibtex-output-dir",
+        default="site/content/publication-bibtex",
+        help="Hugo BibTeX detail content root",
+    )
+    parser.add_argument(
+        "--bibtex-static-dir",
+        default="site/static/bibtex/publications",
+        help="Static BibTeX download root",
+    )
+    parser.add_argument(
         "--clean",
         action="store_true",
         help="Remove generated publication files before writing new ones",
@@ -98,6 +108,45 @@ def filename_slug_from_bibtex_key(key: str) -> str:
 def yaml_quote(value: str) -> str:
     # Use single-quoted YAML scalars and escape embedded single quotes.
     return "'" + value.replace("'", "''") + "'"
+
+
+def yaml_block_scalar(value: str, indent: int = 2) -> str:
+    prefix = " " * indent
+    return "\n".join(f"{prefix}{line}" if line else prefix for line in value.splitlines())
+
+
+def build_bibtex_source(entry: dict) -> str:
+    entry_type = str(entry.get("ENTRYTYPE", "")).strip() or "misc"
+    key = str(entry.get("ID", "")).strip() or slugify(str(entry.get("title", "")))
+    preferred_order = [
+        "title",
+        "author",
+        "journal",
+        "booktitle",
+        "publisher",
+        "year",
+        "month",
+        "volume",
+        "number",
+        "pages",
+        "doi",
+        "url",
+        "abstract",
+        "pub_type",
+        "peer_reviewed",
+        "annote",
+        "note",
+    ]
+    excluded = {"ENTRYTYPE", "ID", "__source_bib"}
+    ordered_keys = [key for key in preferred_order if key in entry and key not in excluded]
+    ordered_keys.extend(sorted(key for key in entry if key not in excluded and key not in ordered_keys))
+
+    lines = [f"@{entry_type}{{{key},"]
+    for field in ordered_keys:
+        value = re.sub(r"\s+", " ", str(entry.get(field, ""))).strip()
+        lines.append(f"  {field} = {{{value}}},")
+    lines.append("}")
+    return "\n".join(lines)
 
 
 def build_doi_url(doi: str, url: str) -> str:
@@ -313,7 +362,7 @@ def detect_peer_reviewed(entry: dict, bib_path: Path, pub_type: str) -> bool | N
     return None
 
 
-def build_markdown(entry: dict, bib_path: Path) -> str:
+def build_markdown(entry: dict, bib_path: Path, bibtex_page: str = "", bibtex_download: str = "") -> str:
     title = entry.get("title", "").replace("\n", " ").strip()
     authors = entry.get("author", "").replace("\n", " ").strip()
     venue = get_venue(entry).replace("\n", " ").strip() or "Unknown venue"
@@ -348,15 +397,37 @@ def build_markdown(entry: dict, bib_path: Path) -> str:
         lines.append(f"doi_url: {yaml_quote(url)}")
     if abstract:
         lines.append(f"abstract: {yaml_quote(abstract)}")
+    if bibtex_page:
+        lines.append(f"bibtex_page: {yaml_quote(bibtex_page)}")
+    if bibtex_download:
+        lines.append(f"bibtex_download: {yaml_quote(bibtex_download)}")
     lines.extend(["---", ""])
     return "\n".join(lines) + "\n"
 
 
-def clean_generated_files(root: Path) -> None:
+def build_bibtex_markdown(entry: dict, bib_path: Path, publication_page: str, bibtex_download: str) -> str:
+    title = entry.get("title", "").replace("\n", " ").strip()
+    date = parse_frontmatter_date(entry)
+    lines = [
+        "---",
+        f"title: {yaml_quote(f'BibTeX: {title}')}",
+        f"date: {date}",
+        f"publication_title: {yaml_quote(title)}",
+        f"publication_page: {yaml_quote(publication_page)}",
+        f"bibtex_download: {yaml_quote(bibtex_download)}",
+        "bibtex_source: |",
+        yaml_block_scalar(build_bibtex_source(entry)),
+        "---",
+        "",
+    ]
+    return "\n".join(lines) + "\n"
+
+
+def clean_generated_files(root: Path, pattern: str = "*.md") -> None:
     for year_dir in root.iterdir():
         if not year_dir.is_dir():
             continue
-        for path in year_dir.glob("*.md"):
+        for path in year_dir.glob(pattern):
             if path.name == "_index.md":
                 continue
             path.unlink()
@@ -450,6 +521,8 @@ def load_entries(bib_paths: list[Path]) -> list[dict]:
 def main() -> int:
     args = parse_args()
     out_root = Path(args.output_dir)
+    bibtex_out_root = Path(args.bibtex_output_dir)
+    bibtex_static_root = Path(args.bibtex_static_dir)
     bib_paths = resolve_bib_inputs(args.bib)
     entries = load_entries(bib_paths)
 
@@ -457,10 +530,15 @@ def main() -> int:
     validate_unique_output_paths(entries, out_root)
 
     out_root.mkdir(parents=True, exist_ok=True)
+    bibtex_out_root.mkdir(parents=True, exist_ok=True)
+    bibtex_static_root.mkdir(parents=True, exist_ok=True)
     if args.clean:
         clean_generated_files(out_root)
+        clean_generated_files(bibtex_out_root)
+        clean_generated_files(bibtex_static_root, "*.bib")
 
     written = 0
+    bibtex_written = 0
     for entry in entries:
         title = entry.get("title", "").strip()
         if not title:
@@ -472,10 +550,33 @@ def main() -> int:
 
         slug = resolve_output_slug(entry, title)
         md_path = year_dir / f"{slug}.md"
-        md_path.write_text(build_markdown(entry, Path(str(entry.get("__source_bib", "")))), encoding="utf-8")
+        publication_page = f"/publications/{year}/{slug}/"
+        bibtex_page = f"/publication-bibtex/{year}/{slug}/"
+        bibtex_download = f"/bibtex/publications/{year}/{slug}.bib"
+        source_bib_path = Path(str(entry.get("__source_bib", "")))
+        md_path.write_text(
+            build_markdown(entry, source_bib_path, bibtex_page, bibtex_download),
+            encoding="utf-8",
+        )
+
+        bibtex_year_dir = bibtex_out_root / year
+        bibtex_year_dir.mkdir(parents=True, exist_ok=True)
+        bibtex_md_path = bibtex_year_dir / f"{slug}.md"
+        bibtex_md_path.write_text(
+            build_bibtex_markdown(entry, source_bib_path, publication_page, bibtex_download),
+            encoding="utf-8",
+        )
+
+        bibtex_static_year_dir = bibtex_static_root / year
+        bibtex_static_year_dir.mkdir(parents=True, exist_ok=True)
+        bibtex_static_path = bibtex_static_year_dir / f"{slug}.bib"
+        bibtex_static_path.write_text(build_bibtex_source(entry) + "\n", encoding="utf-8")
         written += 1
+        bibtex_written += 1
 
     print(f"Generated {written} publication markdown files under {out_root}")
+    print(f"Generated {bibtex_written} BibTeX markdown files under {bibtex_out_root}")
+    print(f"Generated {bibtex_written} BibTeX download files under {bibtex_static_root}")
     return 0
 
 

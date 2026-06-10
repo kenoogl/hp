@@ -5,5 +5,7 @@ authors: '小野 謙二，玉木 剛'
 journal: '第 39回流体力学講演会/航空宇宙数値シミュレーション技術シンポジウム2007講演集'
 year: '2007'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2007/ono-x3a-07-x3a-nal/'
+bibtex_download: '/bibtex/publications/2007/ono-x3a-07-x3a-nal.bib'
 ---
 

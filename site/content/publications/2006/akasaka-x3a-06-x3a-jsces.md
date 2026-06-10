@@ -5,5 +5,7 @@ authors: '赤坂 啓，小野 謙二'
 journal: 'Transaction of JSCES'
 year: '2006'
 pub_type: 'journal'
+bibtex_page: '/publication-bibtex/2006/akasaka-x3a-06-x3a-jsces/'
+bibtex_download: '/bibtex/publications/2006/akasaka-x3a-06-x3a-jsces.bib'
 ---
 

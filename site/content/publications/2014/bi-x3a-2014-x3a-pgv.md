@@ -8,5 +8,7 @@ pub_type: 'international-conference'
 peer_reviewed: true
 doi: '10.2312/pgv.20141078'
 doi_url: 'https://doi.org/10.2312/pgv.20141078'
+bibtex_page: '/publication-bibtex/2014/bi-x3a-2014-x3a-pgv/'
+bibtex_download: '/bibtex/publications/2014/bi-x3a-2014-x3a-pgv.bib'
 ---
 

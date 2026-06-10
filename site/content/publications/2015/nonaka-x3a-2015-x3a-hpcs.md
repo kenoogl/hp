@@ -8,5 +8,7 @@ pub_type: 'international-conference'
 peer_reviewed: true
 annote: 'reffereed'
 doi_url: 'http://hpcs2015.cisedu.info/'
+bibtex_page: '/publication-bibtex/2015/nonaka-x3a-2015-x3a-hpcs/'
+bibtex_download: '/bibtex/publications/2015/nonaka-x3a-2015-x3a-hpcs.bib'
 ---
 

@@ -6,5 +6,7 @@ journal: 'The 5th International Conference on Multiphase Flow, ICMF04'
 year: '2004'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2004/fukuta-x3a-04-x3a-icmf/'
+bibtex_download: '/bibtex/publications/2004/fukuta-x3a-04-x3a-icmf.bib'
 ---
 

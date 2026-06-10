@@ -5,5 +5,7 @@ authors: '大西 順也 and 小野 謙二'
 journal: '第26回数値流体力学シンポジウム'
 year: '2012'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2012/onishi-cfd-x3a-12/'
+bibtex_download: '/bibtex/publications/2012/onishi-cfd-x3a-12.bib'
 ---
 

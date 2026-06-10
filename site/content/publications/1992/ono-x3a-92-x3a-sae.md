@@ -6,5 +6,7 @@ journal: 'SAE Paper'
 year: '1992'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/1992/ono-x3a-92-x3a-sae/'
+bibtex_download: '/bibtex/publications/1992/ono-x3a-92-x3a-sae.bib'
 ---
 

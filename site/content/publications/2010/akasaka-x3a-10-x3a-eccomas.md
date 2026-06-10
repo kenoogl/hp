@@ -6,5 +6,7 @@ journal: '5th European Conference on Computational Fluid Dynamics, {CFD} 2010, B
 year: '2010'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2010/akasaka-x3a-10-x3a-eccomas/'
+bibtex_download: '/bibtex/publications/2010/akasaka-x3a-10-x3a-eccomas.bib'
 ---
 

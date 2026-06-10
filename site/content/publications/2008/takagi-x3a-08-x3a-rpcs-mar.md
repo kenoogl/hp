@@ -5,5 +5,7 @@ authors: '高木 周 and 松本 洋一郎 and 姫野 龍太郎 and 和田 成生
 journal: '理研シンポジウム「生体力学シミュレーション研究」(2008)'
 year: '2008'
 pub_type: 'talk'
+bibtex_page: '/publication-bibtex/2008/takagi-x3a-08-x3a-rpcs-mar/'
+bibtex_download: '/bibtex/publications/2008/takagi-x3a-08-x3a-rpcs-mar.bib'
 ---
 

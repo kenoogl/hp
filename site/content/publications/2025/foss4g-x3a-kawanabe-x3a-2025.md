@@ -7,5 +7,7 @@ year: '2025'
 pub_type: 'international-conference'
 peer_reviewed: true
 doi_url: 'https://2025.foss4g.org/program/schedule'
+bibtex_page: '/publication-bibtex/2025/foss4g-x3a-kawanabe-x3a-2025/'
+bibtex_download: '/bibtex/publications/2025/foss4g-x3a-kawanabe-x3a-2025.bib'
 ---
 

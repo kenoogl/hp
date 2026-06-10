@@ -5,5 +5,7 @@ authors: '小野 謙二'
 journal: '計測自動制御学会鹿児島地区委員会講演会'
 year: '2007'
 pub_type: 'talk'
+bibtex_page: '/publication-bibtex/2007/ono-x3a-07-x3a-auto/'
+bibtex_download: '/bibtex/publications/2007/ono-x3a-07-x3a-auto.bib'
 ---
 

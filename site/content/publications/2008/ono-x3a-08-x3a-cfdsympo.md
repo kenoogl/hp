@@ -5,5 +5,7 @@ authors: '小野 謙二 and 道川 隆士 and 玉木 剛 and 平本 修'
 journal: '第22回 数値流体力学シンポジウム講演論文集'
 year: '2008'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2008/ono-x3a-08-x3a-cfdsympo/'
+bibtex_download: '/bibtex/publications/2008/ono-x3a-08-x3a-cfdsympo.bib'
 ---
 

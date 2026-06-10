@@ -5,5 +5,7 @@ authors: 'Kenji Ono and Takanori Uchida'
 journal: 'Modelling and Simulation in Engineering'
 year: '2018'
 pub_type: 'journal'
+bibtex_page: '/publication-bibtex/2018/mse18/'
+bibtex_download: '/bibtex/publications/2018/mse18.bib'
 ---
 

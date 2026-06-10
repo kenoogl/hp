@@ -5,5 +5,7 @@ authors: '橋本 学，小野 謙二，野口 裕久'
 journal: '日本流体力学会 第21回数値流体力学シンポジウム講演要旨集'
 year: '2008'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2008/hashimoto-x3a-08-x3a-cfd/'
+bibtex_download: '/bibtex/publications/2008/hashimoto-x3a-08-x3a-cfd.bib'
 ---
 

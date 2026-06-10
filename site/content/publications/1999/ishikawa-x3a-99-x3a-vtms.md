@@ -6,5 +6,7 @@ journal: 'Vehicle Thermal Management Systems'
 year: '1999'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/1999/ishikawa-x3a-99-x3a-vtms/'
+bibtex_download: '/bibtex/publications/1999/ishikawa-x3a-99-x3a-vtms.bib'
 ---
 

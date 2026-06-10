@@ -6,5 +6,7 @@ journal: 'The sixth World Congress on Computational Mechanics in conjunction wit
 year: '2004'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2004/ono-x3a-04-x3a-wccm/'
+bibtex_download: '/bibtex/publications/2004/ono-x3a-04-x3a-wccm.bib'
 ---
 

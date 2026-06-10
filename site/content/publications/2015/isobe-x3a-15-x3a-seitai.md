@@ -7,5 +7,7 @@ year: '2015'
 pub_type: 'journal'
 doi: '10.11239/jsmbe.53.16'
 doi_url: 'http://ci.nii.ac.jp/naid/130005106901/'
+bibtex_page: '/publication-bibtex/2015/isobe-x3a-15-x3a-seitai/'
+bibtex_download: '/bibtex/publications/2015/isobe-x3a-15-x3a-seitai.bib'
 ---
 

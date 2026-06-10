@@ -6,5 +6,7 @@ journal: 'WCCM/APCOM 2010'
 year: '2010'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2010/hashimoto-x3a-10-x3a-wccm/'
+bibtex_download: '/bibtex/publications/2010/hashimoto-x3a-10-x3a-wccm.bib'
 ---
 

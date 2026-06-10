@@ -5,5 +5,7 @@ authors: 'Ono, Kenji and Matsumoto, Hideki and Himeno, Ryutaro'
 journal: 'Data Visualization 2001'
 year: '2001'
 pub_type: 'journal'
+bibtex_page: '/publication-bibtex/2001/ono-x3a-01-x3a-dv/'
+bibtex_download: '/bibtex/publications/2001/ono-x3a-01-x3a-dv.bib'
 ---
 

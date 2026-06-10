@@ -5,5 +5,7 @@ authors: '橋本 学 and 小野 謙二'
 journal: '第22回 数値流体力学シンポジウム講演論文集'
 year: '2008'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2008/hashimoto-x3a-08-x3a-cfd22/'
+bibtex_download: '/bibtex/publications/2008/hashimoto-x3a-08-x3a-cfd22.bib'
 ---
 

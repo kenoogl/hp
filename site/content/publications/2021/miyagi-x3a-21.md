@@ -7,5 +7,7 @@ year: '2021'
 pub_type: 'journal'
 doi: 'https://doi.org/10.11421/jsces.2021.20210013'
 doi_url: 'https://doi.org/10.11421/jsces.2021.20210013'
+bibtex_page: '/publication-bibtex/2021/miyagi-x3a-21/'
+bibtex_download: '/bibtex/publications/2021/miyagi-x3a-21.bib'
 ---
 

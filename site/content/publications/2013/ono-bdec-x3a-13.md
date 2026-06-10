@@ -6,5 +6,7 @@ journal: 'Big data and extreme-scale computing'
 year: '2013'
 pub_type: 'talk'
 doi_url: 'http://www.exascale.org/bdec/'
+bibtex_page: '/publication-bibtex/2013/ono-bdec-x3a-13/'
+bibtex_download: '/bibtex/publications/2013/ono-bdec-x3a-13.bib'
 ---
 

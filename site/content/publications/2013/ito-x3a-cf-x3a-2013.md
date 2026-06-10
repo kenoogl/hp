@@ -7,5 +7,7 @@ year: '2013'
 pub_type: 'journal'
 doi: 'http://dx.doi.org/10.1016/j.compfluid.2012.04.024'
 doi_url: 'http://www.sciencedirect.com/science/article/pii/S0045793012001636'
+bibtex_page: '/publication-bibtex/2013/ito-x3a-cf-x3a-2013/'
+bibtex_download: '/bibtex/publications/2013/ito-x3a-cf-x3a-2013.bib'
 ---
 

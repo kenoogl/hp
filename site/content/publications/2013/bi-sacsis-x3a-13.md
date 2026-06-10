@@ -6,5 +6,7 @@ journal: '先進的計算基盤システムシンポジウム論文集 SACSIS201
 year: '2013'
 pub_type: 'domestic-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2013/bi-sacsis-x3a-13/'
+bibtex_download: '/bibtex/publications/2013/bi-sacsis-x3a-13.bib'
 ---
 

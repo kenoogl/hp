@@ -6,5 +6,7 @@ journal: 'International Association for Computational Mechanics, The Third World
 year: '1994'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/1994/ono-x3a-94-x3a-wccm/'
+bibtex_download: '/bibtex/publications/1994/ono-x3a-94-x3a-wccm.bib'
 ---
 

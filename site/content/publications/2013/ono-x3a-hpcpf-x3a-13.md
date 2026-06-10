@@ -7,5 +7,7 @@ year: '2013'
 pub_type: 'journal'
 doi: '10.1007/978-3-642-38718-0_5'
 doi_url: 'http://dx.doi.org/10.1007/978-3-642-38718-0_5'
+bibtex_page: '/publication-bibtex/2013/ono-x3a-hpcpf-x3a-13/'
+bibtex_download: '/bibtex/publications/2013/ono-x3a-hpcpf-x3a-13.bib'
 ---
 

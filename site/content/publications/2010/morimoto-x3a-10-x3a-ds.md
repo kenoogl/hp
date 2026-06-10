@@ -5,5 +5,7 @@ authors: '森本 有紀 and 小野 謙二'
 journal: 'Designシンポジウム'
 year: '2010'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2010/morimoto-x3a-10-x3a-ds/'
+bibtex_download: '/bibtex/publications/2010/morimoto-x3a-10-x3a-ds.bib'
 ---
 

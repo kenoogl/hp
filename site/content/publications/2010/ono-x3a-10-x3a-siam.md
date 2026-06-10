@@ -5,5 +5,7 @@ authors: 'Ono, Kenji and Ito, Satoshi'
 journal: 'SIAM Conference on Parallel Processing for Scientific Computing(PP10)'
 year: '2010'
 pub_type: 'international-conference'
+bibtex_page: '/publication-bibtex/2010/ono-x3a-10-x3a-siam/'
+bibtex_download: '/bibtex/publications/2010/ono-x3a-10-x3a-siam.bib'
 ---
 

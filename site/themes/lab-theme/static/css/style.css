@@ -217,6 +217,39 @@ main.container {
   margin-right: 0.55rem;
 }
 
+.bibtex-source {
+  margin-top: 1.5rem;
+}
+
+.bibtex-source pre {
+  overflow-x: auto;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fafc;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+}
+
+.download-button:visited {
+  color: #fff;
+}
+
+.download-button:hover {
+  text-decoration: none;
+  background: #0f2744;
+}
+
 .member-photo {
   width: 200px;
   height: 200px;

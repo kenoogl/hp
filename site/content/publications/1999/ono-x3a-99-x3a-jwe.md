@@ -5,5 +5,7 @@ authors: 'Ono, Kenji and Himeno, Ryutaro and Fukushima, Tatsuya'
 journal: 'Journal of wind engineering and industrial aerodynamics'
 year: '1999'
 pub_type: 'journal'
+bibtex_page: '/publication-bibtex/1999/ono-x3a-99-x3a-jwe/'
+bibtex_download: '/bibtex/publications/1999/ono-x3a-99-x3a-jwe.bib'
 ---
 

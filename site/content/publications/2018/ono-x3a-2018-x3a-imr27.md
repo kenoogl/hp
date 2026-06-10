@@ -6,5 +6,7 @@ journal: 'In Proc. of 27th International Meshing Roundtable and Users Forum'
 year: '2018'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2018/ono-x3a-2018-x3a-imr27/'
+bibtex_download: '/bibtex/publications/2018/ono-x3a-2018-x3a-imr27.bib'
 ---
 

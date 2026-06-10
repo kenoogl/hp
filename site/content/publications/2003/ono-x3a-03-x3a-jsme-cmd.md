@@ -5,5 +5,7 @@ authors: '小野 謙二，Kwan-Liu Ma'
 journal: '第16回計算力学講演会講演論文集'
 year: '2003'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2003/ono-x3a-03-x3a-jsme-cmd/'
+bibtex_download: '/bibtex/publications/2003/ono-x3a-03-x3a-jsme-cmd.bib'
 ---
 

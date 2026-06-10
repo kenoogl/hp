@@ -6,5 +6,7 @@ journal: 'Proceeding of {SIGGRAPH} {A}sia 2010 Posters'
 year: '2010'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2010/morimoto-x3a-10-x3a-sigasia/'
+bibtex_download: '/bibtex/publications/2010/morimoto-x3a-10-x3a-sigasia.bib'
 ---
 

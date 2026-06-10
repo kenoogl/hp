@@ -6,5 +6,7 @@ journal: '第1回名古屋大学情報基盤センター　ネットワーク型
 year: '2015'
 pub_type: 'domestic-conference'
 doi_url: 'http://www.hpc.itc.nagoya-u.ac.jp/njrs2015/'
+bibtex_page: '/publication-bibtex/2015/ono-x3a-2014-x3a-net-sympo/'
+bibtex_download: '/bibtex/publications/2015/ono-x3a-2014-x3a-net-sympo.bib'
 ---
 

@@ -8,5 +8,7 @@ pub_type: 'international-conference'
 peer_reviewed: true
 doi: '10.1109/PacificVis.2014.28'
 doi_url: 'https://doi.org/10.1109/PacificVis.2014.28'
+bibtex_page: '/publication-bibtex/2014/bi-x3a-2014-x3a-pacificvis/'
+bibtex_download: '/bibtex/publications/2014/bi-x3a-2014-x3a-pacificvis.bib'
 ---
 

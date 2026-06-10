@@ -6,5 +6,7 @@ journal: 'Prospects for Massively Parallel Computing in Science and Technology C
 year: '2014'
 pub_type: 'talk'
 annote: 'Invited'
+bibtex_page: '/publication-bibtex/2014/ono-pmpc-x3a-14/'
+bibtex_download: '/bibtex/publications/2014/ono-pmpc-x3a-14.bib'
 ---
 

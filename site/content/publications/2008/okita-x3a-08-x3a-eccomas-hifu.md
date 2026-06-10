@@ -6,5 +6,7 @@ journal: '5th Europian Congress on Computational methods in Applied Science and 
 year: '2008'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2008/okita-x3a-08-x3a-eccomas-hifu/'
+bibtex_download: '/bibtex/publications/2008/okita-x3a-08-x3a-eccomas-hifu.bib'
 ---
 

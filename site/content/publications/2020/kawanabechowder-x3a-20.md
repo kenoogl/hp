@@ -8,5 +8,7 @@ pub_type: 'international-conference'
 peer_reviewed: true
 annote: 'poster'
 doi_url: 'http://sighpc.ipsj.or.jp/HPCAsia2020/hpcasia2020_poster_abstracts/poster_abstract_45.pdf'
+bibtex_page: '/publication-bibtex/2020/kawanabechowder-x3a-20/'
+bibtex_download: '/bibtex/publications/2020/kawanabechowder-x3a-20.bib'
 ---
 

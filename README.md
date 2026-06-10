@@ -84,6 +84,7 @@ cd /Users/Daily/Development/HP/lab-website
 - publication Markdown のファイル名は BibTeX key を元に生成されます
 - BibTeX key が重複している場合、変換はエラーで停止します
 - BibTeX key は ASCII ベースで一意に管理してください
+- publication 詳細ページには、各文献の BibTeX source 専用ページへのリンクが表示されます
 - BibTeX ソースは `data/publications/` 配下の 5 ファイルで管理します
   - `journal.bib`
   - `intl_conf.bib`

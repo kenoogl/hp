@@ -1,0 +1,18 @@
+---
+title: 'BibTeX: 生体情報を利用した超音波伝播シミュレータの開発'
+date: 2008-01-01
+publication_title: '生体情報を利用した超音波伝播シミュレータの開発'
+publication_page: '/publications/2008/okita-x3a-08-x3a-jsme-am/'
+bibtex_download: '/bibtex/publications/2008/okita-x3a-08-x3a-jsme-am.bib'
+bibtex_source: |
+  @article{Okita:08:JSME-am,
+    title = {生体情報を利用した超音波伝播シミュレータの開発},
+    author = {沖田 浩平，小野 謙二，高木 周，松本 洋一郎},
+    journal = {日本機械学会2008年度年次大会講演論文集},
+    year = {2008},
+    volume = {6},
+    pages = {105--106},
+    yomi = {Okita, Kohei and Ono, Kenji and Takagi, Shu and Matumoto, Yoichiro},
+  }
+---
+

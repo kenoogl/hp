@@ -6,5 +6,7 @@ journal: 'The 2018 Conference on Supercomputing (SC18), Research Poster'
 year: '2018'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2018/nonaka-x3a-2018-x3a-sc/'
+bibtex_download: '/bibtex/publications/2018/nonaka-x3a-2018-x3a-sc.bib'
 ---
 

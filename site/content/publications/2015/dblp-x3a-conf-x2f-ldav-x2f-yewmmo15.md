@@ -8,5 +8,7 @@ pub_type: 'international-conference'
 peer_reviewed: true
 doi: '10.1109/LDAV.2015.7348065'
 doi_url: 'http://dx.doi.org/10.1109/LDAV.2015.7348065'
+bibtex_page: '/publication-bibtex/2015/dblp-x3a-conf-x2f-ldav-x2f-yewmmo15/'
+bibtex_download: '/bibtex/publications/2015/dblp-x3a-conf-x2f-ldav-x2f-yewmmo15.bib'
 ---
 

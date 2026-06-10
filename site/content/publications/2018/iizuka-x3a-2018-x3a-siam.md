@@ -6,5 +6,7 @@ journal: 'SIAM Conference on Parallel Processing for Scientific Computing'
 year: '2018'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2018/iizuka-x3a-2018-x3a-siam/'
+bibtex_download: '/bibtex/publications/2018/iizuka-x3a-2018-x3a-siam.bib'
 ---
 

@@ -6,5 +6,7 @@ journal: '2023 Conference on Advanced Topics and Auto Tuning in High-Performance
 year: '2023'
 pub_type: 'talk'
 doi_url: 'https://sites.google.com/site/atathpsc/'
+bibtex_page: '/publication-bibtex/2023/atat-x5f-qi-x3a-23/'
+bibtex_download: '/bibtex/publications/2023/atat-x5f-qi-x3a-23.bib'
 ---
 

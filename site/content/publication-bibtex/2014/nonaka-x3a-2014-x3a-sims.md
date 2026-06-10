@@ -1,0 +1,25 @@
+---
+title: 'BibTeX: 2-3-4 Decomposition Method for Large-Scale Parallel Image Composition with Arbitrary Number of Nodes'
+date: 2014-01-01
+publication_title: '2-3-4 Decomposition Method for Large-Scale Parallel Image Composition with Arbitrary Number of Nodes'
+publication_page: '/publications/2014/nonaka-x3a-2014-x3a-sims/'
+bibtex_download: '/bibtex/publications/2014/nonaka-x3a-2014-x3a-sims.bib'
+bibtex_source: |
+  @inproceedings{Nonaka:2014:SIMS,
+    title = {2-3-4 Decomposition Method for Large-Scale Parallel Image Composition with Arbitrary Number of Nodes},
+    author = {Nonaka, Jorji and Bi, Chongke and Ono, Kenji and Fujita, Masahiro},
+    booktitle = {Proceedings of the 2014 First International Conference on Systems Informatics, Modelling and Simulation},
+    publisher = {IEEE Computer Society},
+    year = {2014},
+    pages = {59--64},
+    doi = {10.1109/SIMS.2014.21},
+    url = {http://dx.doi.org/10.1109/SIMS.2014.21},
+    peer_reviewed = {true},
+    acmid = {2682469},
+    address = {Sheffield, UK},
+    isbn = {978-0-7695-5198-2},
+    numpages = {6},
+    series = {SIMS '14},
+  }
+---
+

@@ -8,5 +8,7 @@ pub_type: 'international-conference'
 peer_reviewed: true
 annote: 'poster'
 doi_url: 'https://sighpc.ipsj.or.jp/HPCAsia2024/posters.html'
+bibtex_page: '/publication-bibtex/2024/hpcasia-x3a-2024/'
+bibtex_download: '/bibtex/publications/2024/hpcasia-x3a-2024.bib'
 ---
 

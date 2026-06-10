@@ -5,5 +5,7 @@ authors: '白崎 実，小野 謙二，大竹豊，俵 丈展，寺島 洋史，
 journal: '日本機械学会流体工学部門講演会論文集'
 year: '2006'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2006/shirasaki-x3a-06-x3a-jsme/'
+bibtex_download: '/bibtex/publications/2006/shirasaki-x3a-06-x3a-jsme.bib'
 ---
 

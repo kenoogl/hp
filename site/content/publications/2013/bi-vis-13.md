@@ -6,5 +6,7 @@ journal: 'Proceedings of IEEE Symposium on Large-Scale Data Analysis and Visuali
 year: '2013'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2013/bi-vis-13/'
+bibtex_download: '/bibtex/publications/2013/bi-vis-13.bib'
 ---
 

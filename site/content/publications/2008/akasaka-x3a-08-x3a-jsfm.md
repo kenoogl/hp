@@ -5,5 +5,7 @@ authors: '赤坂 啓 and 小野 謙二'
 journal: '日本流体力学会年会2008講演要旨集'
 year: '2008'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2008/akasaka-x3a-08-x3a-jsfm/'
+bibtex_download: '/bibtex/publications/2008/akasaka-x3a-08-x3a-jsfm.bib'
 ---
 

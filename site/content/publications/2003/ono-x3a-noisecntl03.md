@@ -5,5 +5,7 @@ authors: '小野 謙二'
 journal: '騒音制御'
 year: '2003'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2003/ono-x3a-noisecntl03/'
+bibtex_download: '/bibtex/publications/2003/ono-x3a-noisecntl03.bib'
 ---
 

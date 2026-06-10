@@ -8,5 +8,7 @@ pub_type: 'international-conference'
 peer_reviewed: true
 doi: '10.1109/LDAV.2013.6675169'
 doi_url: 'https://doi.org/10.1109/LDAV.2013.6675169'
+bibtex_page: '/publication-bibtex/2013/bi-x3a-2013-x3a-ldav/'
+bibtex_download: '/bibtex/publications/2013/bi-x3a-2013-x3a-ldav.bib'
 ---
 

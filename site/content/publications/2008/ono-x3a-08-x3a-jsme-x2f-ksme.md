@@ -6,5 +6,7 @@ journal: 'The Seventh JSME/KSME Thermal and Fluids Engineering Conference'
 year: '2008'
 pub_type: 'talk'
 annote: 'Invited'
+bibtex_page: '/publication-bibtex/2008/ono-x3a-08-x3a-jsme-x2f-ksme/'
+bibtex_download: '/bibtex/publications/2008/ono-x3a-08-x3a-jsme-x2f-ksme.bib'
 ---
 

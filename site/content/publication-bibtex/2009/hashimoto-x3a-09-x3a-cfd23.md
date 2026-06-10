@@ -1,0 +1,19 @@
+---
+title: 'BibTeX: 接触を考慮した大変形FSI解析のための固定メッシュに基づくpartitioned solution methodの開発'
+date: 2009-01-01
+publication_title: '接触を考慮した大変形FSI解析のための固定メッシュに基づくpartitioned solution methodの開発'
+publication_page: '/publications/2009/hashimoto-x3a-09-x3a-cfd23/'
+bibtex_download: '/bibtex/publications/2009/hashimoto-x3a-09-x3a-cfd23.bib'
+bibtex_source: |
+  @inproceedings{Hashimoto:09:CFD23,
+    title = {接触を考慮した大変形FSI解析のための固定メッシュに基づくpartitioned solution methodの開発},
+    author = {橋本 学 and 小野 謙二},
+    booktitle = {日本流体力学会 第23回数値流体力学シンポジウム講演論文集},
+    year = {2009},
+    month = {12月},
+    date-modified = {2012-02-17 06:16:43 +0000},
+    location = {仙台市},
+    yomi = {Hashimoto, Gaku and Ono, Kenji},
+  }
+---
+

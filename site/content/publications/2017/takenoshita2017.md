@@ -7,5 +7,7 @@ year: '2017'
 pub_type: 'journal'
 doi: '10.5057/jjske.TJSKE-D-17-00052'
 doi_url: 'https://www.jstage.jst.go.jp/article/jjske/advpub/0/advpub_TJSKE-D-17-00052/_pdf'
+bibtex_page: '/publication-bibtex/2017/takenoshita2017/'
+bibtex_download: '/bibtex/publications/2017/takenoshita2017.bib'
 ---
 

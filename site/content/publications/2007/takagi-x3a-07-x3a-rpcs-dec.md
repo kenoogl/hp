@@ -5,5 +5,7 @@ authors: '高木 周 and 松本 洋一郎 and 姫野 龍太郎 and 和田 成生
 journal: '次世代生命体統合シミュレーション研究開発プロジェクトシンポジウム2007'
 year: '2007'
 pub_type: 'talk'
+bibtex_page: '/publication-bibtex/2007/takagi-x3a-07-x3a-rpcs-dec/'
+bibtex_download: '/bibtex/publications/2007/takagi-x3a-07-x3a-rpcs-dec.bib'
 ---
 

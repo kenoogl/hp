@@ -1,0 +1,22 @@
+---
+title: 'BibTeX: Automatically optimized core mapping to subdomains of domain decomposition method on multicore parallel environments'
+date: 2013-01-01
+publication_title: 'Automatically optimized core mapping to subdomains of domain decomposition method on multicore parallel environments'
+publication_page: '/publications/2013/ito-x3a-cf-x3a-2013/'
+bibtex_download: '/bibtex/publications/2013/ito-x3a-cf-x3a-2013.bib'
+bibtex_source: |
+  @article{Ito:CF:2013,
+    title = {Automatically optimized core mapping to subdomains of domain decomposition method on multicore parallel environments},
+    author = {Satoshi Ito and Kazuya Goto and Kenji Ono},
+    journal = {Computers \& Fluids},
+    year = {2013},
+    volume = {80},
+    number = {0},
+    pages = {88--93},
+    doi = {http://dx.doi.org/10.1016/j.compfluid.2012.04.024},
+    url = {http://www.sciencedirect.com/science/article/pii/S0045793012001636},
+    note = {Selected contributions of the 23rd International Conference on Parallel Fluid Dynamics ParCFD2011},
+    issn = {0045-7930},
+  }
+---
+

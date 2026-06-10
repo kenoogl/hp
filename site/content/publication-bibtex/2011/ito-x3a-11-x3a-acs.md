@@ -1,0 +1,19 @@
+---
+title: 'BibTeX: 領域分割法におけるサブドメインのノード内最適自動マッピング'
+date: 2011-01-01
+publication_title: '領域分割法におけるサブドメインのノード内最適自動マッピング'
+publication_page: '/publications/2011/ito-x3a-11-x3a-acs/'
+bibtex_download: '/bibtex/publications/2011/ito-x3a-11-x3a-acs.bib'
+bibtex_source: |
+  @article{ito:11:ACS,
+    title = {領域分割法におけるサブドメインのノード内最適自動マッピング},
+    author = {伊東 聰 and 後藤 和哉 and 小野 謙二},
+    journal = {IPSJ-HPCS201105},
+    year = {2011},
+    volume = {},
+    pages = {163--169},
+    pub_type = {journal},
+    yomi = {Ito, Satoshi and Gotoh, Kazuya and Ono, Kenji},
+  }
+---
+

@@ -7,5 +7,7 @@ year: '2020'
 pub_type: 'journal'
 doi: 'https://doi.org/10.11421/jsces.2020.20201004'
 doi_url: 'https://doi.org/10.11421/jsces.2020.20201004'
+bibtex_page: '/publication-bibtex/2020/onogp18/'
+bibtex_download: '/bibtex/publications/2020/onogp18.bib'
 ---
 

@@ -169,6 +169,14 @@ DOI URL 補完:
 
 - BibTeX に `doi` のみがあり `url` がない場合は、`https://doi.org/<doi>` を自動生成して詳細ページのリンクに利用する
 
+BibTeX source 表示:
+
+- 各 publication Markdown には BibTeX 専用ページへの `bibtex_page` と、`.bib` ファイルへの `bibtex_download` が生成される
+- BibTeX 専用ページは `site/content/publication-bibtex/<year>/<slug>.md` に生成される
+- ダウンロード用 `.bib` は `site/static/bibtex/publications/<year>/<slug>.bib` に生成される
+- 詳細ページには `BibTeX source` 専用ページへのリンクのみを表示する
+- BibTeX 専用ページでは、その文献単体の BibTeX source と `.bib` ダウンロードボタンを表示する
+
 出力先:
 
 ```text

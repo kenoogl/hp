@@ -6,5 +6,7 @@ journal: 'The 10th WSEAS International Conference on Applied Computer Science (A
 year: '2010'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2010/doi-x3a-10-x3a-acs/'
+bibtex_download: '/bibtex/publications/2010/doi-x3a-10-x3a-acs.bib'
 ---
 

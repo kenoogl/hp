@@ -5,5 +5,7 @@ authors: '飯塚 幹夫 and 小野 謙二 and 加藤 千幸'
 journal: '日本機械学会第28回計算力学講演会（CMD2015）'
 year: '2015'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2015/iizuka-x3a-2015-x3a-cmd/'
+bibtex_download: '/bibtex/publications/2015/iizuka-x3a-2015-x3a-cmd.bib'
 ---
 

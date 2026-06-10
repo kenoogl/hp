@@ -6,5 +6,7 @@ journal: 'Proceeding of International Conference on Parallel Computational Fluid
 year: '2009'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2009/ono-x3a-09-x3a-pcfd/'
+bibtex_download: '/bibtex/publications/2009/ono-x3a-09-x3a-pcfd.bib'
 ---
 

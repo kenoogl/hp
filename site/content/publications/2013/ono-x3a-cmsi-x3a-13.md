@@ -5,5 +5,7 @@ authors: '小野 謙二'
 journal: '第２回CMSI人材育成シンポジウム「大規模計算に伴う数値誤差及び可視化'
 year: '2013'
 pub_type: 'talk'
+bibtex_page: '/publication-bibtex/2013/ono-x3a-cmsi-x3a-13/'
+bibtex_download: '/bibtex/publications/2013/ono-x3a-cmsi-x3a-13.bib'
 ---
 

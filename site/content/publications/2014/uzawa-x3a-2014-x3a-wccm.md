@@ -6,5 +6,7 @@ journal: '11th World Congress on Computational Mechanics (WCCM XI)'
 year: '2014'
 pub_type: 'international-conference'
 doi_url: 'http://www.wccm-eccm-ecfd2014.org/admin/files/fileabstract/a3688.pdf'
+bibtex_page: '/publication-bibtex/2014/uzawa-x3a-2014-x3a-wccm/'
+bibtex_download: '/bibtex/publications/2014/uzawa-x3a-2014-x3a-wccm.bib'
 ---
 

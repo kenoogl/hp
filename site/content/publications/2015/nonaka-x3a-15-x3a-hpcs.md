@@ -6,5 +6,7 @@ journal: '2015年ハイパフォーマンスコンピューティングと計算
 year: '2015'
 pub_type: 'domestic-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2015/nonaka-x3a-15-x3a-hpcs/'
+bibtex_download: '/bibtex/publications/2015/nonaka-x3a-15-x3a-hpcs.bib'
 ---
 

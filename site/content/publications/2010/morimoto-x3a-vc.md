@@ -7,5 +7,7 @@ year: '2010'
 pub_type: 'journal'
 doi: '10.1007/978-3-642-17289-2_68'
 doi_url: 'http://dx.doi.org/10.1007/978-3-642-17289-2_68'
+bibtex_page: '/publication-bibtex/2010/morimoto-x3a-vc/'
+bibtex_download: '/bibtex/publications/2010/morimoto-x3a-vc.bib'
 ---
 

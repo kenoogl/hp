@@ -6,5 +6,7 @@ journal: '第 28 回進化計算学会研究会'
 year: '2025'
 pub_type: 'domestic-conference'
 doi_url: 'https://www.jpnsec.org/symposium202502.html'
+bibtex_page: '/publication-bibtex/2025/gc-x5f-shiragami-x3a-25/'
+bibtex_download: '/bibtex/publications/2025/gc-x5f-shiragami-x3a-25.bib'
 ---
 

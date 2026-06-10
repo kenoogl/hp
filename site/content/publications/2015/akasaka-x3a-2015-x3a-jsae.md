@@ -6,5 +6,7 @@ journal: '自動車技術会論文集'
 year: '2015'
 pub_type: 'journal'
 annote: 'refereed'
+bibtex_page: '/publication-bibtex/2015/akasaka-x3a-2015-x3a-jsae/'
+bibtex_download: '/bibtex/publications/2015/akasaka-x3a-2015-x3a-jsae.bib'
 ---
 

@@ -1,0 +1,18 @@
+---
+title: 'BibTeX: 外側の空気の影響を考慮したエアバック展開シミュレーション'
+date: 2009-01-01
+publication_title: '外側の空気の影響を考慮したエアバック展開シミュレーション'
+publication_page: '/publications/2009/hashimoto-x3a-09-x3a-cmd/'
+bibtex_download: '/bibtex/publications/2009/hashimoto-x3a-09-x3a-cmd.bib'
+bibtex_source: |
+  @inproceedings{Hashimoto:09:CMD,
+    title = {外側の空気の影響を考慮したエアバック展開シミュレーション},
+    author = {橋本 学 and 小野 謙二},
+    booktitle = {日本機械学会 第22回計算力学講演会},
+    year = {2009},
+    month = {10月},
+    location = {金沢市},
+    yomi = {Hashimoto, Gaku and Ono, Kenji},
+  }
+---
+

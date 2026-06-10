@@ -7,5 +7,7 @@ year: '2023'
 pub_type: 'domestic-conference'
 doi: '10.1299/jsmekyushu.2023.76.a35'
 doi_url: 'https://www.jstage.jst.go.jp/article/jsmekyushu/2023.76/0/2023.76_A35/_pdf'
+bibtex_page: '/publication-bibtex/2023/tanaka-x3a-23/'
+bibtex_download: '/bibtex/publications/2023/tanaka-x3a-23.bib'
 ---
 

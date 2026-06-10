@@ -6,5 +6,7 @@ journal: 'The 6th Workshop on Virtual Reality Interaction and Physical Simulatio
 year: '2009'
 pub_type: 'international-conference'
 peer_reviewed: true
+bibtex_page: '/publication-bibtex/2009/tawara-x3a-09-x3a-vriphys/'
+bibtex_download: '/bibtex/publications/2009/tawara-x3a-09-x3a-vriphys.bib'
 ---
 

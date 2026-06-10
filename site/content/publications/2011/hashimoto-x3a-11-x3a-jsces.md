@@ -5,5 +5,7 @@ authors: '橋本 学，小野 謙二，河合 秀樹，棚橋 隆彦'
 journal: '日本計算工学会　第16回計算工学講演会'
 year: '2011'
 pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2011/hashimoto-x3a-11-x3a-jsces/'
+bibtex_download: '/bibtex/publications/2011/hashimoto-x3a-11-x3a-jsces.bib'
 ---
 

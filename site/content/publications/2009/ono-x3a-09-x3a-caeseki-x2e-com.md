@@ -6,5 +6,7 @@ journal: '経営に貢献するCAEセミナー'
 year: '2009'
 pub_type: 'talk'
 annote: 'Invited'
+bibtex_page: '/publication-bibtex/2009/ono-x3a-09-x3a-caeseki-x2e-com/'
+bibtex_download: '/bibtex/publications/2009/ono-x3a-09-x3a-caeseki-x2e-com.bib'
 ---
 
