@@ -14,7 +14,7 @@
           {{ end }}
         </a>
         <div class="research-card-body">
-          <h3>{{ .Title }}</h3>
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
           <p>{{ with .Summary }}{{ . }}{{ else }}{{ .Plain | truncate 140 }}{{ end }}</p>
           <a href="{{ .RelPermalink }}">詳細を見る / Learn more</a>
         </div>
