@@ -10,13 +10,17 @@ English version: [About the Laboratory (EN)](/about-en/)
 
 <img src="/images/lab_image.jpg" alt="研究イメージ" style="max-width:1280px; width:100%; height:auto; display:block; margin:0.5rem auto;"><br><br>
 
-## [Intelligent Modeling Laboratory (IML)](https://da.dl.itc.u-tokyo.ac.jp/portal/assets/6876f119-d6f7-4d1b-9a14-d15b0f85a09a)とは
 
-IML（Intelligent Modeling Laboratory）は、1995年に東京大学に設置された全学的な教育研究施設です。本研究室の主宰者は2001年から2005年まで同施設に所属し、運営にも携わっていました。
 
-IMLでは、スーパーコンピューターと先駆的な6面VR装置「CABIN」を活用し、インテリジェント・モデリングという考え方に基づいて、人工物工学の研究が推進されていました。複雑な現象をモデル化し、計算と可視化によって理解するというアプローチは、現在の計算科学やAI研究にも通じるものです。
+## Artificial Intelligence and Modeling Laboratory (AIML) とは
 
-IMLは2011年にその活動を終えましたが、その思想は今なお有効です。本研究室は、その理念を継承し発展させる場として、「IML」の名称を受け継いでいます。
+本研究室 **Artificial Intelligence and Modeling Laboratory（AIML）** の名称には、**人工知能（AI）**、**数理モデリング**、**計算科学**を融合し、新しい科学研究の方法論を創り出すという私たちの理念が込められています。
+
+この名称は、1995年に東京大学に設置された全学的な教育研究施設 [**Intelligent Modeling Laboratory（IML）**](https://da.dl.itc.u-tokyo.ac.jp/portal/assets/6876f119-d6f7-4d1b-9a14-d15b0f85a09a) に由来しています。本研究室の主宰者は2001年から2005年まで同施設に所属し、その運営にも携わっていました。
+
+当時のIMLでは、スーパーコンピューターと先駆的な6面VR装置「CABIN」を活用し、インテリジェント・モデリングという考え方に基づいて人工物工学の研究が推進されていました。複雑な現象をモデル化し、計算と可視化によって理解するというアプローチは、現在の計算科学やAI研究にも通じるものです。
+
+IMLは2011年にその活動を終えましたが、その研究思想は今なお有効です。本研究室では、その理念を受け継ぐとともに、現代のAI技術を取り入れた新しい研究へと発展させるという思いを込めて、**Artificial Intelligence and Modeling Laboratory（AIML）** の名称を採用しました。これは、IMLへの敬意を表すとともに、その思想をAI時代へと継承・発展させることを意味しています。
 
 
 

@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Intelligent Modeling Laboratory (IML)"
+title = "Artificial Intelligence and Modeling Laboratory (AIML)"
 theme = "lab-theme"
 
 [params]
