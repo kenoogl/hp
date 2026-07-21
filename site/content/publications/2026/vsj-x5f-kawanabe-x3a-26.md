@@ -1,0 +1,11 @@
+---
+title: 'スケーラブルディスプレイシステムChOWDERによる３次元GIS分散レンダリング手法と気象データ可視化事例の紹介'
+date: 2026-08-08
+authors: '川鍋 友宏, 鶴田 聡, 揚野 峰人, 加賀谷 仁秀, 小野謙二'
+journal: '第53回可視化情報シンポジウム'
+year: '2026'
+pub_type: 'domestic-conference'
+bibtex_page: '/publication-bibtex/2026/vsj-x5f-kawanabe-x3a-26/'
+bibtex_download: '/bibtex/publications/2026/vsj-x5f-kawanabe-x3a-26.bib'
+---
+

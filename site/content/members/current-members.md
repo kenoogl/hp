@@ -6,7 +6,7 @@ title: "Current Members"
 
 | 役職 / Role | 氏名 / Name | 研究テーマ / Research |
 | --- | --- | --- |
-| 教授 / Professor | 小野 謙二 / Kenji Ono | HPC, CFD, Visualization, Equation Discovery |
+| 教授 / Professor | 小野 謙二 / Kenji Ono [先生の森へリンク](https://www.kyushu-u.ac.jp/ja/university/professor/)| HPC, CFD, Visualization, Equation Discovery |
 
 ### 博士後期課程 / Doctoral Students
 

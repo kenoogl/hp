@@ -69,7 +69,7 @@
 - FR-006: `/news/` は年ごとの時系列アーカイブとし、各ニュースの本文を表示する。
 - FR-007: トップページの Research Highlights は `site/content/research/*.md` の `top_highlight: true` を持つページのみを表示対象とする。
 - FR-008: トップページの Research Highlights は最大5件を表示する。
-- FR-009: トップページの Latest Publications は最新3件を表示し、各論文タイトルは詳細ページへのリンクを持つ。
+- FR-009: トップページの Latest Publications は最新5件を表示し、各論文タイトルは詳細ページへのリンクを持つ。
 - FR-010: トップページのフッターには、ビルド時点の最終更新日時を日本時間で表示する。
 - FR-011: トップページの研究室名は、研究室紹介ページ（日本語 `/about/`）へのリンクを持つ。
 
