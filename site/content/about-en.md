@@ -10,10 +10,12 @@ Our laboratory studies natural and social phenomena through mathematical modelin
 
 
 
-## What is Intelligent Modeling Laboratory (IML)?
+## What is Artificial Intelligence and Modeling Laboratory (AIML)?
 
-The Intelligent Modeling Laboratory (IML) was an interdisciplinary research and education center established at the University of Tokyo in 1995. The principal investigator of this laboratory was affiliated with IML from 2001 to 2005 and was also involved in its operation.
+The name **Artificial Intelligence and Modeling Laboratory (AIML)** reflects our vision of integrating **artificial intelligence**, **mathematical modeling**, and **computational science** to advance scientific discovery.
 
-At IML, research in artifact engineering was conducted based on the concept of intelligent modeling, utilizing supercomputers and an advanced six-sided VR visualization system known as “CABIN.” The approach of modeling complex phenomena and understanding them through computation and visualization remains closely aligned with today’s computational science and AI research.
+Our laboratory name is inspired by the **Intelligent Modeling Laboratory (IML)**, an interdisciplinary research and education center established at the University of Tokyo in 1995. The principal investigator of this laboratory was affiliated with IML from 2001 to 2005 and was also involved in its operation.
 
-Although IML concluded its activities in 2011, its underlying philosophy continues to be relevant. This laboratory inherits and further develops that vision, adopting the name “IML” in recognition of its legacy.
+At IML, research in artifact engineering was conducted based on the concept of intelligent modeling, utilizing supercomputers and an advanced six-sided VR visualization system known as *CABIN*. The philosophy of understanding complex phenomena through mathematical modeling, computation, and visualization remains highly relevant today.
+
+While IML concluded its activities in 2011, its research philosophy continues to inspire us. Our laboratory inherits this legacy and extends it into the era of artificial intelligence. By adopting the name **Artificial Intelligence and Modeling Laboratory (AIML)**, we pay tribute to the original IML while emphasizing our commitment to combining AI with modeling to create the next generation of scientific research.
