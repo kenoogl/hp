@@ -1,6 +1,6 @@
 ---
 title: 'BibTeX: 大規模言語モデルを用いた時系列異常検知モデルのハイパーパラメータ最適化手法の検討'
-date: 2026-06-06
+date: 2026-06-02
 publication_title: '大規模言語モデルを用いた時系列異常検知モデルのハイパーパラメータ最適化手法の検討'
 publication_page: '/publications/2026/jsces-x5f-goto-x3a-26/'
 bibtex_download: '/bibtex/publications/2026/jsces-x5f-goto-x3a-26.bib'
@@ -16,6 +16,7 @@ bibtex_source: |
     doi = {},
     url = {},
     annote = {},
+    date = {2026-06-02},
     issn = {ISSN 1342-145X},
     location = {名古屋},
     organization = {日本計算工学会},

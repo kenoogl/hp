@@ -1,7 +1,7 @@
 ---
 title: 'GPUを用いたBAMファイルの高速圧縮/展開'
-date: 2026-07-07
-authors: '伊東聰, 小野謙二, 井元清哉'
+date: 2026-07-02
+authors: '伊東 聰, 小野 謙二, 井元 清哉'
 journal: '情報処理学会 第157回MPS・第85回BIO合同研究発表会'
 year: '2026'
 pub_type: 'domestic-conference'

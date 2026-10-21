@@ -1,6 +1,6 @@
 ---
 title: 'BibTeX: LLM 駆動による進化計算フレームワーク'
-date: 2026-06-06
+date: 2026-06-02
 publication_title: 'LLM 駆動による進化計算フレームワーク'
 publication_page: '/publications/2026/jsces-x5f-ono-x3a-26/'
 bibtex_download: '/bibtex/publications/2026/jsces-x5f-ono-x3a-26.bib'
@@ -16,6 +16,7 @@ bibtex_source: |
     doi = {},
     url = {},
     annote = {},
+    date = {2026-06-02},
     issn = {ISSN 1342-145X},
     location = {名古屋},
     organization = {日本計算工学会},

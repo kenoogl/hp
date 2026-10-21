@@ -6,7 +6,7 @@ title: "Current Members"
 
 | 役職 / Role | 氏名 / Name | 研究テーマ / Research |
 | --- | --- | --- |
-| 教授 / Professor | 小野 謙二 / Kenji Ono [先生の森へリンク](https://www.kyushu-u.ac.jp/ja/university/professor/)| HPC, CFD, Visualization, Equation Discovery |
+| 教授 / Professor | 小野 謙二 / Kenji Ono [先生の森へリンク](https://www.kyushu-u.ac.jp/ja/university/professor/)| HPC, CFD, Visualization, Equation Discovery, AI Agent |
 
 ### 博士後期課程 / Doctoral Students
 
@@ -16,6 +16,7 @@ title: "Current Members"
 | D3 | 藤井 彬人 / <br/>Akito Fujii | Reeb Space Visualization |
 | D3 | 十川 直幸 / <br/>Naoyuki Sogo | Optimization of Iterative Solver Selection for Sparse Matrix |
 | D3           | 明戸 大介 / <br/>Daisuke Aketo | Model-Based Analysis                                         |
+| D1 | 銭 楽陽（チェン・レーヤン）<br/>Leyang Qian |  |
 
 ### 修士課程 / Master's Students
 
@@ -32,4 +33,11 @@ title: "Current Members"
 | --- | --- | --- |
 | B4 | 沓脱 聖 / <br/>Hijiri Kutsunugi | – |
 | B4 | 中村 彰吾 / <br/>Shogo Nakamura | – |
+
+### 研究生 / Research Student
+
+| 氏名 / Name                                    | 研究テーマ / Research |
+| ---------------------------------------------- | --------------------- |
+| （ジェーン・ファンリャン）<br/>Fangliang Zheng | –                     |
+| 羅 文宗（ロ・ウンゾン）<br/>Wenzong Luo        | –                     |
 
