@@ -6,6 +6,7 @@ title: "受賞 / Awards"
 
 | 受賞名 / Award | 受賞日 / Date | 備考 / Notes |
 | --- | --- | --- |
+| WANC Best Paper Award | 2026-11-27 | "Per-Relation Reliability of LLM-Based Knowledge Graph Extraction: A Verification-First Study on Scientific Abstracts" by Shandong He, Kenji Ono, CANDAR 2026, WANC workshop |
 | Honored Speaker,  ChinaVis2025 | 2025-07-19 | China-Japan-Korea Joint Visualization Workshop |
 | Honorable Mention Award, ChinaVis 2022 | 2022-07 | 投稿論文「ESRGAN-Based Visualization for Large-Scale Volume Data」が受賞 |
 | Excellent award, Poster presentation student paper award, International Symposium on Novel and Sustainable Technology 2019 | 2019-12 | 発表したポスター、Numerical Study of Air Flow Characteristics in a Compact Cyclone Separator for Fuel Cell Vehiclesの内容に対する受賞 |
